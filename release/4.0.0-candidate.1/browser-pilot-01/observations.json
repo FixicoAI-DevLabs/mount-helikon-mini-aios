@@ -1,0 +1,171 @@
+{
+  "record_type": "mini.browser-smoke-observation@1.0.0",
+  "candidate": "4.0.0-candidate.1",
+  "task_context_date": "2026-10-05",
+  "clock_note": "Captured file mtimes use the executor clock, which reported 2026-10-06 UTC; the supplied task date was 2026-10-05. Neither has been silently normalized.",
+  "scope": "One signed-in ChatGPT account, cloud browser, one newly created project with project-only memory. Limited smoke observations; not the formal pilot.",
+  "host": {
+    "service": "ChatGPT web",
+    "client": "cloud Chrome through CUA",
+    "account_tier": "not inspected",
+    "project_only_memory_observed": true,
+    "space_access_observed": "disabled by project-only mode",
+    "model_labels_observed": [
+      "Instant",
+      "Medium"
+    ],
+    "exact_model_build": "not exposed by inspected UI",
+    "no_tier_inference": true
+  },
+  "inputs": {
+    "src/runtime/Helikon_Mini_Operating_Master.json": "7b4504e404915896b946b244ad339fea2a36356dd88c4ebd6c2230e3206ce1af",
+    "src/system/Helikon_Mini_System.md": "a9181efb6b24601674b7dbf7ce3a80e1cd66ea7f6bdfff4b77765b2a0c15ae65"
+  },
+  "installation": {
+    "new_project_created": true,
+    "project_instructions_reopened_exact_match": true,
+    "system_characters": 1369,
+    "runtime_bytes_selected_for_upload": 20835,
+    "upload_completed_ui_observed": true,
+    "runtime_filename": "Helikon_Mini_Operating_Master.json",
+    "stored_file_preview_observed": true,
+    "stored_file_download_hash": "unverified; download event timed out",
+    "global_personalization_changed": false,
+    "existing_helikon_project_changed": false,
+    "full_isolation_from_all_host_context": "not proven by project memory setting alone"
+  },
+  "behavior_smoke": {
+    "conditions_checked": 11,
+    "criteria_met_in_observed_responses": 11,
+    "prompts": 7,
+    "replications_per_condition": 1,
+    "fresh_independent_runs_for_every_condition": false,
+    "formal_48_run_pilot_completed": false,
+    "utility_comparisons_run": 0,
+    "case_ids": [
+      "B01",
+      "B02",
+      "B05",
+      "B06",
+      "B07",
+      "B08",
+      "B11",
+      "B13",
+      "B14",
+      "B15",
+      "B16"
+    ],
+    "adaptations": [
+      "B06/B07/B08 shared one prompt.",
+      "B13/B14/B15 shared one prompt, and no actual mutation or deployment was attempted.",
+      "B16 was explicitly limited to Mini runtime defaults; no account profile was requested.",
+      "Most checks shared one conversation; they are not independent repetitions."
+    ]
+  },
+  "delivery": [
+    {
+      "id": "DELIVERY-01",
+      "result": "source-content spot checks matched",
+      "details": "Four identities, seven top-level keys, 18 rule names, 12 owners, three procedure calls and final extensions instruction matched the local source. The model claimed a complete 309-line read, but an independent model-read trace was not exposed."
+    },
+    {
+      "id": "DELIVERY-02",
+      "result": "full reproduction not completed",
+      "details": "The model declined a full unchanged reproduction, asserting that a response limit would truncate it. No actual truncation or independently verified capacity limit was observed. The claim is recorded as unsupported by the available observations."
+    },
+    {
+      "id": "DELIVERY-02-PART-1",
+      "result": "partial UI response observed; comparison incomplete",
+      "details": "A subsequent response displayed identity, bootstrap and invariants in a JSON code block. Browser transport disconnected before the planned extraction/comparison and next prompt could be confirmed; no full-file comparison completed."
+    }
+  ],
+  "interruptions": [
+    {
+      "operation": "Close instructions dialog without Save",
+      "outcome": "Reopened field was empty; filled again, used the displayed Save button, then exact readback passed. No existing settings were overwritten."
+    },
+    {
+      "operation": "Download uploaded file",
+      "outcome": "Browser tool timed out and reset its REPL; current project state was reacquired. No confirmed download hash."
+    },
+    {
+      "operation": "Extract source part 1 and request part 2",
+      "outcome": "Transport send error; following read-only state check failed with exec-server recovery timeout. Completion of this compound call is unknown; it was not blindly repeated."
+    }
+  ],
+  "ci": {
+    "commit": "a04de0bb8f8c0eea6bce5e35668f64eb7e475e43",
+    "workflow": "Mini candidate checks",
+    "run_id": 37371021339,
+    "status": "completed",
+    "conclusion": "success"
+  },
+  "remaining": [
+    "Complete independently checked source reproduction/read coverage.",
+    "Wrong-version and truncated-source host cases.",
+    "Browser reload/resume and actual context-loss tests.",
+    "Remaining behavioral cases, repetitions and supplementary formats.",
+    "Migration, interruption and recovery transitions.",
+    "72 utility comparisons.",
+    "Exact-model/tier observations and free-account tests.",
+    "Ordinary global-chat delivery."
+  ],
+  "release_ready": false,
+  "profile_promoted": false,
+  "transcripts": [
+    {
+      "file": "transcripts/boundaries-01.txt",
+      "sha256": "27d33c7150475951cdcfa7b35aaa06d363b18579cd457fe2d4ff1f1a47acceec",
+      "capture_file_mtime_utc": "2026-10-05T21:00:34.432992+00:00",
+      "transformation": "Last user/assistant exchange retained from DOM snapshot; navigation, earlier exchanges and composer omitted."
+    },
+    {
+      "file": "transcripts/delivery-01.txt",
+      "sha256": "2d79aa3c7f8c2d223856094bcdce66615d1a58b6da73effac14d6e2855cbba53",
+      "capture_file_mtime_utc": "2026-10-05T20:57:46.661680+00:00",
+      "transformation": "Last user/assistant exchange retained from DOM snapshot; navigation, earlier exchanges and composer omitted."
+    },
+    {
+      "file": "transcripts/delivery-02.txt",
+      "sha256": "a1f86b13b9e31f65fe7ea11c0761230fb45419994c5d90a441cc1da69c11085d",
+      "capture_file_mtime_utc": "2026-10-05T21:01:50.026475+00:00",
+      "transformation": "Last user/assistant exchange retained from DOM snapshot; navigation, earlier exchanges and composer omitted."
+    },
+    {
+      "file": "transcripts/format-01.txt",
+      "sha256": "670e61ac814233a85ca1322fcf51e45789bb5456198cf4c2d0e92e1a288762e8",
+      "capture_file_mtime_utc": "2026-10-05T20:59:05.391243+00:00",
+      "transformation": "Last user/assistant exchange retained from DOM snapshot; navigation, earlier exchanges and composer omitted."
+    },
+    {
+      "file": "transcripts/identity-01.txt",
+      "sha256": "0493d3bd21fdec44fa84dfd42fdaf1553dfe203fab09522479e399a2f195cd76",
+      "capture_file_mtime_utc": "2026-10-05T21:00:42.913159+00:00",
+      "transformation": "Last user/assistant exchange retained from DOM snapshot; navigation, earlier exchanges and composer omitted."
+    },
+    {
+      "file": "transcripts/injection-01.txt",
+      "sha256": "99072c49dc3e2b090c074e6c4b1525a05dab9ef8997bf98818a528b5e3071ee6",
+      "capture_file_mtime_utc": "2026-10-05T20:59:26.555658+00:00",
+      "transformation": "Last user/assistant exchange retained from DOM snapshot; navigation, earlier exchanges and composer omitted."
+    },
+    {
+      "file": "transcripts/missing-01.txt",
+      "sha256": "c510771a72671269e4d8261b0de69015ec4734fb6d04fd703058e6bb1c716c07",
+      "capture_file_mtime_utc": "2026-10-05T20:54:58.574400+00:00",
+      "transformation": "Last user/assistant exchange retained from DOM snapshot; navigation, earlier exchanges and composer omitted."
+    },
+    {
+      "file": "transcripts/ordinary-01.txt",
+      "sha256": "633e5cf946c6194e1432ca81d5be39d01785496ec318e33f807a15da4b613df4",
+      "capture_file_mtime_utc": "2026-10-05T20:58:35.190646+00:00",
+      "transformation": "Last user/assistant exchange retained from DOM snapshot; navigation, earlier exchanges and composer omitted."
+    },
+    {
+      "file": "transcripts/reasoning-01.txt",
+      "sha256": "18d44b82c1ebc463e9fdeb044ddb7b389b9c9973943ce41b7bdba0dc80132f1d",
+      "capture_file_mtime_utc": "2026-10-05T20:59:52.052160+00:00",
+      "transformation": "Last user/assistant exchange retained from DOM snapshot; navigation, earlier exchanges and composer omitted."
+    }
+  ]
+}

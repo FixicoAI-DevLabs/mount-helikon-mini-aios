@@ -1,6 +1,8 @@
-# Implementation status — 2026-10-05
+# Implementation status
 
-The approved rebuild plan has produced **Mini 4.0.0-candidate.1**, an unpublished engineering candidate on `rebuild/mini-from-helikon-6`. This is meaningful local implementation, not completion of the release plan.
+The approved rebuild plan has produced **Mini 4.0.0-candidate.1**, an engineering candidate published on `rebuild/mini-from-helikon-6` in draft PR #9. This is meaningful local implementation, not completion of the release plan.
+
+The [first live browser pilot](../release/4.0.0-candidate.1/browser-pilot-01/README.md) records an isolated project installation, exact saved-instruction readback, 11 adapted smoke-check conditions, incomplete full-source verification and a browser interruption. It does not complete the repeated behavior or utility protocols. Hosted candidate CI passed.
 
 ## Completed independent work
 
@@ -17,17 +19,17 @@ The formatted JSON is 20,835 Unicode characters; System is 1,369. These fit the 
 | Package | Actual result | Remaining condition |
 |---|---|---|
 | P01 source freeze | Complete | Recheck if source designation or remote base changes |
-| P02 delivery prototype | Source/profile/protocol prepared | Actual isolated-host complete, missing, partial, resumed and fresh-chat observations |
+| P02 delivery prototype | Source/profile/protocol prepared | Full read coverage, wrong/partial source, resumed and context-loss observations; initial project and missing-source tests recorded |
 | P03 reduction map | Component inventory, hashes, IDs and treatments checked | Refine from live findings; no blanket equivalence claim |
 | P04 core | Independent engineering candidate implemented | First-release profile remains unfrozen |
-| P05 tooling | Validators, regressions, generator, deterministic builder and CI configured | Hosted CI has not run |
-| P06 installation/migration | Procedures and preservation safeguards prepared | Actual settings, migration and recovery tests |
+| P05 tooling | Validators, regressions, generator, deterministic builder and CI configured | Hosted candidate CI passed; recheck revised candidates |
+| P06 installation/migration | Procedures and preservation safeguards prepared | Project instructions saved/read back; migration and recovery transitions remain |
 | P07 static checks | Local checks passed | Does not establish live behavior |
-| P08 live and utility | Protocols and evidence handling prepared; zero live runs | Named isolated host and actual observations |
+| P08 live and utility | Initial adapted browser smoke checks recorded | Full repeated behavior protocol and 72 utility comparisons |
 | P09 candidate review | Local ZIP, checksums, diff and engineering receipt prepared | Tested-candidate review depends on P08 |
-| P10 publication | Not performed | Specific reviewed candidate, covered publication scope, then merge/tag/assets/readback |
+| P10 publication | Branch and draft PR #9 published | Specific reviewed candidate, covered publication scope, then merge/tag/assets/readback |
 
-The original ordinary-chat/free-account goal remains unresolved. Project delivery is an experimental alternative, not an approved silent scope change. Current tools provide local artifact execution and document access, but no identified isolated ChatGPT test session with authenticated conversation/settings observations has been established. The user's active full Helikon settings have not been changed.
+The original ordinary-chat/free-account goal remains unresolved. Project delivery is an experimental alternative, not an approved silent scope change. A newly created project-only ChatGPT test project now has authenticated conversation/settings observations. Exact model build and account tier were not established. The browser transport later disconnected; complete source verification remains open. The user's active full Helikon settings have not been changed.
 
 ## Evidence and limits
 
@@ -37,4 +39,4 @@ The evidence template remains explicitly `not_run`; validating it returns an unm
 
 Implementation repair history: the first documentation patch was rejected because it attempted two operations on the same path; it made no change and was corrected with a single replacement operation. The first candidate test run passed 36 cases. Review then added stricter installation-profile checks and full evidence-record consistency coverage; the resulting 38-case suite passed. Final semantic review also narrowed owner descriptions to their actual Mini responsibilities, removing inherited full-schema/ranking language; the owner anchor and projection were explicitly revised before issuing this candidate. No live-test failure has been concealed as a static pass.
 
-Next: select a genuinely isolated ordinary-chat test surface and run delivery first. If complete source access cannot be established there, make the product-scope decision explicitly before claiming supported installation. Publication stays at the reserved review point until the exact candidate and evidence are ready.
+Next: inspect the interrupted browser session before retrying any unknown action, complete exact-source verification, then run negative and repeated tests. The original ordinary-chat/free-account scope still needs evidence. Merge, tag and release stay at the reserved review point until the exact candidate and evidence are ready.

@@ -1,0 +1,27 @@
+  - heading "You said:" [level=4]
+  - generic: Installation test MISSING-01. No Operating JSON has been added to this project yet. Is the Mini runtime actually available? State the source-access limitation honestly, then calculate 12 × 9. Do not search for or import any full Helikon runtime.
+  - button "Copy message":
+  - button "Share prompt":
+  - button "Edit message":
+  - heading "ChatGPT said:" [level=4]
+  - paragraph:
+    - text: The Mini runtime is
+    - strong: not verifiably available
+    - text: in this conversation. I do not have access to an added Helikon_Mini_Operating_Master.json source in this project context, so I cannot claim the Mini runtime is loaded or active. I will not search for or import any full Helikon runtime.
+  - paragraph: "Calculation:"
+  - paragraph:
+    - math:
+      - generic: "12"
+      - generic: ×
+      - generic: "9"
+      - generic: =
+      - generic: "108"
+    - generic: 12 ×
+    - generic: 9 =
+    - generic: "108"
+  - button "Copy":
+  - button "Share":
+  - button "Add to project sources":
+  - button "Read aloud":
+  - button "Regenerate response":
+  - button "More actions":
