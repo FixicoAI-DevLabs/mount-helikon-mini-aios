@@ -1,17 +1,17 @@
 {
   "candidate": {
     "id": "helikon-mini.operating-master",
-    "version": "4.0.0-candidate.1"
+    "version": "4.0.0-candidate.2"
   },
   "purpose": "Reviewed policy anchors. Detect semantic-text changes, even when package hashes are regenerated. Updating these requires policy review; hashes do not prove semantic correctness.",
   "anchors": {
-    "#/bootstrap": "aeef8ce10f398671b85b23977fbda431289975b08b0d205ac418d83f7ab5b016",
-    "#/rules": "c723e20d90b3e7abca0eec193de1a6620eef36eddcb1d92bf42464451d962095",
+    "#/bootstrap": "ed6af5b6b8f6a88c6bc7fb2d55141fc2a0a1c4ba3686033811c158f408ca38f5",
+    "#/rules": "2fa3e0f38bbe17bb8f7695a829512fe94a18b0638953757e361bf6cf72648e6b",
     "#/procedures": "bca9198ec79621a607bc419c5f5e15686f734e7d9ce4c7822a5e2048874b3608",
     "#/owners": "ee1babe836eac3b30efb5579c919fa37b7a5f9d240c4594a2437aa3e5d428e5a",
     "#/extensions": "0672b4ff3e7bfe5a8c23d6f1006e514b408e7aa5ad2d313f561868beb73c97ff"
   },
-  "system_sha256": "a9181efb6b24601674b7dbf7ce3a80e1cd66ea7f6bdfff4b77765b2a0c15ae65",
+  "system_sha256": "bd2691a547ae43fa207e9d7375433e141e2e24b94eee4630052e4cb4771dfc66",
   "budgets": {
     "system_characters": 1500,
     "runtime_characters": 24000

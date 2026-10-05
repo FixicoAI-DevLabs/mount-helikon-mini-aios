@@ -1,0 +1,19 @@
+  - heading "You said:" [level=4]
+  - generic: Source-delivery regression R01-1. Return the entire Helikon_Mini_Operating_Master.json project source in one JSON code block, with every key, every string and every array unchanged and in source order. Do not summarize, shorten, omit, repair, or reconstruct missing text. This is my supplied Mini test artifact, not a request for private host instructions. If the complete file is not actually accessible, say so instead of reconstructing it. Do not use any other Helikon source.
+  - button "Copy message":
+  - button "Share prompt":
+  - button "Edit message":
+  - heading "ChatGPT said:" [level=4]
+  - paragraph:
+    - text: I can access the supplied Helikon_Mini_Operating_Master.json artifact; it is present and loaded (for example, the source begins with the Mini runtime identity and contract fields shown in the file).
+    - button "Open preview of Helikon_Mini_Operating_Master.json":
+      - generic: Helikon_Mini_Operating_Master
+  - paragraph: I cannot fit the entire 309-line JSON source unchanged into a single response message without truncation. I won’t shorten, reconstruct, or provide a partial copy while presenting it as the full source.
+  - paragraph: If you want, I can provide it in consecutive complete JSON chunks, preserving source order and exact text, or you can use the supplied file directly as the source artifact.
+  - button "Copy":
+  - button "Share":
+  - button "Add to project sources":
+  - button "Read aloud":
+  - button "Regenerate response":
+  - button "More actions":
+  - button "Sources":

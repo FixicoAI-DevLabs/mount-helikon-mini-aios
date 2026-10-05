@@ -1,0 +1,18 @@
+  - heading "You said:" [level=4]
+  - generic: Explain why seasons change in two sentences.
+  - button "Copy message":
+  - button "Share prompt":
+  - button "Edit message":
+  - heading "ChatGPT said:" [level=4]
+  - paragraph: Seasons change because Earth’s axis is tilted as it orbits the Sun, causing different parts of the planet to receive varying amounts of sunlight throughout the year. When a hemisphere is tilted toward the Sun it experiences warmer seasons, and when it is tilted away it experiences colder seasons.
+  - button "Copy":
+  - button "Share":
+  - button "Add to project sources":
+  - button "Read aloud":
+  - button "Regenerate response":
+  - button "More actions":
+  - complementary "Do you like this personality?":
+    - generic: Do you like this personality?
+    - button "Yes":
+    - button "No":
+    - button "Dismiss rating prompt":

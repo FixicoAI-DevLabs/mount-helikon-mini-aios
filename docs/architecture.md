@@ -1,6 +1,6 @@
 # Mini 4 candidate architecture
 
-Mini is a compact derivative of released Helikon 6.0.0 with independent runtime, schema, System and extension identities. This candidate is `4.0.0-candidate.1`. It is not full Helikon, a service, a security boundary or an empirical reliability guarantee.
+Mini is a compact derivative of released Helikon 6.0.0 with independent runtime, schema, System and extension identities. This candidate is `4.0.0-candidate.2`. It is not full Helikon, a service, a security boundary or an empirical reliability guarantee.
 
 **System** is short user-configured governance on a host-supported instruction surface. **Operating** is the complete compact JSON and any explicitly compatible extensions. No extensions are shipped. Files, tools and the twelve logical owners are hosting or responsibility structures, not extra layers. Task state and continuity remain separate work data.
 

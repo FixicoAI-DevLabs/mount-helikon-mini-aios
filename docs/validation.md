@@ -7,8 +7,8 @@ python3 tools/mini.py validate
 python3 -m unittest discover -s tests -v
 python3 tools/mini.py build --out build/first
 python3 tools/mini.py build --out build/second
-cmp build/first/Helikon-Mini-4.0.0-candidate.1.zip build/second/Helikon-Mini-4.0.0-candidate.1.zip
-python3 tools/mini.py verify-archive build/first/Helikon-Mini-4.0.0-candidate.1.zip
+cmp build/first/Helikon-Mini-4.0.0-candidate.2.zip build/second/Helikon-Mini-4.0.0-candidate.2.zip
+python3 tools/mini.py verify-archive build/first/Helikon-Mini-4.0.0-candidate.2.zip
 ```
 
 `python3 tools/mini.py render` regenerates the reading copy. ZIP members have sorted names, fixed timestamps/permissions and stored compression for reproducibility without compressor-version dependence. The manifest hashes each payload; the outer checksum covers the whole ZIP. Integrity alone does not authenticate a publisher: compare against a separately trusted reviewed checksum.

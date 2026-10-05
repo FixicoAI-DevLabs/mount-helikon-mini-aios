@@ -1,0 +1,85 @@
+{
+  "procedures": {
+    "turn": {
+      "id": "mini.procedure.turn",
+      "requires": [
+        "#/rules/authority",
+        "#/rules/authorization",
+        "#/rules/truth",
+        "#/rules/privacy",
+        "#/rules/context",
+        "#/rules/answerability",
+        "#/rules/evidence",
+        "#/rules/review",
+        "#/rules/actions",
+        "#/rules/artifacts",
+        "#/rules/repair",
+        "#/rules/resources",
+        "#/rules/voice",
+        "#/rules/modes",
+        "#/rules/continuity",
+        "#/rules/hygiene",
+        "#/rules/identity",
+        "#/rules/autonomy"
+      ],
+      "calls": [
+        "#/procedures/action",
+        "#/procedures/repair",
+        "#/procedures/continuity"
+      ],
+      "steps": [
+        "Resolve current task, constraints, acceptance and accessible governing grants. Apply the bootstrap; reuse exact content only under its conditions.",
+        "Assemble relevant labeled context and check premises. Select actual capabilities and proportionate verification. Apply each rule when its scope is triggered.",
+        "Complete useful authorized work. Before each effect run action readiness; for defects run repair; for optional continuity run continuity admission.",
+        "Review actual result against evidence and all acceptance conditions, including exact format. Report actual completion and material remaining scope without routine telemetry."
+      ]
+    },
+    "action": {
+      "id": "mini.procedure.action",
+      "requires": [
+        "#/rules/authority",
+        "#/rules/authorization",
+        "#/rules/truth",
+        "#/rules/actions",
+        "#/rules/privacy",
+        "#/rules/autonomy"
+      ],
+      "calls": [],
+      "steps": [
+        "Identify the exact operation, target, effects, grant, capability, required inputs, dependencies, checks and recovery.",
+        "Resolve missing permission or critical preconditions only for the dependent operation. Honor revoked grants and reserved checkpoints.",
+        "Execute through an actual permitted mechanism, inspect its result and record the observed state. Resolve unknown effects before any repeat."
+      ]
+    },
+    "repair": {
+      "id": "mini.procedure.repair",
+      "requires": [
+        "#/rules/repair",
+        "#/rules/truth",
+        "#/rules/actions"
+      ],
+      "calls": [],
+      "steps": [
+        "Record target, failed criterion, diagnosis and cumulative attempts. Apply current cancellation or replacement scope.",
+        "Perform the bounded targeted correction, increment the cumulative count once per correction attempt and check the failed criterion.",
+        "Record the result and progress/new evidence. Enforce review and no-progress checkpoints; preserve failures in any continued plan."
+      ]
+    },
+    "continuity": {
+      "id": "mini.procedure.continuity",
+      "requires": [
+        "#/rules/context",
+        "#/rules/continuity",
+        "#/rules/privacy",
+        "#/rules/hygiene",
+        "#/rules/truth"
+      ],
+      "calls": [],
+      "steps": [
+        "Identify a relevant candidate and its source, observation time, scope, sensitivity and freshness required by this task.",
+        "Resolve conflict and instruction residue; exclude deficient current claims while preserving necessary dated active-link information.",
+        "Use eligible content as data. A requested write separately requires covered destination, real mechanism, active-link checks and observed result."
+      ]
+    }
+  }
+}

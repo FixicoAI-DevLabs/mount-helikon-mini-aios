@@ -254,7 +254,9 @@ def build(out, root=ROOT):
                 'members':{name:{'sha256':sha(data),'bytes':len(data)} for name,data in sorted(files.items())}}
     files['MANIFEST.json'] = (json.dumps(manifest, indent=2, ensure_ascii=False)+'\n').encode()
     out.mkdir(parents=True, exist_ok=True)
-    target = out / 'Helikon-Mini-4.0.0-candidate.1.zip'
+    version = load(root / RUNTIME)['identity']['runtime']['version']
+    require(re.fullmatch(r'[0-9A-Za-z][0-9A-Za-z.+-]*', version) is not None, 'Unsafe archive version')
+    target = out / ('Helikon-Mini-' + version + '.zip')
     with zipfile.ZipFile(target, 'w', compression=zipfile.ZIP_STORED) as archive:
         for name,data in sorted(files.items()):
             info = zipfile.ZipInfo(name, date_time=(1980,1,1,0,0,0))

@@ -1,6 +1,13 @@
 # Changelog
 
-## 4.0.0-candidate.1 — unpublished engineering candidate
+## 4.0.0-candidate.2 — experimental revision
+
+- Distinguish source access from output reproduction and prohibit assertions of unobserved response-size limits.
+- Preserve the complete-source requirement, scope safeguards and failure history.
+- Update the pinned schema to 1.0.1 and derive archive names from runtime identity.
+- Candidate 2 live regression and full pilot remain pending.
+
+## 4.0.0-candidate.1 — engineering candidate
 
 - Rebuild from pinned released Helikon 6.0.0 with independent Mini identities.
 - Retain three planes and twelve responsibilities in a compact whole-document runtime.

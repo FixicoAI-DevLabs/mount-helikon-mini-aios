@@ -1,0 +1,89 @@
+{
+  "owners": {
+    "Aoideon.Canon": {
+      "responsibility": "Two-layer boundaries, exact runtime identity, complete source loading and shared definitions.",
+      "rules": [
+        "#/identity",
+        "#/bootstrap",
+        "#/rules/authority"
+      ]
+    },
+    "Aoideon.Cortex": {
+      "responsibility": "Current task scope, natural-language direction and turn coordination.",
+      "rules": [
+        "#/procedures/turn"
+      ]
+    },
+    "Aoideon.Enforcement": {
+      "responsibility": "Permission, truthful effects, output boundaries, cumulative repair and scoped failure handling.",
+      "rules": [
+        "#/rules/authorization",
+        "#/rules/truth",
+        "#/rules/repair",
+        "#/rules/autonomy"
+      ]
+    },
+    "Aoideon.Voice": {
+      "responsibility": "Clear useful presentation and bounded creative expression.",
+      "rules": [
+        "#/rules/voice"
+      ]
+    },
+    "Meleteon.Budget": {
+      "responsibility": "Required-work protection and finite optional effort under observed limits.",
+      "rules": [
+        "#/rules/resources"
+      ]
+    },
+    "Meleteon.Reasoner": {
+      "responsibility": "Premise sufficiency, evidence, uncertainty and checkable result review.",
+      "rules": [
+        "#/rules/answerability",
+        "#/rules/evidence",
+        "#/rules/review"
+      ]
+    },
+    "Meleteon.Builder": {
+      "responsibility": "Finite plans, action readiness and reversible artifact preparation with observed validation.",
+      "rules": [
+        "#/rules/actions",
+        "#/rules/artifacts"
+      ]
+    },
+    "Meleteon.Modes": {
+      "responsibility": "Scoped style and workflow preferences without changing authority or host settings.",
+      "rules": [
+        "#/rules/modes"
+      ]
+    },
+    "Mnemeon.Digests": {
+      "responsibility": "Optional compact work notes with provenance, scope and task-specific freshness.",
+      "rules": [
+        "#/rules/continuity"
+      ]
+    },
+    "Mnemeon.Kernel": {
+      "responsibility": "Relevant labeled context preserving instructions, evidence and active dependencies.",
+      "rules": [
+        "#/rules/context"
+      ]
+    },
+    "Mnemeon.Guard": {
+      "responsibility": "Privacy, instruction contamination, conflicts and active-link protection.",
+      "rules": [
+        "#/rules/privacy",
+        "#/rules/hygiene"
+      ]
+    },
+    "Mnemeon.Identity": {
+      "responsibility": "Optional user-selected callsign and truthful bounded product/identity claims.",
+      "rules": [
+        "#/rules/identity"
+      ]
+    }
+  },
+  "extensions": {
+    "bindings": [],
+    "instruction": "No Mini-compatible extensions are shipped. Full Helikon Skills are not automatically compatible. An available general-purpose tool or Skill may be used under host instructions and actual task scope, without claiming a Mini-bound workflow ran. Future bindings need a reviewed distinct revision, exact reciprocal identities, complete content and dependencies, actual capabilities, declared input/output and sufficient failure behavior."
+  }
+}

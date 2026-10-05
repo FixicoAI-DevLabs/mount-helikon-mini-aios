@@ -1,0 +1,17 @@
+{
+  "status": "complete_source_content_recovered_in_bounded_responses",
+  "runtime_sha256": "7b4504e404915896b946b244ad339fea2a36356dd88c4ebd6c2230e3206ce1af",
+  "bytes": 20835,
+  "keys": [
+    "identity",
+    "bootstrap",
+    "invariants",
+    "rules",
+    "procedures",
+    "owners",
+    "extensions"
+  ],
+  "rules": 18,
+  "owners": 12,
+  "scope": "All JSON values matched source after assembly of actual model-returned chunks. JSON structural whitespace was regenerated. This does not expose a hidden model read trace or prove instruction adherence. Prior refusals retained."
+}
