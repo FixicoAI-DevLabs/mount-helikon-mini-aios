@@ -1,0 +1,59 @@
+  - heading "You said:" [level=4]
+  - button "Helikon_Mini_Operating_Master.json"
+  - generic "Helikon_Mini_Operating_Master.json"
+  - generic: Code
+  - generic: Inspect the attached file selected for this test as the Mini Operating source. Is the required runtime available? Report any exact identity mismatch or incomplete content. Do not substitute a different file or a summary.
+  - button "Copy message":
+  - button "Share prompt":
+  - button "Edit message":
+  - heading "ChatGPT said:" [level=4]
+  - paragraph: "Inspection result for the selected Mini Operating source:"
+  - paragraph:
+    - strong: "Runtime availability: Not available as the required Mini runtime."
+  - paragraph: "I inspected the uploaded file as the selected source and did not substitute another file or summary. The file contains the expected Mini identity structure, but the required runtime identity does not match the required candidate. The source reports:"
+  - list:
+    - listitem: "Runtime ID: helikon-mini.operating-master"
+    - text: "Runtime version found: 0.0.0-wrong-fixture"
+    - button "Open preview of Helikon_Mini_Operating_Master.json":
+      - generic: Helikon_Mini_Operating_Master
+  - paragraph: "The expected runtime version from the requested Mini source context was:"
+  - list:
+    - listitem: helikon-mini.operating-master@4.0.0-candidate.3
+  - paragraph:
+    - strong: "Exact identity mismatch found:"
+  - list:
+    - text: "Runtime version mismatch:"
+    - strong: found 0.0.0-wrong-fixture; expected 4.0.0-candidate.3
+  - paragraph: "Other identity pairs present in the file match the expected identifiers shown:"
+  - list:
+    - text: "Schema: helikon-mini.operating-master.schema version 1.0.2"
+    - button "Open preview of Helikon_Mini_Operating_Master.json":
+      - generic: Helikon_Mini_Operating_Master
+    - text: "System contract: helikon-mini.system.contract version 1.0.0"
+    - button "Open preview of Helikon_Mini_Operating_Master.json":
+      - generic: Helikon_Mini_Operating_Master
+    - text: "Extension contract: helikon-mini.extension.contract version 1.0.0"
+    - button "Open preview of Helikon_Mini_Operating_Master.json":
+      - generic: Helikon_Mini_Operating_Master
+  - paragraph:
+    - strong: "Content completeness:"
+  - list:
+    - text: "The uploaded JSON appears structurally complete as a document: it includes identity, bootstrap, invariants, rules, procedures, owners, and extensions sections referenced by its bootstrap requirements."
+    - button "Open preview of Helikon_Mini_Operating_Master.json":
+      - generic: Helikon_Mini_Operating_Master
+    - listitem: However, because the runtime identity is mismatched, I cannot claim the required Mini runtime is available from this source.
+  - paragraph:
+    - strong: "Dependent-use status:"
+  - list:
+    - text: "Required Mini runtime:"
+    - strong: blocked by exact runtime identity mismatch
+    - text: "File inspection:"
+    - strong: completed
+    - listitem: No alternate source, remembered title, or summary was used as a substitute.
+  - button "Copy":
+  - button "Share":
+  - button "Add to project sources":
+  - button "Read aloud":
+  - button "Regenerate response":
+  - button "More actions":
+  - button "Sources":

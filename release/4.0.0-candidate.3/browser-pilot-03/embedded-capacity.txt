@@ -1,0 +1,3 @@
+Observed in the project Instructions form after entering 23,315 characters:
+Project instructions cannot be longer than 8000 characters.
+Save was disabled. No settings save occurred.

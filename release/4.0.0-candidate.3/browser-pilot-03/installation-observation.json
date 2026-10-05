@@ -1,0 +1,23 @@
+{
+  "candidate": "4.0.0-candidate.3",
+  "target": "isolated project Helikon Mini 4 \u2014 Candidate 3 Validation",
+  "existing_state": "new project; empty instructions; zero project sources",
+  "scope": "create disposable isolated test project, save exact System, upload exact Mini runtime",
+  "memory": "Project-only (observed)",
+  "space_access": "Disabled (observed)",
+  "system_characters": 1451,
+  "saved_system_exact_readback": true,
+  "runtime_upload": "completed source card with Preview button observed",
+  "prior_missing_source_tests": [
+    "B02-1",
+    "B02-2",
+    "B02-3"
+  ],
+  "limitations": [
+    "Upload completion and saved instructions establish configured state, not a hidden per-turn model read trace.",
+    "Current active full Helikon global settings were not changed.",
+    "Model selector explicitly observed GPT-5.6 Sol checked and Medium; client label 5.6 Medium retained per trial.",
+    "Account plan Pro observed; account name omitted."
+  ],
+  "observed_date_provenance": "User session October 5; browser/executor capture clock October 6 UTC; retain actual observation timestamps."
+}

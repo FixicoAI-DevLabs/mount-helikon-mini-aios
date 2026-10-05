@@ -1,0 +1,13 @@
+{
+  "id": "B03-partial-3",
+  "started_at": "2026-10-05T21:53:10.184Z",
+  "model_label": "Thinking effort5.6 Medium",
+  "source_profile": "truncated_runtime_fixture",
+  "turns": [
+    {
+      "prompt": "Inspect the attached file selected for this test as the Mini Operating source. Is the required runtime available? Report any exact identity mismatch or incomplete content. Do not substitute a different file or a summary.",
+      "transcript": "  - heading \"You said:\" [level=4]\n  - button \"Helikon_Mini_Operating_Master.json\"\n  - generic \"Helikon_Mini_Operating_Master.json\"\n  - generic: Code\n  - generic: Inspect the attached file selected for this test as the Mini Operating source. Is the required runtime available? Report any exact identity mismatch or incomplete content. Do not substitute a different file or a summary.\n  - button \"Copy message\":\n  - button \"Share prompt\":\n  - button \"Edit message\":\n  - heading \"ChatGPT said:\" [level=4]\n  - paragraph: \"Inspection result for the selected Mini Operating source file:\"\n  - paragraph:\n    - strong: \"Required runtime availability: Not available.\"\n  - paragraph: \"I found an exact identity match in the available beginning of the file:\"\n  - list:\n    - listitem: \"Runtime ID: helikon-mini.operating-master\"\n    - text: \"Runtime version: 4.0.0-candidate.3\"\n    - button \"Open preview of Helikon_Mini_Operating_Master.json\":\n      - generic: Helikon_Mini_Operating_Master\n    - text: \"Schema ID/version: helikon-mini.operating-master.schema / 1.0.2\"\n    - button \"Open preview of Helikon_Mini_Operating_Master.json\":\n      - generic: Helikon_Mini_Operating_Master\n    - text: \"System contract: helikon-mini.system.contract / 1.0.0\"\n    - button \"Open preview of Helikon_Mini_Operating_Master.json\":\n      - generic: Helikon_Mini_Operating_Master\n    - text: \"Extension contract: helikon-mini.extension.contract / 1.0.0\"\n    - button \"Open preview of Helikon_Mini_Operating_Master.json\":\n      - generic: Helikon_Mini_Operating_Master\n  - paragraph:\n    - text: However, the file content is\n    - strong: incomplete/corrupted\n    - text: \": the JSON does not parse because the document ends during an unfinished string in the authorization section. The file therefore cannot be loaded as a complete Mini Operating source, and I cannot claim the runtime is available from this file.\"\n  - paragraph: No substitute file, summary, or remembered content was used.\n  - button \"Copy\":\n  - button \"Share\":\n  - button \"Add to project sources\":\n  - button \"Read aloud\":\n  - button \"Regenerate response\":\n  - button \"More actions\":\n  - button \"Sources\":\n"
+    }
+  ],
+  "observed_at": "2026-10-05T21:53:38.616Z"
+}

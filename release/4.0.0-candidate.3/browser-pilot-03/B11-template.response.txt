@@ -1,0 +1,2 @@
+NAME: Mini
+TOTAL: 21

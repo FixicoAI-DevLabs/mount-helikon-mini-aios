@@ -2,11 +2,11 @@
   "identity": {
     "runtime": {
       "id": "helikon-mini.operating-master",
-      "version": "4.0.0-candidate.2"
+      "version": "4.0.0-candidate.3"
     },
     "schema": {
       "id": "helikon-mini.operating-master.schema",
-      "version": "1.0.1"
+      "version": "1.0.2"
     },
     "system_contract": {
       "id": "helikon-mini.system.contract",

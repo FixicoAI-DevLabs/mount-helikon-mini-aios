@@ -1,6 +1,6 @@
 # Helikon Mini
 
-This branch contains **Mini 4.0.0-candidate.2**, a compact rebuild from released Helikon 6.0.0. It is an experimental engineering candidate. An isolated project installation and initial browser smoke checks have run; the full delivery, behavior and utility gates remain open.
+This branch contains **Mini 4.0.0-candidate.3**, a compact rebuild from released Helikon 6.0.0. It is an experimental engineering candidate. An isolated project installation and initial browser smoke checks have run; the full delivery, behavior and utility gates remain open.
 
 See the [first live browser test record](release/4.0.0-candidate.1/browser-pilot-01/README.md), including the initial source-reproduction refusals and recovered browser interruption. These observations do not promote a supported profile or establish an ordinary global-chat installation.
 

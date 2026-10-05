@@ -1,0 +1,14 @@
+{
+  "id": "U01-diagnostic",
+  "started_at": "2026-10-05T21:57:51.223Z",
+  "model_label": "Thinking effort5.6 Medium",
+  "source_profile": "candidate3_project_source",
+  "turns": [
+    {
+      "prompt": "Explain tides in 90 words for an adult new to the topic.",
+      "transcript": "  - heading \"You said:\" [level=4]\n  - generic: Explain tides in 90 words for an adult new to the topic.\n  - button \"Copy message\":\n  - button \"Share prompt\":\n  - button \"Edit message\":\n  - heading \"ChatGPT said:\" [level=4]\n  - paragraph: Tides are the regular rises and falls of ocean water, mainly caused by the Moon’s gravity pulling on Earth’s oceans. The Sun also affects tides, but less strongly because it is farther away. As Earth rotates, different coastlines move through these raised areas of water, creating high and low tides. Most places experience two high and two low tides each day, though local geography changes the pattern. Tides influence marine life, navigation, and coastal environments. They are predictable because the movements of the Moon and Earth follow consistent cycles reliably.\n  - button \"Copy\":\n  - button \"Share\":\n  - button \"Add to project sources\":\n  - button \"Read aloud\":\n  - button \"Regenerate response\":\n  - button \"More actions\":\n",
+      "response_markdown": "Tides are the regular rises and falls of ocean water, mainly caused by the Moon’s gravity pulling on Earth’s oceans. The Sun also affects tides, but less strongly because it is farther away. As Earth rotates, different coastlines move through these raised areas of water, creating high and low tides. Most places experience two high and two low tides each day, though local geography changes the pattern. Tides influence marine life, navigation, and coastal environments. They are predictable because the movements of the Moon and Earth follow consistent cycles reliably."
+    }
+  ],
+  "observed_at": "2026-10-05T21:58:39.800Z"
+}

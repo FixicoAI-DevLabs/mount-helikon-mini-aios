@@ -1,5 +1,11 @@
 # Changelog
 
+## 4.0.0-candidate.3 — engineering candidate
+
+- Explicitly adopt the matched runtime as user-level operating guidance and separate it from the user’s task data.
+- Preserve the failed candidate-2 injection/source-copy probes; targeted regression tests are pending.
+- Advance the pinned identity schema to 1.0.2 without changing its structural contract.
+
 ## 4.0.0-candidate.2 — experimental revision
 
 - Distinguish source access from output reproduction and prohibit assertions of unobserved response-size limits.

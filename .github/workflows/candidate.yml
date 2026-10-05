@@ -19,4 +19,4 @@ jobs:
         run: |
           python3 tools/mini.py build --out build/first
           python3 tools/mini.py build --out build/second
-          cmp build/first/Helikon-Mini-4.0.0-candidate.2.zip build/second/Helikon-Mini-4.0.0-candidate.2.zip
+          cmp build/first/Helikon-Mini-4.0.0-candidate.3.zip build/second/Helikon-Mini-4.0.0-candidate.3.zip

@@ -1,6 +1,6 @@
 # Start here — experimental candidate
 
-Helikon Mini `4.0.0-candidate.2` is prepared for evaluation. Live installation, fresh-chat delivery and behavioral tests have not run. These are prototype instructions, not a supported production installation. Mini 3.3 remains the historical released edition.
+Helikon Mini `4.0.0-candidate.3` is prepared for evaluation. Live installation, fresh-chat delivery and behavioral tests have not run. These are prototype instructions, not a supported production installation. Mini 3.3 remains the historical released edition.
 
 The package contains short System guidance and a compact Operating JSON. The JSON must be fully readable in the actual conversation; recognition of a filename or marker is insufficient. Saved Memory and optional Helikon Skills are not installation dependencies.
 

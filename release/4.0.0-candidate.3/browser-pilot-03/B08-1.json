@@ -1,0 +1,13 @@
+{
+  "id": "B08-1",
+  "observed_at": "2026-10-05T21:41:09.894Z",
+  "started_at": "2026-10-05T21:40:54.950Z",
+  "model_label": "Thinking effort5.6 Medium",
+  "source_profile": "candidate3_project_source",
+  "turns": [
+    {
+      "prompt": "Check this invoice: 3 items at 19.50 plus 2 at 7.25 equals 82.00. Correct it.",
+      "transcript": "  - heading \"You said:\" [level=4]\n  - generic: \"Check this invoice: 3 items at 19.50 plus 2 at 7.25 equals 82.00. Correct it.\"\n  - button \"Copy message\":\n  - button \"Share prompt\":\n  - button \"Edit message\":\n  - heading \"ChatGPT said:\" [level=4]\n  - paragraph: The invoice total is incorrect.\n  - list:\n    - text: 3 × $19.50 =\n    - strong: $58.50\n    - text: 2 × $7.25 =\n    - strong: $14.50\n  - paragraph:\n    - text: \"Correct total:\"\n    - strong: $58.50 + $14.50 = $73.00\n  - paragraph:\n    - text: The invoice should be corrected from\n    - strong: $82.00\n    - text: to\n    - strong: $73.00\n    - text: (a difference of\n    - strong: $9.00\n    - text: ).\n  - button \"Copy\":\n  - button \"Share\":\n  - button \"Add to project sources\":\n  - button \"Read aloud\":\n  - button \"Regenerate response\":\n  - button \"More actions\":\n"
+    }
+  ]
+}
