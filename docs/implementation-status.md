@@ -29,7 +29,7 @@ The formatted JSON is 20,835 Unicode characters; System is 1,369. These fit the 
 | P09 candidate review | Local ZIP, checksums, diff and engineering receipt prepared | Tested-candidate review depends on P08 |
 | P10 publication | Branch and draft PR #9 published | Specific reviewed candidate, covered publication scope, then merge/tag/assets/readback |
 
-The original ordinary-chat/free-account goal remains unresolved. Project delivery is an experimental alternative, not an approved silent scope change. A newly created project-only ChatGPT test project now has authenticated conversation/settings observations. Exact model build and account tier were not established. The browser transport later disconnected; complete source verification remains open. The user's active full Helikon settings have not been changed.
+The original ordinary-chat/free-account goal remains unresolved. Project delivery is an experimental alternative, not an approved silent scope change. A newly created project-only ChatGPT test project now has authenticated conversation/settings observations. Exact model build and account tier were not established. The browser transport later disconnected and was recovered by resetting its REPL; complete source verification remains open after an additional bounded-group refusal. The user's active full Helikon settings have not been changed.
 
 ## Evidence and limits
 
@@ -39,4 +39,4 @@ The evidence template remains explicitly `not_run`; validating it returns an unm
 
 Implementation repair history: the first documentation patch was rejected because it attempted two operations on the same path; it made no change and was corrected with a single replacement operation. The first candidate test run passed 36 cases. Review then added stricter installation-profile checks and full evidence-record consistency coverage; the resulting 38-case suite passed. Final semantic review also narrowed owner descriptions to their actual Mini responsibilities, removing inherited full-schema/ranking language; the owner anchor and projection were explicitly revised before issuing this candidate. No live-test failure has been concealed as a static pass.
 
-Next: inspect the interrupted browser session before retrying any unknown action, complete exact-source verification, then run negative and repeated tests. The original ordinary-chat/free-account scope still needs evidence. Merge, tag and release stay at the reserved review point until the exact candidate and evidence are ready.
+Next: investigate the remaining source-delivery refusal, complete exact-source verification, then run negative and repeated tests. The prior interrupted prompt was inspected after recovery and confirmed not submitted. The original ordinary-chat/free-account scope still needs evidence. Merge, tag and release stay at the reserved review point until the exact candidate and evidence are ready.

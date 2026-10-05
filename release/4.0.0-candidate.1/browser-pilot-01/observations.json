@@ -75,8 +75,18 @@
     },
     {
       "id": "DELIVERY-02-PART-1",
-      "result": "partial UI response observed; comparison incomplete",
-      "details": "A subsequent response displayed identity, bootstrap and invariants in a JSON code block. Browser transport disconnected before the planned extraction/comparison and next prompt could be confirmed; no full-file comparison completed."
+      "result": "partial sections compared after recovery",
+      "details": "After resetting the browser REPL and inspecting current state, identity/bootstrap/invariants and the first nine rules were extracted and matched exactly. The second nine-rule group was refused. A targeted resources-rule extraction matched. Full document coverage remains incomplete."
+    },
+    {
+      "id": "DELIVERY-03",
+      "result": "bounded group not reproduced",
+      "details": "A request for the remaining nine rules was refused without specific observed missing ranges or capacity evidence."
+    },
+    {
+      "id": "DELIVERY-04",
+      "result": "targeted rule matched",
+      "details": "The resources rule was returned and matched the canonical source. It does not resolve the prior refusal or prove complete source coverage."
     }
   ],
   "interruptions": [
@@ -166,6 +176,51 @@
       "sha256": "18d44b82c1ebc463e9fdeb044ddb7b389b9c9973943ce41b7bdba0dc80132f1d",
       "capture_file_mtime_utc": "2026-10-05T20:59:52.052160+00:00",
       "transformation": "Last user/assistant exchange retained from DOM snapshot; navigation, earlier exchanges and composer omitted."
+    },
+    {
+      "file": "transcripts/delivery-03.txt",
+      "sha256": "c7097c97ade3fe36fc0e10fbb52fb10b9db6433b581683e457a0eb0b3ff8fa9d",
+      "capture_file_mtime_utc": "2026-10-05T21:10:09.332628+00:00",
+      "transformation": "Last user/assistant exchange retained from DOM snapshot; navigation, earlier exchanges and composer omitted."
+    },
+    {
+      "file": "transcripts/delivery-04.txt",
+      "sha256": "5f40736333f27de858c35e0286b3ae649f0d276f01ca00869a767950c00c6ae3",
+      "capture_file_mtime_utc": "2026-10-05T21:10:24.600930+00:00",
+      "transformation": "Last user/assistant exchange retained from DOM snapshot; navigation, earlier exchanges and composer omitted."
     }
-  ]
+  ],
+  "source_extracts": [
+    {
+      "file": "source-extracts/source-part-1.json",
+      "sha256": "2250f79eabd2ce7b4b23d80b12647cb88783eb83f52a6d85cca0bfd27a0bb6cd",
+      "exact_json_values_and_order_match": true,
+      "full_document_coverage": false
+    },
+    {
+      "file": "source-extracts/source-part-2.json",
+      "sha256": "91135566e4e12e55d3214072c12e0063564a94a40220a5560d955c3377c1a9f1",
+      "exact_json_values_and_order_match": true,
+      "full_document_coverage": false
+    },
+    {
+      "file": "source-extracts/source-resources.json",
+      "sha256": "be7d8368b5519a5154707694f15582160d24d57da5149604e3044fb965a852bb",
+      "exact_json_values_and_order_match": true,
+      "full_document_coverage": false
+    }
+  ],
+  "recovery": {
+    "browser_repl_reset": "succeeded",
+    "last_conversation_inspected": true,
+    "unknown_next_prompt_resolved": "not submitted; source part 1 was still the latest response",
+    "bounded_comparisons_completed": [
+      "identity/bootstrap/invariants",
+      "first nine rules",
+      "resources rule"
+    ],
+    "second_nine_rule_group": "model declined unchanged reproduction; no observed capacity proof",
+    "screenshot": "installation-project.jpg"
+  },
+  "screenshot_sha256": "38c53380feb6c1f43f838e303e7feb8b64f614a323846e2b70d051ec09bc1581"
 }

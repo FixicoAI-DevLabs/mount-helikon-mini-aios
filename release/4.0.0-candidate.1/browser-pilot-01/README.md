@@ -2,7 +2,7 @@
 
 Mini `4.0.0-candidate.1` was installed in a new ChatGPT test project on the user's signed-in account. Instructions were saved and verified exactly after reopening; the runtime upload completed and its source preview opened. Eleven adapted smoke-check conditions met their observable criteria. **Complete source-read coverage and release readiness remain unproven.**
 
-This is a bounded observation record, not the formal 48-run behavior pilot or the 72-comparison utility study. Nine captured user/assistant exchanges are retained under `transcripts/`; `observations.json` records their hashes, transformations and limits. These are DOM observations captured by the testing agent, not independently signed host attestations.
+This is a bounded observation record, not the formal 48-run behavior pilot or the 72-comparison utility study. Eleven captured user/assistant exchanges are retained under `transcripts/`; `observations.json` records their hashes, transformations and limits. These are DOM observations captured by the testing agent, not independently signed host attestations.
 
 ## Installation and scope
 
@@ -36,7 +36,7 @@ These are 11 conditions across seven prompts, mostly in one conversation. Groupe
 
 [DELIVERY-02](transcripts/delivery-02.txt), in another fresh chat, requested unchanged full-source reproduction. The model declined, asserting a response-size limit would cause truncation. No truncation or verified limit was observed, so that capacity claim is **unsupported by this test evidence**. It must not become a documented host limitation or a successful full-source check.
 
-A follow-up requested bounded sections. A JSON response containing identity, bootstrap and invariants was visible. Browser transport disconnected before extraction/comparison and the next prompt could be confirmed. A read-only recovery attempt also failed. The interrupted compound action has unknown completion and was not blindly repeated. No complete reproduction comparison, resumed-context result or final screenshot receipt exists.
+A follow-up requested bounded sections. A JSON response containing identity, bootstrap and invariants was visible. Browser transport disconnected before extraction/comparison and the next prompt could be confirmed. A read-only recovery attempt also failed. The compound action was not blindly repeated. Resetting the browser REPL later restored access; inspection showed the next prompt had not been submitted. Identity/bootstrap/invariants and the first nine rules were then extracted and matched exactly. The remaining nine-rule request was refused; a targeted resources-rule request succeeded and matched. See the two additional delivery transcripts and hashed source extracts. Full document coverage remains incomplete. A project screenshot was saved after recovery.
 
 ## Repository and release disposition
 
@@ -44,4 +44,4 @@ Hosted `Mini candidate checks` run **37371021339** completed successfully for ca
 
 This addendum leaves runtime, System, schema, profiles, packaged instructions and issued archive bytes unchanged. The engineering receipt and packaged support documents remain pre-pilot snapshots. No supported-profile promotion, merge, tag or release follows from this smoke result.
 
-Remaining gates include exact-source coverage, wrong/truncated-source cases, reload/resume and context loss, remaining behavior cases/repetitions, migration/recovery, utility comparisons, and ordinary-global-chat/free-account goals. Recovery should inspect the last conversation for the possibly submitted next prompt before sending it again.
+Remaining gates include exact-source coverage, wrong/truncated-source cases, reload/resume and context loss, remaining behavior cases/repetitions, migration/recovery, utility comparisons, and ordinary-global-chat/free-account goals. The browser interruption is resolved, but the source-delivery refusal still needs investigation before supported-profile promotion.
