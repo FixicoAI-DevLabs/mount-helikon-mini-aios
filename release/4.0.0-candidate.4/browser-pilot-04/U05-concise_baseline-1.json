@@ -1,0 +1,14 @@
+{
+  "id": "U05-concise_baseline-1",
+  "started_at": "2026-10-05T23:01:23.962Z",
+  "model_label": "Thinking effort5.6 Medium",
+  "source_profile": "concise_baseline",
+  "turns": [
+    {
+      "prompt": "Return only JSON: two products, pen at 2.5 and book at 9, with numeric prices.",
+      "transcript": "  - heading \"You said:\" [level=4]\n  - generic: \"Return only JSON: two products, pen at 2.5 and book at 9, with numeric prices.\"\n  - button \"Copy message\":\n  - button \"Share prompt\":\n  - button \"Edit message\":\n  - heading \"ChatGPT said:\" [level=4]\n  - paragraph: \"{\\\"products\\\":[{\\\"name\\\":\\\"pen\\\",\\\"price\\\":2.5},{\\\"name\\\":\\\"book\\\",\\\"price\\\":9}]}\"\n  - button \"Copy\":\n  - button \"Share\":\n  - button \"Add to project sources\":\n  - button \"Read aloud\":\n  - button \"Regenerate response\":\n  - button \"More actions\":\n",
+      "response_markdown": "{\"products\":[{\"name\":\"pen\",\"price\":2.5},{\"name\":\"book\",\"price\":9}]}"
+    }
+  ],
+  "observed_at": "2026-10-05T23:01:40.099Z"
+}

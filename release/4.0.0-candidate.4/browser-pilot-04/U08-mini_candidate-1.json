@@ -1,0 +1,14 @@
+{
+  "id": "U08-mini_candidate-1",
+  "started_at": "2026-10-05T23:05:46.692Z",
+  "model_label": "Thinking effort5.6 Medium",
+  "source_profile": "mini_candidate",
+  "turns": [
+    {
+      "prompt": "My draft says 15% of 240 is 24. Correct it and explain the error briefly.",
+      "transcript": "  - heading \"You said:\" [level=4]\n  - generic: My draft says 15% of 240 is 24. Correct it and explain the error briefly.\n  - button \"Copy message\":\n  - button \"Share prompt\":\n  - button \"Edit message\":\n  - heading \"ChatGPT said:\" [level=4]\n  - paragraph:\n    - text: \"Corrected:\"\n    - strong: 15% of 240 is 36, not 24.\n  - paragraph:\n    - text: \"Brief explanation:\"\n    - strong: 24 is 10% of 240\n    - text: (because\n    - math:\n      - generic: \"240\"\n      - generic: \u00d7\n      - generic: \"0.10\"\n      - generic: =\n      - generic: \"24\"\n    - generic: 240 \u00d7\n    - generic: 0.10 =\n    - generic: \"24\"\n    - text: \"). To find 15%, add another 5%:\"\n    - math:\n      - generic: \"5\"\n      - generic: \"%\"\n    - generic: 5%\n    - text: of 240 is 12, so\n    - math:\n      - generic: \"24\"\n      - generic: +\n      - generic: \"12\"\n      - generic: =\n      - generic: \"36\"\n    - generic: 24 +\n    - generic: 12 =\n    - generic: \"36\"\n    - text: .\n  - button \"Copy\":\n  - button \"Share\":\n  - button \"Add to project sources\":\n  - button \"Read aloud\":\n  - button \"Regenerate response\":\n  - button \"More actions\":\n",
+      "response_markdown": "Corrected: **15% of 240 is 36, not 24.**\n\nBrief explanation: **24 is 10% of 240** (because \\(240 \\times 0.10 = 24\\)). To find 15%, add another 5%: \\(5\\%\\) of 240 is 12, so \\(24 + 12 = 36\\)."
+    }
+  ],
+  "observed_at": "2026-10-05T23:05:58.092Z"
+}

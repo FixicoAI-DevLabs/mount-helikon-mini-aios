@@ -1,4 +1,4 @@
-# Live pilot (not run)
+# Live pilot protocol and recorded results
 
 Use `cases.json` for B01–B16 and `utility.json` for the eight comparison tasks. Each behavior case requires three independent fresh runs on a named profile; keep every attempt. B03 needs wrong-identity and truncated-source observations. B11 needs JSON plus raw code, CSV and exact-template variants. Supplementary runs do not replace the 48 primary observations.
 
@@ -8,4 +8,4 @@ Installation cases are separate: clean target, preserved existing instructions, 
 
 For utility hold task, model/client, capabilities and context comparable, rotate condition order and blind review labels where feasible. Score completion, checkable errors, unsupported claims, unnecessary questions/consent, format failures, repair effort and observed elapsed time. Use telemetry only when actually exposed. Keep the concise baseline fixed from `utility.json`.
 
-No local validator replaces these experiments. No successful live transcript is supplied and no general reliability advantage is claimed.
+No local validator replaces these experiments. Versioned live transcripts are supplied under `release/4.0.0-candidate.2/` through the current candidate, including failures. Protocol JSON files are reusable specifications; their `not_run` labels are not the status of those separate records. No general reliability advantage is claimed.

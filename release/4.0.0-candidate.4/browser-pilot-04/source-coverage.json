@@ -1,0 +1,46 @@
+{
+  "result": "complete_runtime_content_recovered_exactly_in_bounded_responses",
+  "parts": [
+    {
+      "path": "source-identity.json",
+      "sha256": "31a0c7a2fba295dd58ae5a8d2f4313e3d873e8c37a863c166d981af4844fbd86"
+    },
+    {
+      "path": "source-rules-a.json",
+      "sha256": "8f80b93546d438c37323aca8063dce8a39984add42d272b05e3bf9803376a6c8"
+    },
+    {
+      "path": "source-rules-b.json",
+      "sha256": "95c4bb2c31428ad5f7656287306b160fc1c70b22897d9e9edc025d03f6043e93"
+    },
+    {
+      "path": "source-rules-c.json",
+      "sha256": "45db2265bd812890ae91ebfb23fd0c594f7bc5af9c5fa872da19aaf26e2d1106"
+    },
+    {
+      "path": "source-rules-d.json",
+      "sha256": "d7b1139b1c5ae6072dbfe2305e066d58978421046f2dbeecb5916083bd5427bd"
+    },
+    {
+      "path": "source-rules-e.json",
+      "sha256": "2b3c96071301c6873669966e843db8c15226d2481f25141acffac46b082d0c94"
+    },
+    {
+      "path": "source-procedures.json",
+      "sha256": "c9cd6d96d8d2b4c6fe29146312def0b5f318a8652b9bc0fda260da078bed20b0"
+    },
+    {
+      "path": "source-owners.json",
+      "sha256": "9eed9cb9c0bb92e74adf3d9b9cf11fc796092c07f0dad30e742d1685417815e2"
+    }
+  ],
+  "runtime_sha256": "3102acb0518a26d08669ca90e186beed405ed9d752636183b02e253b0e477bd2",
+  "bytes": 21903,
+  "rules": 18,
+  "owners": 12,
+  "limits": [
+    "JSON structural whitespace was regenerated; every JSON value and object order matches the canonical source.",
+    "This is a source-access observation for the bounded-copy conversation, not a hidden per-turn read trace or proof of instruction adherence.",
+    "Whole-source single-response refusal R01-1 remains recorded."
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "U03-concise_baseline-1",
+  "started_at": "2026-10-05T22:49:59.255Z",
+  "model_label": "Thinking effort5.6 Medium",
+  "source_profile": "concise_baseline",
+  "turns": [
+    {
+      "prompt": "Summarize these supplied statements: A: Trial included 20 adults, short follow-up, no control. B: Authors report improvement. State what is supported and what cannot be concluded.",
+      "transcript": "  - heading \"You said:\" [level=4]\n  - generic: \"Summarize these supplied statements: A: Trial included 20 adults, short follow-up, no control. B: Authors report improvement. State what is supported and what cannot be concluded.\"\n  - button \"Copy message\":\n  - button \"Share prompt\":\n  - button \"Edit message\":\n  - heading \"ChatGPT said:\" [level=4]\n  - paragraph:\n    - strong: \"Summary of statements:\"\n  - list:\n    - paragraph:\n      - strong: \"Supported:\"\n      - text: The trial involved\n      - strong: 20 adults\n      - text: with a\n      - strong: short follow-up period\n      - text: and\n      - strong: no control group\n      - text: . The authors reported that participants showed\n      - strong: improvement\n      - text: during the study period.\n    - paragraph:\n      - strong: \"Cannot be concluded:\"\n      - text: The results do\n      - strong: not establish that the intervention caused the improvement\n      - text: \", because there was no comparison group to rule out other explanations (such as natural changes, placebo effects, or outside factors). The small sample size and short follow-up also limit confidence that the findings apply broadly or that the effects are lasting.\"\n  - button \"Copy\":\n  - button \"Share\":\n  - button \"Add to project sources\":\n  - button \"Read aloud\":\n  - button \"Regenerate response\":\n  - button \"More actions\":\n  - complementary \"Do you like this personality?\":\n    - generic: Do you like this personality?\n    - button \"Yes\":\n    - button \"No\":\n    - button \"Dismiss rating prompt\":\n",
+      "response_markdown": "**Summary of statements:**\n\n- **Supported:** The trial involved **20 adults** with a **short follow-up period** and **no control group**. The authors reported that participants showed **improvement** during the study period.\n\n- **Cannot be concluded:** The results do **not establish that the intervention caused the improvement**, because there was no comparison group to rule out other explanations (such as natural changes, placebo effects, or outside factors). The small sample size and short follow-up also limit confidence that the findings apply broadly or that the effects are lasting."
+    }
+  ],
+  "observed_at": "2026-10-05T22:51:24.302Z"
+}

@@ -2,7 +2,7 @@
 
 Derived from the pinned Helikon 6.0.0 source in `source-manifest.json`.
 
-This map covers all source components and indexes their nested normative IDs. It records intended treatment, not proof of behavioral equivalence. The referenced live cases have not run. `source-to-mini-map.json` contains exact pointers, component hashes and rule IDs.
+This map covers all source components and indexes their nested normative IDs. It records intended treatment, not proof of behavioral equivalence. Versioned reports under `release/` record which live cases ran, including failures and repairs. `source-to-mini-map.json` contains exact pointers, component hashes and rule IDs.
 
 | Source | Treatment | Mini destination | Behavior change / reason | Cases |
 |---|---|---|---|---|

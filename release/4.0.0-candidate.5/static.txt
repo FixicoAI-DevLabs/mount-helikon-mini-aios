@@ -1,0 +1,10 @@
+{
+  "status": "pass",
+  "scope": "static_candidate_artifacts_only",
+  "runtime_characters": 22251,
+  "system_characters": 1490,
+  "owners": 12,
+  "source_components": 92,
+  "live_behavior": "not_evaluated_by_this_command",
+  "host_installation": "not_evaluated_by_this_command"
+}

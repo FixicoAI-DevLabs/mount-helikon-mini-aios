@@ -1,0 +1,14 @@
+{
+  "id": "U01-plain_host-2",
+  "started_at": "2026-10-05T22:40:36.221Z",
+  "model_label": "Thinking effort5.6 Medium",
+  "source_profile": "plain_host",
+  "turns": [
+    {
+      "prompt": "Explain tides in 90 words for an adult new to the topic.",
+      "transcript": "  - heading \"You said:\" [level=4]\n  - generic: Explain tides in 90 words for an adult new to the topic.\n  - button \"Copy message\":\n  - button \"Share prompt\":\n  - button \"Edit message\":\n  - heading \"ChatGPT said:\" [level=4]\n  - paragraph: Tides are the regular rises and falls of ocean water caused mainly by the Moon\u2019s gravity, which pulls on Earth\u2019s oceans and creates bulges of water on opposite sides of the planet. The Sun\u2019s gravity also influences tides, though less strongly. As Earth rotates, coastlines move through these bulges, producing high and low tides. The shape of coastlines and ocean depths affect local timing and height of tides. Understanding tides helps explain coastal patterns, navigation, fishing, and marine ecosystems. Tides follow predictable cycles but vary by location and seasonal factors.\n  - button \"Copy\":\n  - button \"Share\":\n  - button \"Add to project sources\":\n  - button \"Read aloud\":\n  - button \"Regenerate response\":\n  - button \"More actions\":\n",
+      "response_markdown": "Tides are the regular rises and falls of ocean water caused mainly by the Moon\u2019s gravity, which pulls on Earth\u2019s oceans and creates bulges of water on opposite sides of the planet. The Sun\u2019s gravity also influences tides, though less strongly. As Earth rotates, coastlines move through these bulges, producing high and low tides. The shape of coastlines and ocean depths affect local timing and height of tides. Understanding tides helps explain coastal patterns, navigation, fishing, and marine ecosystems. Tides follow predictable cycles but vary by location and seasonal factors."
+    }
+  ],
+  "observed_at": "2026-10-05T22:41:05.451Z"
+}

@@ -1,23 +1,22 @@
-# Start here — experimental candidate
+# Install the experimental project candidate
 
-Helikon Mini `4.0.0-candidate.3` is prepared for evaluation. Live installation, fresh-chat delivery and behavioral tests have not run. These are prototype instructions, not a supported production installation. Mini 3.3 remains the historical released edition.
+Mini `4.0.0-candidate.5` uses `Helikon_Mini_System.md` (1,490 characters) and `Helikon_Mini_Operating_Master.json` (22,251 bytes). The route below was exercised on Pro, browser ChatGPT, GPT-5.6 Sol / Medium. It creates an evaluation project, not installation in ordinary global chats.
 
-The package contains short System guidance and a compact Operating JSON. The JSON must be fully readable in the actual conversation; recognition of a filename or marker is insufficient. Saved Memory and optional Helikon Skills are not installation dependencies.
+1. Build and verify the candidate ZIP. Use both files from the same revision; do not mix Mini with legacy or full Helikon runtimes.
+2. Create a dedicated ChatGPT project with project-only memory. The observed UI disables Space access and Work mode for that type. Preserve the active full Helikon project and account personalisation.
+3. Open Project settings. Back up any existing instructions. Put the exact System contents in Instructions, save, reopen and compare the entire value. A save attempt alone is not installation evidence.
+4. Under Sources, upload the exact JSON. Wait until the completed Preview control replaces upload progress. The file must be readable content, not just a name.
+5. In a fresh project chat, try an ordinary task and an honest source-availability question. Ask for observed identities and missing ranges; supplying the expected answer does not prove a read. Stored-file presence and self-report do not expose the hidden model input. Bounded source copies can be checked against the canonical JSON.
+6. Run the prepared behavior and utility tasks on your actual model/account and retain failures. Project results do not establish global delivery, complete reading every turn, or another account tier's behavior.
 
-## Isolated session prototype
+An attempted 23,315-character System/runtime embedding was rejected by the UI's observed 8,000-character project Instructions limit and cancelled before saving. This route therefore uses short instructions plus a separate source. The 1,500-character System ceiling is an engineering choice, not that observed provider limit.
 
-1. Choose a fresh conversation suitable for testing. If active full Helikon instructions conflict, use a genuinely isolated surface; do not overwrite production settings. Record unresolved isolation limits.
-2. Keep existing settings untouched. Supply `Helikon_Mini_System.md` as explicitly adopted guidance for this test conversation and attach `Helikon_Mini_Operating_Master.json`. Message text creates session-scoped user guidance, not persistent settings or higher instruction priority.
-3. Request an honest availability check: four observed identity pairs, whether the entire source was read, missing ranges and resulting limits. Expected values copied from a prompt are not observations. Retain actual read evidence where exposed; otherwise record the observability limit.
-4. Run the prepared behavior cases in fresh contexts. Record transcripts, host/model/client, source bytes, profile and findings. Fluency and marker repetition do not prove full-body access.
-5. Start a fresh conversation without the attachment. Observe reacquisition through a real mechanism or disclosure of absent/unknown access. This route makes no persistence claim.
+## Update and recovery
 
-## Project prototype
+Back up exact prior instructions and files; preserve unrelated preferences. Install a matching pair and verify saved state. After an interrupted save or lost acknowledgement, inspect state before retrying. A real Save-then-immediate-reload probe had not applied; only after that readback was one retry made, verified and rolled back. This is not a network-outage test or a universal recovery guarantee.
 
-After a particular isolated project is selected within covered scope, preserve existing instructions/files and add the exact System and JSON source. Host documentation describes project instructions and shared sources; complete Mini delivery still needs testing. Stored files are not proof the model read them. Record fresh and resumed chats separately. Project support and ordinary global chat support are different claims.
+Synthetic legacy project instructions were replaced while preserving a fictional unrelated note. Actual migration of the old six Saved Memories was not tested; do not bulk-delete memories. See migration and recovery procedures.
 
-## Persistent-settings evaluation
+## Session alternative
 
-Back up actual existing text; identify exact fields and concrete changes. Do not blindly concatenate competing full/Mini instructions. Keep personal preferences separate. Verify field capacity and saved content on the actual host. Unknown or interrupted saves require state inspection before retry. No settings editor or automatic installer is included.
-
-Distinguish files prepared, source supplied, save attempted, settings observed saved, source observed in a fresh chat, and tested behavior. Report only observed stages. A session prototype is not a durable installation. See `SUPPORT.md`, `MIGRATION.md` and `RECOVERY.md` in the archive; repository equivalents are under `docs/`.
+The session profile permits explicitly adopted System guidance plus complete JSON in one conversation, with no persistence claim. It has no separate complete live pilot. Reacquire exact source after context loss; disclose missing/mismatched access while continuing independent help. Saved Memory and optional full Helikon Skills are not dependencies.

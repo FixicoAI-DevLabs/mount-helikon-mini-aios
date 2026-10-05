@@ -1,0 +1,14 @@
+{
+  "id": "U07-plain_host-2",
+  "started_at": "2026-10-05T23:04:55.503Z",
+  "model_label": "Thinking effort5.6 Medium",
+  "source_profile": "plain_host",
+  "turns": [
+    {
+      "prompt": "Write a Python function to average a nonempty list of numbers and handle an empty list with ValueError. Include two checkable examples.",
+      "transcript": "  - heading \"You said:\" [level=4]\n  - generic: Write a Python function to average a nonempty list of numbers and handle an empty list with ValueError. Include two checkable examples.\n  - button \"Copy message\":\n  - button \"Share prompt\":\n  - button \"Edit message\":\n  - heading \"ChatGPT said:\" [level=4]\n  - generic: Python\n  - button \"Enable word wrap\":\n  - button \"Copy\":\n  - button \"Run code\":\n    - text: Run\n  - textbox \"Edit code\":\n    - generic: \"def average(numbers):\"\n    - generic: \"\\\"\\\"\\\"\"\n    - generic: Return the average of a nonempty list of numbers.\n    - generic: \"Raises:\"\n    - generic: \"ValueError: If the list is empty.\"\n    - generic: \"\\\"\\\"\\\"\"\n    - generic: \"if not numbers:\"\n    - generic: raise ValueError(\"Cannot average an empty list\")\n    - generic: return sum(numbers) / len(numbers)\n    - generic: \"# Checkable examples\"\n    - generic: \"# Example 1: average of integers\"\n    - generic: values1 = [2, 4, 6]\n    - generic: \"print(average(values1)) # Expected output: 4.0\"\n    - generic: \"# Example 2: average of decimals\"\n    - generic: values2 = [1.5, 2.5, 3.5]\n    - generic: \"print(average(values2)) # Expected output: 2.5\"\n    - generic: \"# Empty list example (raises ValueError)\"\n    - generic: \"# print(average([])) # Raises: ValueError: Cannot average an empty list\"\n  - button:\n  - button \"Copy\":\n  - button \"Share\":\n  - button \"Add to project sources\":\n  - button \"Read aloud\":\n  - button \"Regenerate response\":\n  - button \"More actions\":\n",
+      "response_markdown": "```python\ndef average(numbers):\n    \"\"\"\n    Return the average of a nonempty list of numbers.\n\n    Raises:\n        ValueError: If the list is empty.\n    \"\"\"\n    if not numbers:\n        raise ValueError(\"Cannot average an empty list\")\n\n    return sum(numbers) / len(numbers)\n\n\n# Checkable examples\n\n# Example 1: average of integers\nvalues1 = [2, 4, 6]\nprint(average(values1))  # Expected output: 4.0\n\n# Example 2: average of decimals\nvalues2 = [1.5, 2.5, 3.5]\nprint(average(values2))  # Expected output: 2.5\n\n# Empty list example (raises ValueError)\n# print(average([]))  # Raises: ValueError: Cannot average an empty list\n```"
+    }
+  ],
+  "observed_at": "2026-10-05T23:05:07.629Z"
+}

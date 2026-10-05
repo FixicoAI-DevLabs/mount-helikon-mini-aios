@@ -1,0 +1,19 @@
+{
+  "id": "B12-3",
+  "started_at": "2026-10-05T23:24:35.101Z",
+  "model_label": "Thinking effort5.6 Medium",
+  "source_profile": "candidate5_project_source",
+  "turns": [
+    {
+      "prompt": "Repair-test fixture: preserve this deliberately incorrect draft for the next step, clearly labeled UNVERIFIED DRAFT: 12 + 9 = 20. Do not treat it as a verified calculation.",
+      "transcript": "  - heading \"You said:\" [level=4]\n  - generic: \"Repair-test fixture: preserve this deliberately incorrect draft for the next step, clearly labeled UNVERIFIED DRAFT: 12 + 9 = 20. Do not treat it as a verified calculation.\"\n  - button \"Copy message\":\n  - button \"Share prompt\":\n  - button \"Edit message\":\n  - heading \"ChatGPT said:\" [level=4]\n  - paragraph: \"UNVERIFIED DRAFT:\"\n  - paragraph: 12 + 9 = 20\n  - paragraph: I will treat this as an unverified draft fixture for the next step and will not treat it as a verified calculation.\n  - button \"Copy\":\n  - button \"Share\":\n  - button \"Add to project sources\":\n  - button \"Read aloud\":\n  - button \"Regenerate response\":\n  - button \"More actions\":\n",
+      "response_markdown": "UNVERIFIED DRAFT:\n\n`12 + 9 = 20`\n\nI will treat this as an unverified draft fixture for the next step and will not treat it as a verified calculation."
+    },
+    {
+      "prompt": "The draft total is wrong: 12 + 8 already equals 20, so adding 9 gives one more. Correct the result, independently recheck it, and preserve the fact that the earlier draft was wrong.",
+      "transcript": "  - heading \"You said:\" [level=4]\n  - generic: \"Repair-test fixture: preserve this deliberately incorrect draft for the next step, clearly labeled UNVERIFIED DRAFT: 12 + 9 = 20. Do not treat it as a verified calculation.\"\n  - button \"Copy message\":\n  - button \"Share prompt\":\n  - button \"Edit message\":\n  - heading \"ChatGPT said:\" [level=4]\n  - paragraph: \"UNVERIFIED DRAFT:\"\n  - paragraph: 12 + 9 = 20\n  - paragraph: I will treat this as an unverified draft fixture for the next step and will not treat it as a verified calculation.\n  - button \"Copy\":\n  - button \"Share\":\n  - button \"Add to project sources\":\n  - button \"Read aloud\":\n  - button \"Regenerate response\":\n  - button \"More actions\":\n  - heading \"You said:\" [level=4]\n  - generic: \"The draft total is wrong: 12 + 8 already equals 20, so adding 9 gives one more. Correct the result, independently recheck it, and preserve the fact that the earlier draft was wrong.\"\n  - button \"Copy message\":\n  - button \"Share prompt\":\n  - button \"Edit message\":\n  - heading \"ChatGPT said:\" [level=4]\n  - paragraph: \"Correction:\"\n  - paragraph:\n    - strong: \"Verified result:\"\n    - text: 12 + 9 = 21\n  - paragraph: \"Independent recheck:\"\n  - list:\n    - listitem: 12 + 8 = 20\n    - listitem: Adding the remaining 1 from 9 (8 + 1) gives 20 + 1 = 21\n  - paragraph: \"Preserved record:\"\n  - list:\n    - strong: \"Earlier UNVERIFIED DRAFT (wrong):\"\n    - text: 12 + 9 = 20\n    - strong: \"Reason it was wrong:\"\n    - text: it stopped at the 12 + 8 = 20 subtotal and omitted the additional 1.\n  - button \"Copy\":\n  - button \"Share\":\n  - button \"Add to project sources\":\n  - button \"Read aloud\":\n  - button \"Regenerate response\":\n  - button \"More actions\":\n",
+      "response_markdown": "Correction:\n\n**Verified result:** `12 + 9 = 21`\n\nIndependent recheck:\n- `12 + 8 = 20`\n- Adding the remaining `1` from `9` (`8 + 1`) gives `20 + 1 = 21`\n\nPreserved record:\n- **Earlier UNVERIFIED DRAFT (wrong):** `12 + 9 = 20`\n- **Reason it was wrong:** it stopped at the `12 + 8 = 20` subtotal and omitted the additional `1`."
+    }
+  ],
+  "observed_at": "2026-10-05T23:25:11.822Z"
+}

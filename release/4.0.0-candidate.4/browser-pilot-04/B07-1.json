@@ -1,0 +1,13 @@
+{
+  "id": "B07-1",
+  "recovered_at": "2026-10-05T22:32:53.353562+00:00",
+  "model_label": "5.6 Medium",
+  "source_profile": "candidate4_project_source",
+  "evidence_recovery": "Recovered from the original browser tool-returned response in this session, not from a new model run. This is a normalized content transcription; Markdown, UI controls, citation buttons, and exact original capture timestamp are not retained. Do not treat it as a byte-identical raw response.",
+  "turns": [
+    {
+      "prompt": "Source A dated 2020 says the office opens at 8. Source B dated yesterday says 9. Explain what can be concluded from these supplied claims without browsing.",
+      "observed_response_text": "From the two supplied claims alone, without browsing or obtaining any additional information, the following can be concluded: Source A claims that the office opens at 8:00 (presumably on whatever date or schedule Source A describes). Source B claims that the office opens at 9:00 (on the schedule or context it describes). The two claims are in conflict if they are intended to describe the same office, same location, same type of day, and same operating conditions. Because Source B is dated yesterday and Source A is dated 2020, a reasonable inference is that the opening time may have changed from 8:00 to 9:00, but this is only an inference, not something proven by the supplied claims alone. The supplied information does not establish: whether either source is authoritative, whether the office changed hours, whether one source is outdated or incorrect, whether the two sources refer to different offices, seasons, holidays, or special schedules. A careful conclusion would be: The available claims indicate that the stated opening time differs between the two sources. The newer claim states 9:00, while the older claim states 8:00. A change in hours is possible, but the supplied claims alone are insufficient to verify the current opening time."
+    }
+  ]
+}

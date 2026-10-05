@@ -1,6 +1,6 @@
 # Mini 4 candidate architecture
 
-Mini is a compact derivative of released Helikon 6.0.0 with independent runtime, schema, System and extension identities. This candidate is `4.0.0-candidate.3`. It is not full Helikon, a service, a security boundary or an empirical reliability guarantee.
+Mini is a compact derivative of released Helikon 6.0.0 with independent runtime, schema, System and extension identities. This candidate is `4.0.0-candidate.5`. It is not full Helikon, a service, a security boundary or an empirical reliability guarantee.
 
 **System** is short user-configured governance on a host-supported instruction surface. **Operating** is the complete compact JSON and any explicitly compatible extensions. No extensions are shipped. Files, tools and the twelve logical owners are hosting or responsibility structures, not extra layers. Task state and continuity remain separate work data.
 
@@ -16,6 +16,6 @@ The JSON is canonical. The readable Markdown is generated and checked exactly. S
 
 Intentional reductions: no legacy token parser, six-memory installation, mandatory footer, full RUNSHEET serialization, full continuity record family/RQ ranking, named evidence rubric or full-family Skill certification. Scoped natural-language direction, premise checking, evidence, privacy, cumulative repair and honest effect reporting remain. The repository source map records the changes.
 
-Initial design ceilings are 1,500 Unicode characters for System and 24,000 for formatted runtime JSON. These are engineering budgets, not verified host limits, tokens or empirical optima. This candidate is larger than the old Mini installed payload; reduction is relative to the full master. Utility and latency effects remain untested.
+Initial design ceilings are 1,500 Unicode characters for System and 24,000 for formatted runtime JSON. These are engineering budgets, not verified host limits, tokens or empirical optima. This candidate is larger than the old Mini installed payload; reduction is relative to the full master. The versioned utility pilot measures bounded task outcomes and output characters; it establishes no general advantage, token cost or inference latency.
 
 Whole runtime access is the critical delivery dependency. Session and project profiles are experimental. Automatic exact runtime access across ordinary global chats remains unresolved; a project result cannot silently replace that product goal.

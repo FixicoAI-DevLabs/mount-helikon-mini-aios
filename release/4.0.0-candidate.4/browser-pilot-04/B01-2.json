@@ -1,0 +1,14 @@
+{
+  "id": "B01-2",
+  "started_at": "2026-10-05T22:07:31.073Z",
+  "model_label": "Thinking effort5.6 Medium",
+  "source_profile": "candidate4_project_source",
+  "turns": [
+    {
+      "prompt": "Explain why seasons change in two sentences.",
+      "transcript": "  - heading \"You said:\" [level=4]\n  - generic: Explain why seasons change in two sentences.\n  - button \"Copy message\":\n  - button \"Share prompt\":\n  - button \"Edit message\":\n  - heading \"ChatGPT said:\" [level=4]\n  - paragraph: Seasons change because Earth is tilted on its axis as it orbits the Sun, causing different parts of the planet to receive varying amounts of sunlight throughout the year. When a hemisphere is tilted toward the Sun it experiences warmer months, and when it is tilted away it experiences colder months.\n  - button \"Copy\":\n  - button \"Share\":\n  - button \"Add to project sources\":\n  - button \"Read aloud\":\n  - button \"Regenerate response\":\n  - button \"More actions\":\n",
+      "response_markdown": "Seasons change because Earth is tilted on its axis as it orbits the Sun, causing different parts of the planet to receive varying amounts of sunlight throughout the year. When a hemisphere is tilted toward the Sun it experiences warmer months, and when it is tilted away it experiences colder months."
+    }
+  ],
+  "observed_at": "2026-10-05T22:08:25.524Z"
+}

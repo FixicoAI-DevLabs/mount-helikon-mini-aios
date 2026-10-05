@@ -7,8 +7,8 @@ python3 tools/mini.py validate
 python3 -m unittest discover -s tests -v
 python3 tools/mini.py build --out build/first
 python3 tools/mini.py build --out build/second
-cmp build/first/Helikon-Mini-4.0.0-candidate.3.zip build/second/Helikon-Mini-4.0.0-candidate.3.zip
-python3 tools/mini.py verify-archive build/first/Helikon-Mini-4.0.0-candidate.3.zip
+cmp build/first/Helikon-Mini-4.0.0-candidate.5.zip build/second/Helikon-Mini-4.0.0-candidate.5.zip
+python3 tools/mini.py verify-archive build/first/Helikon-Mini-4.0.0-candidate.5.zip
 ```
 
 `python3 tools/mini.py render` regenerates the reading copy. ZIP members have sorted names, fixed timestamps/permissions and stored compression for reproducibility without compressor-version dependence. The manifest hashes each payload; the outer checksum covers the whole ZIP. Integrity alone does not authenticate a publisher: compare against a separately trusted reviewed checksum.
@@ -35,3 +35,7 @@ The template is explicitly unrun. Actual evidence needs local transcript files/h
 Before production publication resolve the ordinary-chat delivery scope, identify an isolated authorized host, run installation/migration/recovery/fresh-chat cases, complete behavior and utility pilots, and review failures and costs. Prepare exact candidate bytes, diff, destinations and support claims for the reserved publication review. Static checks cannot supply missing live evidence or permission.
 
 GitHub Actions is configured to repeat local checks and compare two builds. Local success does not mean hosted CI ran. The workflow pins checkout, uses read-only permission, and contains no publishing or account mutation.
+
+## Recorded pilots
+
+See the versioned `release/` reports for actual observations. Candidate 4 completed the 48-case-run behavior protocol and all 72 utility responses, retaining planning failures. Candidate 5 records targeted repair and regression work separately. Static validation reports only the checks that command runs; protocol templates remain unrun. The strict source-observation gate is not passed by substituting a source filename or model self-report for a full-body observation.

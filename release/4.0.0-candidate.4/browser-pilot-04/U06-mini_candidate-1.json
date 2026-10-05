@@ -1,0 +1,14 @@
+{
+  "id": "U06-mini_candidate-1",
+  "started_at": "2026-10-05T23:02:53.268Z",
+  "model_label": "Thinking effort5.6 Medium",
+  "source_profile": "mini_candidate",
+  "turns": [
+    {
+      "prompt": "Choose A or B using only these criteria: cost lower is better, must operate offline. A costs 20 and needs internet. B costs 25 and operates offline.",
+      "transcript": "  - heading \"You said:\" [level=4]\n  - generic: \"Choose A or B using only these criteria: cost lower is better, must operate offline. A costs 20 and needs internet. B costs 25 and operates offline.\"\n  - button \"Copy message\":\n  - button \"Share prompt\":\n  - button \"Edit message\":\n  - heading \"ChatGPT said:\" [level=4]\n  - paragraph:\n    - strong: B\n  - paragraph: \"Reasoning:\"\n  - list:\n    - text: \"Must operate offline:\"\n    - strong: B qualifies\n    - text: \", A does not.\"\n    - listitem: \"Cost lower is better: A is cheaper (20 vs 25), but it fails the required offline criterion.\"\n  - paragraph:\n    - text: Because offline operation is mandatory,\n    - strong: B is the only valid choice\n    - text: .\n  - button \"Copy\":\n  - button \"Share\":\n  - button \"Add to project sources\":\n  - button \"Read aloud\":\n  - button \"Regenerate response\":\n  - button \"More actions\":\n",
+      "response_markdown": "**B**\n\nReasoning:\n- Must operate offline: **B qualifies**, A does not.\n- Cost lower is better: A is cheaper (20 vs 25), but it fails the required offline criterion.\n\nBecause offline operation is mandatory, **B is the only valid choice**."
+    }
+  ],
+  "observed_at": "2026-10-05T23:03:13.536Z"
+}

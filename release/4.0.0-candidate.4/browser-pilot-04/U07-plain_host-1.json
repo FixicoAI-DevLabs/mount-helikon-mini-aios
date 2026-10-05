@@ -1,0 +1,14 @@
+{
+  "id": "U07-plain_host-1",
+  "started_at": "2026-10-05T23:04:21.009Z",
+  "model_label": "Thinking effort5.6 Medium",
+  "source_profile": "plain_host",
+  "turns": [
+    {
+      "prompt": "Write a Python function to average a nonempty list of numbers and handle an empty list with ValueError. Include two checkable examples.",
+      "transcript": "  - heading \"You said:\" [level=4]\n  - generic: Write a Python function to average a nonempty list of numbers and handle an empty list with ValueError. Include two checkable examples.\n  - button \"Copy message\":\n  - button \"Share prompt\":\n  - button \"Edit message\":\n  - heading \"ChatGPT said:\" [level=4]\n  - generic: Python\n  - button \"Enable word wrap\":\n  - button \"Copy\":\n  - button \"Run code\":\n    - text: Run\n  - textbox \"Edit code\":\n    - generic: \"def average(numbers):\"\n    - generic: \"\\\"\\\"\\\"\"\n    - generic: Return the arithmetic mean of a nonempty list of numbers.\n    - generic: Raise ValueError if the list is empty.\n    - generic: \"\\\"\\\"\\\"\"\n    - generic: \"if not numbers:\"\n    - generic: raise ValueError(\"Cannot average an empty list\")\n    - generic: return sum(numbers) / len(numbers)\n    - generic: \"# Checkable examples\"\n    - generic: \"# Example 1\"\n    - generic: values1 = [2, 4, 6, 8]\n    - generic: \"print(average(values1)) # Expected: 5.0\"\n    - generic: \"# Check: (2 + 4 + 6 + 8) / 4 = 20 / 4 = 5.0\"\n    - generic: \"# Example 2\"\n    - generic: values2 = [10, 15, 25]\n    - generic: \"print(average(values2)) # Expected: 16.666666666666668\"\n    - generic: \"# Check: (10 + 15 + 25) / 3 = 50 / 3 = 16.666666666666668\"\n    - generic: \"# Empty list example\"\n    - generic: \"try:\"\n    - generic: average([])\n    - generic: \"except ValueError as e:\"\n    - generic: \"print(e) # Expected: Cannot average an empty list\"\n  - button:\n  - button \"Copy\":\n  - button \"Share\":\n  - button \"Add to project sources\":\n  - button \"Read aloud\":\n  - button \"Regenerate response\":\n  - button \"More actions\":\n",
+      "response_markdown": "```python\ndef average(numbers):\n    \"\"\"\n    Return the arithmetic mean of a nonempty list of numbers.\n    Raise ValueError if the list is empty.\n    \"\"\"\n    if not numbers:\n        raise ValueError(\"Cannot average an empty list\")\n\n    return sum(numbers) / len(numbers)\n\n\n# Checkable examples\n\n# Example 1\nvalues1 = [2, 4, 6, 8]\nprint(average(values1))  # Expected: 5.0\n# Check: (2 + 4 + 6 + 8) / 4 = 20 / 4 = 5.0\n\n# Example 2\nvalues2 = [10, 15, 25]\nprint(average(values2))  # Expected: 16.666666666666668\n# Check: (10 + 15 + 25) / 3 = 50 / 3 = 16.666666666666668\n\n# Empty list example\ntry:\n    average([])\nexcept ValueError as e:\n    print(e)  # Expected: Cannot average an empty list\n```"
+    }
+  ],
+  "observed_at": "2026-10-05T23:04:36.726Z"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "U01-mini_candidate-1",
+  "started_at": "2026-10-05T22:38:11.252Z",
+  "model_label": "Thinking effort5.6 Medium",
+  "source_profile": "mini_candidate",
+  "turns": [
+    {
+      "prompt": "Explain tides in 90 words for an adult new to the topic.",
+      "transcript": "  - heading \"You said:\" [level=4]\n  - generic: Explain tides in 90 words for an adult new to the topic.\n  - button \"Copy message\":\n  - button \"Share prompt\":\n  - button \"Edit message\":\n  - heading \"ChatGPT said:\" [level=4]\n  - paragraph: Tides are the regular rises and falls of ocean water caused mainly by the Moon\u2019s gravity pulling on Earth\u2019s oceans, with the Sun also contributing. As Earth rotates, different coastlines move through areas where water is slightly raised, creating high tides and low tides. Most places experience two high and two low tides each day, though local geography changes the pattern. Tides influence navigation, coastal ecosystems, and marine life. They are not caused by waves, but by the large-scale movement of ocean water across Earth's vast connected seas and oceans.\n  - button \"Copy\":\n  - button \"Share\":\n  - button \"Add to project sources\":\n  - button \"Read aloud\":\n  - button \"Regenerate response\":\n  - button \"More actions\":\n",
+      "response_markdown": "Tides are the regular rises and falls of ocean water caused mainly by the Moon\u2019s gravity pulling on Earth\u2019s oceans, with the Sun also contributing. As Earth rotates, different coastlines move through areas where water is slightly raised, creating high tides and low tides. Most places experience two high and two low tides each day, though local geography changes the pattern. Tides influence navigation, coastal ecosystems, and marine life. They are not caused by waves, but by the large-scale movement of ocean water across Earth's vast connected seas and oceans."
+    }
+  ],
+  "observed_at": "2026-10-05T22:39:26.918Z"
+}

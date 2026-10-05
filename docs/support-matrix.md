@@ -1,25 +1,24 @@
-# Candidate support matrix
+# Candidate support and tested scope
 
-No live host profile is supported by completed candidate testing yet.
+The ChatGPT project route has bounded live evidence in [draft PR #9](https://github.com/FixicoAI-DevLabs/mount-helikon-mini-aios/pull/9) and its versioned release directories. Both profiles remain `experimental_unverified`; no production support promotion or universal delivery claim has been made.
 
-| Claim | Evidence / status |
+| Claim | Observed scope |
 |---|---|
-| Source/schema/projection/package checks | Local deterministic engineering validation only |
-| Session System + JSON | Prototype prepared; live test not run; session scope |
-| Isolated ChatGPT project | Documented host concept; complete Mini delivery untested |
-| Ordinary global ChatGPT | Automatic exact-runtime access unresolved |
-| Free account | No account/client/model observations; not tested |
-| Persistent settings installation | No target setting changed or read back |
-| Migration, interruption, recovery | Procedures prepared; not live-tested |
-| Full Helikon Skills/schemas | No Mini bindings; compatibility not claimed |
-| Behavioral reliability and utility | 48 behavior and 72 comparison runs defined; not run |
+| Source/schema/projection/package | Offline validation and reproducible builds, separate from behavior |
+| Project installation | Exact System readback and completed JSON upload; Pro, browser ChatGPT, GPT-5.6 Sol / Medium |
+| Candidate 4 behavior | All 48 case-run criteria met; five supplementary probes; four records have labelled transcription recovery |
+| Candidate 4 utility | 72 responses: Mini 22/24, concise 22/24, plain 21/24; planning defects retained |
+| Candidate 5 | Planning correction; actual regression coverage in the versioned report |
+| Full source content | Candidate 4 recovered exactly in bounded copies; hidden per-turn read trace unavailable |
+| Saved settings/recovery | Readback, preservation, rollback, cancellation, interrupted-save inspection/retry observed |
+| Legacy migration | Synthetic project residue only; actual six-memory migration untested |
+| Session-only | Prepared alternative, no separate complete live pilot |
+| Ordinary global chat | No demonstrated automatic exact-runtime delivery |
+| Free account / other models or hosts | Not tested |
+| Full Helikon Skills/schemas | Not Mini dependencies; full-family certification not claimed |
 
-OpenAI documents projects with instructions and sources, and customization as separate mechanisms. This supports investigating those routes. It does not prove Mini receives complete JSON every turn, works on each account tier, or survives context loss without a new read.
+Fresh chats share an account and project memory; statistical independence is not established. The plain control has a minimal isolation instruction, and review was not blinded. Output character lengths are not token cost or inference latency.
 
-Documentation inspected 2026-10-05:
+Documentation inspected October 5, 2026: [Projects](https://learn.chatgpt.com/docs/projects), [Personalization](https://learn.chatgpt.com/docs/personalize), [Memories](https://learn.chatgpt.com/docs/customization/memories). Product documentation motivated the routes but does not prove Mini delivery.
 
-- [Projects](https://learn.chatgpt.com/docs/projects)
-- [Personalization](https://learn.chatgpt.com/docs/personalize)
-- [Memories](https://learn.chatgpt.com/docs/customization/memories)
-
-Live results must identify plan, client, model and actual tools. Static pass labels cannot supply those observations. Supported-profile promotion requires reviewed evidence and a distinguishable candidate revision; this candidate validator deliberately rejects such a promotion.
+The strict evidence gate requires full-body observations for each positive run. Those fields have not been asserted from filenames, summaries or self-reports. Static checks and response transcripts do not themselves satisfy that gate or authorize release.

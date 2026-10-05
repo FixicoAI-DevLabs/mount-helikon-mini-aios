@@ -1,0 +1,13 @@
+{
+  "id": "B11-1",
+  "recovered_at": "2026-10-05T22:32:53.353766+00:00",
+  "model_label": "5.6 Medium",
+  "source_profile": "candidate4_project_source",
+  "evidence_recovery": "Recovered from the original browser tool-returned response in this session, not from a new model run. This is a normalized content transcription; Markdown, UI controls, citation buttons, and exact original capture timestamp are not retained. Do not treat it as a byte-identical raw response.",
+  "turns": [
+    {
+      "prompt": "Return only JSON with keys total and currency for 3 times 7 USD.",
+      "observed_response_text": "{\"total\":21,\"currency\":\"USD\"}"
+    }
+  ]
+}

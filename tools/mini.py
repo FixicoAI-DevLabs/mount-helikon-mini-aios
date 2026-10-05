@@ -227,7 +227,7 @@ def validate_repo(root=ROOT):
             'runtime_characters':len((root/RUNTIME).read_text()),
             'system_characters':len((root/SYSTEM).read_text()),
             'owners':len(doc['owners']),'source_components':len(paths),
-            'live_behavior':'not_run','host_installation':'not_run'}
+            'live_behavior':'not_evaluated_by_this_command','host_installation':'not_evaluated_by_this_command'}
 
 
 PAYLOAD = {
@@ -250,7 +250,7 @@ def build(out, root=ROOT):
     files = {name:(root / path).read_bytes() for name,path in PAYLOAD.items()}
     manifest = {'format':'helikon-mini.candidate-manifest@1.0.0',
                 'identity':load(root / RUNTIME)['identity'],
-                'status':'experimental_candidate_live_tests_not_run',
+                'status':'experimental_candidate_see_versioned_live_evidence',
                 'members':{name:{'sha256':sha(data),'bytes':len(data)} for name,data in sorted(files.items())}}
     files['MANIFEST.json'] = (json.dumps(manifest, indent=2, ensure_ascii=False)+'\n').encode()
     out.mkdir(parents=True, exist_ok=True)

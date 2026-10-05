@@ -1,0 +1,6 @@
+{
+  "incident": "Two test tabs redirected to the home page; tab 6 displayed We could not load your account; tab 7 showed the normal home composer.",
+  "classification": "Ordinary account-loading error; no bot-detection message, challenge, sign-in, or credential interaction observed.",
+  "recovery": "Used the visible Reload control once on tab 6, then navigated both tabs to the known test project. The account loaded normally.",
+  "submission_state": "B09-1 had submitted and its response was captured. B09-2 and B09-3 had not reached the project composer and were started only after recovery. B09-1 was not resubmitted."
+}
