@@ -1,0 +1,940 @@
+{
+  "type": "object",
+  "properties": {
+    "identity": {
+      "const": {
+        "runtime": {
+          "id": "helikon-mini.operating-master",
+          "version": "4.0.0-candidate.1"
+        },
+        "schema": {
+          "id": "helikon-mini.operating-master.schema",
+          "version": "1.0.0"
+        },
+        "system_contract": {
+          "id": "helikon-mini.system.contract",
+          "version": "1.0.0"
+        },
+        "extension_contract": {
+          "id": "helikon-mini.extension.contract",
+          "version": "1.0.0"
+        }
+      }
+    },
+    "bootstrap": {
+      "type": "object",
+      "properties": {
+        "requires": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "instruction": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "requires",
+        "instruction"
+      ],
+      "additionalProperties": false
+    },
+    "invariants": {
+      "const": {
+        "host_hierarchy_preserved": true,
+        "full_required_text_before_runtime_claim": true,
+        "names_and_markers_prove_full_body": false,
+        "summary_substitutes_exact_text": false,
+        "mandatory_approval_tokens": [],
+        "grant_expires_at_turn_boundary": false,
+        "mandatory_saved_memory": false,
+        "mandatory_footer": false,
+        "configuration_contains_work_state": false,
+        "unobserved_effects_are_complete": false,
+        "unknown_mutations_may_blindly_retry": false,
+        "optional_extensions_required_for_baseline": false
+      }
+    },
+    "rules": {
+      "type": "object",
+      "properties": {
+        "authority": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "const": "mini.authority"
+            },
+            "owner": {
+              "const": "Aoideon.Canon"
+            },
+            "instruction": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "id",
+            "owner",
+            "instruction"
+          ],
+          "additionalProperties": false
+        },
+        "authorization": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "const": "mini.authorization"
+            },
+            "owner": {
+              "const": "Aoideon.Enforcement"
+            },
+            "instruction": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "id",
+            "owner",
+            "instruction"
+          ],
+          "additionalProperties": false
+        },
+        "truth": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "const": "mini.truth"
+            },
+            "owner": {
+              "const": "Aoideon.Enforcement"
+            },
+            "instruction": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "id",
+            "owner",
+            "instruction"
+          ],
+          "additionalProperties": false
+        },
+        "privacy": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "const": "mini.privacy"
+            },
+            "owner": {
+              "const": "Mnemeon.Guard"
+            },
+            "instruction": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "id",
+            "owner",
+            "instruction"
+          ],
+          "additionalProperties": false
+        },
+        "context": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "const": "mini.context"
+            },
+            "owner": {
+              "const": "Mnemeon.Kernel"
+            },
+            "instruction": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "id",
+            "owner",
+            "instruction"
+          ],
+          "additionalProperties": false
+        },
+        "answerability": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "const": "mini.answerability"
+            },
+            "owner": {
+              "const": "Meleteon.Reasoner"
+            },
+            "instruction": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "id",
+            "owner",
+            "instruction"
+          ],
+          "additionalProperties": false
+        },
+        "evidence": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "const": "mini.evidence"
+            },
+            "owner": {
+              "const": "Meleteon.Reasoner"
+            },
+            "instruction": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "id",
+            "owner",
+            "instruction"
+          ],
+          "additionalProperties": false
+        },
+        "review": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "const": "mini.review"
+            },
+            "owner": {
+              "const": "Meleteon.Reasoner"
+            },
+            "instruction": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "id",
+            "owner",
+            "instruction"
+          ],
+          "additionalProperties": false
+        },
+        "actions": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "const": "mini.actions"
+            },
+            "owner": {
+              "const": "Meleteon.Builder"
+            },
+            "instruction": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "id",
+            "owner",
+            "instruction"
+          ],
+          "additionalProperties": false
+        },
+        "artifacts": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "const": "mini.artifacts"
+            },
+            "owner": {
+              "const": "Meleteon.Builder"
+            },
+            "instruction": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "id",
+            "owner",
+            "instruction"
+          ],
+          "additionalProperties": false
+        },
+        "repair": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "const": "mini.repair"
+            },
+            "owner": {
+              "const": "Aoideon.Enforcement"
+            },
+            "instruction": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "id",
+            "owner",
+            "instruction"
+          ],
+          "additionalProperties": false
+        },
+        "resources": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "const": "mini.resources"
+            },
+            "owner": {
+              "const": "Meleteon.Budget"
+            },
+            "instruction": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "id",
+            "owner",
+            "instruction"
+          ],
+          "additionalProperties": false
+        },
+        "voice": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "const": "mini.voice"
+            },
+            "owner": {
+              "const": "Aoideon.Voice"
+            },
+            "instruction": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "id",
+            "owner",
+            "instruction"
+          ],
+          "additionalProperties": false
+        },
+        "modes": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "const": "mini.modes"
+            },
+            "owner": {
+              "const": "Meleteon.Modes"
+            },
+            "instruction": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "id",
+            "owner",
+            "instruction"
+          ],
+          "additionalProperties": false
+        },
+        "continuity": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "const": "mini.continuity"
+            },
+            "owner": {
+              "const": "Mnemeon.Digests"
+            },
+            "instruction": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "id",
+            "owner",
+            "instruction"
+          ],
+          "additionalProperties": false
+        },
+        "hygiene": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "const": "mini.hygiene"
+            },
+            "owner": {
+              "const": "Mnemeon.Guard"
+            },
+            "instruction": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "id",
+            "owner",
+            "instruction"
+          ],
+          "additionalProperties": false
+        },
+        "identity": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "const": "mini.identity"
+            },
+            "owner": {
+              "const": "Mnemeon.Identity"
+            },
+            "instruction": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "id",
+            "owner",
+            "instruction"
+          ],
+          "additionalProperties": false
+        },
+        "autonomy": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "const": "mini.autonomy"
+            },
+            "owner": {
+              "const": "Aoideon.Enforcement"
+            },
+            "instruction": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "id",
+            "owner",
+            "instruction"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "authority",
+        "authorization",
+        "truth",
+        "privacy",
+        "context",
+        "answerability",
+        "evidence",
+        "review",
+        "actions",
+        "artifacts",
+        "repair",
+        "resources",
+        "voice",
+        "modes",
+        "continuity",
+        "hygiene",
+        "identity",
+        "autonomy"
+      ],
+      "additionalProperties": false
+    },
+    "procedures": {
+      "type": "object",
+      "properties": {
+        "turn": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "const": "mini.procedure.turn"
+            },
+            "requires": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "calls": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "steps": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              },
+              "minItems": 1
+            }
+          },
+          "required": [
+            "id",
+            "requires",
+            "calls",
+            "steps"
+          ],
+          "additionalProperties": false
+        },
+        "action": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "const": "mini.procedure.action"
+            },
+            "requires": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "calls": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "steps": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              },
+              "minItems": 1
+            }
+          },
+          "required": [
+            "id",
+            "requires",
+            "calls",
+            "steps"
+          ],
+          "additionalProperties": false
+        },
+        "repair": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "const": "mini.procedure.repair"
+            },
+            "requires": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "calls": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "steps": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              },
+              "minItems": 1
+            }
+          },
+          "required": [
+            "id",
+            "requires",
+            "calls",
+            "steps"
+          ],
+          "additionalProperties": false
+        },
+        "continuity": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "const": "mini.procedure.continuity"
+            },
+            "requires": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "calls": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "steps": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              },
+              "minItems": 1
+            }
+          },
+          "required": [
+            "id",
+            "requires",
+            "calls",
+            "steps"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "turn",
+        "action",
+        "repair",
+        "continuity"
+      ],
+      "additionalProperties": false
+    },
+    "owners": {
+      "type": "object",
+      "properties": {
+        "Aoideon.Canon": {
+          "type": "object",
+          "properties": {
+            "responsibility": {
+              "type": "string",
+              "minLength": 1
+            },
+            "rules": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              },
+              "minItems": 1
+            }
+          },
+          "required": [
+            "responsibility",
+            "rules"
+          ],
+          "additionalProperties": false
+        },
+        "Aoideon.Cortex": {
+          "type": "object",
+          "properties": {
+            "responsibility": {
+              "type": "string",
+              "minLength": 1
+            },
+            "rules": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              },
+              "minItems": 1
+            }
+          },
+          "required": [
+            "responsibility",
+            "rules"
+          ],
+          "additionalProperties": false
+        },
+        "Aoideon.Enforcement": {
+          "type": "object",
+          "properties": {
+            "responsibility": {
+              "type": "string",
+              "minLength": 1
+            },
+            "rules": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              },
+              "minItems": 1
+            }
+          },
+          "required": [
+            "responsibility",
+            "rules"
+          ],
+          "additionalProperties": false
+        },
+        "Aoideon.Voice": {
+          "type": "object",
+          "properties": {
+            "responsibility": {
+              "type": "string",
+              "minLength": 1
+            },
+            "rules": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              },
+              "minItems": 1
+            }
+          },
+          "required": [
+            "responsibility",
+            "rules"
+          ],
+          "additionalProperties": false
+        },
+        "Meleteon.Budget": {
+          "type": "object",
+          "properties": {
+            "responsibility": {
+              "type": "string",
+              "minLength": 1
+            },
+            "rules": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              },
+              "minItems": 1
+            }
+          },
+          "required": [
+            "responsibility",
+            "rules"
+          ],
+          "additionalProperties": false
+        },
+        "Meleteon.Reasoner": {
+          "type": "object",
+          "properties": {
+            "responsibility": {
+              "type": "string",
+              "minLength": 1
+            },
+            "rules": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              },
+              "minItems": 1
+            }
+          },
+          "required": [
+            "responsibility",
+            "rules"
+          ],
+          "additionalProperties": false
+        },
+        "Meleteon.Builder": {
+          "type": "object",
+          "properties": {
+            "responsibility": {
+              "type": "string",
+              "minLength": 1
+            },
+            "rules": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              },
+              "minItems": 1
+            }
+          },
+          "required": [
+            "responsibility",
+            "rules"
+          ],
+          "additionalProperties": false
+        },
+        "Meleteon.Modes": {
+          "type": "object",
+          "properties": {
+            "responsibility": {
+              "type": "string",
+              "minLength": 1
+            },
+            "rules": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              },
+              "minItems": 1
+            }
+          },
+          "required": [
+            "responsibility",
+            "rules"
+          ],
+          "additionalProperties": false
+        },
+        "Mnemeon.Digests": {
+          "type": "object",
+          "properties": {
+            "responsibility": {
+              "type": "string",
+              "minLength": 1
+            },
+            "rules": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              },
+              "minItems": 1
+            }
+          },
+          "required": [
+            "responsibility",
+            "rules"
+          ],
+          "additionalProperties": false
+        },
+        "Mnemeon.Kernel": {
+          "type": "object",
+          "properties": {
+            "responsibility": {
+              "type": "string",
+              "minLength": 1
+            },
+            "rules": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              },
+              "minItems": 1
+            }
+          },
+          "required": [
+            "responsibility",
+            "rules"
+          ],
+          "additionalProperties": false
+        },
+        "Mnemeon.Guard": {
+          "type": "object",
+          "properties": {
+            "responsibility": {
+              "type": "string",
+              "minLength": 1
+            },
+            "rules": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              },
+              "minItems": 1
+            }
+          },
+          "required": [
+            "responsibility",
+            "rules"
+          ],
+          "additionalProperties": false
+        },
+        "Mnemeon.Identity": {
+          "type": "object",
+          "properties": {
+            "responsibility": {
+              "type": "string",
+              "minLength": 1
+            },
+            "rules": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              },
+              "minItems": 1
+            }
+          },
+          "required": [
+            "responsibility",
+            "rules"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "Aoideon.Canon",
+        "Aoideon.Cortex",
+        "Aoideon.Enforcement",
+        "Aoideon.Voice",
+        "Meleteon.Budget",
+        "Meleteon.Reasoner",
+        "Meleteon.Builder",
+        "Meleteon.Modes",
+        "Mnemeon.Digests",
+        "Mnemeon.Kernel",
+        "Mnemeon.Guard",
+        "Mnemeon.Identity"
+      ],
+      "additionalProperties": false
+    },
+    "extensions": {
+      "type": "object",
+      "properties": {
+        "bindings": {
+          "const": []
+        },
+        "instruction": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "bindings",
+        "instruction"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "identity",
+    "bootstrap",
+    "invariants",
+    "rules",
+    "procedures",
+    "owners",
+    "extensions"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://fixicoai-devlabs.github.io/mount-helikon-mini-aios/schema/Helikon_Mini_Operating_Master.schema.json",
+  "title": "Helikon Mini operating master 1.0.0"
+}

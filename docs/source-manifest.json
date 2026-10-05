@@ -1,0 +1,30 @@
+{
+  "source": {
+    "runtime": {
+      "id": "helikon.operating-master",
+      "version": "6.0.0",
+      "canonical_filename": "Helikon_Operating_Master.json"
+    },
+    "schema": {
+      "id": "helikon.operating-master.schema",
+      "version": "3.0.0"
+    },
+    "system_contract": {
+      "id": "helikon.system.contract",
+      "version": "1.0.0"
+    },
+    "sha256": "ab78c0ff04276dee8d6ab9e58077c69c8eb61b2addabff16ad1a2dac56eaa15f"
+  },
+  "mini_base_commit": "42ee21a10660d2f5f26710c7356e9f1a5d48ef36",
+  "legacy_tag": "v3.3.0",
+  "legacy_tag_commit": "ebed7bf8b884ccc8fd488858f5e73778cd22896a",
+  "legacy_root_sha256": {
+    "Helikon-mini_CHANGELOG_v3.3.0.md": "142fe6db3b1dc2f89b18393d2026c5016b1ee16c4627643a72eb36b6e258da7f",
+    "Helikon-mini_SHIP_rev34.md": "902120653da07f3d7d141dd418bb72e54612aeb23a05f14e87158241cf2a9fab",
+    "Helikon-mini_QA_PACK_v3.3.0.md": "906afb8b14ef3228c495be185c0d5a8011a39a01825a02a941a1dc4bdc3702dc",
+    "Helikon-mini_OPERATING_LAYER_v3.3.0_install.md": "cadf565edad19b3508242df647bea0c0a41f74e4ef5b26882f9ac9bb25765e80",
+    "Helikon-mini_Install_Package_v3.3.0.json": "fa81f2e1b0adff5ed41faf4efb1911dd4a558d7f24a0ff4beda523f527974b8e",
+    "Helikon-mini_SYSTEM_LAYER_v3.3.0_install.md": "9c31931fa68c360d28ae08411056e9683e9e0a8407bac9a72f39cbf428e090d6"
+  },
+  "derivation": "Selected released Helikon 6.0.0 source supplied for this rebuild. Its provenance does not grant account access or establish full-family compatibility."
+}

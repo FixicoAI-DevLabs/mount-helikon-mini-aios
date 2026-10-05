@@ -1,0 +1,22 @@
+name: Mini candidate checks
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Validate and test
+        run: |
+          python3 tools/mini.py validate
+          python3 -m unittest discover -s tests -v
+      - name: Build twice and compare
+        run: |
+          python3 tools/mini.py build --out build/first
+          python3 tools/mini.py build --out build/second
+          cmp build/first/Helikon-Mini-4.0.0-candidate.1.zip build/second/Helikon-Mini-4.0.0-candidate.1.zip
