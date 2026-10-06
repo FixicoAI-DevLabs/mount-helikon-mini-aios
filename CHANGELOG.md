@@ -1,5 +1,16 @@
 # Changelog
 
+## 4.1.0 — account-wide installer correction (testing build)
+
+- Restore two Personalization snippets and the guided ordinary-chat installer.
+- Restore a unified install JSON and an eight-file end-user download.
+- Keep Helikon 6-derived runtime-only JSON; use account Library as the designated source.
+- Make Projects optional; retire memory writes without deleting existing memories.
+- Preserve existing settings, active full Helikon, source files and historical evidence.
+- Separate artifact checks from live account verification; ordinary-chat automatic access remains unverified.
+- Advance runtime to 4.1.0, schema to 1.0.6 and System contract to 2.0.0. Runtime policy text is unchanged; System delivery is changed and needs its own tests.
+
+
 ## 4.0.0 — current project edition
 
 - Replace Mini 3.3 as the default repository installer and GitHub Latest release. Move the six old root files unchanged into `archive/3.3.0/`.

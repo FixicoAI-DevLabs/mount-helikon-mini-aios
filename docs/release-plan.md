@@ -1,20 +1,19 @@
-# Mini 4.0.0 release scope
+# Release gate — Mini 4.1.0
 
-This release makes the Helikon 6-derived Mini the current product in this repository.
+The requested product is an account-wide, ordinary-chat starter with two Personalization snippets and a guided installer. Its Operating Layer is Helikon 6-derived JSON. Project-only success cannot satisfy this gate.
 
-| Item | Value |
-|---|---|
-| Runtime | `helikon-mini.operating-master@4.0.0` |
-| Schema | `helikon-mini.operating-master.schema@1.0.5` |
-| Installation | Root System and Operating JSON, dedicated ChatGPT project |
-| GitHub release | `v4.0.0`, regular release, Latest |
-| Assets | `Helikon-Mini-4.0.0.zip` and its SHA-256 file |
-| Previous Mini | Six original files archived unchanged in `archive/3.3.0/`; historical tags/assets retained |
+## Artifact gate
 
-The release preserves candidate 5's operational rules. Its identity-only runtime/System comparison, 38 automated tests, source inventory and reproducible archive are checked before publication. Historical live tests remain candidate 5 observations with their original failures and limits.
+Validate schema, complete runtime references, reviewed policy anchors, exact installer projections, both snippet budgets, source preservation, private-data absence and the eight-file inventory. Run unit tests and build twice with byte-identical results. CI must pass on the exact repository commit prepared for release.
 
-The publication workflow pins the reviewed main commit and file hashes, verifies uploaded bytes, publishes the regular release as Latest, and verifies the Latest API and anonymous asset downloads. The publication receipt records observed completion rather than assuming a successful command changed state.
+## Live account gate
 
-A dedicated project is the current installation scope. Global/free-account support, hidden whole-runtime delivery every turn and universal benefit are not claimed. The evidence validator remains unchanged; profile assurance remains `experimental_unverified`. Account migration is not a release condition.
+On an appropriately scoped test account/configuration, run the shipped SETUP flow. Keep any active full Helikon installation intact unless its replacement is specifically authorized. Observe both settings saves and exact readback; observe the saved Library runtime and its complete content; then open a fresh ordinary non-project, non-Temporary chat with no attached runtime and verify supported automatic source access.
 
-Published tags and assets are immutable in this process. A defect requires a new version; no asset replacement or tag rewrite is used to hide a change.
+Run all four QA cases and retain actual results. The runtime, package version, client, model, plan and test surface must match the release claim. Do not substitute Work mode, Projects, manual attachments, marker echoes or self-reported activation. Any unavailable test remains unrun.
+
+## Distribution
+
+The current 4.1 bundle can be distributed explicitly as a testing build. Promote a regular Latest account-wide release only after the live gate is satisfied. Preserve old tags, assets, source files and test records. Do not rewrite v4.0.0 to pretend it had this product contract.
+
+The requested repository correction is already authorized. A browser connection failure blocks observation, not implementation; report the precise missing test without requesting approval again.

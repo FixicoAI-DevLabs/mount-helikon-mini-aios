@@ -1,23 +1,34 @@
-# Install Helikon Mini 4.0.0
+# Install Helikon Mini 4.1.0
 
-Use the two matching files in the Mini 4.0.0 release: `Helikon_Mini_System.md` and `Helikon_Mini_Operating_Master.json`. The same canonical files are available at the repository root. No Python, local build or Saved Memory setup is required.
+Use [START_HERE](../START_HERE.md) for the beginner flow. The primary input is [Helikon_Mini_Install_Package.json](../Helikon_Mini_Install_Package.json): upload it in an ordinary non-Temporary chat and send **SETUP**. The install package embeds both exact Personalization snippets, the complete runtime text and the guided protocol.
 
-1. Download and extract `Helikon-Mini-4.0.0.zip` from https://github.com/FixicoAI-DevLabs/mount-helikon-mini-aios/releases/tag/v4.0.0. Optionally compare its SHA-256 with the accompanying checksum file.
-2. Create a dedicated ChatGPT project, using project-only memory where available. Keep your existing full Helikon project running separately.
-3. Open Project settings. Copy the entire System file into Instructions. Save, reopen and compare the complete value with the file. If the project already has instructions, preserve a copy before replacing them.
-4. Under Sources, upload the Operating Master JSON. Wait until upload completes and confirm its content is readable. A listed filename alone is insufficient.
-5. Start a fresh project chat. Try an ordinary task with a checkable answer and ask which runtime source is available. The matching identities are Mini runtime `4.0.0`, schema `1.0.5`, System contract `1.0.0` and extension contract `1.0.0`. Supplying those answers to the model does not prove it read the source.
+## Guided commands
 
-For a quick functional check, request exactly one JSON object with a simple calculated result. Then ask for a two-day schedule containing tasks of 30, 45 and 60 minutes, a 90-minute daily capacity, preserved task durations, and unused capacity left empty. Check formatting, task durations and the 135-minute total yourself.
+| Command | Action |
+|---|---|
+| SETUP | Inspect capabilities, explain the two layers and privately back up existing settings |
+| EXTRACT | Produce the exact runtime JSON, or use its byte-identical bundle copy |
+| INSTALL | Save the runtime to Library and guide the two Personalization edits |
+| NEXT | Resume the next unfinished observed checkpoint |
+| FINAL_VERIFY | Check saved settings, complete source access and behavior in a fresh ordinary chat |
+| STATUS | Separate observed, reported, unknown and failed steps |
+| RESTORE | Restore only authorized Mini changes from the exact prior backup |
+| REMEMBER | Explain that JSON replaces the old six-memory runtime; perform no memory writes |
 
-## Evidence and scope
+## Personalization
 
-The project route was exercised using candidate 5 on Pro, browser ChatGPT, GPT-5.6 Sol / Medium, including exact System readback and completed source upload. Version 4.0.0 preserves those operational rules with updated identity labels. Its release validation distinguishes mechanical checks from historical live observations. Account controls may differ.
+[Helikon_Mini_System.md](../Helikon_Mini_System.md) provides two separate copyable blocks. The source templates are maintained in `installer/`; generated copies must match exactly. Both shipped snippets are within 1,500 characters. Preserve existing details and review the combined field length before saving. Do not truncate or overwrite unrelated content.
 
-Short instructions plus a separate source are intentional. A historical attempt to embed the entire runtime exceeded the observed project Instructions capacity. Stored-file presence and a model's self-report do not expose hidden per-turn input. Complete automatic source delivery, global-chat support, free accounts and other models are unverified.
+Full Helikon and Mini are different configurations. If full Helikon already runs on the account, preserve it during a Mini preview or test unless the user specifically scoped its replacement.
 
-## Updating this project
+## Runtime source
 
-Keep a copy of the project's current instructions and source. Replace both with a matching release pair, inspect saved state and use a fresh chat. If a save or upload is interrupted, inspect the result before retrying. Recovery uses your saved configuration. Other projects and account settings need no changes for this installation.
+Save the standalone JSON in Library and verify the actual saved item. Do not designate the installer JSON, a Markdown projection, a memory summary or a different runtime version as Operating. An observed stable source reference can be added privately when available; no account-specific ID is shipped.
 
-A session-only alternative can supply System guidance and the complete JSON in one conversation. It has no separate complete live pilot and makes no persistence claim.
+Supported automatic Library lookup is attempted in fresh ordinary chats. Where available, check **Settings → Personalization → Advanced → Library search**. If automatic access fails, the assistant must say so; **Add from Library** is a manual fallback and must be recorded separately. A file being stored does not prove its complete content was read.
+
+The host documentation describes [account-wide Custom Instructions](https://help.openai.com/en/articles/8096356-chatgpt-custom-instructions) and [Library storage, search controls and manual attachment](https://help.openai.com/en/articles/20001052-file-storage-and-library-in-chatgpt). These features do not establish successful Mini delivery on an untested account.
+
+## Verification and optional Projects
+
+Run [the QA sheet](../Helikon_Mini_QA.md). Keep settings persistence, source access and behavior distinct. Projects may organize work or provide an explicitly selected delivery surface, but are never an installation prerequisite. Project or Work-mode evidence cannot substitute for the ordinary-chat acceptance test.

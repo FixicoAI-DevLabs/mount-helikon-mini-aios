@@ -1,11 +1,19 @@
-# Mini 4 implementation status
+# Implementation status — 4.1.0
 
-Mini 4.0.0 is the current repository edition, rebuilt from released Helikon 6.0.0. The root installation files, default guides, build output and release identity now agree. The six old 3.3 files have moved unchanged to `archive/3.3.0/`.
+The correction restores account-wide System guidance, two Personalization snippets, a unified guided installer and an eight-file end-user bundle. Operating remains Helikon 6-derived runtime-only JSON. Projects are optional; the old six Saved Memories are not restored.
 
-The runtime implements the compact three-plane/twelve-owner design and retains scoped authorization, premise/evidence checks, privacy, bounded repair, quantitative planning and honest effect reporting. It replaces mandatory memory installation, the old approval-token parser and compulsory output decoration. The source mapping inventories 92 components and 474 nested normative IDs from the pinned 488,784-byte Helikon 6 source.
+## Implemented
 
-Candidate 5's operational content is preserved in 4.0.0. Only runtime/schema identity labels changed in the runtime/System pair. The identity-pinned schema and reviewed System digest were updated accordingly; behavioral anchors remain unchanged. The release validation records the comparison, tests and reproducible build.
+- Exact embedded runtime and standalone JSON agree byte-for-byte.
+- Both Personalization snippets are generated into the unified package and copy sheet.
+- Guided commands cover backup, extraction, Library storage, installation, resume, status, verification and restoration.
+- Existing account content and active full Helikon are protected.
+- Source access and settings persistence require actual observations.
+- The evidence checker rejects Project, Work and attached-file tests as proof of ordinary automatic source access.
+- Mini 3.3 files and historical release evidence remain unchanged.
 
-Historical candidate 5 evidence contains 48 core case-runs, five supplementary probes, 24 utility runs and three additional planning probes. Its exact-source bounded reconstruction succeeded; its single-response source copy failed. Hidden complete-runtime delivery on every turn remains unverified. Candidate 4's comparative utility result does not establish general benefit over a concise baseline.
+## Not established
 
-Publication completion and downloaded-asset verification are recorded separately in the versioned release directory. New identity labels have not been presented as a fresh live test. Account installation migration is outside this repository replacement.
+No live 4.1 Personalization installation, fresh ordinary-chat automatic Library read, Free-account test or installer-driven behavior run has been completed. The browser connection timed out before returning page state during this correction. No account settings were changed by that attempt. An earlier full Helikon Work-mode installation record is not substituted for the missing ordinary-chat test.
+
+Use the current package as a testing build. Release promotion requires the live evidence in the release plan. There is no request for another approval; the remaining gap is a working test surface and observed results.

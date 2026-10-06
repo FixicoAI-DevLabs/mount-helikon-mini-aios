@@ -1,0 +1,13 @@
+{
+  "record_version": "1.0.0",
+  "package_version": "4.1.0",
+  "surface": null,
+  "settings_readback": null,
+  "runtime_readback": null,
+  "ordinary_chat_readback": null,
+  "behavior_results": [],
+  "limitations": [
+    "Browser connection timed out before page state was returned. No live 4.1 account changes or ordinary-chat observations were made.",
+    "Historical Project and Work-mode results do not satisfy ordinary-chat automatic Library access acceptance."
+  ]
+}

@@ -2,15 +2,15 @@
   "identity": {
     "runtime": {
       "id": "helikon-mini.operating-master",
-      "version": "4.0.0"
+      "version": "4.1.0"
     },
     "schema": {
       "id": "helikon-mini.operating-master.schema",
-      "version": "1.0.5"
+      "version": "1.0.6"
     },
     "system_contract": {
       "id": "helikon-mini.system.contract",
-      "version": "1.0.0"
+      "version": "2.0.0"
     },
     "extension_contract": {
       "id": "helikon-mini.extension.contract",
@@ -18,6 +18,18 @@
     }
   },
   "profiles": [
+    {
+      "id": "chatgpt-account",
+      "support": "experimental_unverified",
+      "delivery": "Account-wide Custom instructions and More about you designate a runtime-only JSON saved in the account Library. Attempt supported source reads in ordinary non-project chats; actual per-chat availability must be checked.",
+      "requires": [
+        "two_personalization_fields",
+        "saved_runtime_json",
+        "supported_library_source_access",
+        "fresh_ordinary_chat_verification"
+      ],
+      "persistence_claim": false
+    },
     {
       "id": "chatgpt-session",
       "support": "experimental_unverified",
@@ -40,13 +52,14 @@
       "persistence_claim": false
     }
   ],
-  "ordinary_global_chat": "unresolved_no_demonstrated_automatic_exact_runtime_delivery",
-  "free_account": "not_tested",
+  "ordinary_global_chat": "primary_installation_scope_live_validation_pending",
+  "free_account": "design_target_with_1500_character_system_snippets_not_live_tested",
   "installation_safeguards": {
     "preserve_existing_settings": true,
     "resolve_unknown_writes_before_retry": true,
     "isolate_from_active_full_helikon": true,
     "no_bulk_memory_deletion": true,
     "mutations_need_specific_scope": true
-  }
+  },
+  "default_profile": "chatgpt-account"
 }

@@ -1,41 +1,25 @@
-# Validation and maintenance
+# Validation
 
-Run from the repository root with Python 3.10+ and its standard library:
+## Local artifact checks
 
 ```sh
+python3 tools/mini.py render
 python3 tools/mini.py validate
 python3 -m unittest discover -s tests -v
 python3 tools/mini.py build --out build/first
 python3 tools/mini.py build --out build/second
-cmp build/first/Helikon-Mini-4.0.0.zip build/second/Helikon-Mini-4.0.0.zip
-python3 tools/mini.py verify-archive build/first/Helikon-Mini-4.0.0.zip
+cmp build/first/Helikon-Mini-4.1.0.zip build/second/Helikon-Mini-4.1.0.zip
 ```
 
-`python3 tools/mini.py render` regenerates the reading copy. ZIP members have sorted names, fixed timestamps/permissions and stored compression for reproducibility without compressor-version dependence. The manifest hashes each payload; the outer checksum covers the whole ZIP. Integrity alone does not authenticate a publisher: compare against a separately trusted reviewed checksum.
+These validate the canonical runtime, generated projections, two bounded Personalization snippets, guided protocol, eight-file package, private-data exclusions, unchanged legacy source bytes and adversarial evidence-record cases. They do not prove successful settings writes, source retrieval or behavior on a ChatGPT account.
 
-The published schema uses a small standard JSON Schema Draft 2020-12 subset. The offline validator rejects unknown keywords rather than silently ignoring them. It checks exact types, closed objects, constants, nonempty content, references, invocation cycles, owner coverage, design budgets, legacy bytes, profiles, source coverage and private-default patterns.
-
-Independent reviewed anchors lock behavioral prose, bootstrap, procedures, owners, extensions and System bytes. They detect semantic-text changes even if packaging hashes are regenerated. They do not prove meaning or compliance. A maintainer can change code and anchors; explicit semantic review and targeted regression checks are required before rebaselining. No automatic rebaseline command is shipped.
-
-The source map inventories components and nested normative IDs. It does not claim every original schema or rule is preserved verbatim. `python3 tools/source_check.py PATH_TO_AUTHORIZED_FULL_MASTER` verifies the pinned source hash, component hashes and complete inventory without copying the master into this repository.
-
-Negative tests cover reversed completeness, disabled safeguards, altered/blank policies, wrong identities, missing references, cycles, stale projections, contradictory evidence, unsupported pass labels, private defaults and archive tampering. Synthetic fixtures exercise validators; they are never live transcripts.
-
-## Live evidence
-
-The behavior pilot has 16 cases with three fresh runs each; format variants and installation transitions are additional. Utility has eight tasks, three conditions and three runs (72). Retain every failure and rerun, record uncontrolled host differences and blind comparison labels where feasible.
+## Live installation records
 
 ```sh
-python3 tools/evidence.py template --out evidence/local/pilot.json
-python3 tools/evidence.py validate evidence/local/pilot.json
+python3 tools/installer.py record-template --out private-checks/installation.json
+python3 tools/installer.py verify-record private-checks/installation.json
 ```
 
-The template is explicitly unrun. Actual evidence needs local transcript files/hashes, host context, candidate hashes and criterion findings tied to excerpts. Validation establishes record completeness and consistency, not independent authentication of host observations or review. Its strongest result is `record_consistent_manual_review_required`; it never grants release approval. An unrun, empty or contradictory record cannot pass through a status label.
+Keep records and source bindings private; do not commit account backups or transcripts containing personal data. The template starts incomplete. Populate only actual observed results and hash-linked evidence. Required checks appear in the root QA sheet. A complete consistent record still needs human review; the checker always returns `release_ready: false` because it cannot authenticate the host or grant release authority.
 
-The current release scope is the dedicated project edition. See the 4.0.0 release validation for its identity-only delta and the versioned candidate reports for live observations. The full pilot protocol remains available for broader support evaluation; its strict gate has not been passed or weakened. Static checks cannot supply missing live evidence.
-
-GitHub Actions is configured to repeat local checks and compare two builds. Local success does not mean hosted CI ran. The workflow pins checkout, uses read-only permission, and contains no publishing or account mutation.
-
-## Recorded pilots
-
-See the versioned `release/` reports for actual observations. Candidate 4 completed the 48-case-run behavior protocol and all 72 utility responses, retaining planning failures. Candidate 5 records targeted repair and regression work separately. Static validation reports only the checks that command runs; protocol templates remain unrun. The strict source-observation gate is not passed by substituting a source filename or model self-report for a full-body observation.
+Historical project evidence uses the earlier `tools/evidence.py` protocol and remains version-specific. It does not satisfy the new account-level gate.

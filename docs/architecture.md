@@ -1,21 +1,31 @@
-# Mini 4 architecture
+# Mini architecture
 
-Mini is a compact derivative of released Helikon 6.0.0 with independent runtime, schema, System and extension identities. The current release is `4.0.0`. It is not full Helikon, a service, a security boundary or an empirical reliability guarantee.
+Mini is a free, open-source starter using two runtime layers. **System** is account Personalization: two snippets in Custom instructions and More about you. **Operating** is the exact compact JSON saved in the account Library. Ordinary non-project chats are the primary product surface; Projects are optional.
 
-**System** is short user-configured governance on a host-supported instruction surface. **Operating** is the complete compact JSON and any explicitly compatible extensions. No extensions are shipped. Files, tools and the twelve logical owners are hosting or responsibility structures, not extra layers. Task state and continuity remain separate work data.
+## Preserve the Mini setup, replace the old runtime
 
-| Plane | Owners | Responsibility |
-|---|---|---|
-| Aoideon | Canon, Cortex, Enforcement, Voice | Identity/loading, turn coordination, permission/repair, clear output |
-| Meleteon | Budget, Reasoner, Builder, Modes | Finite effort, premises/evidence, actions/artifacts, local style |
-| Mnemeon | Digests, Kernel, Guard, Identity | Optional continuity, labeled context, privacy/active links, bounded callsign |
+| Mini 3.3 setup | Mini 4.1 implementation |
+|---|---|
+| Account-wide Personalization | Preserved as two separate snippets, each at most 1,500 characters |
+| Ordinary-chat guided installation | Preserved through SETUP / INSTALL / NEXT / FINAL_VERIFY |
+| One authoritative install package | Restored; embeds exact snippets, runtime bytes and installer protocol |
+| Six Saved Memories as Operating | Replaced with one runtime-only JSON derived from Helikon 6 |
+| Optional Projects | Preserved as optional organization or explicit alternate delivery |
+| Eight-file end-user bundle | Restored; developer tooling and tests stay in the repository |
+| Universal approval tokens / footer conventions | Replaced with scoped authorization and exact-format compliance from Helikon 6 |
 
-Mini reads the whole compact JSON. Its bootstrap self-reference is a finite content dependency; procedure calls have a separate acyclic graph. Whole-document loading removes conditional route expansion but has an upfront cost. Context loss requires reacquisition. A checksum identifies bytes; it does not establish authority, model access or successful operation.
+The project-only 4.0 release did not preserve the required installation model. Its artifacts and evidence remain historical; 4.1 changes the System delivery contract and requires new account-level verification.
 
-The root `Helikon_Mini_Operating_Master.json` and `Helikon_Mini_System.md` are canonical. The JSON is the runtime authority. The readable Markdown is generated and checked exactly. System is a distinct companion with reviewed compatibility declarations. Schema and policy anchors reject unreviewed changes; neither proves prose semantics or model compliance.
+## Build sources and generated outputs
 
-Intentional reductions: no legacy token parser, six-memory installation, mandatory footer, full RUNSHEET serialization, full continuity record family/RQ ranking, named evidence rubric or full-family Skill certification. Scoped natural-language direction, premise checking, evidence, privacy, cumulative repair and honest effect reporting remain. The repository source map records the changes.
+Maintainer sources are `installer/custom_instructions.txt`, `installer/more_about_you.txt`, `installer/contract.json` and the root runtime JSON. `tools/installer.py` generates the unified install package and the two-snippet Markdown sheet. `tools/mini.py render` also regenerates the human-readable Operating reference. Validation rejects drift between sources and shipped projections.
 
-Initial design ceilings are 1,500 Unicode characters for System and 24,000 for formatted runtime JSON. These are engineering budgets, not verified host limits, tokens or empirical optima. This release is larger than the old Mini installed payload; reduction is relative to the full master. The versioned utility pilot measures bounded task outcomes and output characters; it establishes no general advantage, token cost or inference latency.
+The install package is the installation authority distributed to end users. Once installed, only the standalone JSON is designated Operating. Installer instructions, personal backups, source bindings, test records and release history stay outside the runtime.
 
-Whole runtime access is the critical delivery dependency. The current installation scope is a dedicated ChatGPT project. Session and project delivery assurance remains experimental; automatic exact runtime access across ordinary global chats is unverified.
+All twelve logical Helikon owners and the reviewed compact runtime rules remain. Runtime policy text is unchanged from 4.0; identity changes to runtime 4.1.0, schema 1.0.6 and System contract 2.0.0. The new two-field System and delivery protocol are substantive changes, so earlier project behavior evidence cannot establish their account-wide behavior.
+
+## Source and authority boundaries
+
+Read the complete selected runtime through real available tools, verify all four identity pairs and refresh missing exact text. A filename, checksum, marker, summary or self-report is insufficient. Library search availability is not a guarantee of per-chat full content delivery. Missing access must be disclosed, with manual Add from Library identified as a fallback.
+
+Mini remains user-level guidance under host instructions. It cannot create tools, grant permissions or prove effects. Current scoped authorization carries forward; no universal approval token, mandatory footer, Saved Memory installation or optional Skill is required. Exact-format tasks must not acquire configuration commentary.

@@ -13,7 +13,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 RUNTIME = Path('Helikon_Mini_Operating_Master.json')
-SYSTEM = Path('Helikon_Mini_System.md')
+SYSTEM = Path('installer/custom_instructions.txt')
+PROFILE = Path('installer/more_about_you.txt')
 SCHEMA = Path('schema/Helikon_Mini_Operating_Master.schema.json')
 PROJECTION = Path('docs/OPERATING_REFERENCE.md')
 
@@ -189,6 +190,14 @@ def validate_repo(root=ROOT):
     doc = load(root / RUNTIME)
     anchor = load(root / 'tests/static/reviewed-contract.json')
     validate_runtime(doc, load(root / SCHEMA), anchor, (root / SYSTEM).read_bytes())
+    require(sha((root/PROFILE).read_bytes()) == anchor['profile_sha256'], 'Reviewed profile changed')
+    require(len((root/PROFILE).read_text()) <= 1500, 'Profile exceeds design budget')
+    require(sha((root/'installer/contract.json').read_bytes()) == anchor['installer_contract_sha256'], 'Reviewed installer changed')
+    import installer
+    try:
+        installer.validate(root)
+    except ValueError as exc:
+        raise Invalid(str(exc)) from exc
     require(len((root / RUNTIME).read_text()) <= anchor['budgets']['runtime_characters'], 'Runtime exceeds design budget')
     require((root / PROJECTION).read_text() == render(doc), 'Stale generated projection; run render')
     provenance = load(root / 'docs/source-manifest.json')
@@ -196,7 +205,8 @@ def validate_repo(root=ROOT):
         require(sha((root / path).read_bytes()) == expected, 'Legacy bytes changed: ' + path)
     profile = load(root / 'profiles/chatgpt/profiles.json')
     require(profile['identity'] == doc['identity'], 'Profile identity mismatch')
-    require({p['id'] for p in profile['profiles']} == {'chatgpt-session','chatgpt-project'} and len(profile['profiles']) == 2, 'Profile inventory mismatch')
+    require({p['id'] for p in profile['profiles']} == {'chatgpt-account','chatgpt-session','chatgpt-project'} and len(profile['profiles']) == 3, 'Profile inventory mismatch')
+    require(profile['default_profile'] == 'chatgpt-account', 'Account-wide profile must be the default')
     require(all(p['support'] == 'experimental_unverified' for p in profile['profiles']), 'Live support promotion needs a new reviewed gate')
     require(all(p['persistence_claim'] is False and p['delivery'].strip() and p['requires'] for p in profile['profiles']), 'Profile delivery contract invalid')
     require(profile['installation_safeguards'] == {
@@ -218,7 +228,7 @@ def validate_repo(root=ROOT):
         for target in row['targets']:
             resolve(doc, target)
         require(row['disposition'] == 'exclude' or bool(row['targets']), 'Retained source has no destination')
-    new_paths = [RUNTIME, SYSTEM, SCHEMA, PROJECTION, Path('README.md'), Path('CHANGELOG.md')]
+    new_paths = [RUNTIME, SYSTEM, PROFILE, SCHEMA, PROJECTION, Path('README.md'), Path('CHANGELOG.md'), Path('START_HERE.md'), Path('Helikon_Mini_System.md'), Path('Helikon_Mini_Install_Package.json'), Path('Helikon_Mini_QA.md'), Path('installer/contract.json')]
     new_paths += [p.relative_to(root) for directory in ('docs','profiles','tests/behavior') for p in (root/directory).rglob('*') if p.is_file()]
     private = re.compile(r'libfile[_-]|file_[0-9a-f]{32}|/workspace/|/root/|-----BEGIN .*PRIVATE KEY-----')
     for path in new_paths:
@@ -226,21 +236,17 @@ def validate_repo(root=ROOT):
     return {'status':'pass','scope':'static_candidate_artifacts_only',
             'runtime_characters':len((root/RUNTIME).read_text()),
             'system_characters':len((root/SYSTEM).read_text()),
+            'profile_characters':len((root/PROFILE).read_text()),
             'owners':len(doc['owners']),'source_components':len(paths),
             'live_behavior':'not_evaluated_by_this_command','host_installation':'not_evaluated_by_this_command'}
 
 
 PAYLOAD = {
- 'START_HERE.md':'docs/install.md', 'Helikon_Mini_System.md':str(SYSTEM),
+ 'START_HERE.md':'START_HERE.md', 'Helikon_Mini_System.md':'Helikon_Mini_System.md',
+ 'Helikon_Mini_Install_Package.json':'Helikon_Mini_Install_Package.json',
  'Helikon_Mini_Operating_Master.json':str(RUNTIME),
- 'Helikon_Mini_Operating.md':str(PROJECTION),
- 'Helikon_Mini_Operating_Master.schema.json':str(SCHEMA),
- 'RECOVERY.md':'docs/recovery.md',
- 'SUPPORT.md':'docs/support-matrix.md','ARCHITECTURE.md':'docs/architecture.md',
- 'CHANGELOG.md':'CHANGELOG.md','LICENSE':'LICENSE',
- 'SOURCE_MANIFEST.json':'docs/source-manifest.json',
- 'PILOT.md':'tests/behavior/README.md','cases.json':'tests/behavior/cases.json',
- 'utility.json':'tests/behavior/utility.json'
+ 'Helikon_Mini_QA.md':'Helikon_Mini_QA.md',
+ 'CHANGELOG.md':'CHANGELOG.md','LICENSE':'LICENSE'
 }
 
 
@@ -250,7 +256,7 @@ def build(out, root=ROOT):
     files = {name:(root / path).read_bytes() for name,path in PAYLOAD.items()}
     manifest = {'format':'helikon-mini.release-manifest@1.0.0',
                 'identity':load(root / RUNTIME)['identity'],
-                'status':'current_project_edition_see_support_boundaries',
+                'status':'account_installer_live_ordinary_chat_validation_pending',
                 'members':{name:{'sha256':sha(data),'bytes':len(data)} for name,data in sorted(files.items())}}
     files['MANIFEST.json'] = (json.dumps(manifest, indent=2, ensure_ascii=False)+'\n').encode()
     out.mkdir(parents=True, exist_ok=True)
@@ -296,6 +302,8 @@ def main():
         if args.command == 'render':
             path=ROOT/PROJECTION; path.parent.mkdir(parents=True, exist_ok=True)
             path.write_text(render(load(ROOT/RUNTIME)), encoding='utf-8')
+            import installer
+            installer.render(ROOT)
             result={'status':'generated','path':str(PROJECTION)}
         elif args.command == 'validate': result=validate_repo()
         elif args.command == 'build': result=build(args.out)
