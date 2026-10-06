@@ -1,6 +1,6 @@
 # Mini 4 project-beta publication plan
 
-Status: prepared for review; PR #9 is not merged and no Mini 4 GitHub release has been published. The proposed release makes the rebuilt Mini visible from the default repository entry point while preserving Mini 3.3 as historical material.
+Status: approved; PR #9 merged on October 6, 2026 at `733a9d5ff2a7eda17e4adc8cddd7cacada6a0f12`. Mini 4 is now the default repository entry point. No Mini 4 GitHub release has been published. The release editor and installation browser could not be reached in the publication session, so prerelease creation, asset-download verification and the new installation smoke check remain pending. See the [publication status](../release/4.0.0-candidate.5/PUBLICATION_STATUS.md). Mini 3.3 remains preserved.
 
 ## Exact publication scope
 
@@ -26,7 +26,7 @@ The public beta offers the isolated project route for evaluation. Its evidence c
 
 This scope is narrower than stable support. Both profiles remain `experimental_unverified`. The strict source-evidence gate remains unmet because hidden full-body input was not observed on every positive turn. No validator is weakened and no unknown observation is converted to a pass. Publishing this beta accepts those stated limits for evaluation; it does not certify automatic global delivery, free accounts, other models, actual six-memory migration or general superiority. The single-response full-source-copy failure and optional extra prose/citations remain documented.
 
-## Remaining sequence
+## Approved sequence and current progress
 
 1. Review the exact scope and assets above. Confirm the final PR head still contains the frozen payload, preserved legacy files and this publication plan. Check hosted CI for that exact head.
 2. At the final publication decision, mark PR #9 ready and merge it with an expected-head check. Record the resulting commit and confirm `main` contains the reviewed runtime and package. The updated README and root `START_HERE.md` then become the repository's entry point.
@@ -35,11 +35,11 @@ This scope is narrower than stable support. Both profiles remain `experimental_u
 5. Complete a fresh-project installation smoke check from that downloaded package: saved System readback, readable JSON, one exact-format task and one duration/capacity planning task. Record the publication and smoke evidence, including any failure. If bytes differ, do not claim the historical tests cover the download; resolve the discrepancy first.
 6. Add the verified release link and publication receipt to the repository, replacing preparation-status wording. Keep the candidate's historical evidence unchanged.
 
-These are sequential release actions, not evidence that publication has already happened. Merge and publication are the remaining externally visible transition. No announcement to other people is included.
+Steps 1 and 2 are complete. Steps 3–5 remain pending because the browser interface is unavailable and the connected GitHub interface has no release-creation or asset-upload action. Step 6 has a partial-status record; it must be updated with actual publication and smoke-test evidence after those steps complete. The existing approval covers the remaining stated actions; no further approval is needed merely because work resumes. No announcement to other people is included.
 
 ## What happens to the old Mini
 
-- `main` will point new visitors to Mini 4's project route. The six versioned Mini 3.3 root files and the `v3.3.0` tag/assets remain unchanged.
+- `main` now points new visitors to Mini 4's project route. The six versioned Mini 3.3 root files and the `v3.3.0` tag/assets remain unchanged.
 - Existing installed instructions and Saved Memories do not update automatically. The [start guide](../START_HERE.md#already-using-mini-33) explains the manual move and preserves unrelated settings.
 - GitHub does not allow a prerelease to be the latest stable release. Therefore the generic `/releases/latest` route can still resolve to 3.3; new entry points must link to the explicit Mini 4 release or its versioned package. See [GitHub's release API documentation](https://docs.github.com/en/rest/releases/releases#create-a-release), `make_latest`.
 - A stable Mini 4 replacement needs a separate support decision and evidence for the delivery routes it promises. Global/free-account compatibility and actual legacy migration stay open; this beta does not silently complete them.

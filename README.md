@@ -1,8 +1,8 @@
 # Helikon Mini
 
-**Mini 4.0.0-candidate.5** is a compact rebuild from released Helikon 6.0.0, installed in an isolated ChatGPT test project with versioned browser evidence. It is an experimental project candidate being prepared for a public project beta. It is not a production release or an ordinary global-chat installation.
+**Mini 4.0.0-candidate.5** is a compact rebuild from released Helikon 6.0.0, installed in an isolated ChatGPT test project with versioned browser evidence. The rebuild is now merged into `main`. It is an experimental project candidate approved for a public project beta; the GitHub prerelease is still pending. It is not a production release or an ordinary global-chat installation.
 
-**[Start here: download and install Mini 4 in a dedicated project](START_HERE.md).** No Python or local build is needed to try the packaged candidate. The [publication plan](docs/release-plan.md) records the proposed tag, exact assets and remaining release steps. Preparing this branch does not update `main` or publish a release.
+**[Start here: download and install Mini 4 in a dedicated project](START_HERE.md).** No Python or local build is needed to try the packaged candidate. The [publication status](release/4.0.0-candidate.5/PUBLICATION_STATUS.md) records the completed merge and remaining release/download checks; the [publication plan](docs/release-plan.md) specifies the exact tag and assets.
 
 Short System guidance and one compact Operating JSON retain three planes and twelve responsibilities without requiring six Saved Memories or specialised Skills. The source map covers 92 source components and 474 nested normative IDs; it does not claim full semantic equivalence.
 
