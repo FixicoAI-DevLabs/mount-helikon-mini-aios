@@ -1,6 +1,6 @@
 # Mini 4 publication status — October 6, 2026
 
-The user approved the reviewed project-beta publication proposal. The repository update is complete; GitHub prerelease publication and its fresh-download installation smoke check are pending.
+**Published:** [Helikon Mini 4 — Project beta (candidate 5)](https://github.com/FixicoAI-DevLabs/mount-helikon-mini-aios/releases/tag/v4.0.0-candidate.5), October 6, 2026 at 13:48:40 UTC. The repository update, prerelease publication and public-download verification are complete. Existing account migration is outside this task. The additional fresh ChatGPT installation smoke check remains unrun because browser access was unavailable.
 
 ## Observed completed work
 
@@ -18,17 +18,20 @@ The user approved the reviewed project-beta publication proposal. The repository
 
 The documentation update containing this record does not change those payload files or historical test evidence. The six protected Mini 3.3 files are unchanged in the merged reviewed tree.
 
-## Publication blocker and retained attempts
+## Earlier browser blocker and retained attempts
 
 The connected GitHub interface could merge the PR and inspect releases, but exposes no create-release, create-tag or release-asset-upload action. Browser initialization failed three times: documentation restoration, surface inventory after reset, and a direct attempt to open the repository's release editor. Each returned `js execution timed out; kernel reset, rerun your request`. The direct attempt produced no usable page or confirmed UI action. No draft release, tag creation, upload or publish action was submitted through the browser.
 
-A subsequent GitHub release-list read still returned only `v3.3.0`. No Mini 4 release is claimed. There was no fresh-project installation attempt in this publication session. The earlier candidate-5 installation and behavioral results remain their original evidence, not a replacement for the pending download test.
+A GitHub release-list read during that earlier blocked session still returned only `v3.3.0`. There was no fresh-project installation attempt. The earlier candidate-5 installation and behavioral results remain their original evidence.
 
-## Resume from here
+## Publication completed through GitHub Actions
 
-1. Restore a working supported GitHub release interface. Inspect releases and tags first to resolve any intervening changes; do not blindly duplicate publication.
-2. Create the prerelease `v4.0.0-candidate.5` at the verified merge commit above, using [RELEASE_NOTES.md](RELEASE_NOTES.md). Upload the [ZIP](Helikon-Mini-4.0.0-candidate.5.zip) and [checksum](Helikon-Mini-4.0.0-candidate.5.zip.sha256), inspect the draft, then publish.
-3. Download the actual published asset, verify the frozen checksum and tag target, then perform the approved fresh-project installation smoke check.
-4. Replace pending-publication wording with the verified release URL and append the actual download/installation evidence. Preserve this interruption history and all earlier failures.
+A repository-native publishing workflow on `release/mini-project-beta` used repository-scoped `contents: write` permission for its publishing job. It fixed the target commit, title, prerelease classification and exact two asset names/hashes; it does not overwrite conflicting tags, releases or assets. The original validation workflow and repository permission settings were not changed.
 
-The existing approval covers this sequence within the [release plan](../../docs/release-plan.md). Runtime support remains experimental and project-scoped. Do not promote stable/global/free-account support or alter the frozen bytes as a workaround for interface failure.
+[Workflow run 37473490390](https://github.com/FixicoAI-DevLabs/mount-helikon-mini-aios/actions/runs/37473490390), attempt 1, created draft release ID `404775395` but stopped because its immediate list read did not return the draft. A separate API read subsequently confirmed the draft, exact target and empty asset inventory. Attempt 2 resumed that draft, uploaded and byte-checked both assets, then published it. The failure and consumed attempt remain in the run history.
+
+The successful job reran all 38 deterministic tests, rebuilt the exact 98,043-byte ZIP, checked the target Git tree, verified each uploaded draft asset before publishing, resolved the public tag to the approved merge commit, and downloaded both public asset URLs without authentication. Their bytes matched the local approved files; ZIP inventory/member checks also passed. Separate connector reads confirmed the public release, tag target and asset digests.
+
+See [publication-receipt.json](publication-receipt.json) for the exact URLs, hashes, target, workflow and observation scope. The main README and start guide now link directly to the published package.
+
+Runtime support remains experimental and project-scoped. No fresh post-publication ChatGPT installation result is claimed. This limitation does not change the exact prior installation/behavior evidence or the verified identity of the released package.

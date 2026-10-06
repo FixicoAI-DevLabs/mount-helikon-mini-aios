@@ -1,6 +1,6 @@
 # Mini 4 project-beta publication plan
 
-Status: approved; PR #9 merged on October 6, 2026 at `733a9d5ff2a7eda17e4adc8cddd7cacada6a0f12`. Mini 4 is now the default repository entry point. No Mini 4 GitHub release has been published. The release editor and installation browser could not be reached in the publication session, so prerelease creation, asset-download verification and the new installation smoke check remain pending. See the [publication status](../release/4.0.0-candidate.5/PUBLICATION_STATUS.md). Mini 3.3 remains preserved.
+Status: published October 6, 2026 at 13:48:40 UTC. [Mini 4 project beta](https://github.com/FixicoAI-DevLabs/mount-helikon-mini-aios/releases/tag/v4.0.0-candidate.5) points to the verified PR #9 merge commit `733a9d5ff2a7eda17e4adc8cddd7cacada6a0f12`. The ZIP and checksum were uploaded and downloaded publicly with exact byte checks. See the [publication record](../release/4.0.0-candidate.5/PUBLICATION_STATUS.md). Updating existing users' account installations is outside the current task.
 
 ## Exact publication scope
 
@@ -35,12 +35,12 @@ This scope is narrower than stable support. Both profiles remain `experimental_u
 5. Complete a fresh-project installation smoke check from that downloaded package: saved System readback, readable JSON, one exact-format task and one duration/capacity planning task. Record the publication and smoke evidence, including any failure. If bytes differ, do not claim the historical tests cover the download; resolve the discrepancy first.
 6. Add the verified release link and publication receipt to the repository, replacing preparation-status wording. Keep the candidate's historical evidence unchanged.
 
-Steps 1 and 2 are complete. Steps 3–5 remain pending because the browser interface is unavailable and the connected GitHub interface has no release-creation or asset-upload action. Step 6 has a partial-status record; it must be updated with actual publication and smoke-test evidence after those steps complete. The existing approval covers the remaining stated actions; no further approval is needed merely because work resumes. No announcement to other people is included.
+Steps 1–4 and the repository publication record are complete. A narrowly scoped GitHub Actions workflow supplied the release interface when the browser was unavailable. The fresh post-publication ChatGPT installation smoke check in step 5 was not run; earlier candidate-5 live installation evidence remains unchanged, and the published bytes match that tested package. No announcement to other people or account migration was performed.
 
 ## What happens to the old Mini
 
 - `main` now points new visitors to Mini 4's project route. The six versioned Mini 3.3 root files and the `v3.3.0` tag/assets remain unchanged.
-- Existing installed instructions and Saved Memories do not update automatically. The [start guide](../START_HERE.md#already-using-mini-33) explains the manual move and preserves unrelated settings.
+- Existing account installations are outside this repository-update task; no migration work is a condition of this release.
 - GitHub does not allow a prerelease to be the latest stable release. Therefore the generic `/releases/latest` route can still resolve to 3.3; new entry points must link to the explicit Mini 4 release or its versioned package. See [GitHub's release API documentation](https://docs.github.com/en/rest/releases/releases#create-a-release), `make_latest`.
 - A stable Mini 4 replacement needs a separate support decision and evidence for the delivery routes it promises. Global/free-account compatibility and actual legacy migration stay open; this beta does not silently complete them.
 

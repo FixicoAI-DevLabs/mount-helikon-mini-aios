@@ -1,6 +1,6 @@
 # Mini 4.0.0-candidate.5 review package
 
-This is an experimental project candidate, not a tagged production release. The archive includes the matching short System, canonical runtime, schema, reading copy, installation/recovery/support documents and pilot protocols.
+This exact package is published as the [Mini 4 project-beta prerelease](https://github.com/FixicoAI-DevLabs/mount-helikon-mini-aios/releases/tag/v4.0.0-candidate.5). It remains experimental, with no production/global-chat support claim. The archive includes the matching short System, canonical runtime, schema, reading copy, installation/recovery/support documents and pilot protocols. See the [publication record](PUBLICATION_STATUS.md).
 
 - [Browser tests and limits](browser-pilot-05/README.md)
 - [Engineering receipt](engineering-validation.json)

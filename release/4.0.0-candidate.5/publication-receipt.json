@@ -1,0 +1,44 @@
+{
+  "status": "published_and_public_download_verified",
+  "repository": "FixicoAI-DevLabs/mount-helikon-mini-aios",
+  "tag": "v4.0.0-candidate.5",
+  "target_commit": "733a9d5ff2a7eda17e4adc8cddd7cacada6a0f12",
+  "release_id": 404775395,
+  "release_url": "https://github.com/FixicoAI-DevLabs/mount-helikon-mini-aios/releases/tag/v4.0.0-candidate.5",
+  "prerelease": true,
+  "published_at": "2026-10-06T13:48:40Z",
+  "assets": [
+    {
+      "name": "Helikon-Mini-4.0.0-candidate.5.zip",
+      "bytes": 98043,
+      "sha256": "d4fcf46e86ba349906ce5ade1572502adbdfeec1849ff19f62b2372b0176653a",
+      "url": "https://github.com/FixicoAI-DevLabs/mount-helikon-mini-aios/releases/download/v4.0.0-candidate.5/Helikon-Mini-4.0.0-candidate.5.zip"
+    },
+    {
+      "name": "Helikon-Mini-4.0.0-candidate.5.zip.sha256",
+      "bytes": 101,
+      "sha256": "637697c01b4d3d29b6d25505960cc14c59a5883407084e864a2ae84c1286760d",
+      "url": "https://github.com/FixicoAI-DevLabs/mount-helikon-mini-aios/releases/download/v4.0.0-candidate.5/Helikon-Mini-4.0.0-candidate.5.zip.sha256"
+    }
+  ],
+  "fresh_chatgpt_installation": "not_evaluated_by_this_workflow",
+  "verification_workflow": {
+    "run_id": 37473490390,
+    "attempt": 2,
+    "job_id": 112303567981,
+    "commit": "a6b58227f1e16106c7def927e375f84561b11c11",
+    "url": "https://github.com/FixicoAI-DevLabs/mount-helikon-mini-aios/actions/runs/37473490390"
+  },
+  "retained_failures": [
+    {
+      "run_id": 37473490390,
+      "attempt": 1,
+      "result": "Draft created; immediate release-list read did not return it. Stopped before upload. Draft ID 404775395 subsequently observed, and the existing workflow resumed without duplicate creation."
+    }
+  ],
+  "external_api_confirmation": {
+    "release_draft": false,
+    "tag_commit": "733a9d5ff2a7eda17e4adc8cddd7cacada6a0f12",
+    "asset_digests_match": true
+  }
+}
