@@ -1,0 +1,13 @@
+{
+  "id": "B11-3",
+  "observed_at": "2026-10-05T21:41:44.696Z",
+  "started_at": "2026-10-05T21:41:23.699Z",
+  "model_label": "Thinking effort5.6 Medium",
+  "source_profile": "candidate3_project_source",
+  "turns": [
+    {
+      "prompt": "Return only JSON with keys total and currency for 3 times 7 USD.",
+      "transcript": "  - heading \"You said:\" [level=4]\n  - generic: Return only JSON with keys total and currency for 3 times 7 USD.\n  - button \"Copy message\":\n  - button \"Share prompt\":\n  - button \"Edit message\":\n  - heading \"ChatGPT said:\" [level=4]\n  - paragraph: \"{\\\"total\\\":21,\\\"currency\\\":\\\"USD\\\"}\"\n  - button \"Copy\":\n  - button \"Share\":\n  - button \"Add to project sources\":\n  - button \"Read aloud\":\n  - button \"Regenerate response\":\n  - button \"More actions\":\n"
+    }
+  ]
+}

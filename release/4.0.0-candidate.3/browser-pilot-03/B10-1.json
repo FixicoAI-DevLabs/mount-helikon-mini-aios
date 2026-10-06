@@ -1,0 +1,17 @@
+{
+  "id": "B10-1",
+  "started_at": "2026-10-05T21:46:25.019Z",
+  "model_label": "Thinking effort5.6 Medium",
+  "source_profile": "candidate3_project_source",
+  "turns": [
+    {
+      "prompt": "Prepare a two-part local draft: part one is a two-sentence welcome note for a fictional workshop; part two is a short agenda. Write part one now, then wait before writing part two.",
+      "transcript": "  - heading \"You said:\" [level=4]\n  - generic: \"Prepare a two-part local draft: part one is a two-sentence welcome note for a fictional workshop; part two is a short agenda. Write part one now, then wait before writing part two.\"\n  - button \"Copy message\":\n  - button \"Share prompt\":\n  - button \"Edit message\":\n  - heading \"ChatGPT said:\" [level=4]\n  - paragraph: Here is part one of the draft; I’ll wait before writing part two.\n  - button \"Add to Space\":\n    - generic: Workshop Welcome Note\n  - button \"Copy\":\n  - button \"Open editor\":\n  - textbox \"Start writing\":\n    - paragraph: Welcome to the fictional Community Innovation Workshop, where curious minds gather to share ideas, build connections, and explore new possibilities together. We are excited to have you join this collaborative experience and look forward to the insights, creativity, and conversations you will bring.\n  - button \"Make the welcome more concise\":\n    - generic: Make the welcome more concise\n  - button \"Add a clearer workshop purpose\":\n    - generic: Add a clearer workshop purpose\n  - button \"Copy\":\n  - button \"Share\":\n  - button \"Add to project sources\":\n  - button \"Read aloud\":\n  - button \"Regenerate response\":\n  - button \"More actions\":\n"
+    },
+    {
+      "prompt": "Stop part two; keep the first part.",
+      "transcript": "  - heading \"You said:\" [level=4]\n  - generic: \"Prepare a two-part local draft: part one is a two-sentence welcome note for a fictional workshop; part two is a short agenda. Write part one now, then wait before writing part two.\"\n  - button \"Copy message\":\n  - button \"Share prompt\":\n  - button \"Edit message\":\n  - heading \"ChatGPT said:\" [level=4]\n  - paragraph: Here is part one of the draft; I’ll wait before writing part two.\n  - button \"Add to Space\":\n    - generic: Workshop Welcome Note\n  - button \"Copy\":\n  - button \"Open editor\":\n  - textbox \"Start writing\":\n    - paragraph: Welcome to the fictional Community Innovation Workshop, where curious minds gather to share ideas, build connections, and explore new possibilities together. We are excited to have you join this collaborative experience and look forward to the insights, creativity, and conversations you will bring.\n  - button \"Copy\":\n  - button \"Share\":\n  - button \"Add to project sources\":\n  - button \"Read aloud\":\n  - button \"Regenerate response\":\n  - button \"More actions\":\n  - heading \"You said:\" [level=4]\n  - generic: Stop part two; keep the first part.\n  - button \"Copy message\":\n  - button \"Share prompt\":\n  - button \"Edit message\":\n  - heading \"ChatGPT said:\" [level=4]\n  - paragraph: Understood. I’ll keep part one as written and will not provide part two.\n  - button \"Copy\":\n  - button \"Share\":\n  - button \"Add to project sources\":\n  - button \"Read aloud\":\n  - button \"Regenerate response\":\n  - button \"More actions\":\n"
+    }
+  ],
+  "observed_at": "2026-10-05T21:47:48.921Z"
+}

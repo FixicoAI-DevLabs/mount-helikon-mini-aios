@@ -1,0 +1,14 @@
+{
+  "id": "B11-template",
+  "started_at": "2026-10-05T23:27:37.774Z",
+  "model_label": "Thinking effort5.6 Medium",
+  "source_profile": "candidate5_project_source",
+  "turns": [
+    {
+      "prompt": "Return exactly this two-line template with the result substituted for [result], and no other text:\nNAME: Mini\nTOTAL: [result]\nThe calculation is 3 times 7.",
+      "transcript": "  - heading \"You said:\" [level=4]\n  - generic: \"Return exactly this two-line template with the result substituted for [result], and no other text: NAME: Mini TOTAL: [result] The calculation is 3 times 7.\"\n  - button \"Copy message\":\n  - button \"Share prompt\":\n  - button \"Edit message\":\n  - heading \"ChatGPT said:\" [level=4]\n  - paragraph:\n    - text: \"NAME: Mini\"\n    - text: \"TOTAL: 21\"\n  - button \"Copy\":\n  - button \"Share\":\n  - button \"Add to project sources\":\n  - button \"Read aloud\":\n  - button \"Regenerate response\":\n  - button \"More actions\":\n",
+      "response_markdown": "NAME: Mini\nTOTAL: 21"
+    }
+  ],
+  "observed_at": "2026-10-05T23:28:04.238Z"
+}

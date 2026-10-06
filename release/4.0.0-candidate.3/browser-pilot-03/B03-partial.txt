@@ -1,0 +1,48 @@
+  - heading "You said:" [level=4]
+  - button "Helikon_Mini_Operating_Master.json"
+  - generic "Helikon_Mini_Operating_Master.json"
+  - generic: Code
+  - generic: Inspect the attached file selected for this test as the Mini Operating source. Is the required runtime available? Report any exact identity mismatch or incomplete content. Do not substitute a different file or a summary.
+  - button "Copy message":
+  - button "Share prompt":
+  - button "Edit message":
+  - heading "ChatGPT said:" [level=4]
+  - paragraph: I inspected the explicitly attached file at /mnt/data/Helikon_Mini_Operating_Master.json.
+  - paragraph:
+    - strong: "Required runtime availability: Not available."
+  - paragraph: "The file contains the expected beginning identity values:"
+  - list:
+    - text: "Runtime ID: helikon-mini.operating-master"
+    - button "Open preview of Helikon_Mini_Operating_Master.json":
+      - generic: Helikon_Mini_Operating_Master
+    - text: "Runtime version: 4.0.0-candidate.3"
+    - button "Open preview of Helikon_Mini_Operating_Master.json":
+      - generic: Helikon_Mini_Operating_Master
+    - text: "Schema ID/version: helikon-mini.operating-master.schema / 1.0.2"
+    - button "Open preview of Helikon_Mini_Operating_Master.json":
+      - generic: Helikon_Mini_Operating_Master
+    - text: "System contract: helikon-mini.system.contract / 1.0.0"
+    - button "Open preview of Helikon_Mini_Operating_Master.json":
+      - generic: Helikon_Mini_Operating_Master
+    - text: "Extension contract: helikon-mini.extension.contract / 1.0.0"
+    - button "Open preview of Helikon_Mini_Operating_Master.json":
+      - generic: Helikon_Mini_Operating_Master
+  - paragraph:
+    - text: However, the source is
+    - strong: incomplete/truncated
+    - text: ". The JSON does not contain the full required document body. The file ends inside the mini.authorization instruction string, at:"
+  - paragraph: "\"Before destructive change establish exact target, intende"
+  - paragraph: with no completion of the string and no closing JSON structure.
+  - paragraph: Because the selected source is incomplete, I cannot claim the Mini runtime is available. I did not substitute another file, a summary, or a remembered version.
+  - button "Copy":
+  - button "Share":
+  - button "Add to project sources":
+  - button "Read aloud":
+  - button "Regenerate response":
+  - button "More actions":
+  - button "Sources":
+  - complementary "Is this conversation helpful so far?":
+    - generic: Is this conversation helpful so far?
+    - button "Yes":
+    - button "No":
+    - button "Dismiss rating prompt":

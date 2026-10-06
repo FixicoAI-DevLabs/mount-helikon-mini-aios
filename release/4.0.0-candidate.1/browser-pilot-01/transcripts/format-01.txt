@@ -1,0 +1,13 @@
+  - heading "You said:" [level=4]
+  - generic: Return only JSON with keys total and currency for 3 times 7 USD.
+  - button "Copy message":
+  - button "Share prompt":
+  - button "Edit message":
+  - heading "ChatGPT said:" [level=4]
+  - paragraph: "{\"total\":21,\"currency\":\"USD\"}"
+  - button "Copy":
+  - button "Share":
+  - button "Add to project sources":
+  - button "Read aloud":
+  - button "Regenerate response":
+  - button "More actions":

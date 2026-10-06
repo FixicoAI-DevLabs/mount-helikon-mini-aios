@@ -1,0 +1,14 @@
+{
+  "id": "U02-mini_candidate-3",
+  "started_at": "2026-10-05T23:33:11.389Z",
+  "model_label": "Thinking effort5.6 Medium",
+  "source_profile": "candidate5_project_source",
+  "turns": [
+    {
+      "prompt": "For quantities 4 at 12.25, 3 at 8.00 and discount 10%, calculate the final total. Show checkable arithmetic.",
+      "transcript": "  - heading \"You said:\" [level=4]\n  - generic: For quantities 4 at 12.25, 3 at 8.00 and discount 10%, calculate the final total. Show checkable arithmetic.\n  - button \"Copy message\":\n  - button \"Share prompt\":\n  - button \"Edit message\":\n  - heading \"ChatGPT said:\" [level=4]\n  - paragraph: \"Quantity calculations:\"\n  - list:\n    - listitem: 4 × 12.25 = 49.00\n    - listitem: 3 × 8.00 = 24.00\n  - paragraph: \"Subtotal:\"\n  - list:\n    - listitem: 49.00 + 24.00 = 73.00\n  - paragraph: \"Discount:\"\n  - list:\n    - listitem: 10% of 73.00 = 0.10 × 73.00 = 7.30\n  - paragraph: \"Final total:\"\n  - list:\n    - text: 73.00 − 7.30 =\n    - strong: \"65.70\"\n  - paragraph:\n    - strong: \"Final total: 65.70\"\n  - button \"Copy\":\n  - button \"Share\":\n  - button \"Add to project sources\":\n  - button \"Read aloud\":\n  - button \"Regenerate response\":\n  - button \"More actions\":\n",
+      "response_markdown": "Quantity calculations:\n\n- 4 × 12.25 = 49.00  \n- 3 × 8.00 = 24.00  \n\nSubtotal:\n\n- 49.00 + 24.00 = 73.00  \n\nDiscount:\n\n- 10% of 73.00 = 0.10 × 73.00 = 7.30  \n\nFinal total:\n\n- 73.00 − 7.30 = **65.70**  \n\n**Final total: 65.70**"
+    }
+  ],
+  "observed_at": "2026-10-05T23:33:48.329Z"
+}

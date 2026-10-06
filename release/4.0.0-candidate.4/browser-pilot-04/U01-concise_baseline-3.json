@@ -1,0 +1,14 @@
+{
+  "id": "U01-concise_baseline-3",
+  "started_at": "2026-10-05T22:41:38.684Z",
+  "model_label": "Thinking effort5.6 Medium",
+  "source_profile": "concise_baseline",
+  "turns": [
+    {
+      "prompt": "Explain tides in 90 words for an adult new to the topic.",
+      "transcript": "  - heading \"You said:\" [level=4]\n  - generic: Explain tides in 90 words for an adult new to the topic.\n  - button \"Copy message\":\n  - button \"Share prompt\":\n  - button \"Edit message\":\n  - heading \"ChatGPT said:\" [level=4]\n  - paragraph: Tides are the regular rise and fall of ocean water caused mainly by the Moon\u2019s gravity, with the Sun also contributing. As Earth rotates, coastal areas move through regions where water is pulled slightly higher or lower. Most places experience two high tides and two low tides each day. The timing and height of tides vary because of coastline shape, ocean depth, and the Moon\u2019s position. Tides influence marine life, navigation, fishing, and coastal environments by moving large amounts of seawater in predictable natural cycles around the planet every day.\n  - button \"Copy\":\n  - button \"Share\":\n  - button \"Add to project sources\":\n  - button \"Read aloud\":\n  - button \"Regenerate response\":\n  - button \"More actions\":\n",
+      "response_markdown": "Tides are the regular rise and fall of ocean water caused mainly by the Moon\u2019s gravity, with the Sun also contributing. As Earth rotates, coastal areas move through regions where water is pulled slightly higher or lower. Most places experience two high tides and two low tides each day. The timing and height of tides vary because of coastline shape, ocean depth, and the Moon\u2019s position. Tides influence marine life, navigation, fishing, and coastal environments by moving large amounts of seawater in predictable natural cycles around the planet every day."
+    }
+  ],
+  "observed_at": "2026-10-05T22:43:37.905Z"
+}

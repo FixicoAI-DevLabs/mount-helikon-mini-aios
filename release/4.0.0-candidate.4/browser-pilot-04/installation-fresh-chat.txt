@@ -1,0 +1,27 @@
+  - heading "You said:" [level=4]
+  - generic: "Fresh-chat installation check: Is the exact Mini Operating JSON available here? Do not infer it from another project or a remembered title. Then calculate 7 times 6."
+  - button "Copy message":
+  - button "Share prompt":
+  - button "Edit message":
+  - heading "ChatGPT said:" [level=4]
+  - paragraph:
+    - text: The exact Mini Operating JSON is
+    - strong: not available to me in this chat context
+    - text: . I do not have an attached Helikon_Mini_Operating_Master.json file to inspect, and I cannot infer availability from a filename, previous project context, or a remembered title.
+  - paragraph: "Calculation:"
+  - paragraph:
+    - math:
+      - generic: "7"
+      - generic: ×
+      - generic: "6"
+      - generic: =
+      - generic: "42"
+    - generic: 7 ×
+    - generic: 6 =
+    - generic: "42"
+  - button "Copy":
+  - button "Share":
+  - button "Add to project sources":
+  - button "Read aloud":
+  - button "Regenerate response":
+  - button "More actions":

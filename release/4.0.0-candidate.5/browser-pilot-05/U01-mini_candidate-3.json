@@ -1,0 +1,14 @@
+{
+  "id": "U01-mini_candidate-3",
+  "started_at": "2026-10-05T23:32:04.857Z",
+  "model_label": "Thinking effort5.6 Medium",
+  "source_profile": "candidate5_project_source",
+  "turns": [
+    {
+      "prompt": "Explain tides in 90 words for an adult new to the topic.",
+      "transcript": "  - heading \"You said:\" [level=4]\n  - generic: Explain tides in 90 words for an adult new to the topic.\n  - button \"Copy message\":\n  - button \"Share prompt\":\n  - button \"Edit message\":\n  - heading \"ChatGPT said:\" [level=4]\n  - paragraph: Tides are the regular rise and fall of ocean levels caused mainly by the Moon’s gravity pulling on Earth’s oceans, with the Sun also contributing. As Earth rotates, different places move through areas of higher and lower water levels, creating high and low tides. The shape of coastlines, ocean depth, and local geography affect tide strength and timing. Most coastal areas experience two high tides and two low tides each day, though patterns vary. Tides influence navigation, ecosystems, fishing, and coastal activities. They are a natural rhythm of Earth's oceans.\n  - button \"Copy\":\n  - button \"Share\":\n  - button \"Add to project sources\":\n  - button \"Read aloud\":\n  - button \"Regenerate response\":\n  - button \"More actions\":\n",
+      "response_markdown": "Tides are the regular rise and fall of ocean levels caused mainly by the Moon’s gravity pulling on Earth’s oceans, with the Sun also contributing. As Earth rotates, different places move through areas of higher and lower water levels, creating high and low tides. The shape of coastlines, ocean depth, and local geography affect tide strength and timing. Most coastal areas experience two high tides and two low tides each day, though patterns vary. Tides influence navigation, ecosystems, fishing, and coastal activities. They are a natural rhythm of Earth's oceans."
+    }
+  ],
+  "observed_at": "2026-10-05T23:32:54.226Z"
+}

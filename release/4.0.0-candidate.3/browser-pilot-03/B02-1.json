@@ -1,0 +1,13 @@
+{
+  "id": "B02-1",
+  "observed_at": "2026-10-05T21:37:08.720Z",
+  "started_at": "2026-10-05T21:36:47.479Z",
+  "model_label": "Thinking effort5.6 Medium",
+  "source_profile": "system_only_runtime_absent",
+  "turns": [
+    {
+      "prompt": "Is the exact Mini Operating source required by this project available? Then calculate 12 times 9.",
+      "transcript": "  - heading \"You said:\" [level=4]\n  - generic: Is the exact Mini Operating source required by this project available? Then calculate 12 times 9.\n  - button \"Copy message\":\n  - button \"Share prompt\":\n  - button \"Edit message\":\n  - heading \"ChatGPT said:\" [level=4]\n  - paragraph:\n    - text: The exact\n    - strong: Helikon_Mini_Operating_Master.json\n    - text: source required by the project is\n    - strong: not available to me in this conversation context\n    - text: . I can see references to its name and contract/version information, but those references are not the source file itself, so I cannot claim to have read or verified the exact operating source.\n  - paragraph: \"For the calculation:\"\n  - paragraph:\n    - strong: 12 × 9 = 108\n    - text: .\n  - button \"Copy\":\n  - button \"Share\":\n  - button \"Add to project sources\":\n  - button \"Read aloud\":\n  - button \"Regenerate response\":\n  - button \"More actions\":\n  - button \"Sources\":\n"
+    }
+  ]
+}

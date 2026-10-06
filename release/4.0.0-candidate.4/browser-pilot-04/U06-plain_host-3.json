@@ -1,0 +1,14 @@
+{
+  "id": "U06-plain_host-3",
+  "started_at": "2026-10-05T23:03:55.625Z",
+  "model_label": "Thinking effort5.6 Medium",
+  "source_profile": "plain_host",
+  "turns": [
+    {
+      "prompt": "Choose A or B using only these criteria: cost lower is better, must operate offline. A costs 20 and needs internet. B costs 25 and operates offline.",
+      "transcript": "  - heading \"You said:\" [level=4]\n  - generic: \"Choose A or B using only these criteria: cost lower is better, must operate offline. A costs 20 and needs internet. B costs 25 and operates offline.\"\n  - button \"Copy message\":\n  - button \"Share prompt\":\n  - button \"Edit message\":\n  - heading \"ChatGPT said:\" [level=4]\n  - paragraph: B.\n  - button \"Copy\":\n  - button \"Share\":\n  - button \"Add to project sources\":\n  - button \"Read aloud\":\n  - button \"Regenerate response\":\n  - button \"More actions\":\n  - complementary \"Is this conversation helpful so far?\":\n    - generic: Is this conversation helpful so far?\n    - button \"Yes\":\n    - button \"No\":\n    - button \"Dismiss rating prompt\":\n",
+      "response_markdown": "B."
+    }
+  ],
+  "observed_at": "2026-10-05T23:04:10.101Z"
+}

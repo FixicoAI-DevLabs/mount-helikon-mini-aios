@@ -1,0 +1,52 @@
+{
+  "identity": {
+    "runtime": {
+      "id": "helikon-mini.operating-master",
+      "version": "4.0.0-candidate.5"
+    },
+    "schema": {
+      "id": "helikon-mini.operating-master.schema",
+      "version": "1.0.4"
+    },
+    "system_contract": {
+      "id": "helikon-mini.system.contract",
+      "version": "1.0.0"
+    },
+    "extension_contract": {
+      "id": "helikon-mini.extension.contract",
+      "version": "1.0.0"
+    }
+  },
+  "profiles": [
+    {
+      "id": "chatgpt-session",
+      "support": "experimental_unverified",
+      "delivery": "Explicit System guidance and the complete JSON supplied in one isolated conversation. Session scope only; do not imply persistent installation.",
+      "requires": [
+        "complete_readable_attachment_or_paste",
+        "current_exact_text"
+      ],
+      "persistence_claim": false
+    },
+    {
+      "id": "chatgpt-project",
+      "support": "experimental_unverified",
+      "delivery": "A separately scoped project containing Mini instructions and the exact JSON as a project source; verify actual retrieval in each test context.",
+      "requires": [
+        "isolated_project",
+        "project_instructions",
+        "exact_source_read"
+      ],
+      "persistence_claim": false
+    }
+  ],
+  "ordinary_global_chat": "unresolved_no_demonstrated_automatic_exact_runtime_delivery",
+  "free_account": "not_tested",
+  "installation_safeguards": {
+    "preserve_existing_settings": true,
+    "resolve_unknown_writes_before_retry": true,
+    "isolate_from_active_full_helikon": true,
+    "no_bulk_memory_deletion": true,
+    "mutations_need_specific_scope": true
+  }
+}

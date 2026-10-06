@@ -1,0 +1,43 @@
+test_boolean_is_not_integer (test_candidate.CandidateTests.test_boolean_is_not_integer) ... ok
+test_disabled_safeguards_rejected (test_candidate.CandidateTests.test_disabled_safeguards_rejected) ... ok
+test_duplicate_instruction_id (test_candidate.CandidateTests.test_duplicate_instruction_id) ... ok
+test_duplicate_json_keys_rejected (test_candidate.CandidateTests.test_duplicate_json_keys_rejected) ... ok
+test_empty_steps_rejected (test_candidate.CandidateTests.test_empty_steps_rejected) ... ok
+test_extra_archive_member_rejected (test_candidate.CandidateTests.test_extra_archive_member_rejected) ... ok
+test_installation_safeguards_cannot_be_disabled (test_candidate.CandidateTests.test_installation_safeguards_cannot_be_disabled) ... ok
+test_invocation_cycle (test_candidate.CandidateTests.test_invocation_cycle) ... ok
+test_legacy_bytes_preserved (test_candidate.CandidateTests.test_legacy_bytes_preserved) ... ok
+test_marker_only_integrity_rejected (test_candidate.CandidateTests.test_marker_only_integrity_rejected) ... ok
+test_nonfinite_json_rejected (test_candidate.CandidateTests.test_nonfinite_json_rejected) ... ok
+test_private_default_rejected (test_candidate.CandidateTests.test_private_default_rejected) ... ok
+test_projection_is_exact (test_candidate.CandidateTests.test_projection_is_exact) ... ok
+test_reproducible_and_exact_archive (test_candidate.CandidateTests.test_reproducible_and_exact_archive) ... ok
+test_reverse_prose_rejected_despite_fresh_package_hash (test_candidate.CandidateTests.test_reverse_prose_rejected_despite_fresh_package_hash) ... ok
+test_reversed_full_content_rule_rejected (test_candidate.CandidateTests.test_reversed_full_content_rule_rejected) ... ok
+test_stale_projection_rejected (test_candidate.CandidateTests.test_stale_projection_rejected) ... ok
+test_tampered_archive_member_rejected (test_candidate.CandidateTests.test_tampered_archive_member_rejected) ... ok
+test_unresolved_reference (test_candidate.CandidateTests.test_unresolved_reference) ... ok
+test_unsupported_schema_keyword_fails_closed (test_candidate.CandidateTests.test_unsupported_schema_keyword_fails_closed) ... ok
+test_valid_candidate (test_candidate.CandidateTests.test_valid_candidate) ... ok
+test_whole_source_dependency_closure_terminates (test_candidate.CandidateTests.test_whole_source_dependency_closure_terminates) ... ok
+test_wrong_identity_rejected (test_candidate.CandidateTests.test_wrong_identity_rejected) ... ok
+test_changed_transcript_rejected (test_candidate.EvidenceTests.test_changed_transcript_rejected) ... ok
+test_collected_without_observations_rejected (test_candidate.EvidenceTests.test_collected_without_observations_rejected) ... ok
+test_complete_requires_body_observations (test_candidate.EvidenceTests.test_complete_requires_body_observations) ... ok
+test_complete_source_requires_exact_candidate (test_candidate.EvidenceTests.test_complete_source_requires_exact_candidate) ... ok
+test_complete_synthetic_record_only_establishes_consistency (test_candidate.EvidenceTests.test_complete_synthetic_record_only_establishes_consistency) ... ok
+test_excerpt_must_exist (test_candidate.EvidenceTests.test_excerpt_must_exist) ... ok
+test_false_criterion_is_retained_not_converted_to_pass (test_candidate.EvidenceTests.test_false_criterion_is_retained_not_converted_to_pass) ... ok
+test_missing_evidence_reference_rejected (test_candidate.EvidenceTests.test_missing_evidence_reference_rejected) ... ok
+test_partial_cannot_claim_observed_complete_body (test_candidate.EvidenceTests.test_partial_cannot_claim_observed_complete_body) ... ok
+test_pass_label_cannot_override_missing_evidence (test_candidate.EvidenceTests.test_pass_label_cannot_override_missing_evidence) ... ok
+test_release_flag_cannot_grant_authority (test_candidate.EvidenceTests.test_release_flag_cannot_grant_authority) ... ok
+test_reused_transcript_rejected (test_candidate.EvidenceTests.test_reused_transcript_rejected) ... ok
+test_synthetic_run_cannot_be_live_evidence (test_candidate.EvidenceTests.test_synthetic_run_cannot_be_live_evidence) ... ok
+test_traversal_rejected (test_candidate.EvidenceTests.test_traversal_rejected) ... ok
+test_unrun_is_never_ready (test_candidate.EvidenceTests.test_unrun_is_never_ready) ... ok
+
+----------------------------------------------------------------------
+Ran 38 tests in 0.149s
+
+OK

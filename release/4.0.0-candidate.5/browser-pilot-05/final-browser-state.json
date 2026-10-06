@@ -1,0 +1,12 @@
+{
+  "recorded_at": "2026-10-05T23:41:02.922730+00:00",
+  "project_url": "https://chatgpt.com/g/g-p-6ac42dd9b8e88191ba9a1b0fe075dabe/project?tab=sources",
+  "test_model": "GPT-5.6 Sol / Medium",
+  "restored_after_testing": "Latest selected, Medium unchanged",
+  "project_tab_marked_deliverable": true,
+  "screenshot": "installed-project.jpg",
+  "limits": [
+    "Screenshot shows completed source presence, not hidden runtime reading.",
+    "Production full Helikon settings were not changed."
+  ]
+}

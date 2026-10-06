@@ -1,0 +1,13 @@
+{
+  "id": "B11-csv",
+  "started_at": "2026-10-05T21:54:50.214Z",
+  "model_label": "Thinking effort5.6 Medium",
+  "source_profile": "candidate3_project_source",
+  "turns": [
+    {
+      "prompt": "Return only raw CSV, no Markdown: header item,price, then pen at 2.5 and book at 9.",
+      "transcript": "  - heading \"You said:\" [level=4]\n  - generic: \"Return only raw CSV, no Markdown: header item,price, then pen at 2.5 and book at 9.\"\n  - button \"Copy message\":\n  - button \"Share prompt\":\n  - button \"Edit message\":\n  - heading \"ChatGPT said:\" [level=4]\n  - paragraph:\n    - text: item,price\n    - text: pen,2.5\n    - text: book,9\n  - button \"Copy\":\n  - button \"Share\":\n  - button \"Add to project sources\":\n  - button \"Read aloud\":\n  - button \"Regenerate response\":\n  - button \"More actions\":\n  - complementary \"Is this conversation helpful so far?\":\n    - generic: Is this conversation helpful so far?\n    - button \"Yes\":\n    - button \"No\":\n    - button \"Dismiss rating prompt\":\n"
+    }
+  ],
+  "observed_at": "2026-10-05T21:55:21.223Z"
+}

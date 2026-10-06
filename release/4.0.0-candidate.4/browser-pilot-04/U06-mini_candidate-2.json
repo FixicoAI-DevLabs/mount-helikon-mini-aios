@@ -1,0 +1,14 @@
+{
+  "id": "U06-mini_candidate-2",
+  "started_at": "2026-10-05T23:03:24.395Z",
+  "model_label": "Thinking effort5.6 Medium",
+  "source_profile": "mini_candidate",
+  "turns": [
+    {
+      "prompt": "Choose A or B using only these criteria: cost lower is better, must operate offline. A costs 20 and needs internet. B costs 25 and operates offline.",
+      "transcript": "  - heading \"You said:\" [level=4]\n  - generic: \"Choose A or B using only these criteria: cost lower is better, must operate offline. A costs 20 and needs internet. B costs 25 and operates offline.\"\n  - button \"Copy message\":\n  - button \"Share prompt\":\n  - button \"Edit message\":\n  - heading \"ChatGPT said:\" [level=4]\n  - paragraph:\n    - strong: B\n  - paragraph: \"Reasoning:\"\n  - list:\n    - listitem: Offline operation is a requirement, so A is disqualified because it needs internet.\n    - listitem: B costs 25, which is higher than A\u2019s 20, but it satisfies both criteria.\n    - listitem: A lower cost does not override the \u201cmust operate offline\u201d requirement.\n  - button \"Copy\":\n  - button \"Share\":\n  - button \"Add to project sources\":\n  - button \"Read aloud\":\n  - button \"Regenerate response\":\n  - button \"More actions\":\n",
+      "response_markdown": "**B**\n\nReasoning:\n- Offline operation is a requirement, so A is disqualified because it needs internet.\n- B costs 25, which is higher than A\u2019s 20, but it satisfies both criteria.\n- A lower cost does not override the \u201cmust operate offline\u201d requirement."
+    }
+  ],
+  "observed_at": "2026-10-05T23:03:43.524Z"
+}

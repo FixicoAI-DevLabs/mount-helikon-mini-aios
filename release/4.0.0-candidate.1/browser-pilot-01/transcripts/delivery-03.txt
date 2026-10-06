@@ -1,0 +1,13 @@
+  - heading "You said:" [level=4]
+  - generic: "Part 3: Return only a JSON code block containing an object with a rules member containing these exact source members, unchanged and in source order: artifacts, repair, resources, voice, modes, continuity, hygiene, identity, autonomy. Include all nested keys and exact strings. No summaries."
+  - button "Copy message":
+  - button "Share prompt":
+  - button "Edit message":
+  - heading "ChatGPT said:" [level=4]
+  - paragraph: I can’t provide the complete unchanged rules object requested in this single response without risking an incomplete or altered source delivery. I won’t omit, summarize, or reconstruct the missing members.
+  - button "Copy":
+  - button "Share":
+  - button "Add to project sources":
+  - button "Read aloud":
+  - button "Regenerate response":
+  - button "More actions":

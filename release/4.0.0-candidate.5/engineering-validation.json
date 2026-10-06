@@ -1,0 +1,53 @@
+{
+  "at": "2026-10-05T23:33:33.309138+00:00",
+  "scope": "static artifacts and reproducible archive only; separate versioned browser evidence",
+  "checks": {
+    "static": {
+      "command": [
+        "python",
+        "tools/mini.py",
+        "validate"
+      ],
+      "exit_code": 0
+    },
+    "unit-tests": {
+      "command": [
+        "python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 0
+    },
+    "build-first": {
+      "command": [
+        "python",
+        "tools/mini.py",
+        "build",
+        "--out",
+        "build/candidate5-first"
+      ],
+      "exit_code": 0
+    },
+    "build-second": {
+      "command": [
+        "python",
+        "tools/mini.py",
+        "build",
+        "--out",
+        "build/candidate5-second"
+      ],
+      "exit_code": 0
+    }
+  },
+  "unit_tests": 38,
+  "byte_identical_builds": true,
+  "archive_sha256": "d4fcf46e86ba349906ce5ade1572502adbdfeec1849ff19f62b2372b0176653a",
+  "archive_bytes": 98043,
+  "runtime_sha256": "21f2635f72b3e519d4d25041ef968d2b121df4e8bfb5552a0cc595374c02e378",
+  "system_sha256": "f8432f2f677cca9c95d4a813e4609586eed067e545ff397fcc5b99de56d5ea3f",
+  "release_authorized_by_receipt": false
+}

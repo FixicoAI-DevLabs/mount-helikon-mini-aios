@@ -1,0 +1,22 @@
+{
+  "result": "complete_runtime_content_recovered_exactly_in_bounded_responses",
+  "runtime_sha256": "21f2635f72b3e519d4d25041ef968d2b121df4e8bfb5552a0cc595374c02e378",
+  "bytes": 22251,
+  "parts": [
+    "source-identity",
+    "source-rules-a",
+    "source-rules-b",
+    "source-rules-c",
+    "source-rules-d",
+    "source-rules-e",
+    "source-procedures",
+    "source-owners"
+  ],
+  "rules": 18,
+  "owners": 12,
+  "limits": [
+    "JSON structural whitespace regenerated; every value and key order preserved.",
+    "This proves accessible content in the bounded-copy conversation, not hidden full-body delivery on every ordinary turn.",
+    "Initial single-response source-copy probe failed; unsupported size-limit claim retained in R01.json."
+  ]
+}

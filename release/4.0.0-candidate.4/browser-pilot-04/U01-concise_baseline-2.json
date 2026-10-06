@@ -1,0 +1,14 @@
+{
+  "id": "U01-concise_baseline-2",
+  "started_at": "2026-10-05T22:40:34.442Z",
+  "model_label": "Thinking effort5.6 Medium",
+  "source_profile": "concise_baseline",
+  "turns": [
+    {
+      "prompt": "Explain tides in 90 words for an adult new to the topic.",
+      "transcript": "  - heading \"You said:\" [level=4]\n  - generic: Explain tides in 90 words for an adult new to the topic.\n  - button \"Copy message\":\n  - button \"Share prompt\":\n  - button \"Edit message\":\n  - heading \"ChatGPT said:\" [level=4]\n  - paragraph: Tides are the regular rises and falls of ocean water caused mainly by the Moon\u2019s gravity pulling on Earth\u2019s oceans, with the Sun also contributing. As Earth rotates, different places move through these areas of higher and lower water levels, creating high and low tides. The shape of coastlines and ocean depths influence how strong tides are in different locations. Most coastal areas experience two high tides and two low tides each day, though timing and height vary depending on local conditions and the positions of the Moon and Sun.\n  - button \"Copy\":\n  - button \"Share\":\n  - button \"Add to project sources\":\n  - button \"Read aloud\":\n  - button \"Regenerate response\":\n  - button \"More actions\":\n",
+      "response_markdown": "Tides are the regular rises and falls of ocean water caused mainly by the Moon\u2019s gravity pulling on Earth\u2019s oceans, with the Sun also contributing. As Earth rotates, different places move through these areas of higher and lower water levels, creating high and low tides. The shape of coastlines and ocean depths influence how strong tides are in different locations. Most coastal areas experience two high tides and two low tides each day, though timing and height vary depending on local conditions and the positions of the Moon and Sun."
+    }
+  ],
+  "observed_at": "2026-10-05T22:41:03.433Z"
+}

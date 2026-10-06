@@ -1,0 +1,679 @@
+{
+  "scope": "candidate4 utility pilot; 72 retained responses; non-blinded manual review with mechanical JSON/word-count/Python checks",
+  "rows": [
+    {
+      "id": "U01-concise_baseline-1",
+      "task": "U01",
+      "condition": "concise_baseline",
+      "pass": true,
+      "review": "90 whitespace-delimited words; explanation manually reviewed.",
+      "response_characters": 586,
+      "response_words_whitespace": 90
+    },
+    {
+      "id": "U01-concise_baseline-2",
+      "task": "U01",
+      "condition": "concise_baseline",
+      "pass": true,
+      "review": "90 whitespace-delimited words; explanation manually reviewed.",
+      "response_characters": 538,
+      "response_words_whitespace": 90
+    },
+    {
+      "id": "U01-concise_baseline-3",
+      "task": "U01",
+      "condition": "concise_baseline",
+      "pass": true,
+      "review": "90 whitespace-delimited words; explanation manually reviewed.",
+      "response_characters": 558,
+      "response_words_whitespace": 90
+    },
+    {
+      "id": "U01-mini_candidate-1",
+      "task": "U01",
+      "condition": "mini_candidate",
+      "pass": true,
+      "review": "90 whitespace-delimited words; explanation manually reviewed.",
+      "response_characters": 565,
+      "response_words_whitespace": 90
+    },
+    {
+      "id": "U01-mini_candidate-2",
+      "task": "U01",
+      "condition": "mini_candidate",
+      "pass": true,
+      "review": "90 whitespace-delimited words; explanation manually reviewed.",
+      "response_characters": 599,
+      "response_words_whitespace": 90
+    },
+    {
+      "id": "U01-mini_candidate-3",
+      "task": "U01",
+      "condition": "mini_candidate",
+      "pass": true,
+      "review": "90 whitespace-delimited words; explanation manually reviewed.",
+      "response_characters": 586,
+      "response_words_whitespace": 90
+    },
+    {
+      "id": "U01-plain_host-1",
+      "task": "U01",
+      "condition": "plain_host",
+      "pass": true,
+      "review": "90 whitespace-delimited words; explanation manually reviewed.",
+      "response_characters": 558,
+      "response_words_whitespace": 90
+    },
+    {
+      "id": "U01-plain_host-2",
+      "task": "U01",
+      "condition": "plain_host",
+      "pass": true,
+      "review": "90 whitespace-delimited words; explanation manually reviewed.",
+      "response_characters": 582,
+      "response_words_whitespace": 90
+    },
+    {
+      "id": "U01-plain_host-3",
+      "task": "U01",
+      "condition": "plain_host",
+      "pass": true,
+      "review": "90 whitespace-delimited words; explanation manually reviewed.",
+      "response_characters": 566,
+      "response_words_whitespace": 90
+    },
+    {
+      "id": "U02-concise_baseline-1",
+      "task": "U02",
+      "condition": "concise_baseline",
+      "pass": true,
+      "review": "Reviewed against supplied task criteria.",
+      "response_characters": 394,
+      "response_words_whitespace": 70
+    },
+    {
+      "id": "U02-concise_baseline-2",
+      "task": "U02",
+      "condition": "concise_baseline",
+      "pass": true,
+      "review": "Reviewed against supplied task criteria.",
+      "response_characters": 299,
+      "response_words_whitespace": 51
+    },
+    {
+      "id": "U02-concise_baseline-3",
+      "task": "U02",
+      "condition": "concise_baseline",
+      "pass": true,
+      "review": "Reviewed against supplied task criteria.",
+      "response_characters": 313,
+      "response_words_whitespace": 55
+    },
+    {
+      "id": "U02-mini_candidate-1",
+      "task": "U02",
+      "condition": "mini_candidate",
+      "pass": true,
+      "review": "Reviewed against supplied task criteria.",
+      "response_characters": 254,
+      "response_words_whitespace": 49
+    },
+    {
+      "id": "U02-mini_candidate-2",
+      "task": "U02",
+      "condition": "mini_candidate",
+      "pass": true,
+      "review": "Reviewed against supplied task criteria.",
+      "response_characters": 259,
+      "response_words_whitespace": 50
+    },
+    {
+      "id": "U02-mini_candidate-3",
+      "task": "U02",
+      "condition": "mini_candidate",
+      "pass": true,
+      "review": "Reviewed against supplied task criteria.",
+      "response_characters": 289,
+      "response_words_whitespace": 44
+    },
+    {
+      "id": "U02-plain_host-1",
+      "task": "U02",
+      "condition": "plain_host",
+      "pass": true,
+      "review": "Reviewed against supplied task criteria.",
+      "response_characters": 266,
+      "response_words_whitespace": 50
+    },
+    {
+      "id": "U02-plain_host-2",
+      "task": "U02",
+      "condition": "plain_host",
+      "pass": true,
+      "review": "Reviewed against supplied task criteria.",
+      "response_characters": 310,
+      "response_words_whitespace": 54
+    },
+    {
+      "id": "U02-plain_host-3",
+      "task": "U02",
+      "condition": "plain_host",
+      "pass": true,
+      "review": "Reviewed against supplied task criteria.",
+      "response_characters": 290,
+      "response_words_whitespace": 45
+    },
+    {
+      "id": "U03-concise_baseline-1",
+      "task": "U03",
+      "condition": "concise_baseline",
+      "pass": true,
+      "review": "Reviewed against supplied task criteria.",
+      "response_characters": 593,
+      "response_words_whitespace": 86
+    },
+    {
+      "id": "U03-concise_baseline-2",
+      "task": "U03",
+      "condition": "concise_baseline",
+      "pass": true,
+      "review": "Reviewed against supplied task criteria.",
+      "response_characters": 992,
+      "response_words_whitespace": 150
+    },
+    {
+      "id": "U03-concise_baseline-3",
+      "task": "U03",
+      "condition": "concise_baseline",
+      "pass": true,
+      "review": "Reviewed against supplied task criteria.",
+      "response_characters": 880,
+      "response_words_whitespace": 132
+    },
+    {
+      "id": "U03-mini_candidate-1",
+      "task": "U03",
+      "condition": "mini_candidate",
+      "pass": true,
+      "review": "Reviewed against supplied task criteria.",
+      "response_characters": 667,
+      "response_words_whitespace": 93
+    },
+    {
+      "id": "U03-mini_candidate-2",
+      "task": "U03",
+      "condition": "mini_candidate",
+      "pass": true,
+      "review": "Reviewed against supplied task criteria.",
+      "response_characters": 1014,
+      "response_words_whitespace": 147
+    },
+    {
+      "id": "U03-mini_candidate-3",
+      "task": "U03",
+      "condition": "mini_candidate",
+      "pass": true,
+      "review": "Reviewed against supplied task criteria.",
+      "response_characters": 1035,
+      "response_words_whitespace": 150
+    },
+    {
+      "id": "U03-plain_host-1",
+      "task": "U03",
+      "condition": "plain_host",
+      "pass": true,
+      "review": "Reviewed against supplied task criteria.",
+      "response_characters": 892,
+      "response_words_whitespace": 129
+    },
+    {
+      "id": "U03-plain_host-2",
+      "task": "U03",
+      "condition": "plain_host",
+      "pass": true,
+      "review": "Reviewed against supplied task criteria.",
+      "response_characters": 877,
+      "response_words_whitespace": 132
+    },
+    {
+      "id": "U03-plain_host-3",
+      "task": "U03",
+      "condition": "plain_host",
+      "pass": true,
+      "review": "Reviewed against supplied task criteria.",
+      "response_characters": 795,
+      "response_words_whitespace": 121
+    },
+    {
+      "id": "U04-concise_baseline-1",
+      "task": "U04",
+      "condition": "concise_baseline",
+      "pass": false,
+      "review": "Revised plan adds 1h writing beyond specified 3h.",
+      "response_characters": 1001,
+      "response_words_whitespace": 212
+    },
+    {
+      "id": "U04-concise_baseline-2",
+      "task": "U04",
+      "condition": "concise_baseline",
+      "pass": true,
+      "review": "Explicit corrected final table satisfies 8h, 3/3/2h and dependencies; retained messy initial draft.",
+      "response_characters": 1076,
+      "response_words_whitespace": 215
+    },
+    {
+      "id": "U04-concise_baseline-3",
+      "task": "U04",
+      "condition": "concise_baseline",
+      "pass": false,
+      "review": "Adds 1h polish and suggests reducing specified review time.",
+      "response_characters": 1253,
+      "response_words_whitespace": 245
+    },
+    {
+      "id": "U04-mini_candidate-1",
+      "task": "U04",
+      "condition": "mini_candidate",
+      "pass": false,
+      "review": "Adds 1h research organisation, creating 9h while claiming 8h.",
+      "response_characters": 1118,
+      "response_words_whitespace": 207
+    },
+    {
+      "id": "U04-mini_candidate-2",
+      "task": "U04",
+      "condition": "mini_candidate",
+      "pass": false,
+      "review": "Rows include 1h final checks despite note calling spare capacity a buffer; required-vs-optional schedule ambiguous, not a clean pass.",
+      "response_characters": 1291,
+      "response_words_whitespace": 224
+    },
+    {
+      "id": "U04-mini_candidate-3",
+      "task": "U04",
+      "condition": "mini_candidate",
+      "pass": true,
+      "review": "Required rows total 8h, daily 3/3/2h; explicitly identifies unused capacity and optional buffer use.",
+      "response_characters": 1237,
+      "response_words_whitespace": 209
+    },
+    {
+      "id": "U04-plain_host-1",
+      "task": "U04",
+      "condition": "plain_host",
+      "pass": false,
+      "review": "Adds a mandatory one-hour final check: 9h, despite 8h label.",
+      "response_characters": 1313,
+      "response_words_whitespace": 245
+    },
+    {
+      "id": "U04-plain_host-2",
+      "task": "U04",
+      "condition": "plain_host",
+      "pass": false,
+      "review": "Adds 1h polish; Day 3 row sum 3h contradicts 2h summary.",
+      "response_characters": 1155,
+      "response_words_whitespace": 205
+    },
+    {
+      "id": "U04-plain_host-3",
+      "task": "U04",
+      "condition": "plain_host",
+      "pass": false,
+      "review": "Ambiguous 0\u20131h added writing; Day 3 may total 3h while summary claims 2h.",
+      "response_characters": 1204,
+      "response_words_whitespace": 207
+    },
+    {
+      "id": "U05-concise_baseline-1",
+      "task": "U05",
+      "condition": "concise_baseline",
+      "pass": true,
+      "review": "Raw copied response parses as exact product JSON with numeric prices.",
+      "response_characters": 67,
+      "response_words_whitespace": 1
+    },
+    {
+      "id": "U05-concise_baseline-2",
+      "task": "U05",
+      "condition": "concise_baseline",
+      "pass": true,
+      "review": "Raw copied response parses as exact product JSON with numeric prices.",
+      "response_characters": 67,
+      "response_words_whitespace": 1
+    },
+    {
+      "id": "U05-concise_baseline-3",
+      "task": "U05",
+      "condition": "concise_baseline",
+      "pass": true,
+      "review": "Raw copied response parses as exact product JSON with numeric prices.",
+      "response_characters": 67,
+      "response_words_whitespace": 1
+    },
+    {
+      "id": "U05-mini_candidate-1",
+      "task": "U05",
+      "condition": "mini_candidate",
+      "pass": true,
+      "review": "Raw copied response parses as exact product JSON with numeric prices.",
+      "response_characters": 67,
+      "response_words_whitespace": 1
+    },
+    {
+      "id": "U05-mini_candidate-2",
+      "task": "U05",
+      "condition": "mini_candidate",
+      "pass": true,
+      "review": "Raw copied response parses as exact product JSON with numeric prices.",
+      "response_characters": 67,
+      "response_words_whitespace": 1
+    },
+    {
+      "id": "U05-mini_candidate-3",
+      "task": "U05",
+      "condition": "mini_candidate",
+      "pass": true,
+      "review": "Raw copied response parses as exact product JSON with numeric prices.",
+      "response_characters": 67,
+      "response_words_whitespace": 1
+    },
+    {
+      "id": "U05-plain_host-1",
+      "task": "U05",
+      "condition": "plain_host",
+      "pass": true,
+      "review": "Raw copied response parses as exact product JSON with numeric prices.",
+      "response_characters": 67,
+      "response_words_whitespace": 1
+    },
+    {
+      "id": "U05-plain_host-2",
+      "task": "U05",
+      "condition": "plain_host",
+      "pass": true,
+      "review": "Raw copied response parses as exact product JSON with numeric prices.",
+      "response_characters": 67,
+      "response_words_whitespace": 1
+    },
+    {
+      "id": "U05-plain_host-3",
+      "task": "U05",
+      "condition": "plain_host",
+      "pass": true,
+      "review": "Raw copied response parses as exact product JSON with numeric prices.",
+      "response_characters": 67,
+      "response_words_whitespace": 1
+    },
+    {
+      "id": "U06-concise_baseline-1",
+      "task": "U06",
+      "condition": "concise_baseline",
+      "pass": true,
+      "review": "Reviewed against supplied task criteria.",
+      "response_characters": 1,
+      "response_words_whitespace": 1
+    },
+    {
+      "id": "U06-concise_baseline-2",
+      "task": "U06",
+      "condition": "concise_baseline",
+      "pass": true,
+      "review": "Reviewed against supplied task criteria.",
+      "response_characters": 1,
+      "response_words_whitespace": 1
+    },
+    {
+      "id": "U06-concise_baseline-3",
+      "task": "U06",
+      "condition": "concise_baseline",
+      "pass": true,
+      "review": "Reviewed against supplied task criteria.",
+      "response_characters": 48,
+      "response_words_whitespace": 9
+    },
+    {
+      "id": "U06-mini_candidate-1",
+      "task": "U06",
+      "condition": "mini_candidate",
+      "pass": true,
+      "review": "Reviewed against supplied task criteria.",
+      "response_characters": 237,
+      "response_words_whitespace": 40
+    },
+    {
+      "id": "U06-mini_candidate-2",
+      "task": "U06",
+      "condition": "mini_candidate",
+      "pass": true,
+      "review": "Reviewed against supplied task criteria.",
+      "response_characters": 251,
+      "response_words_whitespace": 43
+    },
+    {
+      "id": "U06-mini_candidate-3",
+      "task": "U06",
+      "condition": "mini_candidate",
+      "pass": true,
+      "review": "Reviewed against supplied task criteria.",
+      "response_characters": 146,
+      "response_words_whitespace": 24
+    },
+    {
+      "id": "U06-plain_host-1",
+      "task": "U06",
+      "condition": "plain_host",
+      "pass": true,
+      "review": "Reviewed against supplied task criteria.",
+      "response_characters": 1,
+      "response_words_whitespace": 1
+    },
+    {
+      "id": "U06-plain_host-2",
+      "task": "U06",
+      "condition": "plain_host",
+      "pass": true,
+      "review": "Reviewed against supplied task criteria.",
+      "response_characters": 102,
+      "response_words_whitespace": 18
+    },
+    {
+      "id": "U06-plain_host-3",
+      "task": "U06",
+      "condition": "plain_host",
+      "pass": true,
+      "review": "Reviewed against supplied task criteria.",
+      "response_characters": 2,
+      "response_words_whitespace": 1
+    },
+    {
+      "id": "U07-concise_baseline-1",
+      "task": "U07",
+      "condition": "concise_baseline",
+      "pass": true,
+      "review": "Reviewed benign Python executed; sample output '4.0\\n25.0\\n'; additional mixed, singleton and empty checks passed.",
+      "response_characters": 389,
+      "response_words_whitespace": 63
+    },
+    {
+      "id": "U07-concise_baseline-2",
+      "task": "U07",
+      "condition": "concise_baseline",
+      "pass": true,
+      "review": "Reviewed benign Python executed; sample output '5.0\\nCannot average an empty list\\n'; additional mixed, singleton and empty checks passed.",
+      "response_characters": 399,
+      "response_words_whitespace": 55
+    },
+    {
+      "id": "U07-concise_baseline-3",
+      "task": "U07",
+      "condition": "concise_baseline",
+      "pass": true,
+      "review": "Reviewed benign Python executed; sample output '5.0\\n15.0\\nCannot average an empty list\\n'; additional mixed, singleton and empty checks passed.",
+      "response_characters": 575,
+      "response_words_whitespace": 81
+    },
+    {
+      "id": "U07-mini_candidate-1",
+      "task": "U07",
+      "condition": "mini_candidate",
+      "pass": true,
+      "review": "Reviewed benign Python executed; sample output '5.0\\nCannot average an empty list\\n'; additional mixed, singleton and empty checks passed.",
+      "response_characters": 551,
+      "response_words_whitespace": 76
+    },
+    {
+      "id": "U07-mini_candidate-2",
+      "task": "U07",
+      "condition": "mini_candidate",
+      "pass": true,
+      "review": "Reviewed benign Python executed; sample output '20.0\\nCannot average an empty list\\n'; additional mixed, singleton and empty checks passed.",
+      "response_characters": 558,
+      "response_words_whitespace": 76
+    },
+    {
+      "id": "U07-mini_candidate-3",
+      "task": "U07",
+      "condition": "mini_candidate",
+      "pass": true,
+      "review": "Reviewed benign Python executed; sample output '20.0\\nCannot average an empty list\\n'; additional mixed, singleton and empty checks passed.",
+      "response_characters": 552,
+      "response_words_whitespace": 75
+    },
+    {
+      "id": "U07-plain_host-1",
+      "task": "U07",
+      "condition": "plain_host",
+      "pass": true,
+      "review": "Reviewed benign Python executed; sample output '5.0\\n16.666666666666668\\nCannot average an empty list\\n'; additional mixed, singleton and empty checks passed.",
+      "response_characters": 689,
+      "response_words_whitespace": 114
+    },
+    {
+      "id": "U07-plain_host-2",
+      "task": "U07",
+      "condition": "plain_host",
+      "pass": true,
+      "review": "Reviewed benign Python executed; sample output '4.0\\n2.5\\n'; additional mixed, singleton and empty checks passed.",
+      "response_characters": 625,
+      "response_words_whitespace": 86
+    },
+    {
+      "id": "U07-plain_host-3",
+      "task": "U07",
+      "condition": "plain_host",
+      "pass": true,
+      "review": "Reviewed benign Python executed; sample output '5.0\\n15.0\\n'; additional mixed, singleton and empty checks passed.",
+      "response_characters": 423,
+      "response_words_whitespace": 61
+    },
+    {
+      "id": "U08-concise_baseline-1",
+      "task": "U08",
+      "condition": "concise_baseline",
+      "pass": true,
+      "review": "Reviewed against supplied task criteria.",
+      "response_characters": 225,
+      "response_words_whitespace": 46
+    },
+    {
+      "id": "U08-concise_baseline-2",
+      "task": "U08",
+      "condition": "concise_baseline",
+      "pass": true,
+      "review": "Reviewed against supplied task criteria.",
+      "response_characters": 286,
+      "response_words_whitespace": 47
+    },
+    {
+      "id": "U08-concise_baseline-3",
+      "task": "U08",
+      "condition": "concise_baseline",
+      "pass": true,
+      "review": "Reviewed against supplied task criteria.",
+      "response_characters": 286,
+      "response_words_whitespace": 61
+    },
+    {
+      "id": "U08-mini_candidate-1",
+      "task": "U08",
+      "condition": "mini_candidate",
+      "pass": true,
+      "review": "Reviewed against supplied task criteria.",
+      "response_characters": 189,
+      "response_words_whitespace": 38
+    },
+    {
+      "id": "U08-mini_candidate-2",
+      "task": "U08",
+      "condition": "mini_candidate",
+      "pass": true,
+      "review": "Reviewed against supplied task criteria.",
+      "response_characters": 202,
+      "response_words_whitespace": 39
+    },
+    {
+      "id": "U08-mini_candidate-3",
+      "task": "U08",
+      "condition": "mini_candidate",
+      "pass": true,
+      "review": "Reviewed against supplied task criteria.",
+      "response_characters": 194,
+      "response_words_whitespace": 36
+    },
+    {
+      "id": "U08-plain_host-1",
+      "task": "U08",
+      "condition": "plain_host",
+      "pass": true,
+      "review": "Reviewed against supplied task criteria.",
+      "response_characters": 228,
+      "response_words_whitespace": 41
+    },
+    {
+      "id": "U08-plain_host-2",
+      "task": "U08",
+      "condition": "plain_host",
+      "pass": true,
+      "review": "Reviewed against supplied task criteria.",
+      "response_characters": 272,
+      "response_words_whitespace": 48
+    },
+    {
+      "id": "U08-plain_host-3",
+      "task": "U08",
+      "condition": "plain_host",
+      "pass": true,
+      "review": "Reviewed against supplied task criteria.",
+      "response_characters": 305,
+      "response_words_whitespace": 58
+    }
+  ],
+  "summary": {
+    "plain_host": {
+      "pass": 21,
+      "total": 24,
+      "median_response_characters": 366.5,
+      "total_response_characters": 11656
+    },
+    "concise_baseline": {
+      "pass": 22,
+      "total": 24,
+      "median_response_characters": 391.5,
+      "total_response_characters": 10894
+    },
+    "mini_candidate": {
+      "pass": 22,
+      "total": 24,
+      "median_response_characters": 420.0,
+      "total_response_characters": 11995
+    }
+  },
+  "limits": [
+    "Small fixed task set; no general superiority or statistical independence claim.",
+    "Project-only controls share a Pro account and may have unobserved host effects.",
+    "Output characters are not input tokens, cost or latency.",
+    "No hidden per-turn complete runtime read trace was exposed."
+  ]
+}

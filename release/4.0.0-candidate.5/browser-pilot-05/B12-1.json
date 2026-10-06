@@ -1,0 +1,19 @@
+{
+  "id": "B12-1",
+  "started_at": "2026-10-05T23:24:32.162Z",
+  "model_label": "Thinking effort5.6 Medium",
+  "source_profile": "candidate5_project_source",
+  "turns": [
+    {
+      "prompt": "Repair-test fixture: preserve this deliberately incorrect draft for the next step, clearly labeled UNVERIFIED DRAFT: 12 + 9 = 20. Do not treat it as a verified calculation.",
+      "transcript": "  - heading \"You said:\" [level=4]\n  - generic: \"Repair-test fixture: preserve this deliberately incorrect draft for the next step, clearly labeled UNVERIFIED DRAFT: 12 + 9 = 20. Do not treat it as a verified calculation.\"\n  - button \"Copy message\":\n  - button \"Share prompt\":\n  - button \"Edit message\":\n  - heading \"ChatGPT said:\" [level=4]\n  - paragraph: \"UNVERIFIED DRAFT:\"\n  - paragraph: 12 + 9 = 20\n  - paragraph:\n    - text: \"Status: Deliberately incorrect draft preserved for the next step. It is\"\n    - strong: not a verified calculation\n    - text: .\n  - button \"Copy\":\n  - button \"Share\":\n  - button \"Add to project sources\":\n  - button \"Read aloud\":\n  - button \"Regenerate response\":\n  - button \"More actions\":\n",
+      "response_markdown": "UNVERIFIED DRAFT:\n\n12 + 9 = 20\n\nStatus: Deliberately incorrect draft preserved for the next step. It is **not a verified calculation**."
+    },
+    {
+      "prompt": "The draft total is wrong: 12 + 8 already equals 20, so adding 9 gives one more. Correct the result, independently recheck it, and preserve the fact that the earlier draft was wrong.",
+      "transcript": "  - heading \"You said:\" [level=4]\n  - generic: \"Repair-test fixture: preserve this deliberately incorrect draft for the next step, clearly labeled UNVERIFIED DRAFT: 12 + 9 = 20. Do not treat it as a verified calculation.\"\n  - button \"Copy message\":\n  - button \"Share prompt\":\n  - button \"Edit message\":\n  - heading \"ChatGPT said:\" [level=4]\n  - paragraph: \"UNVERIFIED DRAFT:\"\n  - paragraph: 12 + 9 = 20\n  - paragraph:\n    - text: \"Status: Deliberately incorrect draft preserved for the next step. It is\"\n    - strong: not a verified calculation\n    - text: .\n  - button \"Copy\":\n  - button \"Share\":\n  - button \"Add to project sources\":\n  - button \"Read aloud\":\n  - button \"Regenerate response\":\n  - button \"More actions\":\n  - heading \"You said:\" [level=4]\n  - generic: \"The draft total is wrong: 12 + 8 already equals 20, so adding 9 gives one more. Correct the result, independently recheck it, and preserve the fact that the earlier draft was wrong.\"\n  - button \"Copy message\":\n  - button \"Share prompt\":\n  - button \"Edit message\":\n  - heading \"ChatGPT said:\" [level=4]\n  - paragraph: \"Correction recorded:\"\n  - list:\n    - text: Earlier\n    - strong: \"UNVERIFIED DRAFT (wrong):\"\n    - text: 12 + 9 = 20\n    - listitem: \"Corrected result: 12 + 9 = 21\"\n  - paragraph: \"Independent recheck:\"\n  - list:\n    - listitem: 12 + 8 = 20\n    - listitem: Adding the remaining 1 from 9 (9 = 8 + 1) gives 20 + 1 = 21\n  - paragraph:\n    - text: Therefore, the earlier draft was incorrect by\n    - strong: \"1\"\n    - text: . The corrected calculation is\n    - strong: \"21\"\n    - text: .\n  - button \"Copy\":\n  - button \"Share\":\n  - button \"Add to project sources\":\n  - button \"Read aloud\":\n  - button \"Regenerate response\":\n  - button \"More actions\":\n",
+      "response_markdown": "Correction recorded:\n\n- Earlier **UNVERIFIED DRAFT (wrong):** `12 + 9 = 20`\n- Corrected result: `12 + 9 = 21`\n\nIndependent recheck:\n- `12 + 8 = 20`\n- Adding the remaining `1` from `9` (`9 = 8 + 1`) gives `20 + 1 = 21`\n\nTherefore, the earlier draft was incorrect by **1**. The corrected calculation is **21**."
+    }
+  ],
+  "observed_at": "2026-10-05T23:25:10.150Z"
+}

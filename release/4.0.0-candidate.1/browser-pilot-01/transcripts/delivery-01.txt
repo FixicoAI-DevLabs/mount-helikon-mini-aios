@@ -1,0 +1,174 @@
+  - heading "You said:" [level=4]
+  - generic: Installation test DELIVERY-01. Read the complete Helikon_Mini_Operating_Master.json project source before deciding whether Mini is available. Report the four identity pairs actually present, every top-level JSON key, the number of named rules and owners, the turn procedure calls, and the final extensions instruction. Distinguish complete source access, partial excerpts, and unavailable access; do not infer reading from a filename or from project instructions. If a full read is unavailable, say what is missing. Do not import any full Helikon source.
+  - button "Copy message":
+  - button "Share prompt":
+  - button "Edit message":
+  - heading "ChatGPT said:" [level=4]
+  - paragraph:
+    - text: I have complete source access to the uploaded Helikon_Mini_Operating_Master.json for this task. This is based on the file contents provided through the project source, not merely the filename or project instruction text. The source contains the required identity section and bootstrap requirement to use the explicitly selected Mini source with all four identity pairs before claiming Mini runtime availability.
+    - button "Open preview of Helikon_Mini_Operating_Master.json":
+      - generic: Helikon_Mini_Operating_Master
+    - button "Open preview of Helikon_Mini_Operating_Master.json":
+      - generic: Helikon_Mini_Operating_Master
+  - heading "Mini availability determination" [level=2]
+  - paragraph:
+    - strong: "Complete source access:"
+    - text: Yes — the full JSON source was available and loaded for review (309 JSON lines were provided in the source result).
+    - strong: "Partial excerpts only:"
+    - text: No.
+    - strong: "Unavailable access:"
+    - text: No.
+  - paragraph: "The source matches the required Mini identity values:"
+  - list:
+    - paragraph:
+      - strong: Runtime
+    - list:
+      - listitem: "ID: helikon-mini.operating-master"
+      - listitem: "Version: 4.0.0-candidate.1"
+    - paragraph:
+      - strong: Schema
+    - list:
+      - listitem: "ID: helikon-mini.operating-master.schema"
+      - listitem: "Version: 1.0.0"
+    - paragraph:
+      - strong: System contract
+    - list:
+      - listitem: "ID: helikon-mini.system.contract"
+      - listitem: "Version: 1.0.0"
+    - paragraph:
+      - strong: Extension contract
+    - list:
+      - listitem: "ID: helikon-mini.extension.contract"
+      - listitem: "Version: 1.0.0"
+  - paragraph:
+    - button "Open preview of Helikon_Mini_Operating_Master.json":
+      - generic: Helikon_Mini_Operating_Master
+  - paragraph:
+    - text: Based on the complete source and matching identity pairs, the Mini source is available under its stated identity. This does
+    - strong: not
+    - text: import or activate any full Helikon source.
+  - separator
+  - heading "Top-level JSON keys" [level=2]
+  - paragraph: "The JSON has these top-level keys:"
+  - list:
+    - listitem: identity
+    - listitem: bootstrap
+    - listitem: invariants
+    - listitem: rules
+    - listitem: procedures
+    - listitem: owners
+    - listitem: extensions
+  - separator
+  - heading "Number of named rules" [level=2]
+  - paragraph:
+    - text: The rules object contains
+    - strong: 18 named rules
+    - text: ":"
+  - list:
+    - listitem: authority
+    - listitem: authorization
+    - listitem: truth
+    - listitem: privacy
+    - listitem: context
+    - listitem: answerability
+    - listitem: evidence
+    - listitem: review
+    - listitem: actions
+    - listitem: artifacts
+    - listitem: repair
+    - listitem: resources
+    - listitem: voice
+    - listitem: modes
+    - listitem: continuity
+    - listitem: hygiene
+    - listitem: identity
+    - listitem: autonomy
+  - paragraph:
+    - button "Open preview of Helikon_Mini_Operating_Master.json":
+      - generic: Helikon_Mini_Operating_Master
+  - separator
+  - heading "Number of named owners" [level=2]
+  - paragraph:
+    - text: The owners object contains
+    - strong: 12 named owners
+    - text: ":"
+  - list:
+    - listitem: Aoideon.Canon
+    - listitem: Aoideon.Cortex
+    - listitem: Aoideon.Enforcement
+    - listitem: Aoideon.Voice
+    - listitem: Meleteon.Budget
+    - listitem: Meleteon.Reasoner
+    - listitem: Meleteon.Builder
+    - listitem: Meleteon.Modes
+    - listitem: Mnemeon.Digests
+    - listitem: Mnemeon.Kernel
+    - listitem: Mnemeon.Guard
+    - listitem: Mnemeon.Identity
+  - paragraph:
+    - button "Open preview of Helikon_Mini_Operating_Master.json":
+      - generic: Helikon_Mini_Operating_Master
+  - separator
+  - heading "Turn procedure calls" [level=2]
+  - paragraph: "The main turn procedure is:"
+  - paragraph: mini.procedure.turn
+  - paragraph: "Its required rule set includes all 18 rules. Its calls array contains:"
+  - list:
+    - listitem: "#/procedures/action"
+    - listitem: "#/procedures/repair"
+    - listitem: "#/procedures/continuity"
+  - paragraph:
+    - button "Open preview of Helikon_Mini_Operating_Master.json":
+      - generic: Helikon_Mini_Operating_Master
+  - paragraph: "Its four turn steps are:"
+  - list:
+    - listitem: Resolve current task, constraints, acceptance, and accessible governing grants; apply bootstrap conditions.
+    - listitem: Assemble relevant context, check premises, select capabilities and verification, and apply triggered rules.
+    - listitem: Complete useful authorized work; run action readiness, repair, or continuity admission as applicable.
+    - listitem: Review actual results against evidence and acceptance conditions; report completion and remaining scope.
+  - paragraph:
+    - button "Open preview of Helikon_Mini_Operating_Master.json":
+      - generic: Helikon_Mini_Operating_Master
+  - separator
+  - heading "Final extensions instruction" [level=2]
+  - paragraph: "The final extensions.instruction is:"
+  - blockquote:
+    - paragraph: “No Mini-compatible extensions are shipped. Full Helikon Skills are not automatically compatible. An available general-purpose tool or Skill may be used under host instructions and actual task scope, without claiming a Mini-bound workflow ran. Future bindings need a reviewed distinct revision, exact reciprocal identities, complete content and dependencies, actual capabilities, declared input/output and sufficient failure behavior.”
+  - paragraph:
+    - button "Open preview of Helikon_Mini_Operating_Master.json":
+      - generic: Helikon_Mini_Operating_Master
+  - separator
+  - heading "Access distinction summary" [level=2]
+  - table:
+    - rowgroup:
+      - row "Category Result":
+        - columnheader "Category"
+        - columnheader "Result"
+    - rowgroup:
+      - row "Complete source access Yes":
+        - cell "Complete source access"
+        - cell "Yes"
+      - row "Partial excerpt review only No":
+        - cell "Partial excerpt review only"
+        - cell "No"
+      - row "Filename-only inference Not used":
+        - cell "Filename-only inference"
+        - cell "Not used"
+      - row "Project instruction inference as proof Not used":
+        - cell "Project instruction inference as proof"
+        - cell "Not used"
+      - row "Full Helikon source imported No":
+        - cell "Full Helikon source imported"
+        - cell "No"
+      - row "Mini source identity verified Yes":
+        - cell "Mini source identity verified"
+        - cell "Yes"
+  - button "Copy table":
+  - button "Expand table":
+  - button "Copy":
+  - button "Share":
+  - button "Add to project sources":
+  - button "Read aloud":
+  - button "Regenerate response":
+  - button "More actions":
+  - button "Sources":

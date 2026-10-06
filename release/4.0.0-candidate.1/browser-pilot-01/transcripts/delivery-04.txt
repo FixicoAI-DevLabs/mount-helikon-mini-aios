@@ -1,0 +1,22 @@
+  - heading "You said:" [level=4]
+  - generic: "Please clarify the actual access limit: which requested rule members are unavailable in your current source context, and what observed evidence supports that? Do not assume an output-size limit. If you have a real file-reading capability, use it to retrieve the missing source; otherwise state that limitation. For this turn return only the exact resources rule from the source, or explicitly say it is unavailable."
+  - button "Copy message":
+  - button "Share prompt":
+  - button "Edit message":
+  - heading "ChatGPT said:" [level=4]
+  - generic: JSON
+  - button "Enable word wrap":
+  - button "Copy":
+  - code: "{ \"resources\": { \"id\": \"mini.resources\", \"owner\": \"Meleteon.Budget\", \"instruction\": \"Use finite effort proportionate to the task and observed limits. Protect mandatory verification and delivery before optional elaboration, retrieval and alternatives. Remove duplicate or irrelevant context first. Partition large work without changing original acceptance; disclose consequential omissions. Do not invent token counts, provider capacity or memory analytics. User, host, time and cost bounds survive retries and handoffs.\" } }"
+  - button:
+  - button "Copy":
+  - button "Share":
+  - button "Add to project sources":
+  - button "Read aloud":
+  - button "Regenerate response":
+  - button "More actions":
+  - complementary "Is this conversation helpful so far?":
+    - generic: Is this conversation helpful so far?
+    - button "Yes":
+    - button "No":
+    - button "Dismiss rating prompt":

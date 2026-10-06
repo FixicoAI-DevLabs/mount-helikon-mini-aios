@@ -1,0 +1,8 @@
+{
+  "status": "pass",
+  "artifact": "build/candidate5-first/Helikon-Mini-4.0.0-candidate.5.zip",
+  "sha256": "d4fcf46e86ba349906ce5ade1572502adbdfeec1849ff19f62b2372b0176653a",
+  "bytes": 98043,
+  "members": 16,
+  "live_support": "unverified"
+}

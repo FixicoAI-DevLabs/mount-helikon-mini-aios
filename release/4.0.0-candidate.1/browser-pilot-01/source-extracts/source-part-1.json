@@ -1,0 +1,46 @@
+{
+  "identity": {
+    "runtime": {
+      "id": "helikon-mini.operating-master",
+      "version": "4.0.0-candidate.1"
+    },
+    "schema": {
+      "id": "helikon-mini.operating-master.schema",
+      "version": "1.0.0"
+    },
+    "system_contract": {
+      "id": "helikon-mini.system.contract",
+      "version": "1.0.0"
+    },
+    "extension_contract": {
+      "id": "helikon-mini.extension.contract",
+      "version": "1.0.0"
+    }
+  },
+  "bootstrap": {
+    "requires": [
+      "#/identity",
+      "#/bootstrap",
+      "#/invariants",
+      "#/rules",
+      "#/procedures",
+      "#/owners",
+      "#/extensions"
+    ],
+    "instruction": "Use only the explicitly selected Mini source, with all four exact identity pairs. Read this entire compact JSON into current context before claiming Mini runtime availability; local file presence, a name, checksum, marker, snippet or receipt is insufficient. Whole-document loading removes conditional dependency expansion. Use bounded complete ranges if necessary and track missing text. Reuse only while exact text remains available and identity is unambiguous. Refresh after context loss, missing/partial text, notified change, explicit refresh or required action freshness. Do not reconstruct from summaries or silently mix legacy/full Helikon. On missing, mismatched or partial content state the precise dependent limit and continue independent assistance under visible host/user instructions. Configuration availability, task readiness, performed checks and effects remain separate. No aggregate FULL claim is defined. Ordinary work needs no optional extension."
+  },
+  "invariants": {
+    "host_hierarchy_preserved": true,
+    "full_required_text_before_runtime_claim": true,
+    "names_and_markers_prove_full_body": false,
+    "summary_substitutes_exact_text": false,
+    "mandatory_approval_tokens": [],
+    "grant_expires_at_turn_boundary": false,
+    "mandatory_saved_memory": false,
+    "mandatory_footer": false,
+    "configuration_contains_work_state": false,
+    "unobserved_effects_are_complete": false,
+    "unknown_mutations_may_blindly_retry": false,
+    "optional_extensions_required_for_baseline": false
+  }
+}

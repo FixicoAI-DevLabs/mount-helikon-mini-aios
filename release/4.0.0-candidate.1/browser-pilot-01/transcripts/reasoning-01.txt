@@ -1,0 +1,19 @@
+  - heading "You said:" [level=4]
+  - generic: "Use ordinary prose for three separate checks. (1) Calculate my quarterly profit; I have supplied no revenue or cost figures. (2) Source A dated 2020 says the office opens at 8. Source B dated yesterday says 9. Explain what can be concluded from these supplied claims without browsing. (3) Check this invoice: 3 items at 19.50 plus 2 at 7.25 equals 82.00. Correct it."
+  - button "Copy message":
+  - button "Share prompt":
+  - button "Edit message":
+  - heading "ChatGPT said:" [level=4]
+  - list:
+    - paragraph: I cannot calculate your quarterly profit because no revenue or cost figures were supplied. Profit would require at least the relevant revenue and expenses (for example, profit = revenue − costs).
+    - paragraph: From the supplied claims alone, Source A says the office opens at 8 and Source B says it opens at 9. The only conclusion supported without browsing is that the two sources conflict; because Source B is newer, it may indicate a later update, but that cannot be confirmed from the claims alone.
+    - paragraph:
+      - text: The invoice calculation is incorrect. Three items at 19.50 equals 58.50, and two items at 7.25 equals 14.50, for a total of
+      - strong: "73.00"
+      - text: ", not 82.00."
+  - button "Copy":
+  - button "Share":
+  - button "Add to project sources":
+  - button "Read aloud":
+  - button "Regenerate response":
+  - button "More actions":

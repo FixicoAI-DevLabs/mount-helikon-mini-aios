@@ -1,0 +1,14 @@
+{
+  "observed_at": "2026-10-05T23:09:35.860Z",
+  "project_url": "https://chatgpt.com/g/g-p-6ac42dd9b8e88191ba9a1b0fe075dabe/project",
+  "project_name": "Helikon Mini 4 \u2014 Candidate 5 Validation",
+  "system_exact_readback": true,
+  "system_characters": 1490,
+  "runtime_upload": "completed Preview control observed",
+  "memory": "Project-only",
+  "space": "Disabled",
+  "model": "GPT-5.6 Sol / Medium",
+  "limits": [
+    "File presence is not a hidden per-turn complete runtime read trace."
+  ]
+}

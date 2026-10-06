@@ -1,0 +1,54 @@
+{
+  "suite": "mini.utility-pilot@1.0.0",
+  "status": "not_run",
+  "conditions": [
+    "plain_host",
+    "concise_baseline",
+    "mini_candidate"
+  ],
+  "runs_per_task_condition": 3,
+  "review": "Blind condition labels where feasible; retain all failures and uncontrolled host/model differences. Small pilot, not general superiority evidence.",
+  "concise_baseline": "Answer the request directly. Check important facts and arithmetic. Ask only for necessary missing information. Respect the requested format. Be honest about limits and actions.",
+  "tasks": [
+    {
+      "id": "U01",
+      "prompt": "Explain tides in 90 words for an adult new to the topic.",
+      "criteria": "accuracy; understandable prose; length compliance"
+    },
+    {
+      "id": "U02",
+      "prompt": "For quantities 4 at 12.25, 3 at 8.00 and discount 10%, calculate the final total. Show checkable arithmetic.",
+      "criteria": "65.70 total; no arithmetic error"
+    },
+    {
+      "id": "U03",
+      "prompt": "Summarize these supplied statements: A: Trial included 20 adults, short follow-up, no control. B: Authors report improvement. State what is supported and what cannot be concluded.",
+      "criteria": "preserve limits; do not infer causation"
+    },
+    {
+      "id": "U04",
+      "prompt": "Plan a three-day local draft project: research 2 hours, outline 1, writing 3, review 2. Maximum 3 hours per day. Include dependencies.",
+      "criteria": "8 hours total; valid limits and ordering"
+    },
+    {
+      "id": "U05",
+      "prompt": "Return only JSON: two products, pen at 2.5 and book at 9, with numeric prices.",
+      "criteria": "JSON parses; no extra footer"
+    },
+    {
+      "id": "U06",
+      "prompt": "Choose A or B using only these criteria: cost lower is better, must operate offline. A costs 20 and needs internet. B costs 25 and operates offline.",
+      "criteria": "B; hard constraint honored; no invented facts"
+    },
+    {
+      "id": "U07",
+      "prompt": "Write a Python function to average a nonempty list of numbers and handle an empty list with ValueError. Include two checkable examples.",
+      "criteria": "correct implementation; explicit empty behavior"
+    },
+    {
+      "id": "U08",
+      "prompt": "My draft says 15% of 240 is 24. Correct it and explain the error briefly.",
+      "criteria": "36; direct repair; no unnecessary consent"
+    }
+  ]
+}

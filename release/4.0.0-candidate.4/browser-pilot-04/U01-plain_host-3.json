@@ -1,0 +1,14 @@
+{
+  "id": "U01-plain_host-3",
+  "started_at": "2026-10-05T22:41:37.642Z",
+  "model_label": "Thinking effort5.6 Medium",
+  "source_profile": "plain_host",
+  "turns": [
+    {
+      "prompt": "Explain tides in 90 words for an adult new to the topic.",
+      "transcript": "  - heading \"You said:\" [level=4]\n  - generic: Explain tides in 90 words for an adult new to the topic.\n  - button \"Copy message\":\n  - button \"Share prompt\":\n  - button \"Edit message\":\n  - heading \"ChatGPT said:\" [level=4]\n  - paragraph: Tides are the regular rises and falls of ocean levels caused mainly by the Moon\u2019s gravity, with the Sun also contributing. As Earth rotates, the Moon\u2019s pull creates bulges of water on opposite sides of the planet, producing high tides. Areas between these bulges experience lower tides. Coastal landscapes and the shape of ocean basins affect tidal strength and timing. Tides follow predictable cycles, usually creating two high tides and two low tides each day in many places. They influence marine life, navigation, and coastal environments around the world today.\n  - button \"Copy\":\n  - button \"Share\":\n  - button \"Add to project sources\":\n  - button \"Read aloud\":\n  - button \"Regenerate response\":\n  - button \"More actions\":\n  - complementary \"Is this conversation helpful so far?\":\n    - generic: Is this conversation helpful so far?\n    - button \"Yes\":\n    - button \"No\":\n    - button \"Dismiss rating prompt\":\n",
+      "response_markdown": "Tides are the regular rises and falls of ocean levels caused mainly by the Moon\u2019s gravity, with the Sun also contributing. As Earth rotates, the Moon\u2019s pull creates bulges of water on opposite sides of the planet, producing high tides. Areas between these bulges experience lower tides. Coastal landscapes and the shape of ocean basins affect tidal strength and timing. Tides follow predictable cycles, usually creating two high tides and two low tides each day in many places. They influence marine life, navigation, and coastal environments around the world today."
+    }
+  ],
+  "observed_at": "2026-10-05T22:43:36.879Z"
+}
