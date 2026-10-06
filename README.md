@@ -1,12 +1,12 @@
 # Mount Helikon Mini
 
 <p align="left">
-  <a href="CHANGELOG.md"><img alt="Mount Helikon Mini 4.1.0" src="docs/badges/version.svg"></a>
-  <img alt="Line: Free Starter" src="docs/badges/line.svg">
-  <a href="release/4.1.0/"><img alt="Release: 4.1.0 testing build" src="docs/badges/release.svg"></a>
-  <a href="#two-layers"><img alt="Runtime: 2 layers, JSON Operating" src="docs/badges/runtime.svg"></a>
-  <a href="START_HERE.md"><img alt="Install: Guided JSON" src="docs/badges/install.svg"></a>
-  <a href="LICENSE"><img alt="License: MIT" src="docs/badges/license.svg"></a>
+  <a href="CHANGELOG.md"><img alt="Mount Helikon Mini 4.1.0" src="https://raw.githubusercontent.com/FixicoAI-DevLabs/mount-helikon-mini-aios/main/assets/badges/version.png" width="157" height="20"></a>
+  <img alt="Line: Free Starter" src="https://raw.githubusercontent.com/FixicoAI-DevLabs/mount-helikon-mini-aios/main/assets/badges/line.png" width="109" height="20">
+  <a href="release/4.1.0/"><img alt="Release: 4.1.0 testing build" src="https://raw.githubusercontent.com/FixicoAI-DevLabs/mount-helikon-mini-aios/main/assets/badges/release.png" width="166" height="20"></a>
+  <a href="#two-layers"><img alt="Runtime: 2 layers, JSON Operating" src="https://raw.githubusercontent.com/FixicoAI-DevLabs/mount-helikon-mini-aios/main/assets/badges/runtime.png" width="150" height="20"></a>
+  <a href="START_HERE.md"><img alt="Install: Guided JSON" src="https://raw.githubusercontent.com/FixicoAI-DevLabs/mount-helikon-mini-aios/main/assets/badges/install.png" width="127" height="20"></a>
+  <a href="LICENSE"><img alt="License: MIT" src="https://raw.githubusercontent.com/FixicoAI-DevLabs/mount-helikon-mini-aios/main/assets/badges/license.png" width="83" height="20"></a>
 </p>
 
 **Start here:** [🚀 Quickstart](#start-here) · [🧠 How Mini works](#two-layers) · [🧩 Runtime contract](docs/architecture.md) · [🛠️ Troubleshooting](docs/recovery.md) · [✅ QA](Helikon_Mini_QA.md)
