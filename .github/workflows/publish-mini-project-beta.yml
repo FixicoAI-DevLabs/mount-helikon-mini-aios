@@ -1,0 +1,40 @@
+name: Publish frozen Mini 4 project beta
+
+on:
+  push:
+    branches: [release/mini-project-beta]
+    paths:
+      - .github/workflows/publish-mini-project-beta.yml
+      - tools/publish_frozen_mini.py
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: mini-4-candidate-5-publication
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    if: github.repository == 'FixicoAI-DevLabs/mount-helikon-mini-aios' && github.ref == 'refs/heads/release/mini-project-beta'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Check frozen package and current source
+        run: |
+          python3 tools/publish_frozen_mini.py --check
+          python3 tools/mini.py validate
+          python3 -m unittest discover -s tests -v
+          python3 tools/mini.py build --out build/publication
+          cmp release/4.0.0-candidate.5/Helikon-Mini-4.0.0-candidate.5.zip build/publication/Helikon-Mini-4.0.0-candidate.5.zip
+      - name: Publish approved prerelease and verify public assets
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_PROMPT_DISABLED: '1'
+        run: python3 tools/publish_frozen_mini.py --publish
