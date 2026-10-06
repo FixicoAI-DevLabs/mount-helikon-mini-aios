@@ -1,6 +1,8 @@
 # Helikon Mini
 
-**Mini 4.0.0-candidate.5** is a compact rebuild from released Helikon 6.0.0, installed in an isolated ChatGPT test project with versioned browser evidence. This branch is experimental, not a production release or an ordinary global-chat installation.
+**Mini 4.0.0-candidate.5** is a compact rebuild from released Helikon 6.0.0, installed in an isolated ChatGPT test project with versioned browser evidence. It is an experimental project candidate being prepared for a public project beta. It is not a production release or an ordinary global-chat installation.
+
+**[Start here: download and install Mini 4 in a dedicated project](START_HERE.md).** No Python or local build is needed to try the packaged candidate. The [publication plan](docs/release-plan.md) records the proposed tag, exact assets and remaining release steps. Preparing this branch does not update `main` or publish a release.
 
 Short System guidance and one compact Operating JSON retain three planes and twelve responsibilities without requiring six Saved Memories or specialised Skills. The source map covers 92 source components and 474 nested normative IDs; it does not claim full semantic equivalence.
 
@@ -21,6 +23,6 @@ Python 3.10+ and its standard library suffice. The deterministic build writes a 
 
 Testing used Pro, browser ChatGPT, GPT-5.6 Sol / Medium. Free-account and ordinary global-chat delivery remain untested. Complete source content was recovered in a bounded-copy candidate-4 conversation, but hidden full-body delivery on every turn was not observable. No general reliability or utility advantage is established. Do not replace an active full Helikon installation to try Mini.
 
-**Historical edition:** [Mini 3.3.0](https://github.com/FixicoAI-DevLabs/mount-helikon-mini-aios/releases/tag/v3.3.0). Its six versioned root files remain unchanged; the old installer describes that historical release.
+**Historical edition:** [Mini 3.3.0](https://github.com/FixicoAI-DevLabs/mount-helikon-mini-aios/releases/tag/v3.3.0). Its six versioned root files remain unchanged; the old installer describes that historical release. Existing ChatGPT installations do not update when this repository changes. The Mini 4 project candidate has a [manual migration path](START_HERE.md#already-using-mini-33), with actual six-memory migration still untested.
 
 See [LICENSE](LICENSE), [SECURITY.md](SECURITY.md) and [CHANGELOG.md](CHANGELOG.md).
