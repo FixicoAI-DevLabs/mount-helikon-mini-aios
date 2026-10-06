@@ -2,7 +2,7 @@
 
 Generated from the canonical JSON. Do not edit this projection.
 
-The JSON is the selected runtime source for this candidate. This rendering is a reading aid.
+The JSON is the selected runtime source for this release. This rendering is a reading aid.
 
 ## identity
 
@@ -10,13 +10,13 @@ The JSON is the selected runtime source for this candidate. This rendering is a 
 
 **id:** helikon-mini.operating-master
 
-**version:** 4.0.0-candidate.5
+**version:** 4.0.0
 
 ### schema
 
 **id:** helikon-mini.operating-master.schema
 
-**version:** 1.0.4
+**version:** 1.0.5
 
 ### system_contract
 

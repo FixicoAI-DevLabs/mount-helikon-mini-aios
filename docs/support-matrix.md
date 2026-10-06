@@ -1,24 +1,18 @@
-# Candidate support and tested scope
+# Mini 4.0.0 support boundaries
 
-The ChatGPT project route has bounded live evidence in [draft PR #9](https://github.com/FixicoAI-DevLabs/mount-helikon-mini-aios/pull/9) and its versioned release directories. Both profiles remain `experimental_unverified`; no production support promotion or universal delivery claim has been made.
+Mini 4.0.0 is the repository's current project edition. Its operational rules match candidate 5; runtime/schema labels and distribution have changed. Historical live observations remain tied to their original versions. No fresh 4.0.0 ChatGPT installation is asserted by the offline checks.
 
-| Claim | Observed scope |
+| Area | Evidence and limit |
 |---|---|
-| Source/schema/projection/package | Offline validation and reproducible builds, separate from behavior |
-| Project installation | Exact System readback and completed JSON upload; Pro, browser ChatGPT, GPT-5.6 Sol / Medium |
-| Candidate 4 behavior | All 48 case-run criteria met; five supplementary probes; four records have labelled transcription recovery |
-| Candidate 4 utility | 72 responses: Mini 22/24, concise 22/24, plain 21/24; planning defects retained |
-| Candidate 5 | Planning correction; actual regression coverage in the versioned report |
-| Full source content | Candidate 4 recovered exactly in bounded copies; hidden per-turn read trace unavailable |
-| Saved settings/recovery | Readback, preservation, rollback, cancellation, interrupted-save inspection/retry observed |
-| Legacy migration | Synthetic project residue only; actual six-memory migration untested |
-| Session-only | Prepared alternative, no separate complete live pilot |
-| Ordinary global chat | No demonstrated automatic exact-runtime delivery |
-| Free account / other models or hosts | Not tested |
-| Full Helikon Skills/schemas | Not Mini dependencies; full-family certification not claimed |
+| 4.0.0 artifacts | Schema, identities, reviewed anchors, archive integrity and reproducible builds are checked offline and in CI |
+| Project installation | Candidate 5: exact System readback and completed JSON upload on Pro, browser ChatGPT, GPT-5.6 Sol / Medium |
+| Candidate 5 behavior | 48 core case-runs, five supplementary probes, 24 utility tasks and three additional planning probes met their recorded criteria |
+| Source content | Candidate 5 runtime reconstructed exactly in bounded copies; single-response full copy failed; hidden complete input each turn is unobservable |
+| Comparative utility | Candidate 4: Mini 22/24, concise baseline 22/24, plain baseline 21/24; no general advantage established |
+| Session-only | Prepared alternative; no separate complete live pilot |
+| Global chats, free accounts, other models | Unverified |
+| Full Helikon equivalence | Selected derivative with documented reductions; no full-family certification |
 
-Fresh chats share an account and project memory; statistical independence is not established. The plain control has a minimal isolation instruction, and review was not blinded. Output character lengths are not token cost or inference latency.
+Both machine-readable profiles retain `experimental_unverified`: that field concerns complete live delivery assurance. Making 4.0.0 the current GitHub release does not supply missing observations or promote those claims. The strict source-evidence gate remains unmet; filenames, summaries and self-reports are not substituted for full-body observations.
 
-Documentation inspected October 5, 2026: [Projects](https://learn.chatgpt.com/docs/projects), [Personalization](https://learn.chatgpt.com/docs/personalize), [Memories](https://learn.chatgpt.com/docs/customization/memories). Product documentation motivated the routes but does not prove Mini delivery.
-
-The strict evidence gate requires full-body observations for each positive run. Those fields have not been asserted from filenames, summaries or self-reports. Static checks and response transcripts do not themselves satisfy that gate or authorize release.
+Fresh chats shared an account and project memory; statistical independence is not established. The utility review was not blinded, and output characters do not measure token cost or inference latency. All candidate failures and capture limitations remain in their versioned records.

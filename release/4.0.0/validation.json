@@ -1,0 +1,28 @@
+{
+  "format": "helikon-mini.release-validation@1.0.0",
+  "version": "4.0.0",
+  "checked_on": "2026-10-06",
+  "runtime_sha256": "a8b54f99268c8ad8d6639f16820243041e82986ed52f78a6d9c79b0482643700",
+  "system_sha256": "d996b9f62e7455587470a0ecea09802bc0c3698b1919a3910f0fe25d70b00d29",
+  "archive_sha256": "8e5493e7106f3fe3341f1a47129f0230173804759a77da6d8c92fd949fafe108",
+  "archive_bytes": 96424,
+  "static_validation": "pass",
+  "automated_tests": {
+    "passed": 38,
+    "failed": 0
+  },
+  "source_inventory": {
+    "components": 92,
+    "normative_ids": 474,
+    "result": "pass"
+  },
+  "reproducible_archive": "pass",
+  "candidate_5_comparison": {
+    "runtime": "identical_except_runtime_and_schema_identity",
+    "system": "identical_except_runtime_and_schema_identity_labels",
+    "schema": "identical_except_pinned_identity_values",
+    "historical_evidence": "unchanged"
+  },
+  "fresh_4_0_0_chatgpt_installation": "not_run_browser_unavailable",
+  "support_claim": "dedicated_project_edition_with_documented_limits"
+}

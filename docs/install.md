@@ -1,22 +1,23 @@
-# Install the experimental project candidate
+# Install Helikon Mini 4.0.0
 
-Mini `4.0.0-candidate.5` uses `Helikon_Mini_System.md` (1,490 characters) and `Helikon_Mini_Operating_Master.json` (22,251 bytes). The route below was exercised on Pro, browser ChatGPT, GPT-5.6 Sol / Medium. It creates an evaluation project, not installation in ordinary global chats.
+Use the two matching files in the Mini 4.0.0 release: `Helikon_Mini_System.md` and `Helikon_Mini_Operating_Master.json`. The same canonical files are available at the repository root. No Python, local build or Saved Memory setup is required.
 
-1. Build and verify the candidate ZIP. Use both files from the same revision; do not mix Mini with legacy or full Helikon runtimes.
-2. Create a dedicated ChatGPT project with project-only memory. The observed UI disables Space access and Work mode for that type. Preserve the active full Helikon project and account personalisation.
-3. Open Project settings. Back up any existing instructions. Put the exact System contents in Instructions, save, reopen and compare the entire value. A save attempt alone is not installation evidence.
-4. Under Sources, upload the exact JSON. Wait until the completed Preview control replaces upload progress. The file must be readable content, not just a name.
-5. In a fresh project chat, try an ordinary task and an honest source-availability question. Ask for observed identities and missing ranges; supplying the expected answer does not prove a read. Stored-file presence and self-report do not expose the hidden model input. Bounded source copies can be checked against the canonical JSON.
-6. Run the prepared behavior and utility tasks on your actual model/account and retain failures. Project results do not establish global delivery, complete reading every turn, or another account tier's behavior.
+1. Download and extract `Helikon-Mini-4.0.0.zip` from https://github.com/FixicoAI-DevLabs/mount-helikon-mini-aios/releases/tag/v4.0.0. Optionally compare its SHA-256 with the accompanying checksum file.
+2. Create a dedicated ChatGPT project, using project-only memory where available. Keep your existing full Helikon project running separately.
+3. Open Project settings. Copy the entire System file into Instructions. Save, reopen and compare the complete value with the file. If the project already has instructions, preserve a copy before replacing them.
+4. Under Sources, upload the Operating Master JSON. Wait until upload completes and confirm its content is readable. A listed filename alone is insufficient.
+5. Start a fresh project chat. Try an ordinary task with a checkable answer and ask which runtime source is available. The matching identities are Mini runtime `4.0.0`, schema `1.0.5`, System contract `1.0.0` and extension contract `1.0.0`. Supplying those answers to the model does not prove it read the source.
 
-An attempted 23,315-character System/runtime embedding was rejected by the UI's observed 8,000-character project Instructions limit and cancelled before saving. This route therefore uses short instructions plus a separate source. The 1,500-character System ceiling is an engineering choice, not that observed provider limit.
+For a quick functional check, request exactly one JSON object with a simple calculated result. Then ask for a two-day schedule containing tasks of 30, 45 and 60 minutes, a 90-minute daily capacity, preserved task durations, and unused capacity left empty. Check formatting, task durations and the 135-minute total yourself.
 
-## Update and recovery
+## Evidence and scope
 
-Back up exact prior instructions and files; preserve unrelated preferences. Install a matching pair and verify saved state. After an interrupted save or lost acknowledgement, inspect state before retrying. A real Save-then-immediate-reload probe had not applied; only after that readback was one retry made, verified and rolled back. This is not a network-outage test or a universal recovery guarantee.
+The project route was exercised using candidate 5 on Pro, browser ChatGPT, GPT-5.6 Sol / Medium, including exact System readback and completed source upload. Version 4.0.0 preserves those operational rules with updated identity labels. Its release validation distinguishes mechanical checks from historical live observations. Account controls may differ.
 
-Synthetic legacy project instructions were replaced while preserving a fictional unrelated note. Actual migration of the old six Saved Memories was not tested; do not bulk-delete memories. See migration and recovery procedures.
+Short instructions plus a separate source are intentional. A historical attempt to embed the entire runtime exceeded the observed project Instructions capacity. Stored-file presence and a model's self-report do not expose hidden per-turn input. Complete automatic source delivery, global-chat support, free accounts and other models are unverified.
 
-## Session alternative
+## Updating this project
 
-The session profile permits explicitly adopted System guidance plus complete JSON in one conversation, with no persistence claim. It has no separate complete live pilot. Reacquire exact source after context loss; disclose missing/mismatched access while continuing independent help. Saved Memory and optional full Helikon Skills are not dependencies.
+Keep a copy of the project's current instructions and source. Replace both with a matching release pair, inspect saved state and use a fresh chat. If a save or upload is interrupted, inspect the result before retrying. Recovery uses your saved configuration. Other projects and account settings need no changes for this installation.
+
+A session-only alternative can supply System guidance and the complete JSON in one conversation. It has no separate complete live pilot and makes no persistence claim.

@@ -101,7 +101,7 @@ class CandidateTests(unittest.TestCase):
             with self.assertRaisesRegex(mini.Invalid,'Private'):mini.validate_repo(root)
 
     def test_legacy_bytes_preserved(self):
-        for path,digest in mini.load(ROOT/'docs/source-manifest.json')['legacy_root_sha256'].items():
+        for path,digest in mini.load(ROOT/'docs/source-manifest.json')['archived_legacy_sha256'].items():
             self.assertEqual(mini.sha((ROOT/path).read_bytes()),digest)
 
     def test_installation_safeguards_cannot_be_disabled(self):

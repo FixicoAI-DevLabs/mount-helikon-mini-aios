@@ -1,7 +1,7 @@
 {
   "candidate": {
     "id": "helikon-mini.operating-master",
-    "version": "4.0.0-candidate.5"
+    "version": "4.0.0"
   },
   "purpose": "Reviewed policy anchors. Detect semantic-text changes, even when package hashes are regenerated. Updating these requires policy review; hashes do not prove semantic correctness.",
   "anchors": {
@@ -11,7 +11,7 @@
     "#/owners": "ee1babe836eac3b30efb5579c919fa37b7a5f9d240c4594a2437aa3e5d428e5a",
     "#/extensions": "0672b4ff3e7bfe5a8c23d6f1006e514b408e7aa5ad2d313f561868beb73c97ff"
   },
-  "system_sha256": "f8432f2f677cca9c95d4a813e4609586eed067e545ff397fcc5b99de56d5ea3f",
+  "system_sha256": "d996b9f62e7455587470a0ecea09802bc0c3698b1919a3910f0fe25d70b00d29",
   "budgets": {
     "system_characters": 1500,
     "runtime_characters": 24000

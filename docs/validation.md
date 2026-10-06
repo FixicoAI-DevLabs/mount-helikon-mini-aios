@@ -7,8 +7,8 @@ python3 tools/mini.py validate
 python3 -m unittest discover -s tests -v
 python3 tools/mini.py build --out build/first
 python3 tools/mini.py build --out build/second
-cmp build/first/Helikon-Mini-4.0.0-candidate.5.zip build/second/Helikon-Mini-4.0.0-candidate.5.zip
-python3 tools/mini.py verify-archive build/first/Helikon-Mini-4.0.0-candidate.5.zip
+cmp build/first/Helikon-Mini-4.0.0.zip build/second/Helikon-Mini-4.0.0.zip
+python3 tools/mini.py verify-archive build/first/Helikon-Mini-4.0.0.zip
 ```
 
 `python3 tools/mini.py render` regenerates the reading copy. ZIP members have sorted names, fixed timestamps/permissions and stored compression for reproducibility without compressor-version dependence. The manifest hashes each payload; the outer checksum covers the whole ZIP. Integrity alone does not authenticate a publisher: compare against a separately trusted reviewed checksum.
@@ -32,7 +32,7 @@ python3 tools/evidence.py validate evidence/local/pilot.json
 
 The template is explicitly unrun. Actual evidence needs local transcript files/hashes, host context, candidate hashes and criterion findings tied to excerpts. Validation establishes record completeness and consistency, not independent authentication of host observations or review. Its strongest result is `record_consistent_manual_review_required`; it never grants release approval. An unrun, empty or contradictory record cannot pass through a status label.
 
-Before production publication resolve the ordinary-chat delivery scope, identify an isolated authorized host, run installation/migration/recovery/fresh-chat cases, complete behavior and utility pilots, and review failures and costs. Prepare exact candidate bytes, diff, destinations and support claims for the reserved publication review. Static checks cannot supply missing live evidence or permission.
+The current release scope is the dedicated project edition. See the 4.0.0 release validation for its identity-only delta and the versioned candidate reports for live observations. The full pilot protocol remains available for broader support evaluation; its strict gate has not been passed or weakened. Static checks cannot supply missing live evidence.
 
 GitHub Actions is configured to repeat local checks and compare two builds. Local success does not mean hosted CI ran. The workflow pins checkout, uses read-only permission, and contains no publishing or account mutation.
 

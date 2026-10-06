@@ -11,4 +11,4 @@ The six old memory bodies are legacy configuration. The candidate uses an explic
 
 Legacy tokens and compulsory confidence/status footers are not supported Mini 4 interfaces. Express behavior in natural language. Optional continuity remains work data and is not automatically moved or converted to the full Helikon record schema.
 
-The six original versioned root files and immutable `v3.3.0` tag remain preserved. Candidate development does not replace published downloads. Migration has been designed but not live-tested.
+The six original versioned files are preserved in `archive/3.3.0/`, alongside the historical `v3.3.0` tag. Mini 4.0.0 is the current repository release. This optional migration procedure has not been live-tested and is not part of the current release task.

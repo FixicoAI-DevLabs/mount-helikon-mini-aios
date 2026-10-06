@@ -1,5 +1,12 @@
 # Changelog
 
+## 4.0.0 — current project edition
+
+- Replace Mini 3.3 as the default repository installer and GitHub Latest release. Move the six old root files unchanged into `archive/3.3.0/`.
+- Put the current System and Operating JSON at the root as the single canonical installation pair. Update download links, installation guidance and maintenance tools.
+- Finalize runtime identity 4.0.0 and the identity-pinned schema 1.0.5. Preserve candidate 5 operational rules and System wording apart from those identities.
+- Package the current project installation with matching files and an exact checksum. Retain historical live evidence under its actual candidate version and retain all support limitations.
+
 ## 4.0.0-candidate.5 — planning correction
 
 - Preserve supplied task durations and reconcile task, day and project totals; do not fill unused capacity with invented work.
@@ -38,8 +45,8 @@
 - Add source mapping, schema, reviewed anchors, negative tests, projection generation and reproducible packaging.
 - Prepare migration/recovery and unrun behavior/utility protocols.
 
-Historical entries describe their own revisions. No general utility improvement or production release is claimed.
+Historical entries describe their own revisions. No general utility improvement is claimed.
 
 ## 3.3.0 — historical release
 
-Original versioned root artifacts and tag remain preserved. See the original versioned changelog in the repository and [v3.3.0 release](https://github.com/FixicoAI-DevLabs/mount-helikon-mini-aios/releases/tag/v3.3.0).
+Original artifacts are preserved unchanged under `archive/3.3.0/`, along with their tag. See the original versioned changelog in that archive and [v3.3.0 release](https://github.com/FixicoAI-DevLabs/mount-helikon-mini-aios/releases/tag/v3.3.0).

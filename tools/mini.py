@@ -12,10 +12,10 @@ import zipfile
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-RUNTIME = Path('src/runtime/Helikon_Mini_Operating_Master.json')
-SYSTEM = Path('src/system/Helikon_Mini_System.md')
+RUNTIME = Path('Helikon_Mini_Operating_Master.json')
+SYSTEM = Path('Helikon_Mini_System.md')
 SCHEMA = Path('schema/Helikon_Mini_Operating_Master.schema.json')
-PROJECTION = Path('generated/Helikon_Mini_Operating.md')
+PROJECTION = Path('docs/OPERATING_REFERENCE.md')
 
 
 class Invalid(ValueError):
@@ -151,7 +151,7 @@ def render(doc):
     """Readable projection includes every runtime value in a deterministic layout."""
     lines = ['# Helikon Mini Operating', '',
              'Generated from the canonical JSON. Do not edit this projection.', '',
-             'The JSON is the selected runtime source for this candidate. This rendering is a reading aid.', '']
+             'The JSON is the selected runtime source for this release. This rendering is a reading aid.', '']
     def section(key, value, depth=2):
         if isinstance(value, dict):
             lines.extend(['#' * min(depth, 6) + ' ' + key, ''])
@@ -192,7 +192,7 @@ def validate_repo(root=ROOT):
     require(len((root / RUNTIME).read_text()) <= anchor['budgets']['runtime_characters'], 'Runtime exceeds design budget')
     require((root / PROJECTION).read_text() == render(doc), 'Stale generated projection; run render')
     provenance = load(root / 'docs/source-manifest.json')
-    for path, expected in provenance['legacy_root_sha256'].items():
+    for path, expected in provenance['archived_legacy_sha256'].items():
         require(sha((root / path).read_bytes()) == expected, 'Legacy bytes changed: ' + path)
     profile = load(root / 'profiles/chatgpt/profiles.json')
     require(profile['identity'] == doc['identity'], 'Profile identity mismatch')
@@ -235,7 +235,7 @@ PAYLOAD = {
  'Helikon_Mini_Operating_Master.json':str(RUNTIME),
  'Helikon_Mini_Operating.md':str(PROJECTION),
  'Helikon_Mini_Operating_Master.schema.json':str(SCHEMA),
- 'MIGRATION.md':'docs/migration.md','RECOVERY.md':'docs/recovery.md',
+ 'RECOVERY.md':'docs/recovery.md',
  'SUPPORT.md':'docs/support-matrix.md','ARCHITECTURE.md':'docs/architecture.md',
  'CHANGELOG.md':'CHANGELOG.md','LICENSE':'LICENSE',
  'SOURCE_MANIFEST.json':'docs/source-manifest.json',
@@ -248,9 +248,9 @@ def build(out, root=ROOT):
     root, out = Path(root), Path(out)
     validate_repo(root)
     files = {name:(root / path).read_bytes() for name,path in PAYLOAD.items()}
-    manifest = {'format':'helikon-mini.candidate-manifest@1.0.0',
+    manifest = {'format':'helikon-mini.release-manifest@1.0.0',
                 'identity':load(root / RUNTIME)['identity'],
-                'status':'experimental_candidate_see_versioned_live_evidence',
+                'status':'current_project_edition_see_support_boundaries',
                 'members':{name:{'sha256':sha(data),'bytes':len(data)} for name,data in sorted(files.items())}}
     files['MANIFEST.json'] = (json.dumps(manifest, indent=2, ensure_ascii=False)+'\n').encode()
     out.mkdir(parents=True, exist_ok=True)
