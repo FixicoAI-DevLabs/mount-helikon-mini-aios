@@ -1,5 +1,16 @@
 # Mount Helikon Mini
 
+<p align="left">
+  <a href="CHANGELOG.md"><img alt="Mount Helikon Mini 4.1.0" src="docs/badges/version.svg"></a>
+  <img alt="Line: Free Starter" src="docs/badges/line.svg">
+  <a href="release/4.1.0/"><img alt="Release: 4.1.0 testing build" src="docs/badges/release.svg"></a>
+  <a href="#two-layers"><img alt="Runtime: 2 layers, JSON Operating" src="docs/badges/runtime.svg"></a>
+  <a href="START_HERE.md"><img alt="Install: Guided JSON" src="docs/badges/install.svg"></a>
+  <a href="LICENSE"><img alt="License: MIT" src="docs/badges/license.svg"></a>
+</p>
+
+**Start here:** [🚀 Quickstart](#start-here) · [🧠 How Mini works](#two-layers) · [🧩 Runtime contract](docs/architecture.md) · [🛠️ Troubleshooting](docs/recovery.md) · [✅ QA](Helikon_Mini_QA.md)
+
 **Helikon 6-derived JSON guidance, with account-wide Personalization and a guided installer for ordinary ChatGPT chats.** Mini is a free, open-source starter. Projects are optional.
 
 The 4.1.0 implementation restores the setup model used by Mini 3.3: two Personalization snippets, one guided install package and an eight-file download. The Operating Layer is now a compact JSON runtime instead of six Saved Memories. The project-only 4.0 release did not preserve that setup model.
