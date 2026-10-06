@@ -1,12 +1,12 @@
 # Mount Helikon Mini
 
 <p align="left">
-  <a href="CHANGELOG.md"><img alt="Mount Helikon Mini 4.1.0" src="https://raw.githubusercontent.com/FixicoAI-DevLabs/mount-helikon-mini-aios/main/assets/badges/version.png" width="157" height="20"></a>
-  <img alt="Line: Free Starter" src="https://raw.githubusercontent.com/FixicoAI-DevLabs/mount-helikon-mini-aios/main/assets/badges/line.png" width="109" height="20">
-  <a href="release/4.1.0/"><img alt="Release: 4.1.0 testing build" src="https://raw.githubusercontent.com/FixicoAI-DevLabs/mount-helikon-mini-aios/main/assets/badges/release.png" width="166" height="20"></a>
-  <a href="#two-layers"><img alt="Runtime: 2 layers, JSON Operating" src="https://raw.githubusercontent.com/FixicoAI-DevLabs/mount-helikon-mini-aios/main/assets/badges/runtime.png" width="150" height="20"></a>
-  <a href="START_HERE.md"><img alt="Install: Guided JSON" src="https://raw.githubusercontent.com/FixicoAI-DevLabs/mount-helikon-mini-aios/main/assets/badges/install.png" width="127" height="20"></a>
-  <a href="LICENSE"><img alt="License: MIT" src="https://raw.githubusercontent.com/FixicoAI-DevLabs/mount-helikon-mini-aios/main/assets/badges/license.png" width="83" height="20"></a>
+  <a href="CHANGELOG.md"><img alt="Mount Helikon Mini 4.1.0" src="https://img.shields.io/badge/Mount%20Helikon%20Mini-4.1.0-blue"></a>
+  <img alt="Line: Free Starter" src="https://img.shields.io/badge/line-Free%20Starter-2ea44f">
+  <a href="release/4.1.0/"><img alt="Release: 4.1.0 testing build" src="https://img.shields.io/badge/release-4.1.0%20testing%20build-orange"></a>
+  <a href="#two-layers"><img alt="Runtime: 2 layers, JSON Operating" src="https://img.shields.io/badge/runtime-2%20layers%20%7C%20JSON%20Operating-purple"></a>
+  <a href="START_HERE.md"><img alt="Install: Guided JSON" src="https://img.shields.io/badge/install-Guided%20JSON-informational"></a>
+  <a href="LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-green"></a>
 </p>
 
 **Start here:** [🚀 Quickstart](#start-here) · [🧠 How Mini works](#two-layers) · [🧩 Runtime contract](docs/architecture.md) · [🛠️ Troubleshooting](docs/recovery.md) · [✅ QA](Helikon_Mini_QA.md)
