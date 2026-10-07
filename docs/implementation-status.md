@@ -1,19 +1,24 @@
-# Implementation status — 4.1.0
+# Implementation status — 4.1.1-candidate.1
 
-The correction restores account-wide System guidance, two Personalization snippets, a unified guided installer and an eight-file end-user bundle. Operating remains Helikon 6-derived runtime-only JSON. Projects are optional; the old six Saved Memories are not restored.
+This testing candidate repairs the reviewed 4.1.0 account installer. It retains two Personalization snippets, compact Helikon 6-derived runtime JSON and an eight-file end-user bundle. Projects remain optional. Runtime policy is unchanged apart from identity; System delivery and evidence tooling have changed.
 
-## Implemented
+## Implemented scope
 
-- Exact embedded runtime and standalone JSON agree byte-for-byte.
-- Both Personalization snippets are generated into the unified package and copy sheet.
-- Guided commands cover backup, extraction, Library storage, installation, resume, status, verification and restoration.
-- Existing account content and active full Helikon are protected.
-- Source access and settings persistence require actual observations.
-- The evidence checker rejects Project, Work and attached-file tests as proof of ordinary automatic source access.
-- Mini 3.3 files and historical release evidence remain unchanged.
+- Exact-byte runtime handling and generated projection checks.
+- Non-overwriting installation-record creation and explicitly versioned evidence records.
+- Host metadata, observation methods, backup state and all eight installer checkpoints.
+- Shorter snippets with explicit combined-field length checks and preservation of existing settings.
+- Self-contained fresh ordinary-chat verification, separate from the installer conversation.
+- Explicit immutable historical evidence bindings plus a current candidate-4/5 inventory.
+- Source-inventory consistency checks, targeted negative tests and limited residue scanning of the complete distributed payload.
+- Manual acceptance instructions in [account acceptance](account-acceptance.md).
+
+Exact executed checks and remaining limitations are recorded in the [candidate validation record](../release/4.1.1-candidate.1/VALIDATION.md). A template or a proposed test is not an observation.
 
 ## Not established
 
-No live 4.1 Personalization installation, fresh ordinary-chat automatic Library read, Free-account test or installer-driven behavior run has been completed. The browser connection timed out before returning page state during this correction. No account settings were changed by that attempt. An earlier full Helikon Work-mode installation record is not substituted for the missing ordinary-chat test.
+Live installation, automatic full-runtime Library reading in fresh ordinary chats, Free-account compatibility and installer-driven host behavior remain unverified for this candidate. No account settings were changed during these repository repairs.
 
-Use the current package as a testing build. Release promotion requires the live evidence in the release plan. There is no request for another approval; the remaining gap is a working test surface and observed results.
+The historical 4.1.0 browser connection failed before page state was returned. Earlier Mini project pilots and full Helikon 6 installation evidence concern different revisions or surfaces. They cannot satisfy this candidate's account acceptance gate.
+
+GitHub's regular v4.0.0 release remains the project edition. This candidate does not promote account support or replace that release.

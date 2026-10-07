@@ -4,7 +4,7 @@ import argparse
 import json
 import sys
 from pathlib import Path
-from mini import ROOT, Invalid, canonical, load, require, resolve, sha
+from mini import ROOT, Invalid, canonical, load, require, resolve, sha, validate_source_inventory
 
 
 def atomic_ids(value):
@@ -20,18 +20,22 @@ def atomic_ids(value):
     return result
 
 
-def verify_source(path):
+def verify_source(path, root=ROOT):
+    root=Path(root)
     data=Path(path).read_bytes(); master=load(path)
-    index=load(ROOT/'docs/source-index.json')
-    mapping=load(ROOT/'docs/source-to-mini-map.json')
+    mapping=validate_source_inventory(root)
+    index=load(root/'docs/source-index.json')
+    provenance=load(root/'docs/source-manifest.json')['source']
     require(sha(data)==index['source_sha256']==mapping['source_sha256'], 'Wrong full source hash')
+    for key in ['runtime','schema','system_contract']:
+        require(master['identity'][key]==provenance[key], 'Full source identity mismatch: '+key)
     pointers=[]
     for key,value in master.items():
         if key in ['bootstrap','owners','routing'] or not isinstance(value,dict):
             pointers.append('#/'+key)
         else:
             pointers.extend('#/'+key+'/'+name for name in value)
-    require(set(pointers)==set(index['pointers']), 'Source component inventory differs')
+    require(pointers==index['pointers'], 'Source component inventory/order differs')
     ids=[]
     for row in mapping['entries']:
         node=resolve(master,row['source_pointer'])

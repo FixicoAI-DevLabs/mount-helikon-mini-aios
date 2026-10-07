@@ -1,18 +1,26 @@
-# Helikon Mini 4.1.0 — installation QA
+# Helikon Mini 4.1.1-candidate.1 — installation QA
 
 Record the client, plan, model, date and package version. Keep account settings and transcripts private. Artifact validation does not prove a live installation.
 
 ## 1. Saved settings and source
 
-Read back both saved Personalization fields and check that the exact Mini snippets are present and unrelated content remains intact. Read the complete runtime from its saved Library item and check all four identity pairs against the install package. Distinguish direct observations from user reports.
+Read back both saved Personalization fields and check that the exact Mini snippets are present verbatim and unrelated content remains intact. Record actual field limits and combined lengths. If a combined field exceeds its limit, keep its previous saved value and resolve the conflict explicitly; a shortened Mini snippet is not this package. Read the complete runtime from its saved Library item and check all four identity pairs against the install package. Distinguish direct observations from user reports.
 
 ## 2. Fresh ordinary-chat access
 
-Open a fresh ordinary non-project, non-Temporary chat. Do not attach the runtime to this primary test. Ask:
+Run **FINAL_VERIFY** in the original installer chat to prepare the handoff. Open a fresh ordinary, non-project, non-Temporary chat and paste the full prompt below. Attach neither the runtime nor the installer package; the package embeds the runtime and would contaminate the automatic-access test. Do not send a bare command in this new chat.
 
-> Locate my designated Helikon Mini runtime in Library. Use supported source tools to read its complete exact content in bounded ranges. Report the four identity pairs you actually observed and any missing portions. Do not infer a complete read from the filename, hash, remembered text or an activation claim.
+This block is generated from `installer/contract.json` → `fresh_chat_handoff.prompt`:
 
-Keep the real tool results and complete coverage evidence. A response claiming activation is insufficient by itself. If access fails, record the failure; manual Add from Library, Work mode and Project tests are separate results.
+<!-- FRESH_CHAT_HANDOFF_BEGIN -->
+```text
+Check my installed Helikon Mini source access in this fresh ordinary, non-project, non-Temporary chat. Do not change settings or files. Use the runtime designation already in my Personalization; if it is missing or ambiguous, report that instead of guessing. No runtime or installation-package file is attached for this automatic-access test.
+Locate that exact runtime through supported Library tools and read its entire exact text in bounded complete ranges before your first substantive answer. Verify all four identity pairs against the installed designation. Report the observed source reference, observed pairs, complete coverage or missing ranges, and any access failure. Keep the actual source-tool results available as evidence. A filename, hash, remembered summary, marker or your own activation claim cannot prove a complete read.
+Do not attach or request attachment of either file to make this primary test pass. Record failed automatic access before any separately labelled manual fallback. Distinguish source access from settings persistence and tested behavior; do not claim account-wide installation passed from this source check alone. Regardless of source availability, also calculate 17 + 25 as an independent task.
+```
+<!-- FRESH_CHAT_HANDOFF_END -->
+
+Keep the real source-tool results and complete coverage evidence. A response claiming activation is insufficient. If access fails, preserve that failure; manual Add from Library, Work mode, install-package attachment and Project tests are separate results. Explicitly requested retrieval does not establish that the chat reads its source before an ordinary task without a source reminder.
 
 ## 3. Behavior cases
 
@@ -27,11 +35,18 @@ Run these after the exact source is available. Keep the actual responses, includ
 
 If a controlled source-failure condition cannot be established, record that case as **not run**. Do not fake unavailable access with a transcript or merely ask the model to pretend. Wrong-source rejection may coexist with a successful read of the real designated source; record both accurately.
 
+## 4. First-use and release acceptance
+
+In a different fresh ordinary chat, attach neither file and ask an ordinary task without mentioning the runtime or requesting a source read. Observe whether the installed guidance reads the complete designated source before the first substantive answer. Record missing tool visibility as unknown, not a pass. Keep this case separate from the explicit request in section 2.
+
+Repository reviewers should use [the expanded account acceptance suite](docs/account-acceptance.md) and [evidence recording guidance](docs/acceptance-recording.md) for reproducible first-use, Free-account and installer-command checks. Those developer documents are outside the eight-file beginner bundle. Historical full Helikon and project pilots cannot pass Mini account-wide checks.
+
 ## Report separately
 
 - Package consistency: pass / fail.
 - Personalization save/readback: observed / user-reported / unknown / failed.
 - Complete runtime access in fresh ordinary chat without attachment: observed / unknown / failed.
 - Four behavior cases: pass / fail / not run, with actual evidence.
+- Automatic first-use read and applicable expanded acceptance cases: pass / fail / not run / unknown, with actual evidence.
 
 No aggregate FULL label is defined. Work or Project success cannot complete ordinary-chat acceptance. A maintained record can be checked with the repository's `tools/installer.py`, but the checker cannot independently authenticate the UI, tool history or account.

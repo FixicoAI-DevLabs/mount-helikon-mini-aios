@@ -1,5 +1,5 @@
 {
-  "protocol_version": "2.0.0",
+  "protocol_version": "2.1.0",
   "primary_surface": "ordinary_non_project_chat",
   "projects_required": false,
   "source": {
@@ -7,7 +7,7 @@
     "memory_writes_required": false,
     "runtime_payload": "operating_layer.exact_runtime_text",
     "identity_check": "All four exact identity pairs and the complete selected runtime text; names or summaries alone are insufficient.",
-    "access": "Attempt supported Library source access in each fresh ordinary chat. Library search may need enabling under Settings > Personalization > Advanced when available. Never claim a file was saved, searched or read without an observed result. Manual Add from Library is an explicit fallback when automatic access fails; it does not pass automatic ordinary-chat acceptance."
+    "access": "Before the first substantive answer in each fresh ordinary chat, attempt supported access to the exact Library runtime designated in Personalization and read its complete text. Refresh after loss of required text or an observed source change. Library search may need enabling under Settings > Personalization > Advanced when available. Never claim a file was saved, searched or read without an observed result. If access fails, disclose the limitation and continue independent help. Manual Add from Library is an explicit fallback; it cannot pass automatic ordinary-chat acceptance. Preserve exact requested output formats; do not add routine activation banners or footers. Report material source limitations in the requested format when possible; missing Mini access does not prevent independent answers."
   },
   "preserve_existing_settings": true,
   "protect_active_full_helikon": true,
@@ -38,10 +38,10 @@
         "Complete the exact backup and scope checks from SETUP. Use a normal, non-Temporary chat for installation. If a requested change would replace active full Helikon outside current scope, provide a preview and retain the existing settings.",
         "Save or upload Helikon_Mini_Operating_Master.json to this account's Library through available supported controls. Inspect the saved item and its complete contents. Record an actually observed stable source reference privately when one is available; never invent an ID. If duplicate filenames exist, select and verify the intended item before adopting it.",
         "If Settings > Personalization > Advanced exposes Library search, explain that enabling it permits supported automatic lookup of eligible Library files. Have the user choose or use already authorized settings scope. Record the actual observed setting and any unavailable controls. Do not imply this guarantees complete retrieval in every chat.",
-        "Open Settings > Personalization. Show system_layer.exact_install_text.custom_instructions in its own copyable block. Merge with existing Custom instructions only after reviewing conflicts and total field length. The shipped Mini snippet is at most 1500 characters, but adding it to existing text may exceed the account's actual limit. Never truncate or silently discard other instructions.",
-        "Show system_layer.exact_install_text.more_about_you separately. Add its marked Mini block while retaining the user's other profile details. Resolve any existing different Mini block explicitly. Check the combined field length before saving. An observed stable source reference may be appended as a clearly labelled Mini source binding if space permits; the shipped package contains no private binding.",
+        "Open Settings > Personalization. Show system_layer.exact_install_text.custom_instructions in its own copyable block, verbatim. Preserve existing instructions and review conflicts, the actual account field limit and the complete combined length using personalization_contract. If it does not fit, leave the saved field unchanged until the user selects an explicit resolution; never shorten or silently rewrite the Mini snippet.",
+        "Show system_layer.exact_install_text.more_about_you separately, verbatim. Add its marked Mini block while retaining the user's profile details. Resolve any existing different Mini block explicitly. Apply the same combined-length and overflow checks. Append a clearly labelled private Mini source binding only when actually observed and when the combined field fits; never invent a reference.",
         "Save each authorized field and read back the actual persisted values where access permits. A click, copy operation or assistant assertion is not save verification. If a save result is uncertain, inspect before retrying. If only the user can see the UI, distinguish their report from direct readback.",
-        "Proceed to FINAL_VERIFY in a fresh ordinary non-project chat. Do not add the runtime as an attachment to the primary automatic-access test."
+        "Return to this installer chat and run FINAL_VERIFY. It supplies fresh_chat_handoff.prompt verbatim for a new ordinary, non-project, non-Temporary chat. Paste that full prompt in the new chat; a bare command carries no protocol there. Attach neither the runtime nor the installer package to the primary automatic-access test."
       ]
     },
     "NEXT": {
@@ -52,13 +52,14 @@
       ]
     },
     "FINAL_VERIFY": {
-      "purpose": "Check saved settings, source access and ordinary-chat behavior separately.",
+      "purpose": "In the installer chat, prepare the complete fresh-chat handoff and review separate settings, source and behavior evidence.",
       "steps": [
-        "Read back both persisted Personalization snippets, including preservation of unrelated content. Record client, plan, model, date and exact package version without publishing private account text.",
-        "Open a fresh ordinary non-project, non-Temporary chat without attaching the runtime. Ask it to locate the designated Library source, read its complete exact content in bounded ranges and report the four observed identity pairs. Retain actual source tool results and coverage. Self-reported activation, names, hashes or marker echoes alone do not prove a complete read.",
-        "If automatic access fails, record that failure. Test manual Add from Library as a separately labelled fallback if useful. Work mode, Project delivery, attached-file delivery and ordinary automatic Library access are different surfaces; success in one cannot pass another.",
-        "Run the four QA cases in Helikon_Mini_QA.md: exact JSON output, fixed-duration capacity arithmetic, missing-source honesty and wrong-source rejection. Preserve actual responses, including failures. No mandatory Mini footer may break exact output formats.",
-        "Report four distinct results: package consistency, settings persistence, full runtime source access and behavior. Never declare account-wide installation complete while any required ordinary-chat check is unknown or failed. Do not equate recorded evidence consistency with independently verified host behavior."
+        "Read back both persisted Personalization snippets, including preservation of unrelated content. Record client, plan, model, date and exact package version privately. Distinguish directly observed values from user reports; do not publish private account text.",
+        "Display fresh_chat_handoff.prompt verbatim in a copyable block. Ask the user to open a fresh ordinary, non-project, non-Temporary chat and paste that full prompt. Do not use a bare FINAL_VERIFY there. Attach neither the runtime nor the install package; the latter contains the full runtime and would invalidate the primary automatic-access condition.",
+        "Retain actual source tool results and full text coverage from the fresh chat. Compare the observed four identity pairs and source against the intended designation. Record how each result was obtained; installer-chat access, self-reported activation, names, hashes or marker echoes alone cannot prove the fresh chat read the complete runtime.",
+        "If automatic access fails, preserve that failure before any separately labelled manual Add from Library fallback. Work mode, Project delivery, runtime attachment, install-package attachment and ordinary automatic Library access are different surfaces; success in one cannot pass another.",
+        "Run the four behavior cases in Helikon_Mini_QA.md and the applicable expanded acceptance cases in docs/account-acceptance.md. Preserve actual responses and failures. Test first-use reading separately with an ordinary task that does not request a source check; this explicit handoff only tests requested retrieval. No mandatory Mini footer may break exact output formats.",
+        "Report distinct results for package consistency, settings persistence, full runtime source access and behavior. Never declare account-wide installation complete while a required ordinary-chat check is unknown, not run or failed. A consistent evidence record is not independently verified host behavior."
       ]
     },
     "STATUS": {
@@ -91,5 +92,25 @@
     "fresh_ordinary_chat_without_attachment_source_read",
     "ordinary_chat_behavior_checked"
   ],
-  "record_boundary": "Backups, source bindings, checkpoint observations and test transcripts belong in private installation records. Never add them to the runtime-only JSON or public release payload."
+  "record_boundary": "Backups, source bindings, checkpoint observations and test transcripts belong in private installation records. Never add them to the runtime-only JSON or public release payload.",
+  "personalization_contract": {
+    "exact_snippets_required": true,
+    "snippet_design_budgets": {
+      "custom_instructions": 1100,
+      "more_about_you": 900
+    },
+    "combined_field_limit": "Observe the actual account limit separately for each field. Include existing text, separators, the exact Mini snippet and any private source binding in its character count. The shipped snippet budget is not a host limit or an allowance to erase existing content.",
+    "overflow": "If the combined field does not fit, keep the existing saved field unchanged. Show the exact count and a preview of the unresolved conflict. Obtain the user's choice of changes to unrelated text or stop installation for that field. Never shorten, paraphrase or silently truncate the canonical Mini snippet; a changed snippet requires a separately versioned and validated package.",
+    "backup": "Privately preserve exact pre-install field contents; restore only scoped Mini changes while preserving subsequent unrelated edits."
+  },
+  "fresh_chat_handoff": {
+    "surface": "fresh_ordinary_non_project_non_temporary_chat",
+    "attachments_allowed": false,
+    "excluded_attachments": [
+      "Helikon_Mini_Operating_Master.json",
+      "Helikon_Mini_Install_Package.json"
+    ],
+    "prompt": "Check my installed Helikon Mini source access in this fresh ordinary, non-project, non-Temporary chat. Do not change settings or files. Use the runtime designation already in my Personalization; if it is missing or ambiguous, report that instead of guessing. No runtime or installation-package file is attached for this automatic-access test.\nLocate that exact runtime through supported Library tools and read its entire exact text in bounded complete ranges before your first substantive answer. Verify all four identity pairs against the installed designation. Report the observed source reference, observed pairs, complete coverage or missing ranges, and any access failure. Keep the actual source-tool results available as evidence. A filename, hash, remembered summary, marker or your own activation claim cannot prove a complete read.\nDo not attach or request attachment of either file to make this primary test pass. Record failed automatic access before any separately labelled manual fallback. Distinguish source access from settings persistence and tested behavior; do not claim account-wide installation passed from this source check alone. Regardless of source availability, also calculate 17 + 25 as an independent task.",
+    "command_boundary": "FINAL_VERIFY is an installer-chat command. In the fresh test chat, paste this complete prompt, not a bare command. Do not attach the installer package: its embedded runtime would contaminate automatic Library access evidence."
+  }
 }

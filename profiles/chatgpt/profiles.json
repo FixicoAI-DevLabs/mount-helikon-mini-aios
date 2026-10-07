@@ -2,15 +2,15 @@
   "identity": {
     "runtime": {
       "id": "helikon-mini.operating-master",
-      "version": "4.1.0"
+      "version": "4.1.1-candidate.1"
     },
     "schema": {
       "id": "helikon-mini.operating-master.schema",
-      "version": "1.0.6"
+      "version": "1.0.7"
     },
     "system_contract": {
       "id": "helikon-mini.system.contract",
-      "version": "2.0.0"
+      "version": "2.1.0"
     },
     "extension_contract": {
       "id": "helikon-mini.extension.contract",
@@ -21,12 +21,14 @@
     {
       "id": "chatgpt-account",
       "support": "experimental_unverified",
-      "delivery": "Account-wide Custom instructions and More about you designate a runtime-only JSON saved in the account Library. Attempt supported source reads in ordinary non-project chats; actual per-chat availability must be checked.",
+      "delivery": "Account-wide Custom instructions and More about you designate the exact runtime-only JSON saved in account Library. Before the first substantive answer in each fresh ordinary chat, use supported source tools to read its complete text and verify all four identity pairs. Refresh on lost required text or source change; actual availability must be observed. If unavailable, disclose and continue independent help.",
       "requires": [
         "two_personalization_fields",
         "saved_runtime_json",
         "supported_library_source_access",
-        "fresh_ordinary_chat_verification"
+        "fresh_ordinary_chat_verification",
+        "verbatim_snippets_within_observed_combined_field_limits",
+        "fresh_chat_primary_test_without_runtime_or_installer_attachments"
       ],
       "persistence_claim": false
     },
@@ -53,7 +55,7 @@
     }
   ],
   "ordinary_global_chat": "primary_installation_scope_live_validation_pending",
-  "free_account": "design_target_with_1500_character_system_snippets_not_live_tested",
+  "free_account": "design_target_with_1100_and_900_character_snippet_budgets_not_live_tested",
   "installation_safeguards": {
     "preserve_existing_settings": true,
     "resolve_unknown_writes_before_retry": true,

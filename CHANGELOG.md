@@ -1,5 +1,17 @@
 # Changelog
 
+## 4.1.1-candidate.1 — repository and acceptance repairs (testing build)
+
+- Preserve the compact runtime policy; bind the repaired artifacts to runtime 4.1.1-candidate.1, schema 1.0.7 and System contract 2.1.0.
+- Hash and compare exact UTF-8 runtime bytes; reject line-ending drift between embedded and standalone delivery.
+- Refuse to overwrite existing installation evidence when creating a record template.
+- Add versioned host metadata, observation methods, checkpoint and backup states to installation records; keep semantic review and release authority separate.
+- Reserve more space for existing Personalization, clarify first-use reading, and supply a self-contained fresh-chat handoff.
+- Verify historical evidence against explicitly bound snapshots and verify a separate current inventory without rewriting old evidence.
+- Strengthen source-index consistency, negative provenance tests, private-record exclusions and limited public-payload residue detection.
+- Add reproducible manual account, Free-plan and installer acceptance cases. Unexecuted cases remain not run; historical project and full Helikon observations are not Mini account validation.
+- Retain the existing 4.1.0 testing bundle and all earlier releases unchanged. This candidate is not a regular release or a live-support promotion.
+
 ## 4.1.0 — account-wide installer correction (testing build)
 
 - Restore two Personalization snippets and the guided ordinary-chat installer.

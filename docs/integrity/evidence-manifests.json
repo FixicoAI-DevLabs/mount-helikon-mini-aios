@@ -1,0 +1,1099 @@
+{
+  "format": "helikon-mini.evidence-integrity@1.0.0",
+  "scope": "Historical receipt integrity and complete current file inventory for only the two declared retained pilot trees; not authentication of observations or repository-wide release acceptance.",
+  "historical_manifests": [
+    {
+      "path": "release/4.0.0-candidate.4/EVIDENCE_MANIFEST.json",
+      "source_commit": "6964592f0120580ce843bbebf954d63b1192fc32",
+      "sha256": "3e25b4381e19b34fd7f9c4874cc948083e361de00adc577c6b3fc630de0bf565",
+      "preserved_entries": {}
+    },
+    {
+      "path": "release/4.0.0-candidate.5/EVIDENCE_MANIFEST.json",
+      "source_commit": "6964592f0120580ce843bbebf954d63b1192fc32",
+      "sha256": "f730af500ae205724ee7ff894811c3d4b128d8d0498899c5f39741d3a6d60f3e",
+      "preserved_entries": {
+        "README.md": {
+          "path": "docs/integrity/candidate-5-original-README.md",
+          "reason": "Historical bytes at the manifest source commit; current README was superseded by publication commit fcc92c387756f9a7173f8cc6e1020707fb91de33 and is checked separately in current_scope."
+        }
+      }
+    }
+  ],
+  "current_scope": {
+    "roots": [
+      "release/4.0.0-candidate.4",
+      "release/4.0.0-candidate.5"
+    ],
+    "files": {
+      "release/4.0.0-candidate.4/EVIDENCE_MANIFEST.json": {
+        "sha256": "3e25b4381e19b34fd7f9c4874cc948083e361de00adc577c6b3fc630de0bf565",
+        "bytes": 23510
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/B01-1.json": {
+        "sha256": "2c5490f4659dc837121a5f89efcd877dcce4240b7854ceaac43748f7a4562611",
+        "bytes": 1626
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/B01-2.json": {
+        "sha256": "f6995b1824c4b252c808ffe738f0117ea83155a7666835e551c9e9d460b9a59a",
+        "bytes": 1376
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/B01-3.json": {
+        "sha256": "7be9ae19feccb505962b6edee0a3b91d98b534af30296b85632849a29008d76e",
+        "bytes": 1358
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/B02-1.json": {
+        "sha256": "c403b52eee7ac78587e06abe492ceca0ad94a87c793f530bd97a8c8e8a2278c5",
+        "bytes": 1364
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/B02-2.json": {
+        "sha256": "274dbfc39825207b61e7840767db2faeffb47ecc43070c4a63addb7490651133",
+        "bytes": 1551
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/B02-3.json": {
+        "sha256": "86f06cd8abf675be1958417cdfc52971b1eeaf3f0aac147758e288467bc0cd69",
+        "bytes": 1802
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/B03-partial-1.json": {
+        "sha256": "4f2d52120566942aa44d3ccc67030ba88a0a8d408f6cd07bd2ecebbd21054337",
+        "bytes": 4882
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/B03-partial-2.json": {
+        "sha256": "8ad46f7167d81f3c531ce28942f05fe4dc4568590ca3fad169e687b51367506d",
+        "bytes": 5060
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/B03-partial-3.json": {
+        "sha256": "8719bc63f2940f79bd46cb6a27916c179113b50a002286edaf65f209c0068845",
+        "bytes": 4329
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/B03-partial.json": {
+        "sha256": "5fc247335e9059ff9bb0e8760c014fcaf695d39e42927d39e090386231a9547e",
+        "bytes": 5374
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/B03-wrong-1.json": {
+        "sha256": "7dbe525df65b5634764507b9494aeced41ef54fae60503ef69f374e963dc7fc0",
+        "bytes": 5131
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/B03-wrong-2.json": {
+        "sha256": "ee5db594c6b1699413cae9645ed5b1d07a443bf2ae05283fb8b5703142467dd8",
+        "bytes": 5758
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/B03-wrong-3.json": {
+        "sha256": "152a41af27c3ec2f86e97dab26945bedb392ab94bf1881c67776c080e51acb6f",
+        "bytes": 5029
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/B03-wrong.json": {
+        "sha256": "12da49af5ab30c9f6335e53f04ba57e3a88564295c46be6769919eee65e8da66",
+        "bytes": 4871
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/B04-1.json": {
+        "sha256": "5dec4ad827ec4f046d769f3009133164ac157664332bb48a6d4746bf266e6c39",
+        "bytes": 4959
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/B04-2.json": {
+        "sha256": "b87cbbe9759b6eb2ca1a07d595b79b825d08deaa425d60c4c030ca4b789a1536",
+        "bytes": 4714
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/B04-3.json": {
+        "sha256": "252161377a1919def997691286f4a019d3b3511ca2ffea4afb14615350c3eb44",
+        "bytes": 4852
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/B05-1.json": {
+        "sha256": "2b62359f51335628c8871e2962066d9e596240d234256b25b23e2923f1e9ab94",
+        "bytes": 1378
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/B05-2.json": {
+        "sha256": "a0558ff4db2b7ff6e231af5ad2187592d606691c1a4069c50e9d316ac12274a0",
+        "bytes": 1546
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/B05-3.json": {
+        "sha256": "371183cb9ffcf1b4bff336005677cbba85a70c2ff00275631de884994647915e",
+        "bytes": 1380
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/B06-1.json": {
+        "sha256": "64eb514a1377a3414481195518330034692ae51dd28679c0319b2acb47cdcd34",
+        "bytes": 2028
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/B06-2.json": {
+        "sha256": "b87eaf52c96f4084f954f805d6a63e6d06a1ffd876d459541bd6e458ba438173",
+        "bytes": 1986
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/B06-3.json": {
+        "sha256": "fd09ad30c0a285592a0c7f6fda3b67c360280d70905751a79b340be26c5b87f3",
+        "bytes": 2090
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/B07-1.json": {
+        "sha256": "c3e9b8f42d00a32536f3f1ff1c7eba2a00a2cbc67d4123d244d066380b8036f1",
+        "bytes": 1967
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/B07-2.json": {
+        "sha256": "910ef02c74d243c8aee09b7aa821e626965a4afafe8ed900a4ec7b17835be644",
+        "bytes": 3862
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/B07-3.json": {
+        "sha256": "f73bb871553bc2921ce1f71aa79f025fae8d869aa2694c4e6326e38534ed746c",
+        "bytes": 3874
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/B08-1.json": {
+        "sha256": "502e2fdc9a7fa83f54920f45598cdb7ff8bda6e7fc862e49171b3ce881b7c99a",
+        "bytes": 1551
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/B08-2.json": {
+        "sha256": "55d4f3fa6802b9d1377b5158e4b845fafebc45088f9313c2bcb7b9a0421cf1bf",
+        "bytes": 1493
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/B08-3.json": {
+        "sha256": "e280942301a1db9077bd99760dea45f4b0724d4336eb679e5adbffc54236b22b",
+        "bytes": 1527
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/B09-1.json": {
+        "sha256": "9855ac72863820422eff4f87a61766d811cd61dda020324f1b16c14ab7934ae1",
+        "bytes": 9472
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/B09-2.json": {
+        "sha256": "26b53761e1982fc76394f1109b30a70ae72d6d97afc2d16054a06513939f244b",
+        "bytes": 10082
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/B09-3.json": {
+        "sha256": "1cd89636673cf09adf17babfe414dfec3fd160692b00a47f1cafe9a63964fb0d",
+        "bytes": 9602
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/B10-1.json": {
+        "sha256": "5c0755a820b7b2772de36eb1daca3e4e9ae093fc6bd1d9605b03a42278b73574",
+        "bytes": 4098
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/B10-2.json": {
+        "sha256": "2a0772b8e46bb04276f65934bab67bfe21ed3380af6c8b1c8107b4655e61bf74",
+        "bytes": 3989
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/B10-3.json": {
+        "sha256": "560fafba641b8921028c8822ccf4edd4cfcc5a2de54adda96da176a07be9721f",
+        "bytes": 4083
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/B11-1.json": {
+        "sha256": "04b1551460ed3858617291f233eef68421dedefec240882548b5ee398b083645",
+        "bytes": 656
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/B11-2.json": {
+        "sha256": "04519ebbb87d02ec795f31eb92e12ad3fd20423ee1f8a01e9ac7ff6642626b70",
+        "bytes": 902
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/B11-3.json": {
+        "sha256": "46e090bb0393e03292beedd4939cd49d8dd146e97123ce78d2f30fb2ffd4d613",
+        "bytes": 902
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/B11-code.json": {
+        "sha256": "3fcb1597d06d9170d7f00cec747cf6c281a78a73cad9c17f95aa2fa68dcf673a",
+        "bytes": 954
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/B11-csv.json": {
+        "sha256": "bd71ff24c546bda874b03a6ce235c9d9bf9bc19426a27f2f89a0c45604f2dbf9",
+        "bytes": 951
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/B11-template.json": {
+        "sha256": "c339a636117e211a4b34b61f1d690ae29a41e35d1728d9fa4ea52716501213b4",
+        "bytes": 1087
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/B12-1.json": {
+        "sha256": "39582bc5a2a03d1d5effd778b23dadfad65f10a17915cc9a170b98e4932cee82",
+        "bytes": 4646
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/B12-2.json": {
+        "sha256": "1ca76ac8d82fb5e94ee9bb0a16baff8786eac5db13d0648d2ae399f5c211af2c",
+        "bytes": 4439
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/B12-3.json": {
+        "sha256": "45f521569eb197094a9afbfad375fbfa8ce4de6fa2779874d6f303f0adb599c9",
+        "bytes": 4364
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/B13-1.json": {
+        "sha256": "ea2909205ab3ccab8a9f59dd43f1ce62b21c41bab228e7462061b0aa1caf6e31",
+        "bytes": 1431
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/B13-2.json": {
+        "sha256": "494902c169acd28c291d2ef56a365462666ec585263145c760c47e7ef2ffe2b0",
+        "bytes": 3841
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/B13-3.json": {
+        "sha256": "6099d3d10b6e05e9f50d3aa23d24f38b4877ebab9f46750c5e40d67816c9f62c",
+        "bytes": 2589
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/B14-1.json": {
+        "sha256": "3ae48b0c7545fc812aab7fc87ed46f9613731590b0f5b87432804a63293a1cad",
+        "bytes": 2808
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/B14-2.json": {
+        "sha256": "a39559c383d1e7d6d0523f5e6efc6abee8b58a31fa307e10e0f48a63e89a5cb9",
+        "bytes": 3326
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/B14-3.json": {
+        "sha256": "b77cbc541f5b1c2af9246d6a806b2d2de92c30e9f3b762d33c16592b6af2a7fc",
+        "bytes": 3162
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/B15-1.json": {
+        "sha256": "be2ecdff7f1374a30496d0e8c926c26334043ec955b37dfa8f1330d0e8a33e90",
+        "bytes": 3051
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/B15-2.json": {
+        "sha256": "d8642907ce322bc0feee0361e82103118b7311d12e34f7c0698e23aafe13e677",
+        "bytes": 1970
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/B15-3.json": {
+        "sha256": "db663f460ddc27709c629db2ab13fd1f7bc41caf1f51a75dd315c40ae74bb88c",
+        "bytes": 3414
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/B16-1.json": {
+        "sha256": "50792901ba0f1199c7ea7f4b84a4d81ee157042a584caaebcae8c6ff80c40dea",
+        "bytes": 11014
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/B16-2.json": {
+        "sha256": "99a786fdce7e74e3083d07d6163b0ff714b342a1c1a1e2cc37b1ddaf5884c10b",
+        "bytes": 12645
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/B16-3.json": {
+        "sha256": "641fb9a13a443a676d4ac2fc27c725b7ed77f8a59069429388e0d93560dbe7c4",
+        "bytes": 12043
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/Helikon_Mini_Operating_Master.json": {
+        "sha256": "3102acb0518a26d08669ca90e186beed405ed9d752636183b02e253b0e477bd2",
+        "bytes": 21903
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/Helikon_Mini_System.md": {
+        "sha256": "7e61ba4b295f51407790acd15077e1f7586faa67dc2411d7d388d6059f36a6e8",
+        "bytes": 1492
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/R01-1.json": {
+        "sha256": "d6e3be9664c4b87665d9d1d29b03eaa2978d64f596a731c01ab2af78f32f9e26",
+        "bytes": 2922
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/README.md": {
+        "sha256": "99a1ba5948aa2f15551410cf39b1f6fd8dd35b013dcc0d2715a7de1cc6d1d525",
+        "bytes": 4373
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/U01-concise_baseline-1.json": {
+        "sha256": "9b238fb1954587d9f9f37cb042ce11b51bff2d7026f2f610a4865ee7b1a85f9b",
+        "bytes": 2010
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/U01-concise_baseline-2.json": {
+        "sha256": "58baa7d7bdef39ca11f20072af688e5dfa29421747f70847d02d44a73e7ce3b3",
+        "bytes": 1904
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/U01-concise_baseline-3.json": {
+        "sha256": "d115897f33cf26906e078c00a16a53adf9ab072e361b17ee776468b7273d6901",
+        "bytes": 1944
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/U01-mini_candidate-1.json": {
+        "sha256": "3918a38ff71854f8c1e19b267efe95ac11a0c9a0ef86c881be5fdf2d630622a9",
+        "bytes": 1954
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/U01-mini_candidate-2.json": {
+        "sha256": "97fea4370d686e860e69491c77e7b160794d24922340cb12ba9eb99c56795b62",
+        "bytes": 2022
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/U01-mini_candidate-3.json": {
+        "sha256": "8a0583a0f06e76da58f2a78a2e24bfb4d047e11c31ecd542cd72beea16119ed7",
+        "bytes": 2036
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/U01-plain_host-1.json": {
+        "sha256": "63fecfaee4a47708c44c90f109c8815d89f472da4a452ef934d84d100cc24ddd",
+        "bytes": 1932
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/U01-plain_host-2.json": {
+        "sha256": "7fcafd71359c0e7b30ff01750c1d7a7231436ec7c1e1447c49ed8d2f119a4741",
+        "bytes": 1990
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/U01-plain_host-3.json": {
+        "sha256": "5a67ded7b3a6e2e6cda20eda88c02cc5e8d7f053a6d3df466be30276bd0094c1",
+        "bytes": 2148
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/U02-concise_baseline-1.json": {
+        "sha256": "e468f059c2a55e7c0d551b4a880308d38cdcbabfc8091f35e915b9ba1f1f8ac9",
+        "bytes": 2999
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/U02-concise_baseline-2.json": {
+        "sha256": "afd56f597663286cfedc283a53db19b1b9380ddb5024e7070291212b5c02cbc1",
+        "bytes": 2853
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/U02-concise_baseline-3.json": {
+        "sha256": "645a4906fdc3e373854435454c76309dedef33fb92907c6665a9f13cc3c162a6",
+        "bytes": 2663
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/U02-mini_candidate-1.json": {
+        "sha256": "9de5666bd55b427e1df4b2d5d6411cde7afc069bd2658278de6cd1365f245f8e",
+        "bytes": 2739
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/U02-mini_candidate-2.json": {
+        "sha256": "fcc96ffe94958963d9ca8996f656f2b55634c15ebddef37a95a40b111fbb5a16",
+        "bytes": 2549
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/U02-mini_candidate-3.json": {
+        "sha256": "45b74ea51941106cd863e35dcfe79cd1819132f2d96f3a277a6d8b0c81433bde",
+        "bytes": 2740
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/U02-plain_host-1.json": {
+        "sha256": "3b6101ec27a48fb71d48a92e76a2cdbe502ad211b7dc7726aac9c9ea5c1753cf",
+        "bytes": 2499
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/U02-plain_host-2.json": {
+        "sha256": "2319dcfcfa7e35ea9fd1dc88cb42eaf0be37c7757b0bb7a113f095a1e4d9bdee",
+        "bytes": 2663
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/U02-plain_host-3.json": {
+        "sha256": "2994a87b3db53696cc4730a719db75bf14b71b1544d1a0ee69e5d9c55913bc7f",
+        "bytes": 2723
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/U03-concise_baseline-1.json": {
+        "sha256": "7939e600b570d58650e270ed8b6a098ee1097640ee44e53dd54e24064cf5d244",
+        "bytes": 2700
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/U03-concise_baseline-2.json": {
+        "sha256": "98e52394699cb2556c99c06eed284eb5e9ead657ca276b101db86de10388a4f3",
+        "bytes": 3442
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/U03-concise_baseline-3.json": {
+        "sha256": "f77ee75d75eb77b53e20c39003395e61550058562b929297876248bb8f0e209f",
+        "bytes": 3428
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/U03-mini_candidate-1.json": {
+        "sha256": "ffc5f5f66d56f2b8e754f814d71f390830cd24f2ff8576a160f49de7fda41afa",
+        "bytes": 2664
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/U03-mini_candidate-2.json": {
+        "sha256": "6a2fe76d1ecd73a726aef0b01c4759f93b2c941bd73e6673183cb751d1dbda70",
+        "bytes": 3790
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/U03-mini_candidate-3.json": {
+        "sha256": "952488c34af3e0eba2120d2f308d46d124b33f9d86cb0e57199e61c70dfbc598",
+        "bytes": 3611
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/U03-plain_host-1.json": {
+        "sha256": "e65902a87104a5c40b71e080764d0f0fdefa74747006733a3b704c62bbe59c5e",
+        "bytes": 3240
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/U03-plain_host-2.json": {
+        "sha256": "cda2a50b90ba0fcbdc2191f00dec7cd68fc2d65a09a90aa9ee28e54a154deb69",
+        "bytes": 3195
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/U03-plain_host-3.json": {
+        "sha256": "f11f68be6b16f05c755aa1b905c8800ab4bc4d36aa9e57df77e3a79219a5dae6",
+        "bytes": 2980
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/U04-concise_baseline-1.json": {
+        "sha256": "f5c83899519c2a787a2fa27cb902634005b042eb1a6e12d3d06391f32bd345a2",
+        "bytes": 5033
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/U04-concise_baseline-2.json": {
+        "sha256": "cb93d0dc559c42d429bf7f497ad4ff06debc9efb51be617dfe81a84b06b03ebc",
+        "bytes": 5252
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/U04-concise_baseline-3.json": {
+        "sha256": "439c81f074421d62da16666ed2c9c231f5d1ae5a228fe3018e592750273f2ada",
+        "bytes": 5656
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/U04-mini_candidate-1.json": {
+        "sha256": "0ccb34934a4a37e378ee5567f5488a32c34a046a22424bc74951b6530b4666b7",
+        "bytes": 5167
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/U04-mini_candidate-2.json": {
+        "sha256": "1e5ca5bb48bf538030c526f6b06ef50ce4979a356fc0ca2d43460c947be58f22",
+        "bytes": 5250
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/U04-mini_candidate-3.json": {
+        "sha256": "142d8a8afde5335729ad681f7ee50bd00766dcfa5b34bae706e5972a6a496b53",
+        "bytes": 5022
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/U04-plain_host-1.json": {
+        "sha256": "bbc03e9ab590096043ee8dc297639406d8e3669283d5116c8c80665ac9789c63",
+        "bytes": 5862
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/U04-plain_host-2.json": {
+        "sha256": "b9f62009662451f7761ed58d744020f9995a16e54ae084d8a22841a39813bf8a",
+        "bytes": 4928
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/U04-plain_host-3.json": {
+        "sha256": "c465ba29cdbab4c28460f45cf1218d3fc58e57fe1a6f43630bbc9d1833973a3a",
+        "bytes": 4929
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/U05-concise_baseline-1.json": {
+        "sha256": "27339cbe90e7d3630a1a297908d240dcc559c8f067dc3af7b436e6a52b981bef",
+        "bytes": 1050
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/U05-concise_baseline-2.json": {
+        "sha256": "38d6b87e337c7fa29b0efef0d919cfb601d669383edf78f2b1d396f88c1e659a",
+        "bytes": 1050
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/U05-concise_baseline-3.json": {
+        "sha256": "8e12af615c44b54954eeca234e678843ad544aa381c20b584d55aa26a4f31177",
+        "bytes": 1050
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/U05-mini_candidate-1.json": {
+        "sha256": "80cc7737fb7c1b81025096e4152b62951b21c21fddf5b18cae01389b4bd6cd5f",
+        "bytes": 1246
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/U05-mini_candidate-2.json": {
+        "sha256": "f7e581ef0e1f9f93a51d25f1e948a2f32677b676cae8dfa1c60d49d41ce0a6b8",
+        "bytes": 1046
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/U05-mini_candidate-3.json": {
+        "sha256": "1c002bde06c1ebed2dbe3efbed162f7403ff82fce2594f6b6125e37b8f55d89e",
+        "bytes": 1046
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/U05-plain_host-1.json": {
+        "sha256": "f366826d7af24deb710b304b43cdc3506715147f4e1cdadf9bd0a3524ea01323",
+        "bytes": 1038
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/U05-plain_host-2.json": {
+        "sha256": "b29139fec11846d30987e67f238c77853ef445027e5ea869e46672877fe8e581",
+        "bytes": 1038
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/U05-plain_host-3.json": {
+        "sha256": "7f9b4df6f642a277777aa03d5ace7add4d449794f1e9619e6b6dc69c42f4c652",
+        "bytes": 1038
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/U06-concise_baseline-1.json": {
+        "sha256": "702512d77215aec4caf169dbd4e9f8f2e9c3ee245895c26be203b9335f7aa27a",
+        "bytes": 998
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/U06-concise_baseline-2.json": {
+        "sha256": "98129380c4792dfc96a8c3ff78a21c73452f9032a397396f1af9957d4e92023a",
+        "bytes": 998
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/U06-concise_baseline-3.json": {
+        "sha256": "155cfec3b319a16b5053c06886266fda5284e37cd488dc0ee972b248d6de7d23",
+        "bytes": 1092
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/U06-mini_candidate-1.json": {
+        "sha256": "74fc7aa8bc74c2ab7014ebeb9289b831b2f9f1d9b6520aa20604eb8011acf343",
+        "bytes": 1629
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/U06-mini_candidate-2.json": {
+        "sha256": "b59a4c211595e777786cdef2dc83f0f2c01d771de64eeb513df221cfac4a8684",
+        "bytes": 1615
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/U06-mini_candidate-3.json": {
+        "sha256": "235bb2fd0ad598b88c4738bb467e2357661406cdc4cac8a70fad56575f387e7d",
+        "bytes": 1305
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/U06-plain_host-1.json": {
+        "sha256": "cea170475eb28a7717019e65f7b722e2d64d73f1a2677d4084ac21237a9592f8",
+        "bytes": 986
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/U06-plain_host-2.json": {
+        "sha256": "70f1abcf9c87490cfee13ac682c3712ccfd221ae18a2b65534e6069fc830eea8",
+        "bytes": 1188
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/U06-plain_host-3.json": {
+        "sha256": "8fc3f500a319f1fe77552f6081ba748eb91bf0c0680700277d5d7a733b1d00bc",
+        "bytes": 1188
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/U07-concise_baseline-1.json": {
+        "sha256": "e4279030b35dbd219002a56a8958124481ac74997b3214a13812ee8102705de2",
+        "bytes": 2077
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/U07-concise_baseline-2.json": {
+        "sha256": "1d77ae17fadcad028ba63431447a7b33d8f8f3340d999f1e075cbb8062579e00",
+        "bytes": 2127
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/U07-concise_baseline-3.json": {
+        "sha256": "f3f1f3663ccedd33bd8894bbcea1ab59acfd68f71e6238931ae099c97bde2bd3",
+        "bytes": 2600
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/U07-mini_candidate-1.json": {
+        "sha256": "e0a045649cc36c87e885e3249df514de4990c2dc9c36b37c55a4197b18ca2a2d",
+        "bytes": 2532
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/U07-mini_candidate-2.json": {
+        "sha256": "a87fd23ea8c4c6b0c263cdd9d1d643b5b19023e9516167c3d5f22153cb981dfa",
+        "bytes": 2546
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/U07-mini_candidate-3.json": {
+        "sha256": "6a4a705aa826794798bbe4c53328a8ac063b83627f8618f3da46e3b597a5fd12",
+        "bytes": 2534
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/U07-plain_host-1.json": {
+        "sha256": "6b254a891c6d6aaf16e158e2085d177a17f7f5ec73b1b75e3045366ae38ffec2",
+        "bytes": 2883
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/U07-plain_host-2.json": {
+        "sha256": "e6dd7c0db8c39bde56e6d9b245cfaaeaf952094ad77a597ad9f200aa8eed9128",
+        "bytes": 2679
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/U07-plain_host-3.json": {
+        "sha256": "50c1f4790c4ad95543c6166d020dd1b7a7c4de252eb2d0e09f0732ce123e661e",
+        "bytes": 2153
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/U08-concise_baseline-1.json": {
+        "sha256": "be77753282c434d99db46e98146faa777a72f0f9f83a2e6025bcf8ebd3180fa2",
+        "bytes": 1951
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/U08-concise_baseline-2.json": {
+        "sha256": "e1d46ebedef7707eed7b05b20843e0812ff6a57a3dc1ad0fbf8ce5a530f28adb",
+        "bytes": 2391
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/U08-concise_baseline-3.json": {
+        "sha256": "bbf1017c3c0edff18e15252423216be408a2677d6d19cfe8c211bc7a59eacce4",
+        "bytes": 2073
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/U08-mini_candidate-1.json": {
+        "sha256": "c3bf90b6f77b782457670f8e67399dbd4cd39f252437057f247111350861e5ea",
+        "bytes": 1787
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/U08-mini_candidate-2.json": {
+        "sha256": "49d7863efb15afb9d10339d0fa7450d866a3b47542d5bb964f31de46e2898cfb",
+        "bytes": 1564
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/U08-mini_candidate-3.json": {
+        "sha256": "c77e33ada786879fb25d93674c56170718d166f9315bffba511790ba43b98144",
+        "bytes": 1445
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/U08-plain_host-1.json": {
+        "sha256": "c7f9873cc18fefc98d2d3306fde58e7a1916700eaa9267ce61c56cb9d83d5514",
+        "bytes": 1874
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/U08-plain_host-2.json": {
+        "sha256": "1ac973235db5ff1271224f76dadf772586760d8a61da1b3fd42be30fde90d6a5",
+        "bytes": 1996
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/U08-plain_host-3.json": {
+        "sha256": "67c25f9c1741c561a84a4390a11e2105363477a7c138e8b5315c16f2702a6da7",
+        "bytes": 2283
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/behavior-review.json": {
+        "sha256": "be68922d6cea553c16f6fc6e1225490e2b5b2902ee0bcb4bb140cf228ad9cc0f",
+        "bytes": 16251
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/browser-recovery.json": {
+        "sha256": "6e52953c1c1ffa4206fb9cb6ec2b8178cdaf70aee017e28f2ac7f6844709c23d",
+        "bytes": 626
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/fixtures/partial/Helikon_Mini_Operating_Master.json": {
+        "sha256": "845c536a698e5365800b3f6063cd7ad5503d81e77fb3424f6b6692e575d0d15d",
+        "bytes": 4000
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/fixtures/wrong/Helikon_Mini_Operating_Master.json": {
+        "sha256": "f3a5f909cf15a60a37a91810284a963ee999c4d8e0bb151b7704710534bc086b",
+        "bytes": 21905
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/installation-fresh-chat.txt": {
+        "sha256": "c1546a7622384cbe7bc592abb64340251927ac849362b91b23b293ca9123d96e",
+        "bytes": 1020
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/installation-journal.json": {
+        "sha256": "19c3c5049b10e2cb3a81367c6c1290a5a064252f90d8d0bc45603d80c0b0d9e8",
+        "bytes": 9889
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/source-coverage.json": {
+        "sha256": "221960d5d33d2bf9e9686e5625ff160545e5ab4eefa8f625437330ce2951f5a6",
+        "bytes": 1650
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/source-identity.json": {
+        "sha256": "31a0c7a2fba295dd58ae5a8d2f4313e3d873e8c37a863c166d981af4844fbd86",
+        "bytes": 3091
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/source-owners.json": {
+        "sha256": "9eed9cb9c0bb92e74adf3d9b9cf11fc796092c07f0dad30e742d1685417815e2",
+        "bytes": 3637
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/source-procedures.json": {
+        "sha256": "c9cd6d96d8d2b4c6fe29146312def0b5f318a8652b9bc0fda260da078bed20b0",
+        "bytes": 4051
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/source-rules-a.json": {
+        "sha256": "8f80b93546d438c37323aca8063dce8a39984add42d272b05e3bf9803376a6c8",
+        "bytes": 3291
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/source-rules-b.json": {
+        "sha256": "95c4bb2c31428ad5f7656287306b160fc1c70b22897d9e9edc025d03f6043e93",
+        "bytes": 3684
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/source-rules-c.json": {
+        "sha256": "45db2265bd812890ae91ebfb23fd0c594f7bc5af9c5fa872da19aaf26e2d1106",
+        "bytes": 3481
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/source-rules-d.json": {
+        "sha256": "d7b1139b1c5ae6072dbfe2305e066d58978421046f2dbeecb5916083bd5427bd",
+        "bytes": 2744
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/source-rules-e.json": {
+        "sha256": "2b3c96071301c6873669966e843db8c15226d2481f25141acffac46b082d0c94",
+        "bytes": 1712
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/utility-controls.json": {
+        "sha256": "82f7b1d227f30ffe3b417ba95e718336968e64cdfb138711c6092fe5dad1c7a0",
+        "bytes": 2811
+      },
+      "release/4.0.0-candidate.4/browser-pilot-04/utility-review.json": {
+        "sha256": "2e7ff60a34b6b7d011f0a363aaded9574cb4786d1984e4d225139bbe03e28f7d",
+        "bytes": 21147
+      },
+      "release/4.0.0-candidate.5/EVIDENCE_MANIFEST.json": {
+        "sha256": "f730af500ae205724ee7ff894811c3d4b128d8d0498899c5f39741d3a6d60f3e",
+        "bytes": 17447
+      },
+      "release/4.0.0-candidate.5/Helikon-Mini-4.0.0-candidate.5.zip": {
+        "sha256": "d4fcf46e86ba349906ce5ade1572502adbdfeec1849ff19f62b2372b0176653a",
+        "bytes": 98043
+      },
+      "release/4.0.0-candidate.5/Helikon-Mini-4.0.0-candidate.5.zip.sha256": {
+        "sha256": "637697c01b4d3d29b6d25505960cc14c59a5883407084e864a2ae84c1286760d",
+        "bytes": 101
+      },
+      "release/4.0.0-candidate.5/PUBLICATION_STATUS.md": {
+        "sha256": "38372dccf4b76daef54e132c53a45c46731a88bb532dc3c356bf80518ef15f48",
+        "bytes": 4506
+      },
+      "release/4.0.0-candidate.5/README.md": {
+        "sha256": "80d5c708390deef29e88bbaf9d8c202993f7393b92259f9f657f5f53bac540b1",
+        "bytes": 1380
+      },
+      "release/4.0.0-candidate.5/RELEASE_NOTES.md": {
+        "sha256": "b77fd1b8c811489cb37848ca7cc9178af97462dc64f239c29705b4ecbad202b9",
+        "bytes": 3365
+      },
+      "release/4.0.0-candidate.5/archive-verification.json": {
+        "sha256": "6d28f6c87e5b53949be66abdefc631af5b769c3d739e082b8b1763f1363ade92",
+        "bytes": 74
+      },
+      "release/4.0.0-candidate.5/browser-pilot-05/B01-1.json": {
+        "sha256": "168fff2fc20f345231132ebf1ccebabe5ab53a7e7b0e88db747ee9c7c3a9ff5e",
+        "bytes": 1409
+      },
+      "release/4.0.0-candidate.5/browser-pilot-05/B01-2.json": {
+        "sha256": "5fa198822abf68b7a8eeb36782272c189aae71d125dccf51895ad152ae3eaa27",
+        "bytes": 1380
+      },
+      "release/4.0.0-candidate.5/browser-pilot-05/B01-3.json": {
+        "sha256": "7586d5b4a7a5cf64d63bf33b0a39462d307f2b9bd7d155bfa3ea4df628072afa",
+        "bytes": 1472
+      },
+      "release/4.0.0-candidate.5/browser-pilot-05/B02-1.json": {
+        "sha256": "a5e1c618edb94ee972b682d738a88d2c1ffe631c30d5f3e9603b38a5ce1bf302",
+        "bytes": 1598
+      },
+      "release/4.0.0-candidate.5/browser-pilot-05/B02-2.json": {
+        "sha256": "635b8d0bd06f79356a7a9663a2c745e014542f45bd55e504dd62e471d2c120a8",
+        "bytes": 1775
+      },
+      "release/4.0.0-candidate.5/browser-pilot-05/B02-3.json": {
+        "sha256": "760f2ec417b5d729ff8534b212c0662e3d38099bbce5d04990f29d17a4022a53",
+        "bytes": 1660
+      },
+      "release/4.0.0-candidate.5/browser-pilot-05/B03-partial-1.json": {
+        "sha256": "edda36a9265e0a51a19f7da085717376b7b600af59129f6f19eec2edc0e44e41",
+        "bytes": 4669
+      },
+      "release/4.0.0-candidate.5/browser-pilot-05/B03-partial-2.json": {
+        "sha256": "0aaeb806bd09070a511a5316d79cfceae3f7969b8ad26e7bf9bf42a7c7022e7d",
+        "bytes": 4551
+      },
+      "release/4.0.0-candidate.5/browser-pilot-05/B03-partial-3.json": {
+        "sha256": "c46cc006e418b4cc8cdffe1bf97d176ca853ac60df1c026bf00877d65328b0f3",
+        "bytes": 4305
+      },
+      "release/4.0.0-candidate.5/browser-pilot-05/B03-partial.json": {
+        "sha256": "d50f72cb972c7afac3662f75b939ac3bc4d44180ad171fef0a8a4e3050346ac0",
+        "bytes": 4683
+      },
+      "release/4.0.0-candidate.5/browser-pilot-05/B03-wrong-1.json": {
+        "sha256": "533658983f4202cb7100ef9ab421a5e03e4da7ce9156a12855f754bcd3798684",
+        "bytes": 4276
+      },
+      "release/4.0.0-candidate.5/browser-pilot-05/B03-wrong-2.json": {
+        "sha256": "c96395d39bbd06f06e4ecda1752031fa7cd8558265edda784feb9dba57d31774",
+        "bytes": 4706
+      },
+      "release/4.0.0-candidate.5/browser-pilot-05/B03-wrong-3.json": {
+        "sha256": "1ce24f133ca4a4b32032b1dcacfa43cdc9383a901ce737054207e2c1a514eb70",
+        "bytes": 5199
+      },
+      "release/4.0.0-candidate.5/browser-pilot-05/B03-wrong.json": {
+        "sha256": "76fb2322af05aa8e07cd4a613944ffab3154a6e8fcaa5ce30b37e27e54ba71b6",
+        "bytes": 4671
+      },
+      "release/4.0.0-candidate.5/browser-pilot-05/B04-1.json": {
+        "sha256": "2be5068f445f6d1bd56b8f71c6075d485e01928869ad21e07615bf958c5bd88d",
+        "bytes": 5981
+      },
+      "release/4.0.0-candidate.5/browser-pilot-05/B04-2.json": {
+        "sha256": "6857d62002a061c2b9545faa9b4a1a6cd56c9f8937bac26e22a5af3aa7b90989",
+        "bytes": 5007
+      },
+      "release/4.0.0-candidate.5/browser-pilot-05/B04-3.json": {
+        "sha256": "c8a1a3c23e8732a36ed35d5cb853e7c72db4a40d1ecac183cee5a3f7cf9def7b",
+        "bytes": 5198
+      },
+      "release/4.0.0-candidate.5/browser-pilot-05/B05-1.json": {
+        "sha256": "1e79b2fb8fba6add01548a8b3c252083eb66571050b7c0f5ade424fcb9550f42",
+        "bytes": 1339
+      },
+      "release/4.0.0-candidate.5/browser-pilot-05/B05-2.json": {
+        "sha256": "84dec044b7603746d3b0f62de0cab3c538669e9eae2b5ad8255371383f81dd5a",
+        "bytes": 1461
+      },
+      "release/4.0.0-candidate.5/browser-pilot-05/B05-3.json": {
+        "sha256": "a3c5f81c60cebd61085936ebd3a4d231b168c86db024fb825d96a3f733cdf018",
+        "bytes": 1691
+      },
+      "release/4.0.0-candidate.5/browser-pilot-05/B06-1.json": {
+        "sha256": "8d08b798508e37502bb729a32a1304beab020bf26bd7f01610d1af0d07122769",
+        "bytes": 1775
+      },
+      "release/4.0.0-candidate.5/browser-pilot-05/B06-2.json": {
+        "sha256": "5b5587e6a0dc9ad6297e06a80dff10791c087487b4be8d0fef29f244d049eb4d",
+        "bytes": 1922
+      },
+      "release/4.0.0-candidate.5/browser-pilot-05/B06-3.json": {
+        "sha256": "40fa03a4041460f453ba9f8d289916680d2fc3bba8d79eeeddf69caa4d5b0792",
+        "bytes": 2167
+      },
+      "release/4.0.0-candidate.5/browser-pilot-05/B07-1.json": {
+        "sha256": "93560226eb3d0976ced2712ca0024863164c84697f50ec5beeb690a1eca43aa4",
+        "bytes": 4078
+      },
+      "release/4.0.0-candidate.5/browser-pilot-05/B07-2.json": {
+        "sha256": "0deb444c2baf42bb28d762e7427600c3b990423103b954d08ad3987886299315",
+        "bytes": 3516
+      },
+      "release/4.0.0-candidate.5/browser-pilot-05/B07-3.json": {
+        "sha256": "15e591f3cba5a69bea7fe977fa7d00f66a3389c504bbd5fddc5c81ed9b017dac",
+        "bytes": 3935
+      },
+      "release/4.0.0-candidate.5/browser-pilot-05/B08-1.json": {
+        "sha256": "828138d58f69dd4edfc0eaa3fa12f46eeba231e08c0f687756296570d9464dfa",
+        "bytes": 1543
+      },
+      "release/4.0.0-candidate.5/browser-pilot-05/B08-2.json": {
+        "sha256": "8dc52fe038e0587d344491b114ed42105ae9f375c1bda69901738ad0ee4992d3",
+        "bytes": 1450
+      },
+      "release/4.0.0-candidate.5/browser-pilot-05/B08-3.json": {
+        "sha256": "fd9ee4606e119b6ca0145ed9c048294fbdeb89124a7564c84b1ef012de0bec97",
+        "bytes": 1410
+      },
+      "release/4.0.0-candidate.5/browser-pilot-05/B09-1.json": {
+        "sha256": "9fdf857840cbf5ab8f36d12d554ab94b6f3f35401b12317f6c89971c84ff27e3",
+        "bytes": 10394
+      },
+      "release/4.0.0-candidate.5/browser-pilot-05/B09-2.json": {
+        "sha256": "909e07ad17e9d139a44ba423634b094754789381d58f225315ff7cdc2a41e9f3",
+        "bytes": 9910
+      },
+      "release/4.0.0-candidate.5/browser-pilot-05/B09-3.json": {
+        "sha256": "eb0c256ec9c48d71e06b9e7a8e0e9adedada8573268066d24ee6ad74e6644934",
+        "bytes": 9100
+      },
+      "release/4.0.0-candidate.5/browser-pilot-05/B10-1.json": {
+        "sha256": "2508eb9e36c7da9cc56c5598c359e14390c124a4f8d2bce6db93a5064dbeed9c",
+        "bytes": 3842
+      },
+      "release/4.0.0-candidate.5/browser-pilot-05/B10-2.json": {
+        "sha256": "ca77a3331990c59c8eeee14c2bb5dd81596e62347e00522a3e752b4f63192313",
+        "bytes": 3654
+      },
+      "release/4.0.0-candidate.5/browser-pilot-05/B10-3.json": {
+        "sha256": "11dbb443232dc562c5feffa46270cb1d6a08c2b870efabc944be242d9bab532e",
+        "bytes": 3182
+      },
+      "release/4.0.0-candidate.5/browser-pilot-05/B11-1.json": {
+        "sha256": "84cd188252b5a52a8a2b5649cb07807fb5f3bf954695d1ccc98fce038828684c",
+        "bytes": 902
+      },
+      "release/4.0.0-candidate.5/browser-pilot-05/B11-2.json": {
+        "sha256": "0d82cc386b64a5b69b81d551794ef4c68802bee6e07f8793949bbb4bd2d21c4a",
+        "bytes": 902
+      },
+      "release/4.0.0-candidate.5/browser-pilot-05/B11-3.json": {
+        "sha256": "46d0a5d540289d4eb8c43a9750461281cbd5c8b052289f524e952331c28c3ced",
+        "bytes": 902
+      },
+      "release/4.0.0-candidate.5/browser-pilot-05/B11-code.json": {
+        "sha256": "45a0880a3c6a9b8f475a03ecba9ef3702fcb3fbe340d7a55cc8c132a3c4eca57",
+        "bytes": 954
+      },
+      "release/4.0.0-candidate.5/browser-pilot-05/B11-csv.json": {
+        "sha256": "affb0966b51291257830bab96fbcf7588c66dcff41828e7a064f4eb48f19fc41",
+        "bytes": 951
+      },
+      "release/4.0.0-candidate.5/browser-pilot-05/B11-template.json": {
+        "sha256": "0c60a7a2550145ca8404e717465e6a9670128cee1be204d2129e1b836e90f1c9",
+        "bytes": 1087
+      },
+      "release/4.0.0-candidate.5/browser-pilot-05/B12-1.json": {
+        "sha256": "76ddd58bda56dc9f74f887493bc5c7186f8967b71a7e11518784a31d871fb766",
+        "bytes": 3815
+      },
+      "release/4.0.0-candidate.5/browser-pilot-05/B12-2.json": {
+        "sha256": "34f15172ff2f0dc0649be7a4c8c2661d20688e100d6e1d9697e21ca12cff8caf",
+        "bytes": 3933
+      },
+      "release/4.0.0-candidate.5/browser-pilot-05/B12-3.json": {
+        "sha256": "c5f64f4a64185bceecc29b5a81ac5c768f435e0199d70f446d4ed884a9b87ae6",
+        "bytes": 3769
+      },
+      "release/4.0.0-candidate.5/browser-pilot-05/B13-1.json": {
+        "sha256": "64751ad6e4e005f4944ebfa6181a82722ae7accb91e6045ae11acfe5a991fe01",
+        "bytes": 3753
+      },
+      "release/4.0.0-candidate.5/browser-pilot-05/B13-2.json": {
+        "sha256": "581f98714759c5b38f9aadd9785c20ff4ee7e6b389978fc1a71e665298c2c8b0",
+        "bytes": 3887
+      },
+      "release/4.0.0-candidate.5/browser-pilot-05/B13-3.json": {
+        "sha256": "661dc951dfed806a72dc662ea26263c70f812212e03dd52cec1b3c85744fa359",
+        "bytes": 3999
+      },
+      "release/4.0.0-candidate.5/browser-pilot-05/B14-1.json": {
+        "sha256": "596abda56489aaaf71d469f3db5a9f19339fe11305169bb48434855da1c93c1c",
+        "bytes": 3022
+      },
+      "release/4.0.0-candidate.5/browser-pilot-05/B14-2.json": {
+        "sha256": "8938ecf26d7a24d07698712d754473a3e0c41c0426335d9f8aa898c93f226db5",
+        "bytes": 3258
+      },
+      "release/4.0.0-candidate.5/browser-pilot-05/B14-3.json": {
+        "sha256": "8ef9fd2b91e5ff35d4dec23767a689e24b38bd9479dfca441adf5e9b1206daf2",
+        "bytes": 2851
+      },
+      "release/4.0.0-candidate.5/browser-pilot-05/B15-1.json": {
+        "sha256": "598bdb5794aa5c049812f3846190c2d2c69823afe9a2533dbce40c9482fa3126",
+        "bytes": 3843
+      },
+      "release/4.0.0-candidate.5/browser-pilot-05/B15-2.json": {
+        "sha256": "814243e20dfbc56cfd3e6f39ba961bcf3cb46d041d6c94301fdf8dec75b14fa8",
+        "bytes": 3799
+      },
+      "release/4.0.0-candidate.5/browser-pilot-05/B15-3.json": {
+        "sha256": "d63504b07f421f6b79fd349722b67a22220b4759e6b8e3b0539b807f8b64b48f",
+        "bytes": 3254
+      },
+      "release/4.0.0-candidate.5/browser-pilot-05/B16-1.json": {
+        "sha256": "db18e9a357b079e3435a01979fd0d3ad7f318d449c42fbec870e7d05cb4df812",
+        "bytes": 11332
+      },
+      "release/4.0.0-candidate.5/browser-pilot-05/B16-2.json": {
+        "sha256": "acb61729c21764fb0e01194cdbe48bd68908e9a78061f8463d7d9cf10400138b",
+        "bytes": 11279
+      },
+      "release/4.0.0-candidate.5/browser-pilot-05/B16-3.json": {
+        "sha256": "dc8adb1212495a092d8d87b4a5d6a602938f23cef83065e101ed2499dcccfbf7",
+        "bytes": 12251
+      },
+      "release/4.0.0-candidate.5/browser-pilot-05/Helikon_Mini_Operating_Master.json": {
+        "sha256": "21f2635f72b3e519d4d25041ef968d2b121df4e8bfb5552a0cc595374c02e378",
+        "bytes": 22251
+      },
+      "release/4.0.0-candidate.5/browser-pilot-05/Helikon_Mini_System.md": {
+        "sha256": "f8432f2f677cca9c95d4a813e4609586eed067e545ff397fcc5b99de56d5ea3f",
+        "bytes": 1490
+      },
+      "release/4.0.0-candidate.5/browser-pilot-05/P01-fractional.json": {
+        "sha256": "366d36a97c0830c71a3b39713b278248ff10eff43632cac175587b97555cbee5",
+        "bytes": 3504
+      },
+      "release/4.0.0-candidate.5/browser-pilot-05/P02-infeasible.json": {
+        "sha256": "d85d15c73bd0ba53b83ca22b1f06f03226720d1260fd72ae7c0e7681f8249cfc",
+        "bytes": 3755
+      },
+      "release/4.0.0-candidate.5/browser-pilot-05/P03-capacity.json": {
+        "sha256": "18f18250f63c7219269fa874a04b44e0eae504da8a0d50a63e479805c958792d",
+        "bytes": 3688
+      },
+      "release/4.0.0-candidate.5/browser-pilot-05/R01.json": {
+        "sha256": "1ac40feb53246f9aa84406022bf4f9177481c8c75efc33775c0396f5a46c6f79",
+        "bytes": 7144
+      },
+      "release/4.0.0-candidate.5/browser-pilot-05/README.md": {
+        "sha256": "9a37e96ab1edcd2054bec5d96dba88c82c4d83e2dcc368ee9117eb569a09f44e",
+        "bytes": 4755
+      },
+      "release/4.0.0-candidate.5/browser-pilot-05/U01-mini_candidate-1.json": {
+        "sha256": "665815138bc219230f3a69b2509db98a576ee933f077b502863316e792c912e3",
+        "bytes": 1919
+      },
+      "release/4.0.0-candidate.5/browser-pilot-05/U01-mini_candidate-2.json": {
+        "sha256": "cbe69f2d7467e155dd407c2e36901b539e41f4902693a1ea65217e641ea5d2fb",
+        "bytes": 2053
+      },
+      "release/4.0.0-candidate.5/browser-pilot-05/U01-mini_candidate-3.json": {
+        "sha256": "fa984dd6ba995d3fd2aecfb2d976d9a147426a9740283b2368dd42e70dce3c95",
+        "bytes": 1957
+      },
+      "release/4.0.0-candidate.5/browser-pilot-05/U02-mini_candidate-1.json": {
+        "sha256": "ee2c930243960ef6033422998cfcadb14a8c101534170775d208b573f0c5ffb2",
+        "bytes": 2719
+      },
+      "release/4.0.0-candidate.5/browser-pilot-05/U02-mini_candidate-2.json": {
+        "sha256": "df6ec7cff839b96674721e2c711d6a484796d1f5f8182a09c7252b95ef4f420a",
+        "bytes": 2818
+      },
+      "release/4.0.0-candidate.5/browser-pilot-05/U02-mini_candidate-3.json": {
+        "sha256": "28cd491a6901c254c7eb1aaadda8b749bbfccf241185400519e7f8fdda2822a6",
+        "bytes": 1599
+      },
+      "release/4.0.0-candidate.5/browser-pilot-05/U03-mini_candidate-1.json": {
+        "sha256": "8d341d8635204af59b681d3f35669d53e42911ccdb02e981897b322ec0e97ad5",
+        "bytes": 3706
+      },
+      "release/4.0.0-candidate.5/browser-pilot-05/U03-mini_candidate-2.json": {
+        "sha256": "a8bd11eae6831788e3caf236321bd09f931ab25b751e996f4e261b8124bcae1f",
+        "bytes": 2563
+      },
+      "release/4.0.0-candidate.5/browser-pilot-05/U03-mini_candidate-3.json": {
+        "sha256": "bade0ab3b5ad4c4871b14150c720ec1b241028f3fecafed0149369a2d7d0df2d",
+        "bytes": 3724
+      },
+      "release/4.0.0-candidate.5/browser-pilot-05/U04-retest-1.json": {
+        "sha256": "95593aed2e7012e5115de4c337a130da1b90dd185baba8286bf346be599e602d",
+        "bytes": 3650
+      },
+      "release/4.0.0-candidate.5/browser-pilot-05/U04-retest-2.json": {
+        "sha256": "f9fc6f732182afcdb7d566986ca7d2e67da5323fff67b0cea301992e07c63d69",
+        "bytes": 3020
+      },
+      "release/4.0.0-candidate.5/browser-pilot-05/U04-retest-3.json": {
+        "sha256": "e20fede010abc9581cae05aa07d6c81f6a422b4bdfffc4e11ae7d5efb62fdd3d",
+        "bytes": 4440
+      },
+      "release/4.0.0-candidate.5/browser-pilot-05/U05-mini_candidate-1.json": {
+        "sha256": "688bd407a9422aa54f3d211b56140229bca9a888b21261f738deda94d5802593",
+        "bytes": 1057
+      },
+      "release/4.0.0-candidate.5/browser-pilot-05/U05-mini_candidate-2.json": {
+        "sha256": "c8db7bb0eae87675090bd464e8fb2c37b000f08c17ffcff2fb6753493bf03522",
+        "bytes": 1057
+      },
+      "release/4.0.0-candidate.5/browser-pilot-05/U05-mini_candidate-3.json": {
+        "sha256": "645411b6d2fef720c58b50dbba291c70bc54f62a21fefb1aee5f6bd96482a536",
+        "bytes": 1057
+      },
+      "release/4.0.0-candidate.5/browser-pilot-05/U06-mini_candidate-1.json": {
+        "sha256": "a3edc895a3df1e35b2d852ca734751037b89af3b4dc89c3d48b9a7897e816def",
+        "bytes": 1403
+      },
+      "release/4.0.0-candidate.5/browser-pilot-05/U06-mini_candidate-2.json": {
+        "sha256": "fd1397ff9c2476d0257c9b36ffb1a4748933aeb7b160d245eff03256eb82d667",
+        "bytes": 1395
+      },
+      "release/4.0.0-candidate.5/browser-pilot-05/U06-mini_candidate-3.json": {
+        "sha256": "d40bf8713d924de22e1d8f41c4798651f4b5e97de8499e1b00d094b25318dd7b",
+        "bytes": 1709
+      },
+      "release/4.0.0-candidate.5/browser-pilot-05/U07-mini_candidate-1.json": {
+        "sha256": "75f19edd4293a1d5f029d4ae48378bd99f51f5a4ab0e1a058825704195cb4796",
+        "bytes": 2316
+      },
+      "release/4.0.0-candidate.5/browser-pilot-05/U07-mini_candidate-2.json": {
+        "sha256": "3598376e6b4994bd83bfaceeab722ad7c763b2676f9f9a4446bc62a5356adada",
+        "bytes": 2546
+      },
+      "release/4.0.0-candidate.5/browser-pilot-05/U07-mini_candidate-3.json": {
+        "sha256": "17c46149ebd433a8c8e3d6068b64bf00eccc244c69f6abac18d8bf691719a607",
+        "bytes": 2553
+      },
+      "release/4.0.0-candidate.5/browser-pilot-05/U08-mini_candidate-1.json": {
+        "sha256": "b15a7a18e42aab8a97f1d728cbcc77ee55a960a58cad53e72684a987402dc45e",
+        "bytes": 1725
+      },
+      "release/4.0.0-candidate.5/browser-pilot-05/U08-mini_candidate-2.json": {
+        "sha256": "d7ab4a5d4989e0576b9a5ed8274b94e4c18be147ad7d39b18f7cfc94433e7d90",
+        "bytes": 1729
+      },
+      "release/4.0.0-candidate.5/browser-pilot-05/U08-mini_candidate-3.json": {
+        "sha256": "539c9b4f8d78231c5d9039712d643fa76d17a893e9236bf8773929729eb467fb",
+        "bytes": 1619
+      },
+      "release/4.0.0-candidate.5/browser-pilot-05/behavior-review.json": {
+        "sha256": "d61022a7d5657af3620a736a8907c3df0d374c32198647d10239329ef5c21cf0",
+        "bytes": 16235
+      },
+      "release/4.0.0-candidate.5/browser-pilot-05/final-browser-state.json": {
+        "sha256": "e32bae993073454f2ef2d8fe6b0db0bf8680ced9f4afc99f6b2603dad93df41f",
+        "bytes": 498
+      },
+      "release/4.0.0-candidate.5/browser-pilot-05/fixtures/partial/Helikon_Mini_Operating_Master.json": {
+        "sha256": "270d2ef46b44acd17d739b9ebc02380f92cc4bd490b5521b64b1381b4dadc65e",
+        "bytes": 4000
+      },
+      "release/4.0.0-candidate.5/browser-pilot-05/fixtures/wrong/Helikon_Mini_Operating_Master.json": {
+        "sha256": "86148ee49cd09db734da442c374f7d8894342fc7f8a9e89bbf5586e7fea99e51",
+        "bytes": 22253
+      },
+      "release/4.0.0-candidate.5/browser-pilot-05/installation.json": {
+        "sha256": "c1505fe19c606f4bbfbccdadcd5b445be4ff8959cf9461bdb6b7dc23cdc4732f",
+        "bytes": 500
+      },
+      "release/4.0.0-candidate.5/browser-pilot-05/installed-project.jpg": {
+        "sha256": "c10478bf416093dbb4affa066652404caabe673117ce221cae12f03cd9e09352",
+        "bytes": 29493
+      },
+      "release/4.0.0-candidate.5/browser-pilot-05/negative-installation.json": {
+        "sha256": "ed7d5ab55abfef4d3322aae0493fc472fe9a2e9871fa475a0b7d67847d4b98b9",
+        "bytes": 3193
+      },
+      "release/4.0.0-candidate.5/browser-pilot-05/source-coverage.json": {
+        "sha256": "d4dbe2fd927fbd1535517f114457449f702bb00de627c993789a78c0dfa73f8a",
+        "bytes": 751
+      },
+      "release/4.0.0-candidate.5/browser-pilot-05/source-identity.json": {
+        "sha256": "513208b572072ea80ac7e9b19d50c3c0ae3c8cb1c730aa39744c5a89faed7ce2",
+        "bytes": 3057
+      },
+      "release/4.0.0-candidate.5/browser-pilot-05/source-owners.json": {
+        "sha256": "54c9ee0791ce63a19efb955fa612f8204847421656c0950734f7c9bf38b4c0c1",
+        "bytes": 3573
+      },
+      "release/4.0.0-candidate.5/browser-pilot-05/source-procedures.json": {
+        "sha256": "301902e06b8e9941c742958c6029f49449cc13188098943ea046873c0a739c1c",
+        "bytes": 4011
+      },
+      "release/4.0.0-candidate.5/browser-pilot-05/source-rules-a.json": {
+        "sha256": "47e7b941342b25fce0510d56b77537419880c67ae54f8c7c6cc3978e74c4fa8a",
+        "bytes": 3239
+      },
+      "release/4.0.0-candidate.5/browser-pilot-05/source-rules-b.json": {
+        "sha256": "8257835c45fa0859965263d32195c7e1326073a3d093d4b77669b197b0952b7e",
+        "bytes": 3980
+      },
+      "release/4.0.0-candidate.5/browser-pilot-05/source-rules-c.json": {
+        "sha256": "11c68c10d079f981ccf137f0ef729de22c0ca8a25484d387d7272a96b7a0b6f8",
+        "bytes": 3429
+      },
+      "release/4.0.0-candidate.5/browser-pilot-05/source-rules-d.json": {
+        "sha256": "4c5c573564d5caa277e1f35522a63fb66ae4461b3e77a89ea72eb01c64804133",
+        "bytes": 2692
+      },
+      "release/4.0.0-candidate.5/browser-pilot-05/source-rules-e.json": {
+        "sha256": "76256f191355969f309a201704dae2696da0c5e5049b94ff51cf470012dde337",
+        "bytes": 1560
+      },
+      "release/4.0.0-candidate.5/browser-pilot-05/utility-review.json": {
+        "sha256": "5c358d91af841e233962e15aa379cff9e68922571fb3ab4b5174670ddf595de5",
+        "bytes": 6662
+      },
+      "release/4.0.0-candidate.5/build-first.txt": {
+        "sha256": "ec58eef373e736320a4bab0aee96f00889a7b57bbffa356c6733b223da58d25e",
+        "bytes": 245
+      },
+      "release/4.0.0-candidate.5/build-second.txt": {
+        "sha256": "4c82825292268eef61c3667b9aed22124e80fa8f8e5cb2ff61282b480698c02f",
+        "bytes": 246
+      },
+      "release/4.0.0-candidate.5/engineering-validation.json": {
+        "sha256": "442f28c5e989dacc068a854d8d835c07e99737b27059f8ceaa2e893ccba3bf23",
+        "bytes": 1249
+      },
+      "release/4.0.0-candidate.5/publication-receipt.json": {
+        "sha256": "272d0f00450650a255baaf1060935ef26c1d6aad25299537132e1e68814c2964",
+        "bytes": 1867
+      },
+      "release/4.0.0-candidate.5/static.txt": {
+        "sha256": "b9f11e7c6a531f60102d761ec4d5726e5a0d99fa010c332b6b42411eb50368d7",
+        "bytes": 280
+      },
+      "release/4.0.0-candidate.5/unit-tests.txt": {
+        "sha256": "8ea5ba2810f7e2d4cdc454b6cf36898247e09aed04efc236af2349ba18f304c0",
+        "bytes": 4334
+      }
+    }
+  }
+}
