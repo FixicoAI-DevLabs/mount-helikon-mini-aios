@@ -1,5 +1,13 @@
 # Changelog
 
+## 4.1.1-candidate.3 — exact installer handoff (testing build)
+
+- Keep runtime policy and System contract 2.2.0 unchanged; pin runtime 4.1.1-candidate.3 with schema 1.0.9 and updated profile/hash bindings.
+- Advance installer protocol to 2.3.0: show both exact snippet previews in the first SETUP response while preserving backup and save prerequisites.
+- Define the fresh-chat handoff as one exact logical line and reject inserted CR/LF or outer whitespace, even when generated copies agree with the malformed value.
+- Preserve failed handoff attempts and direct the operator to the canonical guide block when the chat alters it; keep guides out of the primary source-access test.
+- Preserve historical multiline handoffs and candidate.1/candidate.2 release evidence. Candidate.3 still requires its own live acceptance.
+
 ## 4.1.1-candidate.2 — live-test follow-up (testing build)
 
 - Keep runtime policy unchanged; bind the candidate to schema 1.0.8 and System contract 2.2.0.

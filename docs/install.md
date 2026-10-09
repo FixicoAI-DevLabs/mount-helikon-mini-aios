@@ -1,4 +1,4 @@
-# Install Helikon Mini 4.1.1-candidate.2
+# Install Helikon Mini 4.1.1-candidate.3
 
 Use [START_HERE](../START_HERE.md) for the beginner flow. The primary input is [Helikon_Mini_Install_Package.json](../Helikon_Mini_Install_Package.json): upload it in an ordinary non-Temporary chat and send **SETUP**. The install package embeds both exact Personalization snippets, the complete runtime text and the guided protocol.
 
@@ -6,7 +6,7 @@ Use [START_HERE](../START_HERE.md) for the beginner flow. The primary input is [
 
 | Command | Action |
 |---|---|
-| SETUP | Inspect capabilities, explain the two layers and privately back up existing settings |
+| SETUP | Check the complete package, show both exact snippet previews immediately, inspect capabilities and prepare the private settings backup |
 | EXTRACT | Produce the exact runtime JSON, or use its byte-identical bundle copy |
 | INSTALL | Save the runtime to Library and guide the two Personalization edits |
 | NEXT | Resume the next unfinished observed checkpoint |
@@ -33,6 +33,6 @@ The host documentation describes [account-wide Custom Instructions](https://help
 
 ## Verification and optional Projects
 
-Run **FINAL_VERIFY in the original installer chat**. It displays the complete `fresh_chat_handoff.prompt` from the contract; [the QA sheet](../Helikon_Mini_QA.md) and [START_HERE](../START_HERE.md) contain the same prompt. Paste the full prompt in a fresh ordinary, non-project, non-Temporary chat. Attach neither the runtime nor the install package. A bare command cannot carry the installer protocol into a fresh chat, and the package's embedded runtime would contaminate an automatic Library test.
+Run **FINAL_VERIFY in the original installer chat**. It displays the complete `fresh_chat_handoff.prompt` from the contract; [the QA sheet](../Helikon_Mini_QA.md) and [START_HERE](../START_HERE.md) contain the same prompt. The protocol 2.3.0 prompt is one logical line with no outer whitespace, CR or LF. If the installer changes it, preserve that failed handoff and copy the canonical block from either guide directly. Paste only the prompt in a fresh ordinary, non-project, non-Temporary chat; do not attach the runtime, install package or either guide. A bare command cannot carry the installer protocol into a fresh chat, and the package's embedded runtime would contaminate an automatic Library test.
 
 Run the separate QA behavior cases and the repository [account acceptance suite](account-acceptance.md) as applicable. First-use reading triggered by an ordinary task is a separate case from explicitly requested source retrieval. Keep settings persistence, source access and behavior distinct. Projects may organize work or provide an explicitly selected delivery surface, but are never an installation prerequisite. Project or Work-mode evidence cannot substitute for the ordinary-chat acceptance test.

@@ -141,6 +141,12 @@ def validate(root=ROOT):
     if (handoff.get('surface') != 'fresh_ordinary_non_project_non_temporary_chat'
             or handoff.get('attachments_allowed') is not False or not _text(handoff.get('prompt'))):
         raise ValueError('Self-contained fresh-chat handoff without attachments required')
+    # Protocol 2.3.0 deliberately has no paragraph separators for a chat model
+    # to expand. Historical protocols keep their exact multiline payloads.
+    if contract['protocol_version'] == '2.3.0':
+        prompt = handoff['prompt']
+        if '\r' in prompt or '\n' in prompt or prompt != prompt.strip():
+            raise ValueError('Protocol 2.3.0 handoff must be one exact line without outer whitespace')
     expected_block = '\n```text\n'+handoff['prompt']+'\n```\n'
     for relative in ('START_HERE.md', 'Helikon_Mini_QA.md', 'docs/install.md'):
         path = root/relative

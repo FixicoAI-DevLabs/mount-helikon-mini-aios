@@ -1,9 +1,9 @@
 # Mount Helikon Mini
 
 <p align="left">
-  <a href="CHANGELOG.md"><img alt="Mount Helikon Mini 4.1.1-candidate.2" src="https://img.shields.io/badge/Mount%20Helikon%20Mini-4.1.1-candidate.2-blue"></a>
+  <a href="CHANGELOG.md"><img alt="Mount Helikon Mini 4.1.1-candidate.3" src="https://img.shields.io/badge/Mount%20Helikon%20Mini-4.1.1-candidate.3-blue"></a>
   <img alt="Line: Free Starter" src="https://img.shields.io/badge/line-Free%20Starter-2ea44f">
-  <a href="release/4.1.1-candidate.2/"><img alt="Release: 4.1.1-candidate.2 testing build" src="https://img.shields.io/badge/release-4.1.1-candidate.2%20testing%20build-orange"></a>
+  <a href="release/4.1.1-candidate.3/"><img alt="Release: 4.1.1-candidate.3 testing build" src="https://img.shields.io/badge/release-4.1.1-candidate.3%20testing%20build-orange"></a>
   <a href="#two-layers"><img alt="Runtime: 2 layers, JSON Operating" src="https://img.shields.io/badge/runtime-2%20layers%20%7C%20JSON%20Operating-purple"></a>
   <a href="START_HERE.md"><img alt="Install: Guided JSON" src="https://img.shields.io/badge/install-Guided%20JSON-informational"></a>
   <a href="LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-green"></a>
@@ -15,11 +15,11 @@
 
 The 4.1 line restores the setup model used by Mini 3.3: two Personalization snippets, one guided install package and an eight-file download. The Operating Layer is now a compact JSON runtime instead of six Saved Memories. The project-only 4.0 release did not preserve that setup model.
 
-**Status:** this is the 4.1.1-candidate.2 repair candidate for review and testing, not a new regular release. Live account installation and fresh ordinary-chat automatic Library access remain unverified. The published 4.0 release is the earlier project edition; it is not the account-wide installer described here. Do not treat a project test as proof of ordinary-chat support.
+**Status:** this is the 4.1.1-candidate.3 repair candidate for review and testing, not a new regular release. Live account installation and fresh ordinary-chat automatic Library access remain unverified. The published 4.0 release is the earlier project edition; it is not the account-wide installer described here. Do not treat a project test as proof of ordinary-chat support.
 
 ## Start here
 
-1. Download [the 4.1.1-candidate.2 testing bundle](release/4.1.1-candidate.2/Helikon-Mini-4.1.1-candidate.2.zip) and unzip it.
+1. Download [the 4.1.1-candidate.3 testing bundle](release/4.1.1-candidate.3/Helikon-Mini-4.1.1-candidate.3.zip) and unzip it.
 2. Open a normal, non-Temporary ChatGPT chat. Upload **Helikon_Mini_Install_Package.json** and send **SETUP**.
 3. Follow the guided steps to back up existing settings, save the runtime JSON in Library, and install the two Personalization snippets.
 4. Send **FINAL_VERIFY** in the installer chat. It supplies a complete prompt to paste into a fresh ordinary, non-project, non-Temporary chat. Attach neither the runtime nor the install package to that primary automatic-access test; do not send a bare command in the fresh chat. Keep automatic access, manual attachment and Project results separate.

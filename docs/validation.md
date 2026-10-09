@@ -8,12 +8,14 @@ python3 tools/mini.py validate
 python3 -m unittest discover -s tests -v
 python3 tools/mini.py build --out build/first
 python3 tools/mini.py build --out build/second
-cmp build/first/Helikon-Mini-4.1.1-candidate.2.zip build/second/Helikon-Mini-4.1.1-candidate.2.zip
+cmp build/first/Helikon-Mini-4.1.1-candidate.3.zip build/second/Helikon-Mini-4.1.1-candidate.3.zip
 ```
 
 These check the canonical runtime, generated projections, two bounded Personalization snippets, guided protocol, eight-file package, limited private-marker exclusions, unchanged legacy source bytes and evidence-record rejection cases. These are commands to run, not a claim that this document has run them. They do not prove successful settings writes, source retrieval or behavior on a ChatGPT account.
 
-Candidate.2 snippet checks use canonical strings without terminal newlines and require exact text at newline or field boundaries. Saved captures must not be stripped or normalized to pass validation. Keep candidate.1 archives and evidence bound to their original bytes and results; run candidate.2 checks and live trials under a new record path.
+Candidate.3 snippet checks use canonical strings without terminal newlines and require exact text at newline or field boundaries. Saved captures must not be stripped or normalized to pass validation. Keep candidate.1 archives and evidence bound to their original bytes and results; run candidate.3 checks and live trials under a new record path.
+
+Protocol 2.3.0 also requires a single-line handoff without outer whitespace, CR or LF. Its format check runs even when the package and guide projections match a changed canonical value. Historical protocol 2.1.0 and 2.2.0 handoffs keep their exact multiline payloads and are tested from their preserved archives.
 
 ## Exact source derivation check
 

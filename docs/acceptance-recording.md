@@ -1,6 +1,6 @@
 # Recording account acceptance evidence
 
-Use this guide with [account-acceptance.md](account-acceptance.md). It records proposed 4.1.1-candidate.2 tests; it is not evidence that installation occurred. Keep account text, backups, source bindings and unredacted transcripts private. Do not put them in runtime JSON, the public package, or committed fixtures. Preserve candidate.1 records and archived artifacts under their original version and outcomes; use a new run for the revised candidate.
+Use this guide with [account-acceptance.md](account-acceptance.md). It records proposed 4.1.1-candidate.3 tests; it is not evidence that installation occurred. Keep account text, backups, source bindings and unredacted transcripts private. Do not put them in runtime JSON, the public package, or committed fixtures. Preserve candidate.1 records and archived artifacts under their original version and outcomes; use a new run for the revised candidate.
 
 ## Create a private run
 
@@ -35,7 +35,9 @@ Generate the template instead of hand-copying a second schema from this document
 
 Result states are `not_run`, `unknown`, `failed`, and `passed`. Observation methods are `not_recorded`, `direct_observation`, and `user_reported`. Do not put an assistant's unsupported self-report in the direct-observation category.
 
-For operator-assisted manual installation, record the installer guidance and the operator's actual steps separately. An independently observed operator action can support `direct_observation`; a report of that action remains `user_reported`. Neither proves that the installer chat had a settings-write tool. Preserve exact snippets from the tested package and exact persisted field text. Candidate.2 canonical snippets have no terminal newline: validate their unchanged text at newline or field boundaries without stripping or normalizing the capture. Do not apply candidate.2 byte rules to candidate.1 evidence.
+For operator-assisted manual installation, record the installer guidance and the operator's actual steps separately. An independently observed operator action can support `direct_observation`; a report of that action remains `user_reported`. Neither proves that the installer chat had a settings-write tool. Preserve exact snippets from the tested package and exact persisted field text. Candidate.3 canonical snippets have no terminal newline: validate their unchanged text at newline or field boundaries without stripping or normalizing the capture. Do not apply candidate.3 byte rules to candidate.1 evidence.
+
+Capture the actual copyable SETUP snippets and FINAL_VERIFY handoff, retaining line breaks and outer whitespace. Compare each against its canonical string without trimming or normalization. Protocol 2.3.0 requires both preview blocks in the first SETUP response and a single-line handoff. An accessibility summary may flatten source formatting; use a capture that preserves the actual text. Record a changed handoff as failed even if the canonical guide fallback enables an independent source diagnostic.
 
 An evidence reference identifies an actual UTF-8 file relative to the record directory, its SHA-256, and an exact nonempty excerpt found in that file. Compute the digest from the saved bytes; do not ask the model to invent it. If source evidence is an image, retain the image and create an accurate textual observation sidecar identifying the image and method; the text-reference checker does not authenticate image contents. A copied runtime file proves what bytes were captured, while the associated tool/UI trace is needed to establish where, when and how those bytes were read.
 

@@ -1,7 +1,7 @@
 {
   "candidate": {
     "id": "helikon-mini.operating-master",
-    "version": "4.1.1-candidate.2"
+    "version": "4.1.1-candidate.3"
   },
   "purpose": "Reviewed policy anchors. Detect semantic-text changes, even when package hashes are regenerated. Updating these requires policy review; hashes do not prove semantic correctness.",
   "anchors": {
@@ -17,7 +17,7 @@
     "runtime_characters": 24000
   },
   "budget_basis": "Initial engineering ceilings for this prototype; not measured host limits or token counts.",
-  "profile_sha256": "e17382bb76aa25722d7a7aadff38293026203125161db7c0ed4da94324c2e717",
-  "installer_contract_sha256": "2eb969d0afd416f124c0be71d3f504bb4efa0da3c223b39485e0d0cd5085f8f3",
-  "review_basis": "4.1.1-candidate.2: runtime policy anchors unchanged. System contract 2.2.0 defines exact snippets without terminal LF; profile binds the new candidate identity/hash. Installer protocol 2.2.0 adds operator-assisted guidance and separate raw-source evidence. Candidate-specific live acceptance remains required."
+  "profile_sha256": "c6730fb4baaa4bcb9c22fdb397b3a4a1507232024fc47ce1d19eb9c32b326c24",
+  "installer_contract_sha256": "3143b0850c39b265b6d376bcb811948b5e12c54cdb3b384cf04c3c8b637c9fe6",
+  "review_basis": "4.1.1-candidate.3: runtime policy anchors and System contract 2.2.0 are unchanged; schema 1.0.9 pins the new runtime identity and the profile binds its exact hash. Installer protocol 2.3.0 requires immediate SETUP snippet previews and a single-line exact handoff with canonical fallback. Candidate-specific live acceptance remains required."
 }

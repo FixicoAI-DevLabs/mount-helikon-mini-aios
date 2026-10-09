@@ -1,4 +1,4 @@
-# Helikon Mini 4.1.1-candidate.2 — System installation
+# Helikon Mini 4.1.1-candidate.3 — System installation
 
 Two separate account Personalization fields. Preserve existing personal details and preferences. Use SETUP in the unified installation package for the guided process.
 
@@ -16,13 +16,13 @@ Add this block alongside your personal details. Review the combined field length
 ```text
 [HELIKON_MINI_PROFILE_BEGIN]
 Operating: Helikon_Mini_Operating_Master.json in my account Library.
-System: helikon-mini.system-layer@4.1.1-candidate.2.
+System: helikon-mini.system-layer@4.1.1-candidate.3.
 Required identity pairs:
-Runtime: helikon-mini.operating-master@4.1.1-candidate.2.
-Schema: helikon-mini.operating-master.schema@1.0.8.
+Runtime: helikon-mini.operating-master@4.1.1-candidate.3.
+Schema: helikon-mini.operating-master.schema@1.0.9.
 System contract: helikon-mini.system.contract@2.2.0.
 Extension contract: helikon-mini.extension.contract@1.0.0.
-SHA-256: 2afe9b2b83ae6ac91c09ab4c5232ed1e9f8bc22f69c840b908d5107cb6447daf
+SHA-256: 1d5d7648a6dd2580fe8d0b451b398bfe675edb6eb0af4177e3bbe5cfb9430cd4
 Use an observed stable source reference below if present. Resolve ambiguity; never invent a reference or substitute versions. Storage is not proof of reading. Preserve personal details outside this block. Mini is separate from full Helikon; do not replace an active configuration without scope. Projects and chat history are optional; Saved Memory is not the runtime.
 [HELIKON_MINI_PROFILE_END]
 ```

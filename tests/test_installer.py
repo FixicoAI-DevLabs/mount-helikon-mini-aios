@@ -139,6 +139,41 @@ class InstallerArtifactTests(unittest.TestCase):
         self.change_contract(lambda d:d['fresh_chat_handoff'].update(attachments_allowed=True))
         with self.assertRaisesRegex(ValueError,'without attachments'):installer.validate(self.root)
 
+    def test_handoff_format_rejects_added_whitespace_even_with_matching_projections(self):
+        original=json.loads((self.root/'installer/contract.json').read_text())
+        prompt=original['fresh_chat_handoff']['prompt']
+        self.assertNotIn('\n',prompt)
+        # A synchronized package and guide must not hide an invalid new payload.
+        for changed in (prompt.replace('. ','.\n',1),prompt.replace('. ','.\r\n',1),
+                        prompt.replace('. ','.\n\n',1),' '+prompt,prompt+' ',prompt+'\n'):
+            with self.subTest(changed=repr(changed[:50])):
+                self.change_contract(lambda d:d['fresh_chat_handoff'].update(prompt=changed))
+                for name in ('START_HERE.md','Helikon_Mini_QA.md'):
+                    path=self.root/name;text=path.read_text()
+                    before,after=text.split(installer.HANDOFF_BEGIN,1)
+                    _,after=after.split(installer.HANDOFF_END,1)
+                    path.write_text(before+installer.HANDOFF_BEGIN+'\n```text\n'+changed+
+                                    '\n```\n'+installer.HANDOFF_END+after)
+                with self.assertRaisesRegex(ValueError,'one exact line'):
+                    installer.validate(self.root)
+
+    def test_historical_protocols_keep_their_exact_multiline_handoffs(self):
+        for version in ('4.1.1-candidate.1','4.1.1-candidate.2'):
+            with self.subTest(version=version):
+                archive=ROOT/'release'/version/('Helikon-Mini-'+version+'.zip')
+                with zipfile.ZipFile(archive) as bundle:
+                    p=json.loads(bundle.read(installer.PACKAGE.name))
+                    for name in ('START_HERE.md','Helikon_Mini_QA.md'):
+                        (self.root/name).write_bytes(bundle.read(name))
+                self.assertIn('\n',p['installer']['fresh_chat_handoff']['prompt'])
+                (self.root/'installer/contract.json').write_text(json.dumps(p['installer']))
+                (self.root/installer.RUNTIME).write_bytes(p['operating_layer']['exact_runtime_text'].encode())
+                for key,relative in (('custom_instructions',installer.SYSTEM),
+                                     ('more_about_you',installer.PROFILE)):
+                    (self.root/relative).write_bytes(p['system_layer']['exact_install_text'][key].encode())
+                installer.render(self.root)
+                self.assertEqual(installer.validate(self.root)['status'],'pass')
+
     def test_smaller_snippet_design_budget_is_enforced(self):
         self.change_contract(lambda d:d['personalization_contract']['snippet_design_budgets'].update(custom_instructions=1))
         with self.assertRaisesRegex(ValueError,'design budget'):installer.validate(self.root)
