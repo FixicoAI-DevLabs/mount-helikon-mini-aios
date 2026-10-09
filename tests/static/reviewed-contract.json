@@ -1,7 +1,7 @@
 {
   "candidate": {
     "id": "helikon-mini.operating-master",
-    "version": "4.1.1-candidate.1"
+    "version": "4.1.1-candidate.2"
   },
   "purpose": "Reviewed policy anchors. Detect semantic-text changes, even when package hashes are regenerated. Updating these requires policy review; hashes do not prove semantic correctness.",
   "anchors": {
@@ -11,13 +11,13 @@
     "#/owners": "ee1babe836eac3b30efb5579c919fa37b7a5f9d240c4594a2437aa3e5d428e5a",
     "#/extensions": "0672b4ff3e7bfe5a8c23d6f1006e514b408e7aa5ad2d313f561868beb73c97ff"
   },
-  "system_sha256": "08499d86ad4fcfd3bbb90b5af1b7520ad14b685702e7a629236fec25d9789d02",
+  "system_sha256": "0edb09215a732afd55962a6a08eaae8a2c8ed99a6e960af7086f9455b70ccbd3",
   "budgets": {
     "system_characters": 1500,
     "runtime_characters": 24000
   },
   "budget_basis": "Initial engineering ceilings for this prototype; not measured host limits or token counts.",
-  "profile_sha256": "b80af3da323dac723ae0d59d9f24727fedca76bf68b251db76c397d4958a3550",
-  "installer_contract_sha256": "d0c6a1206c5f4ddf68ae1238ae0fafb4479b8ad65d3b9ea5713f104c306b8e61",
-  "review_basis": "4.1.1-candidate.1: runtime policy anchors unchanged; shortened System/profile and protocol 2.1.0 reviewed for hierarchy, first-use reading, exact identity, source honesty, scope, preservation and complete fresh-chat handoff. Live behavior unverified."
+  "profile_sha256": "e17382bb76aa25722d7a7aadff38293026203125161db7c0ed4da94324c2e717",
+  "installer_contract_sha256": "2eb969d0afd416f124c0be71d3f504bb4efa0da3c223b39485e0d0cd5085f8f3",
+  "review_basis": "4.1.1-candidate.2: runtime policy anchors unchanged. System contract 2.2.0 defines exact snippets without terminal LF; profile binds the new candidate identity/hash. Installer protocol 2.2.0 adds operator-assisted guidance and separate raw-source evidence. Candidate-specific live acceptance remains required."
 }

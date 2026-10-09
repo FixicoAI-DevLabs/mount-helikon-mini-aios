@@ -1,6 +1,6 @@
 # Recording account acceptance evidence
 
-Use this guide with [account-acceptance.md](account-acceptance.md). It records proposed 4.1.1-candidate.1 tests; it is not evidence that installation occurred. Keep account text, backups, source bindings and unredacted transcripts private. Do not put them in runtime JSON, the public package, or committed fixtures.
+Use this guide with [account-acceptance.md](account-acceptance.md). It records proposed 4.1.1-candidate.2 tests; it is not evidence that installation occurred. Keep account text, backups, source bindings and unredacted transcripts private. Do not put them in runtime JSON, the public package, or committed fixtures. Preserve candidate.1 records and archived artifacts under their original version and outcomes; use a new run for the revised candidate.
 
 ## Create a private run
 
@@ -35,6 +35,8 @@ Generate the template instead of hand-copying a second schema from this document
 
 Result states are `not_run`, `unknown`, `failed`, and `passed`. Observation methods are `not_recorded`, `direct_observation`, and `user_reported`. Do not put an assistant's unsupported self-report in the direct-observation category.
 
+For operator-assisted manual installation, record the installer guidance and the operator's actual steps separately. An independently observed operator action can support `direct_observation`; a report of that action remains `user_reported`. Neither proves that the installer chat had a settings-write tool. Preserve exact snippets from the tested package and exact persisted field text. Candidate.2 canonical snippets have no terminal newline: validate their unchanged text at newline or field boundaries without stripping or normalizing the capture. Do not apply candidate.2 byte rules to candidate.1 evidence.
+
 An evidence reference identifies an actual UTF-8 file relative to the record directory, its SHA-256, and an exact nonempty excerpt found in that file. Compute the digest from the saved bytes; do not ask the model to invent it. If source evidence is an image, retain the image and create an accurate textual observation sidecar identifying the image and method; the text-reference checker does not authenticate image contents. A copied runtime file proves what bytes were captured, while the associated tool/UI trace is needed to establish where, when and how those bytes were read.
 
 Populate only what was actually observed. Keep unknown write outcomes unknown until state inspection resolves them. Never edit a transcript to improve an answer, remove failed attempts, or replace an older attempted result with a successful retry without retaining both.
@@ -46,6 +48,9 @@ Copy this into a separate private Markdown file for each A/I case and each repea
 ```text
 Case ID and attempt number:
 Result: not_run
+Task-output result: not_run / unknown / failed / passed / not_applicable
+Source-delivery result: not_run / unknown / failed / passed / not_applicable
+Observability: not_observed / partial / sufficient (explain evidence and limits)
 Observation method: not_recorded
 Started at / ended at (ISO 8601 with timezone):
 Candidate commit and package SHA-256:
@@ -60,6 +65,9 @@ Authorized target and effects / reserved checkpoints:
 Prerequisites and exact backup evidence:
 Prompt sent verbatim:
 Actual steps and tool/UI results:
+Actor for each action (installer, operator, other observed tool):
+Assistant's source-access assertions (quoted; not proof of reading):
+Actual returned source text and coverage-ledger references:
 Source reference, mechanism, ranges/chunks and truncation status:
 Read completed before first substantive answer? Evidence:
 Expected result:
@@ -74,7 +82,11 @@ Restoration state and outstanding effects:
 
 For A06/A07, keep one worksheet per fresh chat. A single successful read cannot stand in for all repetitions. The runtime may be stored in Library before these trials, but neither it nor the installer package may be attached or pasted into the primary automatic-access chat. Retain the exact tested prompt, including whether it explicitly mentioned Mini.
 
+The added worksheet dimensions are narrative review fields, not new keys or enum values for the canonical v2 installation record. Use `not_applicable` only when the case has no corresponding task or delivery requirement; explain why. Sufficient observability means the available evidence can adjudicate that dimension, including an observed failure, not that the case passed. Required A06/A07 delivery cannot be made inapplicable because access is unavailable. Preserve all three A06 trials and all three A07 trials with their independent outcomes; unmet prerequisites prevent a qualifying acceptance pass even if an exploratory response is correct.
+
 For complete source reads, retain the actual returned text in order and a coverage ledger. Account for every part of the document, missing range, truncation and reread. If the host provides only selected search snippets, that is discovery or partial reading. A full canonical file copied from the repository is not evidence that the fresh chat read that file from Library.
+
+Keep automatic-delivery evidence distinct from manual diagnostics. Record whether a later diagnostic used Add from Library, local upload, or operator inspection, and link it to the earlier attempt without changing that attempt's result. An assistant's assertion that it loaded the source, a displayed filename, or a repeated identity/hash does not substitute for the returned source text and attributable read trace. When the host conceals coverage, record that limit rather than upgrading the assertion to direct evidence.
 
 For a hash comparison, distinguish original bytes from normalized or reconstructed content. If the host returns text rather than downloadable bytes, disclose any newline/serialization transformation. A value-equivalent reconstruction is weaker evidence than observed original-byte delivery and must be labelled accordingly.
 

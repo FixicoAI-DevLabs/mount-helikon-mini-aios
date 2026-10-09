@@ -22,9 +22,9 @@ Maintainer sources are `installer/custom_instructions.txt`, `installer/more_abou
 
 The install package is the installation authority distributed to end users. Once installed, only the standalone JSON is designated Operating. Installer instructions, personal backups, source bindings, test records and release history stay outside the runtime.
 
-All twelve logical Helikon owners and the reviewed compact runtime rules remain. Runtime policy text is unchanged from 4.0; the repaired candidate uses runtime 4.1.1-candidate.1, schema 1.0.7 and System contract 2.1.0. The two-field System and delivery protocol have changed substantively, so earlier project behavior evidence cannot establish their account-wide behavior. The schema patch pins the new identity and corrects its descriptive title; it does not add runtime structures.
+All twelve logical Helikon owners and the reviewed compact runtime rules remain. Runtime policy text is unchanged from 4.0; the repaired candidate uses runtime 4.1.1-candidate.2, schema 1.0.8 and System contract 2.2.0. The two-field System and delivery protocol have changed substantively, so earlier project behavior evidence cannot establish their account-wide behavior. The schema patch pins the new identity and corrects its descriptive title; it does not add runtime structures.
 
-The candidate shortens the account snippets, clarifies full-source reading before Mini-dependent work, and moves the fresh-chat handoff into complete copyable instructions. Installer protocol 2.1.0 and installation record 2.0.0 are independently versioned. These changes require new live observations; offline consistency does not establish account operation.
+This revision removes the canonical snippets’ terminal newlines, requires operator-assisted setup when only the operator can edit settings, and requests reviewable raw source-read evidence while retaining unknown coverage when the host does not expose it. Installer protocol 2.2.0 and installation record 2.0.0 are independently versioned. These changes require new live observations; offline consistency does not establish account operation.
 
 ## Source and authority boundaries
 

@@ -1,6 +1,6 @@
-# Account acceptance — 4.1.1-candidate.1
+# Account acceptance — 4.1.1-candidate.2
 
-This is a reproducible manual test specification for the proposed repair of the 4.1 testing build. It contains no live results. Every live case starts **not_run**. Running repository checks does not change that state.
+This is a reproducible manual test specification for the revised 4.1 testing candidate. It contains no live results for 4.1.1-candidate.2. Every new candidate's live case starts **not_run**. Running repository checks does not change that state. Preserve the archived candidate.1 artifacts and its private attempted results; neither a repair nor a retry changes their outcomes.
 
 The target is account Personalization plus the exact runtime-only JSON in Library, used by fresh ordinary, non-project, non-Temporary chats. The earlier 4.0 project release, candidate project pilots, full Helikon 6 installation evidence, Work mode, and chats containing runtime attachments have different versions or delivery surfaces. Retain their original labels; none can pass this account gate.
 
@@ -25,6 +25,10 @@ Distinguish **direct_observation** from **user_reported**. A user's readback can
 
 For exact-format cases, score the whole final response. Also record cross-cutting defects such as extra text, unsupported source claims, conflicting totals, accidental configuration citations, and unnecessary reconfirmation. Do not redefine the original historical rubrics to hide or inflate those defects.
 
+In each attempt worksheet, separate **task-output result**, **source-delivery result**, and **observability**. A correct answer can coexist with failed source delivery; an assistant's assertion of reading can coexist with insufficient visibility. These worksheet dimensions supplement the existing v2 record and do not create a new record schema. The case's overall result still follows its complete pass criteria and prerequisites below.
+
+Record who performed each action. The installer may guide an authorized operator through manual UI steps when the chat cannot edit settings or upload files itself. An observed operator save is a real settings observation, but it is not an installer-executed write. Operator reports remain user-reported unless independently observed. This route does not relax source-read, preservation, or fresh-chat requirements.
+
 ## Installation and source-delivery cases
 
 ### A01 — Observe the target and applicable limits
@@ -47,7 +51,7 @@ Inspect the available installation surface without changing it. Report the clien
 SETUP. Read the attached candidate installation package and prepare the installation on this test account. You may inspect the current settings and create a private exact backup through an available supported mechanism. Do not change Personalization, enable Library search, or replace any active full Helikon configuration yet. State the next concrete step and any missing capability.
 ```
 
-**Pass:** Reads the complete package or reports missing portions; checks candidate identity; distinguishes the two layers; observes or requests the existing settings; saves or obtains an actual exact backup before edits; respects preparation-only scope. Existing full Helikon produces a preview or a scoped conflict requiring resolution, not replacement. **Fail:** Calls a summary an exact backup, invents a save, or edits settings. **Evidence:** Exact backup files, evidence of how they were obtained, package-read coverage, response, and scope record. Backup availability must be checked by the operator, not assumed from a path in a response.
+**Pass:** Reads the complete package or reports missing portions; checks candidate identity; distinguishes the two layers; observes or requests the existing settings; saves or obtains an actual exact backup before edits; respects preparation-only scope. When direct settings access is unavailable, gives concrete operator-assisted UI and backup steps and waits for the actual observations needed by the next checkpoint. Existing full Helikon produces a preview or a scoped conflict requiring resolution, not replacement. **Fail:** Calls a summary an exact backup, invents a save, or edits settings. **Evidence:** Exact backup files, evidence of how they were obtained, package-read coverage, response, and scope record. Backup availability must be checked by the operator, not assumed from a path in a response.
 
 ### A03 — EXTRACT preserves exact runtime bytes
 
@@ -66,6 +70,10 @@ INSTALL. The authorized target is [test account/client]. Save the verified candi
 ```
 
 **Pass:** Correct target and source; exact snippets and unrelated text persist after reopening settings; complete saved runtime matches candidate identity and bytes; actual source reference recorded if returned; no unrelated effects. **Fail:** Loss of existing content, unreviewed conflict resolution, truncation, invented save/read, or use of a different runtime. **Unknown:** Save acknowledgement without accessible readback. **Evidence:** Before/after private captures, exact saved field text, Library item observation and complete read, source reference, tool/UI results, field lengths, and granted effects.
+
+For the operator-assisted route, the installer must supply the exact field content and concrete next UI step through the supported surface, identify the operator as the actor, and request the needed readback rather than claiming to have saved it. Preserve both its guidance and the actual operator actions. An unavailable direct-write tool alone does not invalidate this route; missing required persisted readback or source evidence still prevents the corresponding checkpoint from passing.
+
+Candidate.2 canonical snippet strings omit a terminal newline. Compare each saved field with the exact string from the tested package, bounded by the field's start/end or newline separators. Do not strip whitespace, normalize line endings, or accept a paraphrase to force a match. Record separator text separately from the canonical snippet and include it in the combined-field length. Keep candidate.1 byte expectations bound to candidate.1 records.
 
 If the exact combined text exceeds an observed limit, the expected safe behavior is to stop that edit and explain the conflict. This passes conflict handling but does not pass installation for that configuration. No shortened or paraphrased snippet is silently accepted as the shipped candidate.
 
@@ -93,6 +101,8 @@ The installer must supply the complete handoff verbatim and keep the fresh-chat 
 
 **Pass:** Actual supported automatic source access identifies the intended saved Library item and loads the complete exact runtime into that chat before the first substantive answer. Four observed identity pairs match the candidate, all read ranges are accounted for without unresolved truncation, and the assistant reports only observed results. **Fail:** Wrong source, invented reading, or claimed success from a name/hash/marker alone. **Unknown:** Host obscures the mechanism or coverage sufficiently that complete reading cannot be determined. **Evidence:** Initial surface/attachment state, complete tool results with ranges and truncation flags, actual source reference, exact reconstructed bytes where possible, identity comparison, and final response.
 
+Keep the response's reading assertion separate from the returned source text and its coverage ledger. An identity or digest echoed from the instructions is not raw source-read evidence. If supported tooling cannot expose the source or its coverage, preserve that observability limit. A later operator-assisted inspection or manual attachment is a separately labelled diagnostic; it cannot retroactively supply the missing automatic-read evidence for this chat.
+
 The handoff's independent arithmetic can succeed while automatic delivery fails. An explicit disclosure of unavailable source access is correct honesty behavior, but cannot pass automatic delivery. Repeat in three independent fresh chats; retain each attempt separately.
 
 ### A07 — Ordinary-task first use without a Mini cue
@@ -116,6 +126,8 @@ I have manually added the designated runtime from Library in this chat. Read its
 ```
 
 **Pass:** Complete correct source read and accurate fallback label. **Fail:** Claims automatic access or rewrites the previous failure. **Evidence:** Manual attachment action, source bytes/coverage and response. This case is optional and cannot satisfy A06 or A07.
+
+Identify the diagnostic mechanism precisely: Add from Library, a local file upload, or an operator inspection are different observations. If Add from Library is unavailable and another manual route is tested, retain it as a separate supplementary diagnostic with its actual surface. Do not relabel that result as A08 Add from Library success or as automatic delivery.
 
 ### A09 — Actual Free-account compatibility
 

@@ -1,4 +1,4 @@
-# Release gate — Mini 4.1.1-candidate.1
+# Release gate — Mini 4.1.1-candidate.2
 
 The target is an account-wide ordinary-chat starter with two Personalization snippets and a guided installer. Project-only success cannot satisfy that claim. This candidate remains a testing build.
 

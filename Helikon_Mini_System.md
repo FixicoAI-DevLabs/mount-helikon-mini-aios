@@ -1,4 +1,4 @@
-# Helikon Mini 4.1.1-candidate.1 — System installation
+# Helikon Mini 4.1.1-candidate.2 — System installation
 
 Two separate account Personalization fields. Preserve existing personal details and preferences. Use SETUP in the unified installation package for the guided process.
 
@@ -16,15 +16,17 @@ Add this block alongside your personal details. Review the combined field length
 ```text
 [HELIKON_MINI_PROFILE_BEGIN]
 Operating: Helikon_Mini_Operating_Master.json in my account Library.
-System: helikon-mini.system-layer@4.1.1-candidate.1.
+System: helikon-mini.system-layer@4.1.1-candidate.2.
 Required identity pairs:
-Runtime: helikon-mini.operating-master@4.1.1-candidate.1.
-Schema: helikon-mini.operating-master.schema@1.0.7.
-System contract: helikon-mini.system.contract@2.1.0.
+Runtime: helikon-mini.operating-master@4.1.1-candidate.2.
+Schema: helikon-mini.operating-master.schema@1.0.8.
+System contract: helikon-mini.system.contract@2.2.0.
 Extension contract: helikon-mini.extension.contract@1.0.0.
-SHA-256: 531ea75853845f0e31a2a8ce03fc469fb8a5af2d4dabb73672ed2a1e9075eccd
+SHA-256: 2afe9b2b83ae6ac91c09ab4c5232ed1e9f8bc22f69c840b908d5107cb6447daf
 Use an observed stable source reference below if present. Resolve ambiguity; never invent a reference or substitute versions. Storage is not proof of reading. Preserve personal details outside this block. Mini is separate from full Helikon; do not replace an active configuration without scope. Projects and chat history are optional; Saved Memory is not the runtime.
 [HELIKON_MINI_PROFILE_END]
 ```
 
-Each Mini snippet is within 1,500 characters. If existing content makes a field too long, retain each Mini snippet verbatim and stop until the combined field fits; never truncate silently. Only add a source ID when the host actually returns it.
+The canonical snippets have no terminal newline; the newline before each closing code fence is display syntax. Copy the snippet text only and preserve its internal line breaks.
+
+Each Mini snippet is within the 1,500-character engineering ceiling; this is not an observed host limit. Inspect the actual limit and count the complete proposed field, including existing content and separators. If existing content makes a field too long, retain each Mini snippet verbatim and stop until the combined field fits; never truncate silently. Only add a source ID when the host actually returns it.

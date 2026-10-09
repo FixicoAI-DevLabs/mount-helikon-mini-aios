@@ -2,15 +2,15 @@
   "identity": {
     "runtime": {
       "id": "helikon-mini.operating-master",
-      "version": "4.1.1-candidate.1"
+      "version": "4.1.1-candidate.2"
     },
     "schema": {
       "id": "helikon-mini.operating-master.schema",
-      "version": "1.0.7"
+      "version": "1.0.8"
     },
     "system_contract": {
       "id": "helikon-mini.system.contract",
-      "version": "2.1.0"
+      "version": "2.2.0"
     },
     "extension_contract": {
       "id": "helikon-mini.extension.contract",
@@ -55,7 +55,7 @@
     }
   ],
   "ordinary_global_chat": "primary_installation_scope_live_validation_pending",
-  "free_account": "design_target_with_1100_and_900_character_snippet_budgets_not_live_tested",
+  "free_account": "experimental_design_target_candidate_specific_live_acceptance_required",
   "installation_safeguards": {
     "preserve_existing_settings": true,
     "resolve_unknown_writes_before_retry": true,

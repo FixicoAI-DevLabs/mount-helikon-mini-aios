@@ -8,10 +8,12 @@ python3 tools/mini.py validate
 python3 -m unittest discover -s tests -v
 python3 tools/mini.py build --out build/first
 python3 tools/mini.py build --out build/second
-cmp build/first/Helikon-Mini-4.1.1-candidate.1.zip build/second/Helikon-Mini-4.1.1-candidate.1.zip
+cmp build/first/Helikon-Mini-4.1.1-candidate.2.zip build/second/Helikon-Mini-4.1.1-candidate.2.zip
 ```
 
 These check the canonical runtime, generated projections, two bounded Personalization snippets, guided protocol, eight-file package, limited private-marker exclusions, unchanged legacy source bytes and evidence-record rejection cases. These are commands to run, not a claim that this document has run them. They do not prove successful settings writes, source retrieval or behavior on a ChatGPT account.
+
+Candidate.2 snippet checks use canonical strings without terminal newlines and require exact text at newline or field boundaries. Saved captures must not be stripped or normalized to pass validation. Keep candidate.1 archives and evidence bound to their original bytes and results; run candidate.2 checks and live trials under a new record path.
 
 ## Exact source derivation check
 
@@ -33,6 +35,8 @@ python3 tools/installer.py verify-record private-checks/run-001/installation.jso
 Keep records and source bindings private; do not commit account backups or transcripts containing personal data. The template starts incomplete and refuses to overwrite an existing record. Populate only actual observed results and hash-linked evidence. Use [account acceptance](account-acceptance.md) for reproducible prompts, expected results and the manual release matrix, [acceptance recording](acceptance-recording.md) for v2 fields and per-attempt worksheets, and the [root QA sheet](../Helikon_Mini_QA.md) for the compact four-case check and self-contained fresh-chat handoff.
 
 The fresh ordinary-chat automatic-access tests prohibit runtime and install-package attachments. Manual Add from Library, Project delivery and Work mode are separate outcomes. A correct ordinary answer without evidence of the required source read does not pass automatic delivery. Actual Free-account validation needs an observed Free account and exposed capabilities; a snippet-length check alone is insufficient.
+
+Retain three independent explicit-access trials and three further ordinary-task trials, with all existing prerequisites. Each attempt worksheet separates task-output result, source-delivery result and observability without changing the canonical v2 schema. Source-access assertions must be distinguished from actual returned text and attributable coverage evidence. Manual source diagnostics never replace missing automatic-read evidence. The operator-assisted UI route can establish observed settings saves and readback, but does not demonstrate that the installer chat itself performed those writes or that fresh chats can read the runtime.
 
 Inspect both the checker's result JSON and process exit status: `0` means a consistent current record requiring manual review, `2` means incomplete or legacy evidence, and `1` means invalid input or an evidence-consistency error. The checker always returns `release_ready: false` because it cannot authenticate the host or grant release authority. The expanded manual suite includes repetition, Free compatibility and recovery cases beyond the minimum record schema. Conditional unknown-write and duplicate-source cases remain unrun when those conditions do not occur; they do not alone block the basic account claim.
 

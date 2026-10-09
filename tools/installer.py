@@ -66,14 +66,23 @@ def package(root=ROOT):
 
 def system_markdown(p):
     texts=p['system_layer']['exact_install_text']
+    # The Markdown fence separator is display syntax, not part of the canonical
+    # Personalization payload. Historical payloads may already contain that LF.
+    def block(text):
+        return '```text\n'+text+('' if text.endswith('\n') else '\n')+'```\n\n'
     return ('# Helikon Mini '+p['package_version']+' — System installation\n\n'
             'Two separate account Personalization fields. Preserve existing personal details and preferences. '
             'Use SETUP in the unified installation package for the guided process.\n\n'
-            '## Snippet 1 — Custom instructions\n\n```text\n'+texts['custom_instructions']+'```\n\n'
+            '## Snippet 1 — Custom instructions\n\n'+block(texts['custom_instructions'])+
             '## Snippet 2 — More about you\n\n'
-            'Add this block alongside your personal details. Review the combined field length before saving.\n\n'
-            '```text\n'+texts['more_about_you']+'```\n\n'
-            'Each Mini snippet is within 1,500 characters. If existing content makes a field too long, '
+            'Add this block alongside your personal details. Review the combined field length before saving.\n\n'+
+            block(texts['more_about_you'])+
+            ('The canonical snippets have no terminal newline; the newline before each closing code fence is display syntax. '
+             'Copy the snippet text only and preserve its internal line breaks.\n\n'
+             if all(not text.endswith('\n') for text in texts.values()) else '')+
+            'Each Mini snippet is within the 1,500-character engineering ceiling; this is not an observed host limit. '
+            'Inspect the actual limit and count the complete proposed field, including existing content and separators. '
+            'If existing content makes a field too long, '
             'retain each Mini snippet verbatim and stop until the combined field fits; never truncate silently. '
             'Only add a source ID when the host actually returns it.\n')
 
@@ -175,6 +184,27 @@ def _text(value):
     return isinstance(value, str) and bool(value.strip())
 
 
+def _exact_snippet_in_field(field, snippet):
+    """Find a verbatim snippet separated from preserved text by line boundaries.
+
+    A newline already inside the canonical string remains required, including
+    for historical packages. Newlines outside it may delimit unrelated text or
+    an observed source binding; spaces and partial-line matches cannot.
+    """
+    if not isinstance(field, str) or not isinstance(snippet, str) or not snippet:
+        return False
+    start = field.find(snippet)
+    while start != -1:
+        end = start+len(snippet)
+        before = start == 0 or field[start-1] == '\n'
+        after = (end == len(field) or snippet.endswith('\n')
+                 or field.startswith(('\n', '\r\n'), end))
+        if before and after:
+            return True
+        start = field.find(snippet, start+1)
+    return False
+
+
 def _evidence_reader(base):
     base = Path(base).resolve()
     def evidence(ref):
@@ -215,7 +245,7 @@ def _readbacks(record, p, evidence, legacy=False):
             if settings['observation_method'] == 'user_reported': reported.append('settings_readback')
         evidence(settings['evidence'])
         for key, text in p['system_layer']['exact_install_text'].items():
-            if not isinstance(settings[key], str) or text.strip() not in settings[key]:
+            if not _exact_snippet_in_field(settings[key], text):
                 raise ValueError('Saved settings omit exact Mini snippet')
         if settings['unrelated_content_preserved'] is not True:
             raise ValueError('Existing content not preserved')
@@ -275,7 +305,11 @@ def _legacy_record(record, p, evidence):
 
 def verify_record(record, base, root=ROOT):
     """Check evidence bytes and recorded scope, never independently authenticate a host."""
-    p = package(root); evidence = _evidence_reader(base)
+    # Read the distributed canonical strings, and reject inconsistent source
+    # projections rather than quietly checking against newly reconstructed text.
+    p = read_json(Path(root)/PACKAGE)
+    if p != package(root): raise ValueError('Stale or modified unified installation package')
+    evidence = _evidence_reader(base)
     if not isinstance(record, dict): raise ValueError('Installation record must be an object')
     if not isinstance(record.get('limitations'), list) or not all(isinstance(v, str) for v in record['limitations']):
         raise ValueError('Limitations must be a list of text observations')

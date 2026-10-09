@@ -5,15 +5,15 @@
       "const": {
         "runtime": {
           "id": "helikon-mini.operating-master",
-          "version": "4.1.1-candidate.1"
+          "version": "4.1.1-candidate.2"
         },
         "schema": {
           "id": "helikon-mini.operating-master.schema",
-          "version": "1.0.7"
+          "version": "1.0.8"
         },
         "system_contract": {
           "id": "helikon-mini.system.contract",
-          "version": "2.1.0"
+          "version": "2.2.0"
         },
         "extension_contract": {
           "id": "helikon-mini.extension.contract",
@@ -936,5 +936,5 @@
   "additionalProperties": false,
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://fixicoai-devlabs.github.io/mount-helikon-mini-aios/schema/Helikon_Mini_Operating_Master.schema.json",
-  "title": "Helikon Mini Operating Master schema 1.0.7"
+  "title": "Helikon Mini Operating Master schema 1.0.8"
 }

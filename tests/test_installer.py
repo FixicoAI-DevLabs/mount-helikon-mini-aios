@@ -7,6 +7,7 @@ import shutil
 import sys
 import tempfile
 import unittest
+import zipfile
 from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[1]
@@ -37,6 +38,32 @@ class InstallerArtifactTests(unittest.TestCase):
     def test_copy_sheet_cannot_drift(self):
         (self.root/'Helikon_Mini_System.md').write_text('old project instructions')
         with self.assertRaisesRegex(ValueError,'projection'):installer.validate(self.root)
+
+    def test_copy_sheet_fences_do_not_add_newlines_to_canonical_snippets(self):
+        for relative in (installer.SYSTEM, installer.PROFILE):
+            path=self.root/relative
+            path.write_bytes(path.read_bytes().rstrip(b'\n'))
+        p=installer.render(self.root)
+        sheet=(self.root/'Helikon_Mini_System.md').read_text()
+        for key, snippet in p['system_layer']['exact_install_text'].items():
+            with self.subTest(key=key):
+                self.assertFalse(snippet.endswith('\n'))
+                self.assertIn('```text\n'+snippet+'\n```\n',sheet)
+                self.assertEqual(p['system_layer']['payload_sha256'][key],installer.sha(snippet.encode()))
+        self.assertEqual(installer.validate(self.root)['status'],'pass')
+
+    def test_record_check_rejects_package_and_projection_drift(self):
+        record=installer.record_template(self.root)
+        path=self.root/installer.PACKAGE
+        p=json.loads(path.read_text())
+        p['system_layer']['exact_install_text']['custom_instructions']='different packaged snippet'
+        path.write_text(json.dumps(p))
+        with self.assertRaisesRegex(ValueError,'Stale or modified'):
+            installer.verify_record(record,self.root,self.root)
+        installer.render(self.root)
+        (self.root/installer.SYSTEM).write_text('different source snippet')
+        with self.assertRaisesRegex(ValueError,'Stale or modified'):
+            installer.verify_record(record,self.root,self.root)
 
     def test_runtime_line_ending_change_is_not_hidden(self):
         path=self.root/installer.RUNTIME
@@ -185,6 +212,15 @@ class InstallationEvidenceTests(unittest.TestCase):
         record=self.complete_synthetic_record();record['settings_readback']['more_about_you']='personal details only'
         with self.assertRaisesRegex(ValueError,'omit'):installer.verify_record(record,self.base)
 
+    def test_saved_snippets_can_preserve_unrelated_text_and_source_binding(self):
+        record=self.complete_synthetic_record()
+        for key in ('custom_instructions','more_about_you'):
+            record['settings_readback'][key]=('Existing preference.\n'+record['settings_readback'][key]
+                                               +'\nLater unrelated preference.\n')
+        record['settings_readback']['more_about_you']+='Mini source binding: synthetic-unit-fixture-source'
+        result=installer.verify_record(record,self.base)
+        self.assertEqual(result['status'],'record_consistent_manual_review_required')
+
     def test_invented_pass_flag_rejected(self):
         record=installer.record_template();record['release_ready']=True
         with self.assertRaisesRegex(ValueError,'fields differ'):installer.verify_record(record,self.base)
@@ -290,6 +326,62 @@ class InstallationEvidenceTests(unittest.TestCase):
                 path.write_text(json.dumps(record))
                 with contextlib.redirect_stdout(io.StringIO()):
                     self.assertEqual(installer.main(['verify-record',str(path)]),expected)
+
+
+class ExactSnippetReadbackTests(unittest.TestCase):
+    """Exercise persisted-text comparisons independently of changing releases."""
+
+    def readback(self,p,texts,legacy=False):
+        record={'surface':'ordinary_non_project_chat',
+                'settings_readback':{**texts,'evidence':{},'unrelated_content_preserved':True},
+                'runtime_readback':None,'ordinary_chat_readback':None}
+        if not legacy:record['settings_readback']['observation_method']='direct_observation'
+        return installer._readbacks(record,p,lambda ref:None,legacy=legacy)
+
+    def test_historical_package_terminal_newline_is_still_required(self):
+        path=ROOT/'release/4.1.1-candidate.1/Helikon-Mini-4.1.1-candidate.1.zip'
+        with zipfile.ZipFile(path) as archive:
+            p=json.loads(archive.read(installer.PACKAGE.name))
+        canonical=p['system_layer']['exact_install_text']
+        for legacy in (False,True):
+            with self.subTest(legacy=legacy):
+                completed,_,_=self.readback(p,canonical,legacy=legacy)
+                self.assertIn('saved_personalization_readback',completed)
+                for key,snippet in canonical.items():
+                    self.assertTrue(snippet.endswith('\n'))
+                    observed={**canonical,key:snippet[:-1]}
+                    with self.subTest(key=key),self.assertRaisesRegex(ValueError,'exact Mini snippet'):
+                        self.readback(p,observed,legacy=legacy)
+
+    def test_no_terminal_newline_payload_requires_exact_characters_and_line_boundaries(self):
+        canonical={'custom_instructions':'Use exact guidance.\nKeep formats.',
+                   'more_about_you':'[HELIKON_MINI_PROFILE_BEGIN]\nRuntime: fixture@1.\n[HELIKON_MINI_PROFILE_END]'}
+        p={'system_layer':{'exact_install_text':canonical}}
+        for key,snippet in canonical.items():
+            cases={'interior_character':snippet.replace('i','I',1),
+                   'interior_whitespace':snippet.replace('\n','\n ',1),
+                   'prefix_without_separator':'unrelated '+snippet,
+                   'suffix_without_separator':snippet+' unrelated',
+                   'space_before_boundary':snippet+' \nLater preference.',
+                   'partial_payload':snippet[:-1],
+                   'normalized_line_endings':snippet.replace('\n','\r\n')}
+            for case,observed in cases.items():
+                with self.subTest(key=key,case=case),self.assertRaisesRegex(ValueError,'exact Mini snippet'):
+                    self.readback(p,{**canonical,key:observed})
+            for observed in (snippet,'Earlier preference.\n'+snippet,
+                             snippet+'\nLater preference.',
+                             'Earlier preference.\r\n'+snippet+'\r\nLater preference.'):
+                with self.subTest(key=key,valid=observed):
+                    completed,_,_=self.readback(p,{**canonical,key:observed})
+                    self.assertIn('saved_personalization_readback',completed)
+
+    def test_canonical_leading_and_trailing_spaces_are_not_trimmed(self):
+        canonical={'custom_instructions':' Exact guidance. ',
+                   'more_about_you':' Exact profile.\n'}
+        p={'system_layer':{'exact_install_text':canonical}}
+        for key,snippet in canonical.items():
+            with self.subTest(key=key),self.assertRaisesRegex(ValueError,'exact Mini snippet'):
+                self.readback(p,{**canonical,key:snippet.strip()})
 
 
 if __name__=='__main__':unittest.main()

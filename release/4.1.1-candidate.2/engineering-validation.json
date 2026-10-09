@@ -1,0 +1,101 @@
+{
+  "candidate": "4.1.1-candidate.2",
+  "base_commit": "433fd7749d9b91e4957182749005c97365abc767",
+  "review_date": "2026-10-09",
+  "scope": "local_artifacts_record_consistency_and_focused_live_retest",
+  "checks": {
+    "unit_tests": {
+      "status": "pass",
+      "count": 108
+    },
+    "artifact_validation": {
+      "status": "pass"
+    },
+    "runtime_policy_anchors": {
+      "status": "pass",
+      "changed": false
+    },
+    "exact_source_inventory": {
+      "status": "not_rerun_for_this_candidate",
+      "semantic_equivalence_asserted": false
+    },
+    "repeated_build": {
+      "status": "pass",
+      "byte_identical": true
+    },
+    "archive_copy": {
+      "status": "pass",
+      "matches_validated_build_bytes": true
+    },
+    "historical_release_changes": [],
+    "archive_inventory_and_integrity": {
+      "status": "pass",
+      "scope": "archive_inventory_and_integrity_only"
+    }
+  },
+  "archive": {
+    "filename": "Helikon-Mini-4.1.1-candidate.2.zip",
+    "bytes": 99047,
+    "sha256": "fc1ec33458ff8faa6bb38eb09cd27e32819f6efb24608a967fdac542f88b3ad2",
+    "members": 8
+  },
+  "runtime_sha256": "2afe9b2b83ae6ac91c09ab4c5232ed1e9f8bc22f69c840b908d5107cb6447daf",
+  "snippet_characters": {
+    "custom_instructions": 1099,
+    "more_about_you": 866
+  },
+  "canonical_snippet_terminal_newline": false,
+  "hosted_ci": "check_exact_published_commit_separately",
+  "live_account_acceptance": "incomplete_saved_source_prerequisite_not_established",
+  "fresh_ordinary_chat_automatic_source_read": "not_established_one_diagnostic_reported_no_supported_read",
+  "free_account_compatibility": "not_established",
+  "installer_driven_host_behavior": "partially_observed_manual_guidance_and_exact_next_blocks_with_handoff_format_failure",
+  "release_ready": false,
+  "focused_live_retest": {
+    "date": "2026-10-09",
+    "surface": "ordinary_chat_separate_free_test_account",
+    "model_independently_observed": false,
+    "public_summary": "LIVE_RETEST.md",
+    "package_upload": "failed_unable_to_upload_cause_unknown",
+    "alternative_installer_entry": "complete_package_pasted",
+    "setup_manual_guidance": "observed_copy_blocks_deferred_until_next",
+    "next_copy_blocks": "exact_match",
+    "saved_personalization": {
+      "status": "pass",
+      "observation_method": "direct_dom_readback_after_save_and_reopen",
+      "entire_fields_exact": true,
+      "terminal_newline": false,
+      "characters": {
+        "custom_instructions": 1099,
+        "more_about_you": 866
+      },
+      "nickname_and_occupation": "empty",
+      "backup": "directly_preserved"
+    },
+    "runtime_extraction": "local_bundle_bytes_verified_no_chat_generated_file",
+    "runtime_library_upload": "failed_unable_to_upload_cause_unknown",
+    "runtime_library_storage": "not_established",
+    "final_verify_status": "appropriately_partial",
+    "action_attribution_issue": "bundle_fallback_described_as_local_extraction",
+    "handoff_exactness": {
+      "status": "fail",
+      "canonical_characters": 2223,
+      "observed_characters": 2226,
+      "difference": "three_additional_blank_line_newline_characters"
+    },
+    "fresh_source_diagnostic": {
+      "attempts": 1,
+      "prompt": "canonical_repository_prompt",
+      "attachments": [],
+      "reported_source_read": "none",
+      "independently_reviewable_full_coverage": "unknown",
+      "independent_arithmetic": "pass_42",
+      "primary_acceptance_pass": false
+    },
+    "six_trial_primary_series": "not_run_saved_source_prerequisite_not_established",
+    "a07_ordinary_tasks": "not_rerun",
+    "four_behavior_cases": "not_rerun",
+    "restoration": "not_rerun",
+    "fast_answers_memory_library_search_settings": "unchanged"
+  }
+}

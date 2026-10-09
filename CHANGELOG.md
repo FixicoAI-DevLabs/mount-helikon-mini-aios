@@ -1,5 +1,13 @@
 # Changelog
 
+## 4.1.1-candidate.2 — live-test follow-up (testing build)
+
+- Keep runtime policy unchanged; bind the candidate to schema 1.0.8 and System contract 2.2.0.
+- Define canonical Personalization snippets without a terminal newline and validate exact, line-bounded content without whitespace stripping.
+- Add an explicit operator-assisted installer path when account-write tools are unavailable, with concrete UI steps, copyable snippets and honest readback reporting.
+- Separate source-tool evidence, model assertions and task-output results; preserve failed automatic delivery before any separately labelled manual fallback.
+- Retain candidate.1 artifacts and their outcomes. This candidate does not inherit an account-wide or Free-compatible pass.
+
 ## 4.1.1-candidate.1 — repository and acceptance repairs (testing build)
 
 - Preserve the compact runtime policy; bind the repaired artifacts to runtime 4.1.1-candidate.1, schema 1.0.7 and System contract 2.1.0.
