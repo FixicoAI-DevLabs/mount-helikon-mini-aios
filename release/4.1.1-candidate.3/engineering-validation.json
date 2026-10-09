@@ -1,0 +1,82 @@
+{
+  "candidate": "4.1.1-candidate.3",
+  "base_commit": "5ad51ac4febf7c07de4c01ef52d1c2e30527db4d",
+  "review_date": "2026-10-09",
+  "scope": "local_artifacts_and_record_consistency_only",
+  "checks": {
+    "unit_tests": {
+      "status": "pass",
+      "count": 110,
+      "duration_seconds": 2.391
+    },
+    "artifact_validation": {
+      "status": "pass",
+      "scope": "static_candidate_artifacts_only"
+    },
+    "runtime_policy_anchors": {
+      "status": "pass",
+      "changed": false
+    },
+    "runtime_nonidentity_content": {
+      "status": "pass",
+      "unchanged_from": "4.1.1-candidate.2"
+    },
+    "exact_source_inventory": {
+      "status": "not_rerun_for_this_candidate",
+      "semantic_equivalence_asserted": false
+    },
+    "repeated_build": {
+      "status": "pass",
+      "byte_identical": true,
+      "comparison": "cmp_exit_0"
+    },
+    "archive_copy": {
+      "status": "pass",
+      "matches_validated_build_bytes": true
+    },
+    "historical_release_changes": [],
+    "diff_whitespace": {
+      "status": "pass"
+    },
+    "archive_inventory_and_integrity": {
+      "status": "pass",
+      "scope": "archive_inventory_and_integrity_only"
+    }
+  },
+  "archive": {
+    "filename": "Helikon-Mini-4.1.1-candidate.3.zip",
+    "bytes": 102786,
+    "sha256": "261c26dbf8cc1f212acf85319ca2d3a7d7a7d0220fe6916215dcaee2ce47fb31",
+    "members": 8
+  },
+  "runtime_sha256": "1d5d7648a6dd2580fe8d0b451b398bfe675edb6eb0af4177e3bbe5cfb9430cd4",
+  "install_package_sha256": "21879aad64e08bc0e34eafdef5a776dd9a841daef5bf264812aae22b195654c5",
+  "snippet_characters": {
+    "custom_instructions": 1099,
+    "more_about_you": 866
+  },
+  "canonical_snippet_terminal_newline": false,
+  "fresh_chat_handoff": {
+    "characters": 2223,
+    "logical_lines": 1,
+    "contains_cr_or_lf": false,
+    "outer_whitespace": false,
+    "sha256_utf8": "04647da32ff157b3b482ea7a1f26e4feea8145669eead17e175e896c983ee3f3"
+  },
+  "version_axes": {
+    "runtime": "4.1.1-candidate.3",
+    "schema": "1.0.9",
+    "system_contract": "2.2.0",
+    "installer_protocol": "2.3.0",
+    "extension_contract": "1.0.0",
+    "install_package_schema": "2.1.0",
+    "installation_record_schema": "2.0.0"
+  },
+  "hosted_ci": "check_exact_published_commit_separately",
+  "live_account_acceptance": "not_run_source_prerequisite_blocked_and_candidate3_settings_not_installed",
+  "fresh_ordinary_chat_automatic_source_read": "not_established",
+  "free_account_compatibility": "not_established",
+  "installer_driven_host_behavior": "focused_preview_observed; immediate_exact_SETUP_pass; initial_FINAL_VERIFY_handoff_omitted; exact_handoff_after_one_corrective_followup",
+  "release_ready": false,
+  "live_evidence_summary": "LIVE_RETEST.md"
+}

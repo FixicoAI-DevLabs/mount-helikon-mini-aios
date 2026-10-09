@@ -1,0 +1,51 @@
+{
+  "candidate": "4.1.1-candidate.1",
+  "base_commit": "1826830243dc6e629ad80c52493306073c180df2",
+  "review_date": "2026-10-07",
+  "scope": "local_artifacts_and_record_consistency_only",
+  "checks": {
+    "unit_tests": {
+      "status": "pass",
+      "count": 102
+    },
+    "artifact_validation": {
+      "status": "pass"
+    },
+    "exact_source_inventory": {
+      "status": "pass",
+      "components": 92,
+      "normative_ids": 474,
+      "semantic_equivalence_asserted": false
+    },
+    "historical_manifest_entries": {
+      "status": "pass",
+      "count": 262
+    },
+    "current_evidence_files": {
+      "status": "pass",
+      "count": 267
+    },
+    "repeated_build": {
+      "status": "pass",
+      "byte_identical": true
+    },
+    "historical_release_changes": []
+  },
+  "archive": {
+    "filename": "Helikon-Mini-4.1.1-candidate.1.zip",
+    "bytes": 87520,
+    "sha256": "a45c75ef307cde09774bea5f69b7a1eec7e18ac3b20e709a5b7b5793e89cb5eb",
+    "members": 8
+  },
+  "runtime_sha256": "531ea75853845f0e31a2a8ce03fc469fb8a5af2d4dabb73672ed2a1e9075eccd",
+  "snippet_characters": {
+    "custom_instructions": 1100,
+    "more_about_you": 867
+  },
+  "hosted_ci": "check_exact_published_commit_separately",
+  "live_account_installation": "not_run",
+  "fresh_ordinary_chat_automatic_source_read": "not_run",
+  "free_account_compatibility": "not_run",
+  "installer_driven_host_behavior": "not_run",
+  "release_ready": false
+}

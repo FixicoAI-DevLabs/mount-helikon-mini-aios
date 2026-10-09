@@ -6,7 +6,7 @@ This repository publishes a minimal set of installer and usage documents. Securi
 - bypasses of explicit safety gating
 - misleading claims about tools, persistence, or background work
 
-Only the latest version in `main` is considered supported unless otherwise stated.
+Security reports are welcome for the latest regular release and the current development candidate. The latest regular release is 4.0, the project edition; the current development candidate is the 4.1.1-candidate.1 account-installer repair. Accepting security reports for that candidate is not a claim that its account-wide installation has passed live acceptance. Include the exact commit or package version in every report.
 
 ## Reporting a vulnerability
 If you believe you’ve found a security or safety issue:

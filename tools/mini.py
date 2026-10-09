@@ -53,6 +53,116 @@ def require(condition, message):
         raise Invalid(message)
 
 
+def valid_sha256(value):
+    return isinstance(value, str) and re.fullmatch(r'[0-9a-f]{64}', value) is not None
+
+
+def validate_source_inventory(root=ROOT):
+    """Check public provenance consistency; exact source bytes need source_check.py."""
+    root = Path(root)
+    provenance = load(root / 'docs/source-manifest.json')
+    mapping = load(root / 'docs/source-to-mini-map.json')
+    index = load(root / 'docs/source-index.json')
+    digest = provenance['source']['sha256']
+    require(valid_sha256(digest), 'Invalid full source hash')
+    require(mapping['source_sha256'] == index['source_sha256'] == digest,
+            'Source inventory provenance mismatch')
+    require(mapping['inventory_complete'] is True, 'Source inventory incomplete')
+    paths = [row['source_pointer'] for row in mapping['entries']]
+    require(all(isinstance(p, str) and p.startswith('#/') for p in paths), 'Invalid source pointer')
+    require(len(paths) == len(set(paths)), 'Duplicate source map entry')
+    require(index['pointers'] == paths, 'Source pointer inventory/order mismatch')
+    hashes = index['component_sha256']
+    require(isinstance(hashes, dict) and set(hashes) == set(paths), 'Source component hash inventory mismatch')
+    ids = []
+    for row in mapping['entries']:
+        pointer = row['source_pointer']
+        require(valid_sha256(row['source_sha256']) and row['source_sha256'] == hashes[pointer],
+                'Source component hash mismatch: ' + pointer)
+        rule_ids = row['source_rule_ids']
+        require(isinstance(rule_ids, list) and all(isinstance(i, str) and bool(i.strip()) for i in rule_ids),
+                'Invalid source rule IDs: ' + pointer)
+        ids.extend(rule_ids)
+    require(len(ids) == len(set(ids)), 'Duplicate source normative ID')
+    require(index['normative_ids'] == ids, 'Source normative index mismatch')
+    return mapping
+
+
+def confined_file(root, relative):
+    """Manifest paths must identify regular files inside their declared scope."""
+    require(isinstance(relative, str) and bool(relative), 'Invalid manifest path')
+    path = Path(relative)
+    require(not path.is_absolute() and '..' not in path.parts, 'Unsafe manifest path')
+    root = Path(root).resolve()
+    resolved = (root / path).resolve()
+    require(resolved.is_relative_to(root) and resolved.is_file(), 'Manifest file missing or escapes scope: ' + relative)
+    return resolved
+
+
+def check_file_receipt(path, expected, label):
+    require(isinstance(expected, dict) and set(expected) == {'sha256', 'bytes'}, 'Invalid file receipt: ' + label)
+    require(valid_sha256(expected['sha256']) and type(expected['bytes']) is int and expected['bytes'] >= 0,
+            'Invalid hash/size receipt: ' + label)
+    data = path.read_bytes()
+    require(expected == {'sha256': sha(data), 'bytes': len(data)}, 'Evidence file integrity mismatch: ' + label)
+
+
+def validate_evidence_manifests(root=ROOT):
+    """Check preserved historical receipts and an explicit current tree inventory offline."""
+    root = Path(root)
+    policy = load(root / 'docs/integrity/evidence-manifests.json')
+    require(policy['format'] == 'helikon-mini.evidence-integrity@1.0.0', 'Unknown evidence integrity format')
+    historical_count = 0
+    seen = set()
+    for binding in policy['historical_manifests']:
+        relative = binding['path']
+        require(relative not in seen, 'Duplicate historical manifest binding')
+        seen.add(relative)
+        require(re.fullmatch(r'[0-9a-f]{40}', binding['source_commit']) is not None, 'Invalid historical source commit')
+        path = confined_file(root, relative)
+        require(valid_sha256(binding['sha256']) and sha(path.read_bytes()) == binding['sha256'], 'Historical manifest changed: ' + relative)
+        manifest = load(path)
+        overrides = binding['preserved_entries']
+        require(isinstance(overrides, dict) and set(overrides) <= set(manifest['files']), 'Unknown preserved historical entry')
+        for name, receipt in manifest['files'].items():
+            if name in overrides:
+                preserved = overrides[name]
+                require(isinstance(preserved['reason'], str) and bool(preserved['reason'].strip()), 'Historical replacement needs rationale')
+                actual = confined_file(root, preserved['path'])
+            else:
+                actual = confined_file(path.parent, name)
+            check_file_receipt(actual, receipt, relative + ':' + name)
+            historical_count += 1
+    current = policy['current_scope']
+    require(isinstance(current['roots'], list) and current['roots'] and len(current['roots']) == len(set(current['roots'])), 'Invalid current evidence roots')
+    actual_paths = set()
+    for relative in current['roots']:
+        require(isinstance(relative, str) and relative.startswith('release/') and '..' not in Path(relative).parts, 'Invalid current evidence root')
+        directory = root / relative
+        require(directory.is_dir() and directory.resolve().is_relative_to(root.resolve()), 'Current evidence root missing or escapes scope')
+        actual_paths.update(str(path.relative_to(root)) for path in directory.rglob('*') if path.is_file())
+    require(set(current['files']) == actual_paths, 'Current evidence file inventory mismatch')
+    require(seen <= actual_paths, 'Historical manifests must be covered by current scope')
+    for relative, receipt in current['files'].items():
+        check_file_receipt(confined_file(root, relative), receipt, relative)
+    return {'status': 'pass', 'scope': 'declared_historical_and_current_file_integrity_only',
+            'historical_entries': historical_count, 'current_files': len(actual_paths),
+            'observations_authenticated': False}
+
+
+def validate_public_residue(root=ROOT):
+    """A limited pattern check over every public payload member and current docs."""
+    root = Path(root)
+    paths = {Path(p) for p in PAYLOAD.values()} | {SYSTEM, PROFILE, SCHEMA, Path('README.md'), Path('installer/contract.json')}
+    paths.update(p.relative_to(root) for directory in ('docs', 'profiles', 'tests/behavior')
+                 for p in (root / directory).rglob('*') if p.is_file())
+    private = re.compile(r'libfile[_-]|file_[0-9a-f]{32}|/workspace/|/root/|-----BEGIN .*PRIVATE KEY-----')
+    for relative in sorted(paths):
+        require(not private.search((root / relative).read_text(encoding='utf-8')),
+                'Private/default account residue: ' + str(relative))
+    return len(paths)
+
+
 def validate_schema(value, schema, path='$'):
     """Validate the deliberately small closed subset used by this checked-in schema.
 
@@ -214,13 +324,8 @@ def validate_repo(root=ROOT):
         'isolate_from_active_full_helikon':True,'no_bulk_memory_deletion':True,
         'mutations_need_specific_scope':True}, 'Installation safeguards changed')
     require(all(type(v) is bool for v in profile['installation_safeguards'].values()), 'Safeguards must be Boolean')
-    mapping = load(root / 'docs/source-to-mini-map.json')
-    require(mapping['source_sha256'] == provenance['source']['sha256'], 'Source map provenance mismatch')
-    require(mapping['inventory_complete'] is True, 'Source inventory incomplete')
+    mapping = validate_source_inventory(root)
     paths = [r['source_pointer'] for r in mapping['entries']]
-    require(len(paths) == len(set(paths)), 'Duplicate source map entry')
-    index = load(root / 'docs/source-index.json')
-    require(set(paths) == set(index['pointers']), 'Unmapped source component')
     for row in mapping['entries']:
         require(row['disposition'] in {'retain','simplify','exclude'}, 'Invalid source disposition')
         require(bool(row['reason'].strip()), 'Missing mapping rationale')
@@ -228,16 +333,14 @@ def validate_repo(root=ROOT):
         for target in row['targets']:
             resolve(doc, target)
         require(row['disposition'] == 'exclude' or bool(row['targets']), 'Retained source has no destination')
-    new_paths = [RUNTIME, SYSTEM, PROFILE, SCHEMA, PROJECTION, Path('README.md'), Path('CHANGELOG.md'), Path('START_HERE.md'), Path('Helikon_Mini_System.md'), Path('Helikon_Mini_Install_Package.json'), Path('Helikon_Mini_QA.md'), Path('installer/contract.json')]
-    new_paths += [p.relative_to(root) for directory in ('docs','profiles','tests/behavior') for p in (root/directory).rglob('*') if p.is_file()]
-    private = re.compile(r'libfile[_-]|file_[0-9a-f]{32}|/workspace/|/root/|-----BEGIN .*PRIVATE KEY-----')
-    for path in new_paths:
-        require(not private.search((root/path).read_text()), 'Private/default account residue: ' + str(path))
+    validate_evidence_manifests(root)
+    scanned = validate_public_residue(root)
     return {'status':'pass','scope':'static_candidate_artifacts_only',
             'runtime_characters':len((root/RUNTIME).read_text()),
             'system_characters':len((root/SYSTEM).read_text()),
             'profile_characters':len((root/PROFILE).read_text()),
             'owners':len(doc['owners']),'source_components':len(paths),
+            'residue_scan':{'scope':'limited_patterns_in_public_payload_and_current_docs','files':scanned},
             'live_behavior':'not_evaluated_by_this_command','host_installation':'not_evaluated_by_this_command'}
 
 
@@ -295,6 +398,7 @@ def main():
     sub = parser.add_subparsers(dest='command', required=True)
     sub.add_parser('render')
     sub.add_parser('validate')
+    sub.add_parser('validate-evidence')
     pack = sub.add_parser('build'); pack.add_argument('--out', default=str(ROOT/'build'))
     verify = sub.add_parser('verify-archive'); verify.add_argument('archive')
     args = parser.parse_args()
@@ -306,6 +410,7 @@ def main():
             installer.render(ROOT)
             result={'status':'generated','path':str(PROJECTION)}
         elif args.command == 'validate': result=validate_repo()
+        elif args.command == 'validate-evidence': result=validate_evidence_manifests()
         elif args.command == 'build': result=build(args.out)
         else: result=verify_archive(args.archive)
         print(json.dumps(result, indent=2))

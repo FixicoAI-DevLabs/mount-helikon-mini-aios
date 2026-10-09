@@ -22,7 +22,9 @@ Maintainer sources are `installer/custom_instructions.txt`, `installer/more_abou
 
 The install package is the installation authority distributed to end users. Once installed, only the standalone JSON is designated Operating. Installer instructions, personal backups, source bindings, test records and release history stay outside the runtime.
 
-All twelve logical Helikon owners and the reviewed compact runtime rules remain. Runtime policy text is unchanged from 4.0; identity changes to runtime 4.1.0, schema 1.0.6 and System contract 2.0.0. The new two-field System and delivery protocol are substantive changes, so earlier project behavior evidence cannot establish their account-wide behavior.
+All twelve logical Helikon owners and the reviewed compact runtime rules remain. Runtime policy text is unchanged from 4.0; the repaired candidate uses runtime 4.1.1-candidate.3, schema 1.0.9 and System contract 2.2.0. The two-field System and delivery protocol have changed substantively since the project edition, so earlier project behavior evidence cannot establish their account-wide behavior. The schema patch pins the new identity; it does not add runtime structures.
+
+Candidate.2 removed the canonical snippets’ terminal newlines, added operator-assisted setup and requested reviewable raw source-read evidence. Candidate.3 retains those requirements and advances installer protocol to 2.3.0: the first SETUP response must provide both exact previews, and the fresh-chat handoff is one logical line with an exact canonical fallback. Historical protocols retain their original multiline handoffs. System contract 2.2.0 and installation record 2.0.0 are unchanged. These changes require new live observations; offline consistency does not establish account operation.
 
 ## Source and authority boundaries
 

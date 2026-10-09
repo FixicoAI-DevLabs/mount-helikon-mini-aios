@@ -1,19 +1,23 @@
-# Release gate — Mini 4.1.0
+# Release gate — Mini 4.1.1-candidate.3
 
-The requested product is an account-wide, ordinary-chat starter with two Personalization snippets and a guided installer. Its Operating Layer is Helikon 6-derived JSON. Project-only success cannot satisfy this gate.
+The target is an account-wide ordinary-chat starter with two Personalization snippets and a guided installer. Project-only success cannot satisfy that claim. This candidate remains a testing build.
 
 ## Artifact gate
 
-Validate schema, complete runtime references, reviewed policy anchors, exact installer projections, both snippet budgets, source preservation, private-data absence and the eight-file inventory. Run unit tests and build twice with byte-identical results. CI must pass on the exact repository commit prepared for release.
+Validate the runtime schema and references, reviewed policy anchors, exact-byte installer projections, snippet budgets, preserved source artifacts, current and historical evidence manifests, limited public-payload residue checks and eight-file archive inventory. Run the negative regression suite and build twice with byte-identical results. CI must pass on the exact commit prepared for release.
+
+Run the separate source checker against the exact authorized Helikon 6 source. Ordinary CI checks the public source inventory's internal consistency; it cannot authenticate a private source that is not present. Follow [source derivation](source-to-mini-map.md) and the validator command in [validation](validation.md). Do not publish private configuration to satisfy this gate.
 
 ## Live account gate
 
-On an appropriately scoped test account/configuration, run the shipped SETUP flow. Keep any active full Helikon installation intact unless its replacement is specifically authorized. Observe both settings saves and exact readback; observe the saved Library runtime and its complete content; then open a fresh ordinary non-project, non-Temporary chat with no attached runtime and verify supported automatic source access.
+Follow [account acceptance](account-acceptance.md) on an appropriately scoped test account/configuration. Preserve active full Helikon. Record the exact candidate, plan, client, model and date, observation method, settings backups and every checkpoint.
 
-Run all four QA cases and retain actual results. The runtime, package version, client, model, plan and test surface must match the release claim. Do not substitute Work mode, Projects, manual attachments, marker echoes or self-reported activation. Any unavailable test remains unrun.
+Observe both settings saves and persisted readback, then the saved Library runtime and its complete content. Test fresh ordinary non-project, non-Temporary chats without runtime or installation-package attachments. Keep automatic lookup, manual Add from Library, Work and Project results separate. A prompt explaining a missing installer command must not also supply the runtime under test.
 
-## Distribution
+Run the ordinary-task first-use check, explicit source verification, four QA cases, guided installer cases and the Free-plan cases. Retain every attempt, failure and unknown. The existing sixteen-case behavior suite remains separate regression coverage. Settings persistence, source access and task behavior require separate evidence; a matching hash or a passing record checker cannot establish all three.
 
-The current 4.1 bundle can be distributed explicitly as a testing build. Promote a regular Latest account-wide release only after the live gate is satisfied. Preserve old tags, assets, source files and test records. Do not rewrite v4.0.0 to pretend it had this product contract.
+## Distribution and acceptance
 
-The requested repository correction is already authorized. A browser connection failure blocks observation, not implementation; report the precise missing test without requesting approval again.
+Candidate packaging and a reviewed repository change can proceed with live cases marked not run. A regular account-wide release requires the manual gates to pass on the actual claimed surface and plan, with semantic evidence review. An incomplete or contradictory record blocks that claim.
+
+Preserve old tags, release assets, source files and pilot records. Never rewrite v4.0.0 or the 4.1.0 testing bundle to imply they contained these repairs or passed the new tests. Use a distinct artifact version for changed bytes. Merge, tagging and release promotion are separate from preparing and reviewing the candidate branch.

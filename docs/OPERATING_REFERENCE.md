@@ -10,19 +10,19 @@ The JSON is the selected runtime source for this release. This rendering is a re
 
 **id:** helikon-mini.operating-master
 
-**version:** 4.1.0
+**version:** 4.1.1-candidate.3
 
 ### schema
 
 **id:** helikon-mini.operating-master.schema
 
-**version:** 1.0.6
+**version:** 1.0.9
 
 ### system_contract
 
 **id:** helikon-mini.system.contract
 
-**version:** 2.0.0
+**version:** 2.2.0
 
 ### extension_contract
 

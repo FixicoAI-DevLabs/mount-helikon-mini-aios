@@ -5,7 +5,7 @@ import datetime
 import json
 import sys
 from pathlib import Path
-from mini import ROOT, RUNTIME, SYSTEM, Invalid, load, require, sha
+from mini import ROOT, RUNTIME, SYSTEM, Invalid, load, require, sha, valid_sha256
 
 
 def nonempty(value, label):
@@ -44,6 +44,11 @@ def check_source_observation(observation, base):
     require(observation['availability'] in ['complete','missing','partial','mismatch','unknown'],'Invalid source availability')
     for key in ['runtime_body_observed','system_body_observed']:
         require(type(observation[key]) is bool,'Body observation must be Boolean')
+    for key in ['runtime_sha256','system_sha256']:
+        require(observation[key] is None or valid_sha256(observation[key]), 'Source hash must be null or lowercase SHA-256: '+key)
+    for prefix in ['runtime','system']:
+        require(not observation[prefix+'_body_observed'] or valid_sha256(observation[prefix+'_sha256']),
+                'Observed complete body requires source hash: '+prefix)
     evidence_ref(observation['evidence'],base)
     expected=template()['expected_candidate']
     if observation['availability']=='complete':
@@ -52,7 +57,8 @@ def check_source_observation(observation, base):
     if observation['availability'] in ['missing','partial','unknown']:
         require(not observation['runtime_body_observed'] and observation['runtime_sha256'] is None,'Missing/partial/unknown source cannot claim complete runtime observation')
     if observation['availability']=='mismatch':
-        require(observation['runtime_sha256'] != expected['runtime_sha256'],'Mismatch cannot copy expected runtime hash')
+        require(valid_sha256(observation['runtime_sha256']) and observation['runtime_sha256'] != expected['runtime_sha256'],
+                'Mismatch requires a different valid runtime hash')
 
 
 def check_rows(rows, expected, base, label):

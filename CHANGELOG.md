@@ -1,5 +1,33 @@
 # Changelog
 
+## 4.1.1-candidate.3 — exact installer handoff (testing build)
+
+- Keep runtime policy and System contract 2.2.0 unchanged; pin runtime 4.1.1-candidate.3 with schema 1.0.9 and updated profile/hash bindings.
+- Advance installer protocol to 2.3.0: show both exact snippet previews in the first SETUP response while preserving backup and save prerequisites.
+- Define the fresh-chat handoff as one exact logical line and reject inserted CR/LF or outer whitespace, even when generated copies agree with the malformed value.
+- Preserve failed handoff attempts and direct the operator to the canonical guide block when the chat alters it; keep guides out of the primary source-access test.
+- Preserve historical multiline handoffs and candidate.1/candidate.2 release evidence. Candidate.3 still requires its own live acceptance.
+
+## 4.1.1-candidate.2 — live-test follow-up (testing build)
+
+- Keep runtime policy unchanged; bind the candidate to schema 1.0.8 and System contract 2.2.0.
+- Define canonical Personalization snippets without a terminal newline and validate exact, line-bounded content without whitespace stripping.
+- Add an explicit operator-assisted installer path when account-write tools are unavailable, with concrete UI steps, copyable snippets and honest readback reporting.
+- Separate source-tool evidence, model assertions and task-output results; preserve failed automatic delivery before any separately labelled manual fallback.
+- Retain candidate.1 artifacts and their outcomes. This candidate does not inherit an account-wide or Free-compatible pass.
+
+## 4.1.1-candidate.1 — repository and acceptance repairs (testing build)
+
+- Preserve the compact runtime policy; bind the repaired artifacts to runtime 4.1.1-candidate.1, schema 1.0.7 and System contract 2.1.0.
+- Hash and compare exact UTF-8 runtime bytes; reject line-ending drift between embedded and standalone delivery.
+- Refuse to overwrite existing installation evidence when creating a record template.
+- Add versioned host metadata, observation methods, checkpoint and backup states to installation records; keep semantic review and release authority separate.
+- Reserve more space for existing Personalization, clarify first-use reading, and supply a self-contained fresh-chat handoff.
+- Verify historical evidence against explicitly bound snapshots and verify a separate current inventory without rewriting old evidence.
+- Strengthen source-index consistency, negative provenance tests, private-record exclusions and limited public-payload residue detection.
+- Add reproducible manual account, Free-plan and installer acceptance cases. Unexecuted cases remain not run; historical project and full Helikon observations are not Mini account validation.
+- Retain the existing 4.1.0 testing bundle and all earlier releases unchanged. This candidate is not a regular release or a live-support promotion.
+
 ## 4.1.0 — account-wide installer correction (testing build)
 
 - Restore two Personalization snippets and the guided ordinary-chat installer.
